@@ -1,0 +1,142 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Hardzakman Bazhanumy" # Infantry Division
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		#infantry = { x = 1 y = 2 }
+		#infantry = { x = 2 y = 0 }
+		#infantry = { x = 2 y = 1 }
+	}
+	support = {
+		#recon = { x = 0 y = 0 }
+		#engineer = { x = 0 y = 1 }
+		#artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Hatuk Brigad" # Mountain Division
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		#mountaineers = { x = 1 y = 0 }
+		#mountaineers = { x = 1 y = 1 }
+		#mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		#artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Hetselazorayin Brigad" # Cavalry Division
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		#cavalry = { x = 1 y = 1 }
+		#cavalry = { x = 2 y = 0 }
+		#cavalry = { x = 2 y = 1 }
+		#cavalry = { x = 3 y = 0 }
+		#cavalry = { x = 3 y = 1 }
+	}
+}
+
+##### OOB #####
+units = {
+
+	division= {	# "Sevan Cavalry Division"
+		name = "1ya 'Sevan' Hetselazorayin Brigad"
+		location = 11708
+		division_template = "Hetselazorayin Brigad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	# "Kars Infantry Division"
+		name = "1ya 'Kars' Hardzakman Bazhanumy"
+		location = 789
+		division_template = "Hardzakman Bazhanumy"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	# "Nakhichevan Mountain Division"
+		name = "2ya 'Nakhijevan' Hatuk Brigad"
+		location = 6997
+		division_template = "Hatuk Brigad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+
+	division= {	# "Shusha Mountain Division"
+		name = "3ya 'Artsaktsi' Hatuk Brigad"
+		location = 1467
+		division_template = "Hatuk Brigad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+
+	division= {	# "Erzurum Infantry Division"
+		name = "2ya 'Karin' Hardzakman Bazhanumy"
+		location = 11853
+		division_template = "Hardzakman Bazhanumy"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+
+	division= {	# "Van Mountain Division"
+		name = "1ya 'Vani' Hatuk Brigad"
+		location = 864
+		division_template = "Hatuk Brigad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+
+	division= {	# "Trapizon Infantry Division"
+		name = "3ya 'Trebizond' Hardzakman Bazhanumy"
+		location = 9932
+		division_template = "Hardzakman Bazhanumy"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+}
+
+### Air Wings
+air_wings = {
+	230 = {
+		fighter_equipment_0 = {
+			owner = "ARM" 
+			amount = 16
+		}
+	}
+}
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "ARM"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+}

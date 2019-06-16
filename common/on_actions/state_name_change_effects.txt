@@ -1,0 +1,32 @@
+on_actions = {
+    on_state_control_changed={
+        effect={
+            if = { #Completed Syunik, ARM, AZR
+                limit={FROM.FROM={state = 794}}
+                if={
+                    limit = {
+                        tag=ARM
+                        FROM.FROM={NOT={has_state_flag=armenian_name}}
+                    }
+                    FROM.FROM = {
+                        clear_language = yes
+                        set_state_flag = armenian_name
+                        set_state_name = "Syunik"
+                    }
+                }
+                if={
+                    limit = {
+                        tag=AZR
+                        FROM.FROM={NOT={has_state_flag=azerbaijani_name}}
+                    }
+                    FROM.FROM = {
+                        clear_language = yes
+                        set_state_flag = azerbaijani_name
+                        set_state_name = "Zangezur"
+                        add_core_of=ROOT
+                    }
+                }
+            }
+        }
+    }
+}

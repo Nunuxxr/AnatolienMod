@@ -1,0 +1,125 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Piyada Diviziyası"	# Rifle Division
+#	division_names_group = AZR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Dağ Briqadası"	# Mountain Division
+#	division_names_group = AZR_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Süvari Diviziyası"	# Cavalry Division
+#	division_names_group = AZR_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+##### OOB #####
+units = {
+	division= {	# "Piyada Diviziyası" #Baku
+		name = "1ya Piyada 'Bakü Guard' Diviziyası"
+		location = 7661
+		division_template = "Piyada Diviziyası"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "AZR" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+
+	}
+
+	division= {	# "Süvari Diviziyası" #Kura
+		name = "1ya Süvari 'Kura' Diviziyası"
+		location = 11704
+		division_template = "Süvari Diviziyası"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "AZR" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	
+	division= {	# "Dağ Briqadası" #Derbent
+		name = "1ya Dağ 'Derbent' Briqadası"
+		location = 7624
+		division_template = "Dağ Briqadası"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "AZR" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	
+	division= {	# "Dağ Briqadası" #Ganja
+		name = "2ya Dağ 'Ganca' Briqadası"
+		location = 11674
+		division_template = "Dağ Briqadası"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "AZR" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+
+	division= {	# "Piyada Diviziyası" #Lankaran	
+		name = "2ya Piyada 'Lankaran' Diviziyası"
+		location = 12434
+		division_template = "Piyada Diviziyası"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "AZR" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+
+}
+
+### Air Wings
+air_wings = {
+#	229 = {
+#		fighter_equipment_0 = {
+#			owner = "AZR" 
+#			amount = 15
+#		}
+#	}
+}
+
+
+		
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "AZR"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+}

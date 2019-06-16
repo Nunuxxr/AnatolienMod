@@ -1,0 +1,136 @@
+﻿capital = 231 #Tbilisi
+
+oob = "GEO_1936"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+	early_bomber = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	superior_firepower = 1
+	fleet_in_being = 1
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1920.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    fascism = 10
+    democratic = 65
+    communism = 15
+    neutrality = 10
+}
+
+add_ideas = {
+}
+
+create_country_leader = {
+	name = "Noe Ramishvili"
+	desc = ""
+	picture = "Portrait_GEO_Noe_Ramishvili.dds"
+	expire = "1953.3.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Polikarp Mdivani"
+	desc = ""
+	picture = "Portrait_GEO_Polikarp_Mdivani.dds"
+	expire = "1953.3.1"
+	ideology = stalinism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Giorgi Kvinitadze"
+	desc = ""
+	picture = "Portrait_GEO_Giorgi_Kvinitadze.dds"
+	expire = "1953.3.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Giorgi Bagration-Mukhraneli"
+	desc = ""
+	picture = "Portrait_GEO_Giorgi_BagrationMukhraneli.dds"
+	expire = "1953.3.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Shalva Maglakelidze"
+	picture = "Portrait_GEO_Shalva_Maglakelidze.dds"
+	traits = { inspirational_leader offensive_doctrine }
+	skill = 2
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Giorgi Mazniashvili"
+	picture = "Portrait_GEO_Giorgi_Mazniashvili.tga"
+	id = 63001
+	id = 63001
+	traits = {  }
+	skill = 2
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 1
+    logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Giorgi Kvinitadze"
+	picture = "Portrait_GEO_Giorgi_Kvinitadze.tga"
+	id = 63002
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 4
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Kakutsa Cholokashvili"
+	picture = "Portrait_GEO_Kakutsa_Cholokashvili.tga"
+	id = 63003
+	traits = { trait_mountaineer }
+	skill = 1
+	attack_skill = 2
+    defense_skill = 3
+    planning_skill = 1
+    logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Giorgi Abashvili"
+	picture = "Portrait_GEO_Giorgi_Abashvili.tga"
+	traits = { seawolf blockade_runner }
+	skill = 1
+}

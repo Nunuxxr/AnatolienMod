@@ -1,0 +1,58 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ENG_motobike_mesh"
+		file = "gfx/models/units/vehicles/ENG_motobike.mesh"
+
+		animation = { id = "idle"			type = "GER_mechanized_01_idle_animation" }
+		animation = { id = "move"			type = "GER_mechanized_01_move_animation" }
+		animation = { id = "attack"			type = "GER_mechanized_01_attack_animation" }
+
+	}
+}
+
+objectTypes = {
+	pdxmesh = {
+		name = "SOV_motobike_mesh"
+		file = "gfx/models/units/vehicles/SOV_motobike.mesh"
+
+		animation = { id = "idle"			type = "GER_mechanized_01_idle_animation" }
+		animation = { id = "move"			type = "GER_mechanized_01_move_animation" }
+		animation = { id = "attack"			type = "GER_mechanized_01_attack_animation" }
+
+	}
+}
+
+objectTypes = {
+	pdxmesh = {
+		name = "JAP_motobike_mesh"
+		file = "gfx/models/units/vehicles/JAP_motobike.mesh"
+
+		animation = { id = "idle"			type = "GER_mechanized_01_idle_animation" }
+		animation = { id = "move"			type = "GER_mechanized_01_move_animation" }
+		animation = { id = "attack"			type = "GER_mechanized_01_attack_animation" }
+
+	}
+}
+objectTypes = {
+	pdxmesh = {
+		name = "GER_motobike_mesh"
+		file = "gfx/models/units/vehicles/GER_motobike.mesh"
+
+		animation = { id = "idle"			type = "GER_mechanized_01_idle_animation" }
+		animation = { id = "move"			type = "GER_mechanized_01_move_animation" }
+		animation = { id = "attack"			type = "GER_mechanized_01_attack_animation" }
+
+	}
+}
+
+objectTypes = {
+	pdxmesh = {
+		name = "EUO_motobike_mesh"
+		file = "gfx/models/units/vehicles/EUO_motobike.mesh"
+
+		animation = { id = "idle"			type = "GER_mechanized_01_idle_animation" }
+		animation = { id = "move"			type = "GER_mechanized_01_move_animation" }
+		animation = { id = "attack"			type = "GER_mechanized_01_attack_animation" }
+
+	}
+}

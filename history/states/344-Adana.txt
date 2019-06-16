@@ -1,0 +1,33 @@
+
+state={
+	id=344
+	name="STATE_344"
+	manpower = 727198
+	
+	state_category = town
+
+	history={
+		owner = FRA
+		victory_points = { #Gaziantep
+			9893 1
+		}
+		victory_points = { #Adana
+			806 3
+		}
+		#victory_points = { #Kahramanmaraş
+		#	886 1 
+		#}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			806 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = TUR
+	}
+
+	provinces={
+		806 886 3889 6813 7620 9823 9893 9912 11759 11871 12029
+	}
+}

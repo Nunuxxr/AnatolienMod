@@ -1,0 +1,21 @@
+﻿add_namespace = azerbaijan
+
+#Rename New Provinces
+country_event = {
+    id = azerbaijan.1
+    title = azerbaijan.1.t
+    desc = azerbaijan.1.d
+    picture = GFX_report_event_german_reichstag_gathering
+ 
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+ 
+    option = { #a great idea!
+        name = azerbaijan.1.a
+        ai_chance = {
+            base = 100
+        }
+        794 = { set_state_name = "Zangezur" }
+    }
+}

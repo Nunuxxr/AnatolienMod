@@ -1,0 +1,189 @@
+﻿capital = 230 #Yerevan, Armenia
+
+oob = "ARM_1936"
+
+set_research_slots = 3
+
+set_stability = 0.45
+set_war_support = 0.65
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+	superior_firepower = 1
+}
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	oob = "ARM_1939"
+	
+	set_technology = {
+		fighter1 = 1
+		early_bomber = 1
+		gw_artillery = 1
+		interwar_artillery = 1
+		interwar_antiair = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+
+		grand_battle_plan = 1
+		prepared_defense = 1
+		grand_assault = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+	}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.11.11"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    fascism = 5
+    democratic = 25
+    communism = 7
+    neutrality = 63
+}
+
+add_ideas = {
+	#limited_conscription
+	ARM_preserve_greater_armenia
+	ARM_church
+	ARM_banak_shortcomings
+}
+
+create_country_leader = {
+	name = "Hamo Ohanjanyan"
+	desc = "ARM_hamo_ohanjanyan_desc"
+	picture = "Portrait_ARM_Hamo_Ohanjanyan.tga"
+	expire = "1947.7.31"
+	ideology = centrism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Drastamat Kanayan"
+	desc = "ARM_drastamat_kanayan_desc"
+	picture = "Portrait_Armenia_Drastamat_Kanayan3.dds"
+	expire = "1956.3.8"
+	ideology = fascism_ideology
+	traits = {
+		great_war_hero
+	}
+}
+
+create_country_leader = {
+	name = "Garegin Nzhdeh"
+	desc = "ARM_garegin_nzhdeh_desc_desc"
+	picture = "Portrait_Armenia_Garegin_Nzhdeh.dds"
+	expire = "1955.3.8"
+	ideology = nazism
+	traits = {
+		great_war_hero
+	}
+}
+
+create_country_leader = {
+	name = "Stepan Sapah-Gulian"
+	desc = "ARM_stepan_sapah-gulian_desc"
+	picture = "Portrait_Armenia_Stepan_Sapah-Gulian.tga"
+	expire = "1953.3.1"
+	ideology = socialism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Aghasi Khanjian"
+	desc = "ARM_aghasi_khanjian_desc"
+	picture = "Portrait_Armenia_Aghasi_Khanjian.tga"
+	expire = "1975.1.1"
+	ideology = stalinism
+	traits = {
+	}
+}
+
+create_field_marshal = {
+	name = "Andranik Ozanian"
+	desc = "ARM_andranik_ozanian_desc"
+	picture = "Portrait_Armenia_Andranik_Ozanian.dds"
+	traits = { inspirational_leader infantry_officer offensive_doctrine trait_mountaineer }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Movses Silikyan"
+	desc = "ARM_movses_silikyan_desc"
+	picture = "Portrait_Armenia_Movses_Silikyan.dds"
+	traits = { old_guard commando infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Drastamat Kanayan"
+	desc = "ARM_drastamat_kanayan_desc"
+	picture = "Portrait_Armenia_Drastamat_Kanayan3.dds"
+	traits = { trait_mountaineer }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Christopher Araratyan"
+	desc = "ARM_christopher_araratyan_desc"
+	picture = "Portrait_Armenia_Christopher_Araratov.tga"
+	traits = { bearer_of_artillery }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Garegin Nzhdeh"
+	desc = "ARM_garegin_nzhdeh_desc"
+	picture = "Portrait_Armenia_Garegin_Nzhdeh.dds"
+	traits = { commando trait_mountaineer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}

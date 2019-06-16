@@ -1,0 +1,22 @@
+state={
+	id=790
+	name="STATE_790"
+
+	history={
+		owner = GEO
+		victory_points = {
+			6436 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = GEO
+		add_core_of = AZR
+	}
+
+	provinces = {
+		4605 6436 6763
+	}
+	manpower = 47500
+	state_category = pastoral
+}

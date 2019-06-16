@@ -1,0 +1,22 @@
+state={
+	id=794
+	name="STATE_794"
+
+	history={
+		owner = ARM
+        victory_points = {
+			4660 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ARM
+	}
+
+	provinces={
+		4660 6642
+	}
+	manpower=180000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

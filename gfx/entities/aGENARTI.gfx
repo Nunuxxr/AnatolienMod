@@ -1,0 +1,57 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "unit_artillery_0_mesh"
+		file = "gfx/models/buildings/GEN_artillery_0.mesh"
+		
+		animation = { id = "idle"  			type = "artillery_idle_animation" }
+		animation = { id = "move"  			type = "artillery_moving_animation" }
+		animation = { id = "attack"  		type = "artillery_attack_animation" }
+	}
+		}
+		
+objectTypes = {		
+	pdxmesh = {
+		name = "unit_artillery_1_mesh"
+		file = "gfx/models/buildings/GEN_artillery_1.mesh"
+		
+		animation = { id = "idle"  			type = "artillery_idle_animation" }
+		animation = { id = "move"  			type = "artillery_moving_animation" }
+		animation = { id = "attack"  		type = "artillery_attack_animation" }
+	}
+			}
+		
+objectTypes = {		
+		pdxmesh = {
+		name = "unit_artillery_2_mesh"
+		file = "gfx/models/buildings/GEN_artillery_2.mesh"
+		
+		animation = { id = "idle"  			type = "artillery_idle_animation" }
+		animation = { id = "move"  			type = "artillery_moving_animation" }
+		animation = { id = "attack"  		type = "artillery_attack_animation" }
+	}
+	
+			}
+		
+objectTypes = {		
+	pdxmesh = {
+		name = "unit_artillery_3_mesh"
+		file = "gfx/models/buildings/GEN_artillery_3.mesh"
+		
+		animation = { id = "idle"  			type = "artillery_idle_animation" }
+		animation = { id = "move"  			type = "artillery_moving_animation" }
+		animation = { id = "attack"  		type = "artillery_attack_animation" }
+	}
+			}
+		
+objectTypes = {		
+	pdxmesh = {
+		name = "frame_artillery_mesh"
+		file = "gfx/models/buildings/artillery_frame.mesh"
+		
+		animation = { id = "idle"  			type = "artillery_frame_idle_animation" }
+		animation = { id = "move"  			type = "artillery_frame_moving_animation" }
+		animation = { id = "attack"  		type = "artillery_frame_attack_animation" }
+	}
+		}
+	

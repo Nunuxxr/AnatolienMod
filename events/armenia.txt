@@ -1,0 +1,613 @@
+﻿add_namespace = armenia
+
+#Rename New Provinces
+country_event = {
+    id = armenia.1
+    title = armenia.1.t
+    desc = armenia.1.d
+    picture = GFX_report_event_german_reichstag_gathering
+ 
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+ 
+    option = { #a great idea!
+        name = armenia.1.a
+        ai_chance = {
+            base = 100
+        }
+        344 = { set_state_name = "Cilicia" }
+        349 = { set_state_name = "Kharput" }
+        350 = { set_state_name = "Sophene" }
+        792 = { set_state_name = "Jolamerk" }
+        set_province_name = { id = 7620 name = "Malat'ya"}
+        set_province_name = { id = 9761 name = "Sebastia"}
+        set_province_name = { id = 4512 name = "Tigranakert"}
+        set_province_name = { id = 876 name = "Kharput"}
+        set_province_name = { id = 1463 name = "Jolamerk"}
+    }
+}
+
+country_event = { #Elections
+    id = armenia.2
+    title = armenia.2.t
+    desc = armenia.2.d
+    picture = GFX_report_event_election_vote
+   
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+   
+    option = { #Hovhannes Kajasnuni
+        name = armenia.2.a
+        ai_chance = { factor = 15 }
+		create_country_leader = {
+			name = "Hovhannes Kajaznuni"
+			desc = ""
+			picture = "Portrait_Armenia_Hovhannes_Kajaznuni.dds"
+			expire = "1953.3.1"
+			ideology = conservatism
+			traits = {
+				great_architect
+			}
+		}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = democratic
+			}
+			set_party_name = { 
+				ideology = democratic 
+				long_name = ARM_democratic_party_dashnak_long 
+				name = ARM_democratic_party_dashnak
+			}
+			set_party_name = { 
+				ideology = neutrality 
+				long_name = ARM_neutrality_party_long 
+				name = ARM_neutrality_party
+			}
+			set_country_flag = ARM_dashnak_victory
+		}
+    }
+	
+    option = { #Stepan Sapah-Gulian | Hunchakian
+        name = armenia.2.b
+        ai_chance = { factor = 45 }
+		create_country_leader = {
+			name = "Stepan Sapah-Gulian"
+			desc = ""
+			picture = "Portrait_Armenia_Stepan_Sapah-Gulian.tga"
+			expire = "1953.3.1"
+			ideology = socialism
+			traits = {
+			}
+		}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = democratic
+			}
+			set_country_flag = ARM_western_victory
+		}
+    }
+	
+    option = { #Andranik Ozanian
+        name = armenia.2.c
+        ai_chance = { factor = 30 }
+		create_country_leader = {
+			name = "Andranik Ozanian"
+			desc = ""
+			picture = "Portrait_Armenia_Andranik_Ozanian.dds"
+			expire = "1953.3.1"
+			ideology = conservatism
+			traits = {
+				great_war_hero
+			}
+		}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = democratic
+			}
+			set_party_name = { 
+				ideology = democratic 
+				long_name = ARM_democratic_party_dashnak_long 
+				name = ARM_democratic_party_dashnak
+			}
+			set_party_name = { 
+				ideology = neutrality 
+				long_name = ARM_neutrality_party_long 
+				name = ARM_neutrality_party
+			}
+			set_country_flag = ARM_dashnak_victory
+		}
+    }
+}
+
+country_event = { #Dissonance of the Republic
+    id = armenia.3
+    title = armenia.3.t
+    desc = armenia.3.d
+    #picture = GFX_report_event_german_reichstag_gathering
+   
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+   
+    option = { #Status-Quo
+        name = armenia.3.a
+        ai_chance = { factor = 80 }
+		set_country_flag = ARM_maintain_status_quo_flag
+		add_stability = -0.05
+    }
+	
+    option = { #Radical Politics
+        name = armenia.3.b
+        ai_chance = { factor = 20 }
+		set_country_flag = ARM_radical_politics_flag
+		add_political_power = -25
+    }
+}
+
+country_event = { #Status-Quo
+    id = armenia.4
+    title = armenia.4.t
+    desc = armenia.4.d
+    #picture = GFX_report_event_german_reichstag_gathering
+   
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+   
+    option = { #Democracy
+        name = armenia.4.a
+        ai_chance = { factor = 75 }
+		set_country_flag = ARM_democracy_flag
+		add_stability = 0.05
+		add_political_power = -50
+    }
+	
+    option = { #Monarchism
+        name = armenia.4.b
+        ai_chance = { factor = 25 }
+		set_country_flag = ARM_monarchism_flag
+		add_political_power = -25
+    }
+}
+
+country_event = { #Radical Politics
+    id = armenia.5
+    title = armenia.5.t
+    desc = armenia.5.d
+    #picture = GFX_report_event_german_reichstag_gathering
+   
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+   
+    option = { #Fascism
+        name = armenia.5.a
+        ai_chance = { factor = 75 }
+		set_country_flag = ARM_fascism_flag
+		add_war_support = 0.1
+    }
+	
+    option = { #Communism
+        name = armenia.5.b
+        ai_chance = { factor = 25 }
+		set_country_flag = ARM_communism_flag
+		add_stability = -0.05
+		add_political_power = 25
+    }
+}
+
+country_event = { #Heir Apparent
+    id = armenia.6
+    title = armenia.6.t
+    desc = armenia.6.d
+    #picture = GFX_report_event_german_reichstag_gathering
+   
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+   
+    option = { #Jaques
+        name = armenia.6.a
+        ai_chance = { factor = 75 }
+		set_country_flag = ARM_jaques_bagratuni_chosen
+    }
+	
+    option = { #Giorgi
+        name = armenia.6.b
+        ai_chance = { factor = 25 }
+		set_country_flag = ARM_giorgi_bagration-mukhranel_chosen
+    }
+}
+
+country_event = { #Summit Offer from Armenia
+    id = armenia.9
+    title = armenia.9.t
+    desc = armenia.9.d
+    picture = GFX_report_event_german_reichstag_gathering
+   
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+   
+    option = { #Accept
+        name = armenia.9.a
+        ai_chance = { factor = 85 }
+		ARM = {
+			country_event = armenia.10
+		}
+    }
+	
+    option = { #Refuse
+        name = armenia.9.b
+        ai_chance = { factor = 15 }
+		ARM = {
+			country_event = armenia.21
+		}
+    }
+}
+
+country_event = { #Summit Begins
+    id = armenia.10
+    title = armenia.10.t
+    desc = armenia.10.d
+    picture = GFX_report_event_german_reichstag_gathering
+   
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+   
+    option = { #Discuss Trade
+        name = armenia.10.a
+        ai_chance = { factor = 33 }
+		GEO = {
+			country_event = armenia.11
+		}
+    }
+	
+    option = { #Discuss Borders
+        name = armenia.10.b
+        ai_chance = { factor = 33 }
+		GEO = {
+			country_event = armenia.12
+		}
+    }
+	
+    option = { #Discuss Military
+        name = armenia.10.b
+        ai_chance = { factor = 34 }
+		GEO = {
+			country_event = armenia.13
+		}
+    }
+}
+
+country_event = { #Trade discussion
+    id = armenia.11
+    title = armenia.11.t
+    desc = armenia.11.d
+    picture = GFX_report_event_german_reichstag_gathering
+   
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+   
+    option = { #Yes
+        name = armenia.11.a
+        ai_chance = { factor = 80 }
+		ARM = {
+			country_event = armenia.14
+		}
+    }
+	
+    option = { #No
+        name = armenia.11.b
+        ai_chance = { factor = 20 }
+		ARM = {
+			country_event = armenia.15
+		}
+    }
+}
+
+country_event = { #Borders discussion
+    id = armenia.12
+    title = armenia.12.t
+    desc = armenia.12.d
+    picture = GFX_report_event_german_reichstag_gathering
+   
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+   
+    option = { #Yes
+        name = armenia.12.a
+        ai_chance = { factor = 33 }
+		ARM = {
+			country_event = armenia.16
+		}
+    }
+	
+    option = { #No
+        name = armenia.12.b
+        ai_chance = { factor = 33 }
+		ARM = {
+			country_event = armenia.17
+		}
+    }
+}
+
+country_event = { #Research discussion
+    id = armenia.13
+    title = armenia.13.t
+    desc = armenia.13.d
+    picture = GFX_report_event_german_reichstag_gathering
+   
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+   
+    option = { #Yes
+        name = armenia.13.a
+        ai_chance = { factor = 75 }
+		ARM = {
+			country_event = armenia.18
+		}
+    }
+	
+    option = { #No
+        name = armenia.13.b
+        ai_chance = { factor = 25 }
+		ARM = {
+			country_event = armenia.19
+		}
+    }
+}
+
+country_event = { #Georgia agrees to trade
+    id = armenia.14
+    title = armenia.14.t
+    desc = armenia.14.d
+    picture = GFX_report_event_german_reichstag_gathering
+   
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+   
+    option = { #Yes
+        name = armenia.14.a
+        ai_chance = { factor = 75 }
+		#add_ideas = +trade relations or -15% consumer goods 200days
+		GEO = {
+			#add_ideas = +trade relations or -15% consumer goods 200days
+		}
+		set_global_flag = ARM_georgia_summit_positive
+    }
+}
+
+country_event = { #Georgia refuses trade
+    id = armenia.15
+    title = armenia.15.t
+    desc = armenia.15.d
+    picture = GFX_report_event_german_reichstag_gathering
+   
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+   
+    option = { #Yes
+        name = armenia.15.a
+        ai_chance = { factor = 100 }
+		#trade relations -25
+		set_global_flag = ARM_georgia_summit_negative
+    }
+}
+
+country_event = { #Georgia agrees to lighter borders
+    id = armenia.16
+    title = armenia.16.t
+    desc = armenia.16.d
+    picture = GFX_report_event_german_reichstag_gathering
+   
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+   
+    option = { #Yes
+        name = armenia.16.a
+        ai_chance = { factor = 75 }
+		#add_ideas = 10% monthly population 200days
+		GEO = {
+			#add_ideas = 10% monthly population 200days
+		}
+		set_global_flag = ARM_georgia_summit_positive
+    }
+}
+
+country_event = { #Georgia refuses lighter borders
+    id = armenia.17
+    title = armenia.17.t
+    desc = armenia.17.d
+    picture = GFX_report_event_german_reichstag_gathering
+   
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+   
+    option = { #Yes
+        name = armenia.17.a
+        ai_chance = { factor = 100 }
+		#add_ideas = -10% monthly population 200days
+		GEO = {
+			#add_ideas = -10% monthly population 200days
+		}
+		set_global_flag = ARM_georgia_summit_negative
+    }
+}
+
+country_event = { #Georgia agrees to Research cooperation
+    id = armenia.18
+    title = armenia.18.t
+    desc = armenia.18.d
+    picture = GFX_report_event_german_reichstag_gathering
+   
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+   
+    option = { #Yes
+        name = armenia.18.a
+        ai_chance = { factor = 75 }
+		#2x +75% guns research bonus +15 army xp
+		GEO = {
+			#2x +75% guns research bonus +15 army xp
+		}
+		set_global_flag = ARM_georgia_summit_positive
+    }
+}
+
+country_event = { #Georgia refuses Research cooperation
+    id = armenia.19
+    title = armenia.19.t
+    desc = armenia.19.d
+    picture = GFX_report_event_german_reichstag_gathering
+   
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+   
+    option = { #Yes
+        name = armenia.19.a
+        ai_chance = { factor = 100 }
+		#add_ideas = -1% research time 200days
+		GEO = {
+			#add_ideas = -1% research time 200days
+		}
+		set_global_flag = ARM_georgia_summit_negative
+    }
+}
+
+country_event = { #Georgia refuses Research cooperation to attend summit
+    title = armenia.21.t
+    desc = armenia.21.d
+    picture = GFX_report_event_german_reichstag_gathering
+   
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+   
+    option = {
+        name = armenia.21.a
+        ai_chance = { factor = 100 }
+		set_global_flag = ARM_georgia_summit_negative
+    }
+}
+
+#sparapet
+country_event = {
+    id = armenia.22
+    title = armenia.22.t
+    desc = armenia.22.d
+    picture = GFX_report_event_german_reichstag_gathering
+ 
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+ 
+    option = { #Army
+        name = armenia.22.a
+        ai_chance = {
+            base = 60
+        }
+		set_country_flag = ARM_sparapet_army
+    }
+ 
+    option = { #Airforce
+        name = armenia.22.b
+        ai_chance = {
+            base = 20
+        }
+		set_country_flag = ARM_sparapet_air
+    }
+
+    option = { #Navy
+        name = armenia.22.c
+        ai_chance = {
+            base = 20
+        }
+		set_country_flag = ARM_sparapet_navy
+    }
+}
+
+#SU transfers Armenian military staff
+country_event = {
+    id = armenia.26
+    title = armenia.26.t
+    desc = armenia.26.d
+    picture = GFX_report_event_german_reichstag_gathering
+ 
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+ 
+    option = {
+        name = armenia.26.a
+        ai_chance = {
+            base = 100
+        }
+		create_corps_commander = {
+			name = "Hovhannes Bagramyan"
+			picture = "Portrait_Armenia_Hovhannes_Bagramyan.dds"
+			traits = { trait_engineer }
+			skill = 4
+		}
+		create_corps_commander = {
+			name = "Hamazasp Babadzhanian"
+			picture = "Portrait_Armenia_Hamazasp_Babadzhanian.dds"
+			traits = { panzer_leader }
+			skill = 2
+		}
+		create_navy_leader = {
+			name = "Ivan Ter-Isahakyan"
+			picture = "Portrait_Armenia_Hovhannes_Ter-Isahakyan.dds"
+			traits = { blockade_runner superior_tactician }
+			skill = 3
+		}
+    }
+}
+
+#change capital
+country_event = {
+    id = armenia.27
+    title = armenia.27.t
+    desc = armenia.27.d
+    picture = GFX_report_event_german_reichstag_gathering
+ 
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+ 
+    option = { #Tblisi
+        name = armenia.27.a
+        ai_chance = {
+            base = 100
+        }
+        set_capital = 231
+    }
+ 
+    option = { #Baku
+        name = armenia.27.b
+        ai_chance = {
+            base = 0
+        }
+        set_capital = 229
+    }
+
+    option = { #Yerevan
+        name = armenia.27.c
+        ai_chance = {
+            base = 0
+        }
+        set_capital = 230
+    }
+}

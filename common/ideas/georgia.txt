@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		GEO_abkazian_seperatists = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = arm_abkhazian_seperatists
+			
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.05
+			}
+		}
+	}
+}

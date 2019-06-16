@@ -1,0 +1,124 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Kveiti Sammartvelo"			# Rifle Division
+#	division_names_group = GEO_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+	}
+}
+
+division_template = {
+	name = "Mtis Brigada"		# Mountain Division
+#	division_names_group = GEO_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "K’avaleriuli Erteuli" 	# Cavalry Division
+#	division_names_group = GEO_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+##### OOB #####
+units = {
+	division= {
+		name = "Mtis 'Tiflis' Brigada"
+		location = 1599
+		division_template = "Mtis Brigada"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "AZR" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division= {
+		name = "1ya K’avaleriuli 'Sukhumi' Erteuli"
+		location = 11617
+		division_template = "K’avaleriuli Erteuli"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "AZR" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {
+		name = "1ya Kveiti 'Telavi' Sammartvelo"
+		location = 12309
+		division_template = "Kveiti Sammartvelo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "AZR" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division= {
+		name = "2ya Kveiti 'Batumi' Sammartvelo"
+		location = 3653
+		division_template = "Kveiti Sammartvelo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "AZR" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {
+		name = "2ya Mtis 'Kutaisi' Brigada"
+		location = 6671
+		division_template = "Mtis Brigada"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "AZR" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division= {
+		name = "3ya Mtis 'Oseti' Brigada"
+		location = 1530
+		division_template = "Mtis Brigada"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "AZR" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+}
+
+### Air Wings
+air_wings = {
+	231 = {
+		fighter_equipment_0 = {
+			owner = "GEO" 
+			amount = 31
+		}
+	}
+}
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "GEO"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 55
+	}
+}

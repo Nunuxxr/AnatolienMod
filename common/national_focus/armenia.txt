@@ -1,0 +1,2408 @@
+focus_tree = {
+    id = ARM_armenia_focus
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = ARM
+        }
+    }
+    default = no
+
+	continuous_focus_position = { x = 50 y = 2250 }
+
+    focus = {
+        id = ARM_radical_politics
+        icon = GFX_goal_generic_political_pressure
+		mutually_exclusive = { focus = ARM_maintain_status_quo }
+        x = 4
+        y = 0
+        cost = 5
+        available_if_capitulated = no
+        completion_reward = {
+			hidden_effect = {
+				country_event = armenia.5
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_left_leanings
+        icon = GFX_focus_generic_strike_at_democracy3
+        prerequisite = { focus = ARM_radical_politics }
+		available = { has_country_flag = ARM_communism_flag }
+        x = 1
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_red_army
+        icon = GFX_focus_YUG_pan_slavic_congress
+        prerequisite = { focus = ARM_left_leanings }
+        x = 2
+        y = 2
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_ideas = militarism_focus
+        }
+    }
+
+    focus = {
+        id = ARM_focus_on_the_greater_threat
+        icon = GFX_goal_support_fascism
+        prerequisite = { focus = ARM_radical_politics }
+		available = { has_country_flag = ARM_fascism_flag }
+        x = 5
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_timed_idea = {
+				idea = nationalism
+				days = 180
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_a_gun_in_every_hand
+        icon = GFX_focus_generic_little_entente
+        prerequisite = { 
+			focus = ARM_red_army
+			focus = ARM_support_dro 
+		}
+        x = 3
+        y = 3
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_ideas = ARM_a_gun_in_every_hand_idea
+        }
+    }
+
+    focus = {
+        id = ARM_increase_army_reserves
+        icon = GFX_focus_chi_army_reform
+        prerequisite = { 
+			focus = ARM_maintain_status_quo
+			focus = ARM_radical_politics
+		}
+        x = 7
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_ideas = ROM_reserve_divisions
+        }
+    }
+
+    focus = {
+        id = ARM_concessions_to_factory_workers
+        icon = GFX_focus_eng_concessions_to_the_trade_unions
+        prerequisite = { focus = ARM_left_leanings }
+        x = 0
+        y = 2
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_timed_idea = {
+				idea = internationalism
+				days = 180
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_reintroduce_melikdoms
+        icon = GFX_focus_generic_home_defense
+        prerequisite = { 
+			focus = ARM_a_gun_in_every_hand 
+		}
+        prerequisite = { 
+			focus = ARM_tseghakronism
+		}
+        x = 4
+        y = 4
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_political_power = 200
+        }
+    }
+
+    focus = {
+        id = ARM_political_commissars
+        icon = GFX_goal_anti_comintern_pact
+        prerequisite = { focus = ARM_concessions_to_factory_workers }
+        prerequisite = { focus = ARM_red_army }
+        x = 1
+        y = 3
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_ideas = political_commissars_focus
+		}
+	}
+
+    focus = {
+        id = ARM_collectivism
+        icon = GFX_goal_generic_propaganda
+        prerequisite = { focus = ARM_political_commissars }
+        x = 0
+        y = 4
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_ideas = collectivist_ethos_focus
+		}
+	}
+
+    focus = {
+        id = ARM_soviet_aid
+        icon = GFX_focus_chi_mission_to_the_soviet_union
+        prerequisite = { focus = ARM_political_commissars }
+        x = 2
+        y = 4
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			230 = {
+				#limit = {
+				#	ROOT = { has_full_control_of_state = PREV }
+				#}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+    focus = {
+        id = ARM_stalinism
+        icon = GFX_focus_generic_join_comintern
+        prerequisite = { focus = ARM_soviet_aid }
+        prerequisite = { focus = ARM_collectivism }
+		mutually_exclusive = {
+			focus = ARM_leninism
+		}
+        x = 3
+        y = 5
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			create_country_leader = {
+				name = "Grigory Harutyunyan"
+				desc = ""
+				picture = "Portrait_Armenia_Grigory_Arutinov.dds"
+				expire = "1953.3.1"
+				ideology = stalinism
+				traits = {
+					#
+				}
+			}
+			hidden_effect = {
+				set_politics = {
+					parties = {
+						communism = {
+							popularity = 35
+						}
+					}
+					ruling_party = communism
+				}
+			}
+		}
+	}
+
+    focus = {
+        id = ARM_leninism
+        icon = GFX_focus_ger_great_red_menace
+        prerequisite = { focus = ARM_collectivism }
+		mutually_exclusive = {
+			focus = ARM_stalinism
+		}
+        x = 0
+        y = 5
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			create_country_leader = {
+				name = "Stepan Shahumyan"
+				desc = ""
+				picture = "Portrait_Armenia_Stepan_Shahumyan.dds"
+				expire = "1953.3.1"
+				ideology = anarchist_communism
+				traits = {
+					triumphant_revolutionary
+				}
+			}
+			hidden_effect = {
+				set_politics = {
+					parties = {
+						communism = {
+							popularity = 35
+						}
+					}
+					ruling_party = communism
+				}
+			}
+		}
+	}
+
+    focus = {
+        id = ARM_permanent_revolution
+        icon = GFX_goal_support_fourth_int
+        prerequisite = { focus = ARM_leninism }
+        x = 0
+        y = 6
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_political_power = 50
+			hidden_effect = {
+				remove_country_leader_trait = permanent_revolutionary
+				add_country_leader_trait = triumphant_revolutionary
+			}
+		}
+	}
+
+    focus = {
+        id = ARM_state_atheism
+        icon = GFX_goal_tfv_burn_the_royal_portraits
+        prerequisite = { 
+			focus = ARM_permanent_revolution
+			focus = ARM_soviet_armenians
+		}
+        x = 0
+        y = 7
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			swap_ideas = {
+				remove_idea = ARM_church
+				add_idea = ARM_atheism
+			}
+		}
+	}
+
+    focus = {
+        id = ARM_soviet_armenians
+        icon = GFX_goal_support_communism
+        prerequisite = { focus = ARM_stalinism }
+        x = 0
+        y = 6
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			custom_effect_tooltip = available_theorist
+			show_ideas_tooltip = anastas_mikoyan_advisor
+			show_ideas_tooltip = mig_design_bureau
+			show_ideas_tooltip = artem_mikoyan_theorist
+			show_ideas_tooltip = isakov_theorist
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = hovhannes_bagramyan_army_chief
+			show_ideas_tooltip = khanferiants_air_chief
+			show_ideas_tooltip = isakov_navy_chief
+			show_ideas_tooltip = hamazasp_babadzhanian_high_command
+			show_ideas_tooltip = nelson_stepanyan_high_command
+		}
+	}
+
+    focus = {
+        id = ARM_axis_friendship
+        icon = GFX_focus_chi_mission_to_germany
+        prerequisite = { focus = ARM_tseghakronism }
+        prerequisite = { focus = ARM_never_another_mets_yeghern }
+        x = 6
+        y = 4
+        cost = 10
+		available = {
+			not = {
+				has_war_with = GER
+			}
+		}
+        available_if_capitulated = no
+        completion_reward = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = ARM_friendship
+			}
+			GER = {
+				add_opinion_modifier = {
+					target = ARM
+					modifier = ARM_friendship
+				}
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_german_attache
+        icon = GFX_goal_molotov_ribbentrop_pact
+        prerequisite = { focus = ARM_reintroduce_melikdoms }
+        prerequisite = { focus = ARM_axis_friendship }
+        x = 5
+        y = 5
+        cost = 10
+		available = {
+			not = {
+				has_war_with = GER
+			}
+		}
+        available_if_capitulated = no
+        completion_reward = {
+			add_ideas = ARM_german_advisors
+        }
+    }
+
+    focus = {
+        id = ARM_maintain_status_quo
+        icon = GFX_goal_generic_improve_relations
+		mutually_exclusive = { focus = ARM_radical_politics }
+        x = 10
+        y = 0
+        cost = 5
+        available_if_capitulated = no
+        completion_reward = {
+			hidden_effect = { country_event = armenia.4 }
+        }
+    }
+
+    focus = {
+        id = ARM_draft_new_constitution
+        icon = GFX_focus_hol_the_foundations_of_defense
+        prerequisite = { focus = ARM_maintain_status_quo }
+		available = { has_country_flag = ARM_democracy_flag }
+        x = 9
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = ARM_democratic_reform
+        icon = GFX_focus_generic_the_giant_wakes
+        prerequisite = { 
+			focus = ARM_draft_new_constitution
+		}
+        x = 8
+        y = 2
+        cost = 5
+        available_if_capitulated = no
+        completion_reward = {
+			add_timed_idea = {
+				idea = democratic_influence
+				days = 180
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_dissolve_parliament
+        icon = GFX_focus_usa_build_the_pentagon
+        prerequisite = { 
+			focus = ARM_draft_new_constitution
+		}
+        x = 10
+        y = 2
+        cost = 5
+        available_if_capitulated = no
+        completion_reward = {
+			add_manpower = 132
+        }
+    }
+
+    focus = {
+        id = ARM_free_elections
+        icon = GFX_focus_usa_voter_registration_act
+        prerequisite = { focus = ARM_democratic_reform }
+        prerequisite = { focus = ARM_dissolve_parliament }
+        x = 9
+        y = 3
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			country_event = armenia.2
+        }
+    }
+
+    focus = {
+        id = ARM_azat_economy
+        icon = GFX_focus_hol_liberation
+        prerequisite = { 
+			focus = ARM_dashnak_victory_focus
+			focus = ARM_western_victory_focus
+			focus = ARM_jaques_bagratuni
+		}
+		bypass = {
+			has_idea = free_trade
+		}
+        x = 9
+        y = 5
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_ideas = { free_trade }
+        }
+    }
+
+    focus = {
+        id = ARM_hire_state_economists
+        icon = GFX_goal_generic_major_alliance
+        prerequisite = { focus = ARM_azat_economy }
+        x = 10
+        y = 6
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_ideas = { ARM_economists }
+        }
+    }
+
+    focus = {
+        id = ARM_prepare_for_next_war
+        icon = GFX_focus_generic_license_production
+        prerequisite = { focus = ARM_azat_economy }
+        x = 8
+        y = 6
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_ideas = ARM_prepare_for_next_war_idea
+        }
+    }
+
+    focus = {
+        id = ARM_democratic_investment
+        icon = GFX_focus_mex_privatisation
+        prerequisite = { focus = ARM_hire_state_economists }
+        prerequisite = { focus = ARM_prepare_for_next_war }
+        x = 9
+        y = 7
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_timed_idea = {
+				idea = ARM_democratic_investments
+				days = 180
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_dashnak_victory_focus
+        icon = GFX_focus_arm_dashnak
+        prerequisite = { focus = ARM_free_elections }
+		available = {
+			has_government = democratic
+			has_country_flag = ARM_dashnak_victory
+		}
+        x = 8
+        y = 4
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = ARM_ayf
+        icon = GFX_focus_arm_ayf
+        prerequisite = { 
+			focus = ARM_dashnak_victory_focus
+			focus = ARM_axis_friendship
+		}
+        x = 7
+        y = 5
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_ideas = military_youth_focus
+        }
+    }
+
+    focus = {
+        id = ARM_western_victory_focus
+        icon = GFX_goal_support_democracy
+        prerequisite = { focus = ARM_free_elections }
+		available = {
+			has_government = democratic
+			has_country_flag = ARM_western_victory
+		}
+        x = 10
+        y = 4
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = ARM_support_dro
+        icon = GFX_focus_usa_honor_the_confederacy
+        prerequisite = { focus = ARM_focus_on_the_greater_threat }
+        x = 4
+        y = 2
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_ideas = militarism_focus
+        }
+    }
+
+    focus = {
+        id = ARM_never_another_mets_yeghern
+        icon = GFX_focus_generic_military_academy
+        prerequisite = {
+			focus = ARM_recruit_nzhdeh
+		}
+        x = 7
+        y = 3
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_ideas = ARM_never_another_mets_yeghern_idea
+        }
+    }
+
+    focus = {
+        id = ARM_join_axis
+        icon = GFX_focus_chi_mission_to_germany
+        prerequisite = {
+			focus = ARM_german_attache
+		}
+		mutually_exclusive = { focus = ARM_join_comintern }
+        x = 5
+        y = 7
+        cost = 10
+        available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				GER = {
+					has_capitulated = yes
+				}
+			}
+		}
+
+		available = {
+			GER = { 
+				is_faction_leader = yes
+				has_government = fascism
+			}
+			is_in_faction = no
+			NOT = { has_war_with = GER }
+			is_subject = no
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = GER
+					has_war_with = ARM
+				}
+			}
+		}
+
+		bypass = {
+			is_in_faction_with = GER
+		}
+
+		completion_reward = {
+			GER = {
+				country_event = generic.2
+			}
+		}
+    }
+
+    focus = {
+        id = ARM_join_comintern
+        icon = GFX_focus_chi_mission_to_the_soviet_union
+        prerequisite = {
+			focus = ARM_soviet_armenians
+		}
+		mutually_exclusive = {
+			focus = ARM_join_axis
+		}
+        x = 2
+        y = 7
+        cost = 10
+        available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				SOV = {
+					has_capitulated = yes
+				}
+			}
+		}
+
+		available = {
+			SOV = { is_faction_leader = yes }
+			is_in_faction = no
+			NOT = { has_war_with = SOV }
+			is_subject = no
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = SOV
+					has_war_with = ARM
+				}
+			}
+		}
+
+		bypass = {
+			is_in_faction_with = SOV
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			SOV = { country_event = generic.2 }
+		}
+    }
+
+    focus = {
+        id = ARM_erzurum_capital
+        icon = GFX_goal_generic_construct_military
+        prerequisite = {
+			focus = ARM_ayf
+			focus = ARM_stalinism
+			focus = ARM_leninism
+		}
+		mutually_exclusive = { focus = ARM_van_capital }
+        x = 2
+        y = 6
+        cost = 10
+        available_if_capitulated = no
+		available = {
+			OR = {
+				has_full_control_of_state = 230
+			}
+		}
+        completion_reward = {
+			230 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 12320
+					instant_build = yes
+				}
+			}	
+        }
+    }
+
+    focus = {
+        id = ARM_van_capital
+        icon = GFX_focus_usa_guarantee_the_american_dream
+        prerequisite = {
+			focus = ARM_ayf
+		}
+		mutually_exclusive = { focus = ARM_erzurum_capital }
+        x = 4
+        y = 6
+        cost = 10
+        available_if_capitulated = no
+		available = {
+			OR = {
+				has_full_control_of_state = 352
+			}
+		}
+        completion_reward = {
+			set_capital = 352
+			352 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6935
+					instant_build = yes
+				}
+			}	
+        }
+    }
+
+    focus = {
+        id = ARM_recruit_nzhdeh
+        icon = GFX_focus_mex_soldaderas
+        prerequisite = { focus = ARM_focus_on_the_greater_threat }
+        x = 6
+        y = 2
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = ARM_tseghakronism
+        icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+        prerequisite = { focus = ARM_recruit_nzhdeh }
+        prerequisite = { focus = ARM_support_dro }
+        x = 5
+        y = 3
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			create_country_leader = {
+				name = "Garegin Nzhdeh"
+				desc = ""
+				picture = "Portrait_Armenia_Garegin_Nzhdeh.dds"
+				expire = "1955.3.8"
+				ideology = nazism
+				traits = {
+					great_war_hero
+				}
+			}
+			hidden_effect = {
+				set_politics = {
+					parties = {
+						fascism = {
+							popularity = 35
+						}
+					}
+					ruling_party = fascism
+				}
+				set_party_name = { 
+					ideology = fascism 
+					long_name = ARM_fascism_party_nzhdeh_long 
+					name = ARM_fascism_party_nzhdeh
+				}
+				set_cosmetic_tag = ARM_national_socialism
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_centralisation
+        icon = GFX_focus_hol_united_netherlands
+        prerequisite = {
+			focus = ARM_bastion_of_christianity
+			focus = ARM_religious_freedom
+			focus = ARM_increase_funding_to_etchimiadzin
+			focus = ARM_state_atheism
+		}
+		mutually_exclusive = { focus = ARM_federalisation }
+        x = 5
+        y = 8
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_political_power = 50
+			add_stability = -0.05
+        }
+    }
+
+    focus = {
+        id = ARM_expand_civil_rights
+        icon = GFX_goal_generic_national_unity
+        prerequisite = {
+			focus = ARM_western_victory_focus
+			focus = ARM_constitutional_monarchy
+		}
+        x = 12
+        y = 6
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_ideas = ARM_liberal_reforms
+        }
+    }
+
+    focus = {
+        id = ARM_continue_religion_persecution
+        icon = GFX_goal_tfv_sever_ties_with_uk
+        prerequisite = {
+			focus = ARM_ayf
+		}
+        x = 6
+        y = 6
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_ideas = ARM_one_nation
+        }
+    }
+
+    focus = {
+        id = ARM_increase_funding_to_etchimiadzin
+        icon = GFX_focus_generic_concessions
+        prerequisite = { focus = ARM_continue_religion_persecution }
+        x = 7
+        y = 7
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = ARM_religious_freedom
+        icon = GFX_focus_generic_diplomatic_treaty
+        prerequisite = { focus = ARM_expand_civil_rights }
+        x = 12
+        y = 7
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_ideas = ARM_allow_minorities
+        }
+    }
+
+    focus = {
+        id = ARM_successor_to_the_bagratids
+        icon = GFX_focus_CZE_german_puppet
+        prerequisite = { focus = ARM_maintain_status_quo }
+		available = { has_country_flag = ARM_monarchism_flag }
+        x = 13
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			set_cosmetic_tag = ARM_monarchy
+        }
+    }
+
+    focus = {
+        id = ARM_rebuilding_ani
+        icon = GFX_goal_generic_construction2
+        prerequisite = {
+			focus = ARM_continue_public_works
+			focus = ARM_successor_to_the_bagratids
+		}
+		available = {
+			OR = {
+				has_full_control_of_state = 353
+			}
+		}
+        x = 14
+        y = 2
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_stability = 0.025
+        }
+    }
+
+    focus = {
+        id = ARM_reinstate_nakharars
+        icon = GFX_focus_hol_gateway_to_europe
+        prerequisite = { 
+			focus = ARM_successor_to_the_bagratids
+		}
+        x = 12
+        y = 2
+        cost = 5
+        available_if_capitulated = no
+        completion_reward = {
+			add_ideas = ARM_empowered_nakharars
+        }
+    }
+
+    focus = {
+        id = ARM_heir_apparent
+        icon = GFX_focus_hun_elect_a_king
+        prerequisite = { 
+			focus = ARM_reinstate_nakharars
+		}
+        prerequisite = { 
+			focus = ARM_rebuilding_ani
+		}
+        x = 13
+        y = 3
+        cost = 5
+        available_if_capitulated = no
+        completion_reward = {
+			country_event = armenia.6
+        }
+    }
+
+    focus = {
+        id = ARM_giorgi_bagration-mukhranel
+        icon = GFX_focus_eng_motion_of_no_confidence
+        prerequisite = { 
+			focus = ARM_heir_apparent
+		}
+		mutually_exclusive = {
+			focus = ARM_jaques_bagratuni
+		}
+        available = { has_country_flag = ARM_giorgi_bagration-mukhranel_chosen }
+        x = 14
+        y = 4
+        cost = 5
+        available_if_capitulated = no
+        completion_reward = {
+			add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = ARM_dismiss_parliament
+        icon = GFX_focus_eng_decolonization
+        prerequisite = { 
+			focus = ARM_giorgi_bagration-mukhranel
+		}
+        available = { has_country_flag = ARM_jaques_bagratuni_chosen }
+        x = 13
+        y = 5
+        cost = 5
+        cost = 5
+        available_if_capitulated = no
+        completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.15
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_abolish_constitution
+        icon = GFX_focus_renounce_the_treaty_of_trianon
+        prerequisite = {
+			focus = ARM_giorgi_bagration-mukhranel
+		}
+        available = { has_country_flag = ARM_jaques_bagratuni_chosen }
+        x = 15
+        y = 5
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_political_power = 200
+			add_stability = -0.05
+        }
+    }
+
+    focus = {
+        id = ARM_absolute_monarchy
+        icon = GFX_focus_ger_revive_kaiserreich
+        prerequisite = { focus = ARM_dismiss_parliament }
+		prerequisite = { focus = ARM_abolish_constitution }
+        x = 14
+        y = 6
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Giorgi Bagration"
+				desc = ""
+				picture = "Portrait_Armenia_Giorgi_BagrationMukhraneli.tga"
+				expire = "1957.9.29"
+				ideology = despotism
+				traits = {
+					#
+				}
+			}
+			set_party_name = { 
+				ideology = neutrality 
+				long_name = ARM_neutrality_party_long 
+				name = ARM_neutrality_party
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_bastion_of_christianity
+        icon = GFX_focus_eng_expose_the_belly_of_the_bear
+        prerequisite = {
+			focus = ARM_absolute_monarchy
+		}
+        available = { has_country_flag = ARM_jaques_bagratuni_chosen }
+        x = 14
+        y = 7
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_ideas = {
+				ARM_bastion_of_christianity_idea
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_jaques_bagratuni
+        icon = GFX_focus_eng_god_save_the_king
+        prerequisite = { 
+			focus = ARM_heir_apparent
+		}
+		mutually_exclusive = {
+			focus = ARM_giorgi_bagration-mukhranel
+		}
+        available = { has_country_flag = ARM_jaques_bagratuni_chosen }
+        x = 12
+        y = 4
+        cost = 5
+        available_if_capitulated = no
+        completion_reward = {
+			add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = ARM_constitutional_monarchy
+        icon = GFX_goal_tfv_strengthen_commonwealth_ties
+        prerequisite = { 
+			focus = ARM_jaques_bagratuni
+		}
+        x = 11
+        y = 5
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			create_country_leader = {
+				name = "Jaques Bagratuni"
+				desc = ""
+				picture = "Portrait_Armenia_Jaques_Bagratuni.tga"
+				expire = "1953.3.1"
+				ideology = conservatism
+				traits = {
+					#
+				}
+			}
+			hidden_effect = {
+				set_politics = {
+					parties = {
+						democratic = {
+							popularity = 35
+						}
+					}
+					ruling_party = democratic
+				}
+				set_party_name = { 
+					ideology = democratic 
+					long_name = ARM_democratic_party_consitutional_monarchy_long
+					name = ARM_democratic_party_consitutional_monarchy
+				}
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_federalisation
+        icon = GFX_focus_usa_union_representation_act
+        prerequisite = {
+			focus = ARM_bastion_of_christianity
+			focus = ARM_religious_freedom
+			focus = ARM_increase_funding_to_etchimiadzin
+			focus = ARM_state_atheism
+		}
+		mutually_exclusive = { focus = ARM_centralisation }
+        x = 9
+        y = 8
+        cost = 10
+        available_if_capitulated = no
+		available = {
+			owns_state = 788
+			owns_state = 793
+		}
+        completion_reward = {
+			add_stability = 0.05
+			add_political_power = 150
+        }
+    }
+
+    focus = {
+        id = ARM_independent_armenian_state
+        icon = GFX_focus_arm_flag_armenia
+        prerequisite = { 
+			focus = ARM_centralisation
+			focus = ARM_federalisation
+		}
+        x = 7
+        y = 9
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_ideas = ARM_motherland_sentinel
+        }
+    }
+
+    focus = {
+        id = ARM_move_the_capital_ani
+        icon = GFX_focus_generic_support_the_left_right
+        prerequisite = { focus = ARM_rebuilding_ani }
+        prerequisite = { focus = ARM_reinstate_nakharars }
+		mutually_exclusive = { focus = ARM_develop_the_capital }
+		available = {
+			OR = {
+				has_full_control_of_state = 230
+				has_full_control_of_state = 352
+				has_full_control_of_state = 353
+				has_full_control_of_state = 788
+				has_full_control_of_state = 789
+			}
+		}
+        x = 15
+        y = 3
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			352 = { set_state_name = "Vaspurakan" }
+			353 = { set_state_name = "Ayrarat" }
+			354 = { set_state_name = "Tayk" }
+			788 = { set_state_name = "Artsakh" }
+			set_province_name = { id = 10472 name = "Ani"}
+			set_province_name = { id = 12320 name = "Artashat"}
+			set_province_name = { id = 11853 name = "Karin"}
+			set_province_name = { id = 4583 name = "Tsolakert"}
+			set_capital = 353
+        }
+    }
+
+#############
+###Economy###
+#############
+	
+    focus = {
+        id = ARM_economic_recovery
+        icon = GFX_goal_generic_production
+        x = 20
+        y = 0
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_pass_agriculture_act
+        icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = ARM_economic_recovery }
+        x = 20
+        y = 2
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = ARM_expand_yerevan_state_university
+        icon = GFX_focus_research
+		prerequisite = {
+			focus = ARM_pass_agriculture_act
+		}
+        x = 20
+        y = 3
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_research_slot = 1
+        }
+    }
+
+    focus = {
+        id = ARM_continue_public_works
+        icon = GFX_goal_generic_construction
+		prerequisite = { focus = ARM_economic_recovery }
+        x = 19
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			230 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			352 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			353 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			794 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			789 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_open_kajaran_mine
+        icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = ARM_economic_recovery }
+        x = 21
+        y = 1
+        cost = 10
+        available_if_capitulated = no
+		available = {
+			OR = {
+				has_full_control_of_state = 794
+			}
+		}
+        completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 3
+				state = 794
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_western_steel_repositories
+        icon = GFX_focus_generic_steel
+		prerequisite = { focus = ARM_open_kajaran_mine }
+        x = 22
+        y = 3
+        cost = 10
+        available_if_capitulated = no
+		available = {
+			OR = {
+				has_full_control_of_state = 353
+			}
+		}
+        completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 5
+				state = 354
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_develop_the_capital
+        icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = ARM_continue_public_works }
+		mutually_exclusive = { focus = ARM_move_the_capital_ani }
+        x = 18
+        y = 3
+        cost = 10
+        available_if_capitulated = no
+		available = {
+			OR = {
+				has_full_control_of_state = 230
+			}
+		}
+        completion_reward = {
+			230 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_develop_the_west
+        icon = GFX_focus_generic_industry_2
+		prerequisite = { 
+			focus = ARM_develop_the_capital
+			focus = ARM_western_steel_repositories 
+		}
+		mutually_exclusive = { focus = ARM_expand_east_industry }
+        x = 21
+        y = 4
+        cost = 20
+        available_if_capitulated = no
+		available = {
+			OR = {
+				has_full_control_of_state = 352
+				has_full_control_of_state = 353
+				has_full_control_of_state = 354
+			}
+		}
+        completion_reward = {
+			353 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			352 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			354 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_expand_east_industry
+        icon = GFX_focus_generic_industry_3
+		prerequisite = { 
+			focus = ARM_develop_the_capital
+			focus = ARM_western_steel_repositories 
+		}
+		mutually_exclusive = { focus = ARM_develop_the_west }
+        x = 19
+        y = 4
+        cost = 20
+        available_if_capitulated = no
+		available = {
+			OR = {
+				has_full_control_of_state = 230
+				has_full_control_of_state = 788
+				has_full_control_of_state = 794
+				has_full_control_of_state = 793
+			}
+		}
+        completion_reward = {
+			230 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			788 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			794 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			793 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_attract_investment
+        icon = GFX_focus_mex_privatisation
+		prerequisite = {
+			focus = ARM_expand_east_industry
+			focus = ARM_develop_the_west
+		}
+        x = 20
+        y = 5
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 1 }
+        }
+    }
+
+    focus = {
+        id = ARM_karabakh_erzincan_railway
+        icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = {
+			focus = ARM_expand_east_industry
+			focus = ARM_develop_the_west
+		}
+        x = 22
+        y = 5
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			353 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			354 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			788 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			789 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_subsidise_local_businesses
+        icon = GFX_goal_generic_consumer_goods
+		prerequisite = {
+			focus = ARM_expand_east_industry
+			focus = ARM_develop_the_west
+		}
+        x = 18
+        y = 5
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_armament_effort
+        icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ARM_karabakh_erzincan_railway }
+		prerequisite = { focus = ARM_attract_investment }
+		prerequisite = { focus = ARM_subsidise_local_businesses }
+        x = 18
+        y = 6
+        cost = 10
+        available_if_capitulated = no
+		available = {
+			OR = {
+				has_full_control_of_state = 230
+			}
+		}
+        completion_reward = {
+			230 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_extract_rare_minerals
+        icon = GFX_focus_generic_aluminum
+		prerequisite = { focus = ARM_karabakh_erzincan_railway }
+		prerequisite = { focus = ARM_attract_investment }
+		prerequisite = { focus = ARM_subsidise_local_businesses }
+		mutually_exclusive = { focus = ARM_nakhichevan_oil }
+        x = 22
+        y = 6
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_resource = {
+				type = aluminium
+				amount = 3
+				state = 230
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_nakhichevan_oil
+        icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = ARM_karabakh_erzincan_railway }
+		prerequisite = { focus = ARM_attract_investment }
+		prerequisite = { focus = ARM_subsidise_local_businesses }
+		mutually_exclusive = { focus = ARM_extract_rare_minerals }
+        x = 20
+        y = 6
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 5
+				state = 793
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_research_slot_focus_2
+        icon = GFX_focus_research2
+		prerequisite = {
+			focus = ARM_nakhichevan_oil
+			focus = ARM_extract_rare_minerals
+		}
+		prerequisite = { focus = ARM_armament_effort }
+        x = 20
+        y = 7
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_research_slot = 1
+        }
+    }
+
+##########
+###ARMY###
+##########
+
+    focus = {
+        id = ARM_appoint_new_sparapet
+        icon = GFX_focus_generic_military_mission
+        x = 30
+        y = 0
+        cost = 10
+        available_if_capitulated = yes
+        completion_reward = {
+            country_event = armenia.22
+		}
+    }
+
+    focus = {
+        id = ARM_army_reform
+        icon = GFX_focus_secret_rearmament
+        prerequisite = { focus = ARM_appoint_new_sparapet }
+		available = { has_country_flag = ARM_sparapet_army }
+        cost = 10.00
+        x = 30
+        y = 1
+        available_if_capitulated = yes
+        completion_reward = {
+            army_experience = 25
+            #add_political_power = -5
+        }
+    }
+
+    focus = {
+        id = ARM_infantry_equipment_focus
+        icon = GFX_goal_generic_axis_build_infantry
+        prerequisite = { focus = ARM_army_reform }
+        x = 31
+        y = 2
+        cost = 5
+        available_if_capitulated = yes
+        completion_reward = {
+            add_tech_bonus = {
+                name = infantry_bonus
+                bonus = 0.5
+                uses = 2
+                category = infantry_weapons
+            }
+		}
+    }
+
+    focus = {
+        id = ARM_doctrine_effort_focus
+        icon = GFX_goal_generic_cavalry
+        prerequisite = { focus = ARM_infantry_equipment_focus }
+        prerequisite = { focus = ARM_mechanization_effort }
+        x = 30
+        y = 3
+        cost = 10
+        available_if_capitulated = yes
+        completion_reward = {
+            army_experience = 5
+            add_tech_bonus = {
+                name = land_doc_bonus
+                bonus = 0.5
+                uses = 1
+                category = land_doctrine
+            }
+        }
+    }
+
+    focus = {
+        id = ARM_artillery_effort
+        icon = GFX_goal_generic_army_artillery2
+        prerequisite = { focus = ARM_doctrine_effort_focus }
+        x = 31
+        y = 4
+        cost = 5
+        available_if_capitulated = yes
+        completion_reward = {
+            add_tech_bonus = {
+                name = artillery_bonus
+                bonus = 0.5
+                uses = 2
+                category = artillery
+            }
+        }
+    }
+
+    focus = {
+        id = ARM_mechanization_effort
+        icon = GFX_goal_generic_army_motorized
+        prerequisite = { focus = ARM_army_reform }
+        x = 29
+        y = 2
+        cost = 5
+        available_if_capitulated = yes
+        completion_reward = {
+			custom_effect_tooltip = available_theorist
+			show_ideas_tooltip = eraz
+			#add_tech_bonus = {
+			#	name = motorized_bonus
+			#	ahead_reduction = 0.50
+			#	uses = 1
+			#	category = motorized_equipment
+            #}
+        }
+    }
+
+    focus = {
+        id = ARM_tank_innovation
+        icon = GFX_goal_generic_army_tanks
+        prerequisite = { focus = ARM_doctrine_effort_focus }
+        x = 29
+        y = 4
+        cost = 5
+        available_if_capitulated = yes
+        completion_reward = {
+            add_tech_bonus = {
+                name = armor_bonus
+                bonus = 0.5
+                uses = 2
+                category = armor
+            }
+        }
+    }
+
+    focus = {
+        id = ARM_doctrine_effort_focus_2
+        icon = GFX_goal_generic_army_doctrines
+        prerequisite = { focus = ARM_tank_innovation }
+        prerequisite = { focus = ARM_artillery_effort }
+        x = 30
+        y = 5
+        cost = 10
+        available_if_capitulated = yes
+        completion_reward = {
+            army_experience = 5
+            add_tech_bonus = {
+                name = land_doc_bonus
+                bonus = 0.5
+                uses = 1
+                category = land_doctrine
+            }
+        }
+    }
+
+    focus = {
+        id = ARM_mountaineer_divisions
+        icon = GFX_focus_prc_infiltration
+        prerequisite = { focus = ARM_tank_innovation }
+        prerequisite = { focus = ARM_artillery_effort }
+        cost = 5
+        x = 32
+        y = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = tech_mountaineers2
+			}
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = tech_mountaineers3
+			}
+		}
+	}
+
+    focus = {
+        id = ARM_paratroopers_focus
+        icon = GFX_goal_generic_air_bomber
+        prerequisite = { focus = ARM_tank_innovation }
+        prerequisite = { focus = ARM_artillery_effort }
+        cost = 5
+		x = 28
+		y = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = paratroopers
+			}
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = paratroopers2
+			}
+		}
+	}
+
+    focus = {
+        id = ARM_armed_forces_armenia
+        icon = GFX_focus_arm_armed_foces_armenia
+        prerequisite = { 
+			focus = ARM_doctrine_effort_focus_2
+			focus = ARM_destroyer_effort
+			focus = ARM_jet_technology_focus
+		}
+        cost = 10
+        x = 30
+        y = 6
+        available_if_capitulated = yes
+        completion_reward = {
+            swap_ideas = {
+				remove_idea = ARM_banak_shortcomings
+				add_idea = ARM_banak_compromise
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_air_reform
+        icon = GFX_goal_generic_air_fighter2
+        prerequisite = { focus = ARM_appoint_new_sparapet }
+		available = { has_country_flag = ARM_sparapet_air }
+        cost = 10.00
+        x = 26
+        y = 1
+        available_if_capitulated = yes
+        completion_reward = {
+            air_experience = 25
+        }
+    }
+
+    focus = {
+        id = ARM_air_bases
+        icon = GFX_goal_generic_build_airforce
+        prerequisite = { focus = ARM_air_reform }
+        prerequisite = { focus = ARM_open_kajaran_mine }
+        x = 25
+        y = 2
+        cost = 5
+        available_if_capitulated = yes
+        completion_reward = {
+            if = {
+                230 = {
+                    add_building_construction = {
+                        type = air_base
+                        level = 2
+                        instant_build = yes
+                    }
+                    ROOT = { set_country_flag = aviation_effort_AB }
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = ARM_air_doctrine_focus
+        icon = GFX_goal_generic_air_doctrine
+        prerequisite = { focus = ARM_air_reform }
+        x = 27
+        y = 2
+        cost = 10
+        available_if_capitulated = yes
+        complete_tooltip = {
+            add_tech_bonus = {
+                name =  air_doc_bonus
+                bonus = 0.5
+                uses = 1
+                category = air_doctrine
+            }
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                name =  air_doc_bonus
+                bonus = 0.5
+                uses = 1
+                category = air_doctrine
+            }
+        }
+    }
+
+    focus = {
+        id = ARM_air_doctrine_2_focus
+        icon = GFX_goal_generic_air_doctrine
+        prerequisite = { focus = ARM_air_bases }
+        x = 25
+        y = 4
+        cost = 10
+        available_if_capitulated = yes
+        complete_tooltip = {
+            add_tech_bonus = {
+                name =  air_doc_bonus
+                bonus = 0.5
+                uses = 2
+                category = air_doctrine
+            }
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                name =  air_doc_bonus
+                bonus = 0.5
+                uses = 2
+                category = air_doctrine
+            }
+        }
+    }
+
+    focus = {
+        id = ARM_fighter_focus
+        icon = GFX_goal_generic_air_fighter
+        prerequisite = { focus = ARM_air_doctrine_focus }
+        mutually_exclusive = {
+            focus = ARM_bomber_focus
+        }
+        x = 28
+        y = 3
+        cost = 5
+        available_if_capitulated = yes
+        completion_reward = {
+            add_tech_bonus = {
+                name = fighter_bonus
+                bonus = 1
+                uses = 1
+                technology = fighter1
+                technology = fighter2
+                technology = fighter3
+                technology = heavy_fighter1
+                technology = heavy_fighter2
+                technology = heavy_fighter3
+            }
+        }
+    }
+
+    focus = {
+        id = ARM_bomber_focus
+        icon = GFX_focus_usa_escort_fighters
+        prerequisite = { focus = ARM_air_doctrine_focus }
+        mutually_exclusive = {
+            focus = ARM_fighter_focus
+        }
+        x = 26
+        y = 3
+        cost = 5
+        available_if_capitulated = yes
+        completion_reward = {
+            add_tech_bonus = {
+                name = bomber_bonus
+                bonus = 0.5
+                uses = 1
+                technology = strategic_bomber1
+                category = tactical_bomber
+            }
+        }
+    }
+
+    focus = {
+        id = ARM_anti_air_guns
+        icon = GFX_focus_generic_air_defense
+        prerequisite = { 
+			focus = ARM_fighter_focus
+			focus = ARM_bomber_focus
+		}
+        cost = 5
+        x = 27
+        y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			230 = { 
+				add_extra_state_shared_building_slots = 2
+			}
+            230 = {
+                add_building_construction = {
+                    type = anti_air_building
+                    level = 2
+                    instant_build = yes
+                }
+			}
+ 		}
+ 	}
+
+    focus = {
+        id = ARM_jet_technology_focus
+        icon = GFX_focus_arm_airforce
+        prerequisite = { focus = ARM_anti_air_guns }
+        prerequisite = { focus = ARM_air_doctrine_2_focus }
+        cost = 5
+        x = 26
+        y = 5
+        available_if_capitulated = yes
+        completion_reward = {
+            add_tech_bonus = {
+                name = jet_rocket_bonus
+                ahead_reduction = 0.5
+                uses = 2
+                category = rocketry
+                category = jet_technology
+            }
+        }
+    }
+
+    focus = {
+        id = ARM_naval_awakening
+        icon = GFX_goal_generic_navy_carrier
+        prerequisite = { focus = ARM_appoint_new_sparapet }
+		available = { has_country_flag = ARM_sparapet_navy }
+        cost = 2
+        x = 34
+        y = 1
+        available_if_capitulated = yes
+        completion_reward = {
+            navy_experience = 25
+        }
+    }
+
+	focus = {
+		id = ARM_naval_doctrine
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = ARM_naval_awakening }
+		x = 33
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.5
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+
+    focus = {
+        id = ARM_trapizon_shipyards
+        icon = GFX_goal_generic_construct_naval_dockyard
+        prerequisite = { focus = ARM_naval_awakening }
+        x = 35
+        y = 2
+        cost = 10
+        available_if_capitulated = yes
+        available = {
+            354 = {
+                is_coastal = yes
+                is_controlled_by = ROOT
+            }
+        }
+        complete_tooltip = {
+            add_extra_state_shared_building_slots = 3
+            add_building_construction = {
+                type = dockyard
+                level = 3
+                instant_build = yes
+            }
+        }
+        completion_reward = {
+            354 = {
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = dockyard
+                    level = 3
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = ARM_naval_bases
+        icon = GFX_focus_ger_accept_british_naval_dominance
+		prerequisite = { focus = ARM_naval_doctrine }
+		mutually_exclusive = { focus = ARM_coastal_forts }
+        cost = 5
+        x = 34
+        y = 3
+		completion_reward = {
+            354 = {
+				add_building_construction = {
+					type = naval_base
+					level = 4
+					province = 9932
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+    focus = {
+        id = ARM_coastal_forts
+        icon = GFX_focus_generic_coastal_fort
+		prerequisite = { focus = ARM_naval_doctrine }
+		mutually_exclusive = { focus = ARM_naval_bases }
+        cost = 5
+        x = 32
+        y = 3
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			354 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 9932
+					instant_build = yes
+				}
+			}							
+		}
+	}
+
+    focus = {
+        id = ARM_trapizon_shipyards_2
+        icon = GFX_goal_generic_construct_naval_dockyard
+        prerequisite = { focus = ARM_naval_bases }
+		prerequisite = { focus = ARM_coastal_forts }
+        x = 33
+        y = 4
+        cost = 10
+        available_if_capitulated = yes
+        available = {
+            354 = {
+                is_coastal = yes
+                is_controlled_by = ROOT
+            }
+        }
+        complete_tooltip = {
+            navy_experience = 25
+            add_extra_state_shared_building_slots = 3
+            add_building_construction = {
+                type = dockyard
+                level = 3
+                instant_build = yes
+            }
+        }
+        completion_reward = {
+            354 = {
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = dockyard
+                    level = 3
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+	focus = {
+		id = ARM_naval_doctrine_2
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = ARM_trapizon_shipyards }
+		x = 35
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.5
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+
+    focus = {
+        id = ARM_destroyer_effort
+        icon = GFX_goal_generic_navy_battleship
+        prerequisite = { focus = ARM_naval_doctrine_2 }
+        prerequisite = { focus = ARM_trapizon_shipyards_2 }
+        x = 34
+        y = 5
+        cost = 4.5
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 2
+				technology = early_destroyer
+				technology = basic_destroyer
+				technology = improved_destroyer
+				technology = advanced_destroyer
+			}
+		}
+	}
+
+    focus = {
+        id = ARM_foreign_policy
+        icon = GFX_focus_chi_legislative_yuan
+        x = 24
+        y = 10
+        cost = 0
+        available_if_capitulated = yes
+        available = {
+            has_global_flag = ARM_van_riots_flag
+			NOT = {
+				#has_idea = ARM_van_riots_spirit
+			}
+        }
+        completion_reward = {
+        }
+    }
+
+    focus = {
+        id = ARM_continue_disregard
+        icon = GFX_
+        prerequisite = { focus = ARM_foreign_policy }
+		mutually_exclusive = { focus = ARM_acceptance }
+        x = 21
+        y = 11
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = ARM_ratify_persia_treaty
+        icon = GFX_
+        prerequisite = { focus = ARM_continue_disregard }
+        x = 20
+        y = 12
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			#country_event = armenia.x
+        }
+    }
+
+    focus = {
+        id = ARM_diplomacy_west
+        icon = GFX_
+        prerequisite = { focus = ARM_continue_disregard }
+        x = 22
+        y = 12
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = ARM_georgia_summit
+        icon = GFX_
+        prerequisite = { focus = ARM_diplomacy_west }
+        x = 23
+        y = 13
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			GEO = {
+				country_event = armenia.9
+			}
+		}
+    }
+
+    focus = {
+        id = ARM_propose_alliance_georgia
+        icon = GFX_
+        prerequisite = { focus = ARM_georgia_summit }
+		mutually_exclusive = { focus = ARM_secure_georgia }
+		available = {
+			has_global_flag = ARM_georgia_summit_positive
+			#GEO at peace, no faction
+		}
+        x = 22
+        y = 14
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			#country_event = armenia.z
+        }
+    }
+
+    focus = {
+        id = ARM_secure_georgia
+        icon = GFX_
+        prerequisite = { focus = ARM_georgia_summit }
+		mutually_exclusive = { focus = ARM_propose_alliance_georgia }
+		available = {
+			has_global_flag = ARM_georgia_summit_negative
+		}
+        x = 24
+        y = 14
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			declare_war_on = {
+				target = GEO
+				type = puppet_wargoal_focus
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_acceptance
+        icon = GFX_
+        prerequisite = { focus = ARM_foreign_policy }
+		mutually_exclusive = { focus = ARM_continue_disregard }
+        x = 27
+        y = 11
+        cost = 10
+        available_if_capitulated = yes
+        completion_reward = {
+			add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = ARM_diplomacy_azerbaijan
+        icon = GFX_
+        prerequisite = { focus = ARM_acceptance }
+        x = 27
+        y = 12
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			AZR = {
+				add_opinion_modifier = {
+					target = ARM
+					modifier = ARM_recognised
+				}
+			}
+        }
+    }
+
+    focus = {
+        id = ARM_diplomacy_turkey
+        icon = GFX_focus_industry_1
+        prerequisite = { focus = ARM_acceptance }
+        x = 30
+        y = 13
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_political_power = -50
+			TUR = {
+				add_opinion_modifier = {
+					target = ARM
+					modifier = ARM_recognised
+				}
+				#country_event = turkey.1 #Reopen Embassy
+			}
+        }
+    }
