@@ -53,7 +53,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = YUG_orthodox_church_support
+			picture = arm_legacy_of_genocide
 			
 			modifier = {
 				war_support_factor = 0.05
@@ -101,22 +101,6 @@ ideas = {
 				mobilization_speed = 0.05
 			}
 		}
-	
-		AZR_turkish_officers = {
-		
-			allowed = {
-				always = yes
-			}
-
-			picture = raj_marginalized_muslim_community_happy
-
-			removal_cost = -1
-			
-			research_bonus = {
-				land_doctrine = 0.03
-				army_org_Factor = 0.05
-			}
-		}
 		
 		ARM_preserve_greater_armenia = {
 
@@ -130,12 +114,12 @@ ideas = {
 				always = yes
 			}
 			
-			picture = generic_reserve_divisions
+			picture = arm_coa
 			
 			modifier = {
 				guarantee_tension = -1.0
 				guarantee_cost = -0.5
-				surrender_limit = 0.4
+				surrender_limit = 0.25
 			}
 		}
 		

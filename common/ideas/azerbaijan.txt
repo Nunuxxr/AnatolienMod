@@ -1,0 +1,868 @@
+ideas = {
+
+	country = {
+		
+		AZR_islamic_law = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = turkey
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+		
+		AZR_secular_republic = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture = YUG_orthodox_church_support
+			
+			modifier = {
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.10
+			}
+		}
+		
+		AZR_ethnic_tension = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture = YUG_orthodox_church_support
+			
+			modifier = {
+				war_support_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = ARM
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+
+		AZR_defeated_nation = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = #
+			
+			modifier = {
+				political_power_gain = -0.10
+				stability_factor = -0.05
+			}
+		}
+
+		AZR_empowered_khans = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ast_abandon_the_westminster_system_fascism
+			
+			modifier = {
+				conscription = 0.01
+				partisan_effect = 0.1
+				mobilization_speed = 0.05
+			}
+		}
+	
+		AZR_turkish_officers = {
+		
+			allowed = {
+				always = yes
+			}
+
+			picture = raj_marginalized_muslim_community_happy
+
+			removal_cost = -1
+			
+			research_bonus = {
+				land_doctrine = 0.03
+				army_org_Factor = 0.05
+			}
+		}
+		
+		AZR_preserve_greater_azerbaijan= {
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = AZR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = azr_national_emblem
+			
+			modifier = {
+				guarantee_tension = -1.0
+				guarantee_cost = -0.5
+				surrender_limit = 0.2
+			}
+		}
+		
+		AZR_state_security_service = {
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = AZR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = azr_state_security
+			
+			modifier = {
+				army_morale_factor = 0.05
+				army_org_Factor = 0.05
+			}
+		}
+		
+		AZR_azerbaycan_motherland = {
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = AZR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = azr_greater_azerbaijan
+			
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_morale_factor = 0.1
+				conscription = 0.025
+			}
+		}
+
+		AZR_communism_influence = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = home_of_the_revolution
+			
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+
+		AZR_german_influence = {
+			
+			allowed = {
+				always = no
+				GER = {
+					has_government = fascism
+				}
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				fascism_drift = 0.1
+				fascism_acceptance = 85
+			}
+		}
+		
+		AZR_liberal_reforms = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				political_power_gain = 0.1
+				democratic_drift = 0.04
+			}
+		}
+		
+		AZR_khanate_return = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = azr_khanate
+			
+			modifier = {
+				neutrality_drift = 0.1
+			}
+		}
+		
+		AZR_multinational_state = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = raj_marginalized_muslim_community_happy
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+		}
+		
+		AZR_turkic_state = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = azr_turan
+			
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+		
+		AZR_democracy_of_the_east = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = azr_national_flag
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+		
+		AZR_mass_infantry_production = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			#picture = raj_marginalized_muslim_community
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+			}
+		}
+		
+		AZR_military_industrialisation = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			#picture = raj_marginalized_muslim_community
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+			}
+		}
+		
+		AZR_economists = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			#picture = raj_marginalized_muslim_community
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.1
+			}
+		}
+		
+		AZR_rehabilitated_bureaucracy = {
+		
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_pp_unity_bonus #ger_mefo_bills
+			
+			modifier = {
+				political_advisor_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+			}
+		}
+	
+	}
+
+	political_advisor = {
+
+		khoren_advisor = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = AZR
+			}
+			
+			traits = { popular_figurehead }
+		}
+
+		simon_vratsian_advisor = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = AZR
+			}
+			
+			traits = { democratic_reformer }
+		}
+
+		drastamat_kanayan_advisor = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = AZR
+			}
+			
+			traits = { fascist_demagogue }
+		}
+
+		soghomon_tehlirian_advisor = {
+
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = AZR
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		ruben_ter-minasian_advisor = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = AZR
+			}
+			
+			traits = { war_industrialist }
+		}
+
+		anastas_mikoyan_advisor = {
+
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = AZR
+			}
+
+			available = {
+				has_completed_focus = AZR_soviet_armenians
+			}
+			
+			traits = { silent_workhorse }
+		}
+
+		amatuni_vardapetyan_advisor = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = AZR
+			}
+			
+			traits = { communist_revolutionary }
+		}
+
+		jaques_bagratuni_advisor = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = AZR
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+	}
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		AZR_mig_design_bureau = {
+			
+			
+			allowed = {
+				original_tag = AZR
+			}
+
+			available = {
+				has_completed_focus = AZR_soviet_armenians
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			picture = idea_mig_design_bureau
+			
+			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+	}
+	
+	industrial_concern = {
+		
+		zcmc = {
+			
+			allowed = {
+				original_tag = AZR
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.1
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ararat_cement = {
+			
+			allowed = {
+				original_tag = AZR
+			}
+			
+			research_bonus = {
+				industry = 0.10
+				
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		ycrdi = {
+			
+			allowed = {
+				original_tag = AZR
+			}
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+		}		
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		eraz = {
+			
+			allowed = {
+				original_tag = AZR
+			}
+			
+			available = {
+				has_completed_focus = AZR_mechanization_effort
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+	}
+	
+	theorist = {
+		artem_mikoyan_theorist = {
+			
+			allowed = {
+				original_tag = AZR
+			}
+
+			available = {
+				has_completed_focus = AZR_soviet_armenians
+			}
+			
+			research_bonus = {
+				rocketry = 0.10
+			}
+			
+			traits = { rocket_scientist }
+		}
+		
+		artem_alikhanian_theorist = {
+
+			
+			allowed = {
+				original_tag = AZR
+			}
+		
+			research_bonus = {
+				nuclear = 0.10
+			}
+			
+			traits = { nuclear_scientist }
+		}
+		
+		garegin_nzhdeh_theorist = {
+
+			
+			allowed = {
+				original_tag = AZR
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			
+			traits = { military_theorist }
+		}
+		
+		ray_melikian_theorist = {
+
+			
+			allowed = {
+				original_tag = AZR
+			}
+
+			available = {
+				has_completed_focus = AZR_soviet_armenians
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		
+		isakov_theorist = {
+
+			
+			allowed = {
+				original_tag = AZR
+			}
+
+			available = {
+				has_completed_focus = AZR_soviet_armenians
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+	}	
+		
+	# MILITARY
+	army_chief = {
+
+		christopher_araratyan_army_chief = {
+
+			
+			allowed = {
+				original_tag = AZR
+			}
+			
+			traits = { army_artillery_1 }			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		gargein_nzhdeh_army_chief  = {
+
+			
+			allowed = {
+				original_tag = AZR
+			}
+						
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		hovhannes_bagramyan_army_chief = {
+
+			
+			allowed = {
+				original_tag = AZR
+			}
+
+			available = {
+				has_completed_focus = AZR_soviet_armenians
+			}
+			
+			traits = { army_chief_offensive_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		andranik_ozanian_army_chief = {
+
+			
+			allowed = {
+				original_tag = AZR
+			}
+			available = {
+			}
+
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	air_chief = {
+		
+		khanferiants_air_chief = {
+
+			
+			allowed = {
+				original_tag = AZR
+			}
+
+			available = {
+				has_completed_focus = AZR_soviet_armenians
+			}
+
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	
+	navy_chief = { #CHIEF OF NAVY
+		
+		isakov_navy_chief = {
+
+			
+			allowed = {
+				original_tag = AZR
+			}
+
+			available = {
+				has_completed_focus = AZR_soviet_armenians
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+	}
+
+	high_command = {
+
+		movses_silikyan_high_command = {
+
+			
+			allowed = {
+				original_tag = AZR
+			}
+			
+			traits = { army_infantry_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		hamazasp_babadzhanian_high_command = {
+
+			
+			allowed = {
+				original_tag = AZR
+			}
+
+			available = {
+				has_completed_focus = AZR_soviet_armenians
+			}
+			
+			traits = { army_armored_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		hovhannes_hakhverdyan_high_command = {
+
+			
+			allowed = {
+				original_tag = AZR
+			}
+			
+			traits = { army_regrouping_1 }
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+		
+		tovmas_nazarbekian_high_command = {
+
+			
+			allowed = {
+				original_tag = AZR
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+		
+		nelson_stepanyan_high_command = {
+
+			
+			allowed = {
+				original_tag = AZR
+			}
+
+			available = {
+				has_completed_focus = AZR_soviet_armenians
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

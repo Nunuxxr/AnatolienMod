@@ -17,14 +17,11 @@ country_event = {
             base = 100
         }
         344 = { set_state_name = "Cilicia" }
-        349 = { set_state_name = "Kharput" }
+        349 = { set_state_name = "Sebastia" }
         350 = { set_state_name = "Sophene" }
-        792 = { set_state_name = "Jolamerk" }
-        set_province_name = { id = 7620 name = "Malat'ya"}
+        set_province_name = { id = 7620 name = "Malatya"}
         set_province_name = { id = 9761 name = "Sebastia"}
         set_province_name = { id = 4512 name = "Tigranakert"}
-        set_province_name = { id = 876 name = "Kharput"}
-        set_province_name = { id = 1463 name = "Jolamerk"}
     }
 }
 
@@ -587,7 +584,7 @@ country_event = {
  
     is_triggered_only = yes
  
-    option = { #Tblisi
+    option = { #Tbilisi
         name = armenia.27.a
         ai_chance = {
             base = 100

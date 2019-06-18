@@ -1683,5 +1683,30 @@ spriteTypes = {
 		name = "GFX_focus_arm_armed_foces_artsakh"
 		texturefile = "gfx/interface/goals/focus_arm_armed_foces_artsakh.dds"
 	}
+	
+	SpriteType = { 
+		name = "GFX_focus_azr_greater_azerbaijan"
+		texturefile = "gfx/interface/goals/focus_azr_greater_azerbaijan.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_azr_court"
+		texturefile = "gfx/interface/goals/focus_azr_court.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_nuclear"
+		texturefile = "gfx/interface/goals/focus_arm_nuclear.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_avenge"
+		texturefile = "gfx/interface/goals/focus_arm_avenge.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_officer"
+		texturefile = "gfx/interface/goals/focus_arm_officer.dds"
+	}
   
 }

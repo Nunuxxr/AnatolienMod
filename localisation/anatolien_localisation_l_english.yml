@@ -8,6 +8,8 @@ l_english:
  ###Custom Tooltip Effects###
  ARM_dissonance_of_the_republic_tt:0 "The republic is in political crisis, in this gathering storm all sorts of sentiment and radical ideological values are arising, its time to discuss this."
  ARM_soviet_armenians_tt:0 "Unlocks Soviet Armenian poltical advisors and military high command"
+ AZR_tensions_calming_tt:0 "Showing that the government is not afraid to make this initiative will provide an example for the people to follow suit."
+ AZR_tensions_escalating_tt:0 "Instituting the death penalty for any hate violence will be met with harsh opposition from the traditional nationalists of the country."
 
  ###Leader & General Descriptions###
  ARM_garegin_nzhdeh_desc:0 "Garegin Nzhdeh, one of the heroes of modern day Armenia is famed for his love and devotion to his country. Gaining experience from the Balkan Wars, Nzhdeh moved to Armenia shortly after it gained independence and helped fight off Azerbaijani forces in Zangezur, helping to establish Armenia's modern-day Eastern borders; Nzhdeh is a strong advocate for his self-founded ideology, Tseghakronism."
@@ -15,7 +17,7 @@ l_english:
  ARM_christopher_araratyan_desc:0 "An experienced artillery officer in the Russian Imperial Army, Christopher Araratyan is a specialist of using heavy weapons and ordnance in the battlefield."
  ARM_movses_silikyan_desc:0 "Movses Silikyan is a veteran of the First World War and hero of Sardarapet, he has extensive knowledge of military warfare and using whatever he could get his hands on to defend, unaffected by supply shortages."
  ARM_stepan_sapah-gulian_desc:0 "Stepan Sapah-Gulian, a member of the Social-Conservative Hunchakian party advocates for the gradual liberalisation of the republic as opposed to the ultra-conservative views of the ARF."
- ARM_hamo_ohanjanyan_desc:0 "Born in Akhalkalak, Hamo Ohanjanyan has been a crucial member of the Armenian National Movement; Hamo since the Armenian-Turkish war has remained in power since, praised for his success in establishing Western Armenia and defeating Mustafa Kemal."
+ ARM_hamo_ohanjanyan_desc:0 "Hamo Ohanjanyan has been a crucial member of the Armenian National Movement; Hamo since the Armenian-Turkish war has remained in power since, praised for his success in establishing Western Armenia."
  ARM_andranik_ozanian_desc:0 "Andranik Ozanian is a reknown and beloved hero of the nation, earning his name and experience in the Balkans, he fought for the liberation of Karabakh from Azerbaijani occupation."
  ARM_aghasi_khanjian_desc:0 "A native of Van, Aghasi Khanjian was one of the organizers of Spartak, the Marxist student's union of Armenia. He later served as the secretary of the Armenian Bolshevik underground committee and is a known sympathiser to Stalinism."
 
@@ -33,7 +35,7 @@ l_english:
  ARM_jaques_bagratuni_chosen:0 "Jaques Bagratuni has been elected"
  ARM_dashnak_victory:0 "The Dashnaktsutyun has won the elections"
  ARM_western_victory:0 "The Hunchakian Party has won the elections"
- ARM_soviet_officers:0 "Soviet Armenians have returned to the country"
+ ARM_soviet_officers:0 "Soviet Armenians have joined the country"
 
  ###Events###
  armenia.1.t:0 "Renaming Provinces"
@@ -51,27 +53,27 @@ l_english:
  armenia.3.a:0 "We should continue our current course"
  armenia.3.b:0 "Desperate times call for desperate measures"
 
- armenia.4.t:0 "Status-Quo"
+ armenia.4.t:0 "The Status Quo"
  armenia.4.d:0 "While the next elections are upcoming, some ultra-conservatives have proposed the idea of reinstating the monarchy to rekindle the Armenia of old."
  armenia.4.a:0 "We should go ahead with the upcoming elections"
  armenia.4.b:0 "The Kingdom of Armenia will be once more!"
 
- armenia.5.t:0 "Radical Politics"
+ armenia.5.t:0 "Radicals in the National Assembly"
  armenia.5.d:0 "Between the radical politicans the two most prevalent ideologies are that of the neighbouring Soviet Union and that of the German Reich. The pro-Fascists have an opinion that our sovereignty is not yet secure and that we are still under threat from Turkey whereas the communist movement proposes an idea of "voluntary" Sovietization to align ourselves with the Cominform.
  armenia.5.a:0 "Our sovereignty is not yet secure"
  armenia.5.b:0 "Accept the Sovietization movement"
 
  armenia.6.t:0 "Heir to the Bagratuni Throne"
  armenia.6.d:0 ""
- armenia.6.a:0 "Jaques"
- armenia.6.b:0 "Giorgi"
+ armenia.6.a:0 "Jaques is the logical choice"
+ armenia.6.b:0 "Giorgi the eccentric, but necessary"
 
  armenia.9.t:0 "Armenia Wants to Host a Summit"
- armenia.9.d:0 "With the uneasy relations between our nations Armenia has finally broken the ice and proposed a meeting with our leaders in their capital city Yerevan, how shall we respond to this invitation?"
- armenia.9.a:0 "A Splendid Idea!"
+ armenia.9.d:0 "With the uneasy relations between our nations, Armenia has finally broken the ice and proposed a meeting with our leaders in their capital city Erivan. How shall we respond to this invitation?"
+ armenia.9.a:0 "We will attend"
  armenia.9.b:0 "We would rather not."
 
- armenia.10.t:0 "Georgia Agrees to Attend Yerevan Summit"
+ armenia.10.t:0 "Georgia Agrees to Attend Erivan Summit"
  armenia.10.d:0 "Our scheduled meeting with the Georgian government has come at last and is due to begin shortly, what shall we discuss to enhance our relations with them?"
  armenia.10.a:0 "We will push for lower trade tariffs."
  armenia.10.b:0 "Try negotiating the status of disputed territories."
@@ -79,18 +81,18 @@ l_english:
 
  armenia.11.t:0 "Mutual Trade Cooperation Proposal"
  armenia.11.d:0 "Armenian leadership has proposed us to mutually lower trade tariffs on imports to increase trade with eachother"
- armenia.11.a:0 "A fine idea."
+ armenia.11.a:0 "A fine idea"
  armenia.11.b:0 "Absolutely not!"
 
  armenia.12.t:0 "Lowering Border Restrictions Proposal"
  armenia.12.d:0 "Armenian leadership has proposed us to lower the restrictions on our border to increase migration and tourism between our nations."
  armenia.12.a:0 "Why not!"
- armenia.12.b:0 "A bad idea."
+ armenia.12.b:0 "A bad idea"
 
  armenia.13.t:0 "Technological Exchange Proposal"
  armenia.13.d:0 "Armenian leadership has proposed us to share our military technology research with eachother."
  armenia.13.a:0 "There is some benefit to this."
- armenia.13.b:0 "We can't afford any leaks."
+ armenia.13.b:0 "We can't afford any leaks"
 
  armenia.14.t:0 "Georgia Agrees to Trade Cooperation"
  armenia.14.d:0 "Georgian diplomats have agreed to lower tariffs to increase trade between our nations!"
@@ -102,11 +104,11 @@ l_english:
 
  armenia.16.t:0 "Georgia Agrees to Cede a Province"
  armenia.16.d:0 "Georgian diplomats have agreed to cede one of the Armenian majority provinces."
- armenia.16.a:0 "A good sign."
+ armenia.16.a:0 "A good sign"
 
  armenia.17.t:0 "Georgia Refuses to Cede a Province"
  armenia.17.d:0 "Georgian diplomats have refused to cede one of the Armenian majority provinces."
- armenia.17.a:0 "Not good."
+ armenia.17.a:0 "Not good"
 
  armenia.18.t:0 "Georgia Agrees to Technology Exchange"
  armenia.18.d:0 "Georgian diplomats have agreed to share their technology with us in a treaty."
@@ -114,7 +116,7 @@ l_english:
 
  armenia.19.t:0 "Georgia Refuses Technology Exchange"
  armenia.19.d:0 "Georgian diplomats have refused to share their technology with us in a treaty."
- armenia.19.a:0 "Unfortunate."
+ armenia.19.a:0 "Unfortunate"
 
  armenia.21.t:0 "Georgia Declines a Summit"
  armenia.21.d:0 "The leadership of Georgia has refused to meet with us, preferring to align themselves with our enemies and adopting a hostile stance towards us."
@@ -135,10 +137,28 @@ l_english:
  armenia.27.c:0 "Erivan, the 3 millenia old city"
 
  ###Azerbaijan Events###
- ###Renaming Cities
- azerbaijan.1.t:0 "Renaming Provinces"
- azerbaijan.1.d:0 "With the restoration of our 'ancient' provinces we should rename the cities and provinces to thier original names to assimilate them into the national identity."
- azerbaijan.1.a:0 "A Fine idea!"
+ azerbaijan.1.t:0 "Ethnic Tensions"
+ azerbaijan.1.d:0 "The strain in ethnic tensions between Azerbaijanis and Christian subjects of Azerbaijan waked from Azerbaijan's loss of North-West Azerbaijan to Georgia and Armenia. While we deal with the issues of territories seperately, we must take action to reduce hatred between both sides."
+ azerbaijan.1.a:0 "Make a national speech of Azerbaijani unity"
+ azerbaijan.1.b:0 "Declare ethnic violance punishable by death"
+ azerbaijan.2.t:0 "Tensions Thawed"
+ azerbaijan.2.d:0 "Thanks to the government action in reducing ethnic hatred, people are more interested in emphasizing on Azerbaijani unity rather than fighting amongst themselves."
+ azerbaijan.2.a:0 "One and the same"
+ azerbaijan.3.t:0 "Peacekeeping Action Backfires"
+ azerbaijan.3.d:0 "Our recent legislation in making ethnic related violence punishable by death has backfired, and if anything hate crime has drastically increased in a effort to oppose this new law. The National Assembly is already in the process of appealing it but the damage has been done and hundreds of Christians lay dead at our hands"
+ azerbaijan.3.a:0 "Appeal the law at once!"
+ azerbaijan.4.t:0 ""
+ azerbaijan.4.d:0 ""
+ azerbaijan.4.a:0 ""
+ azerbaijan.4.b:0 ""
+ azerbaijan.5.t:0 ""
+ azerbaijan.5.d:0 ""
+ azerbaijan.5.a:0 ""
+ azerbaijan.5.b:0 ""
+ azerbaijan.1.t:0 ""
+ azerbaijan.1.d:0 ""
+ azerbaijan.1.a:0 ""
+ azerbaijan.1.b:0 ""
 
  ###Formable News Events
  wtt_news.1002.t:0 "Unification of Transcaucasia"
@@ -148,19 +168,18 @@ l_english:
  wtt_news.1002.c:0 "It will not last long!"
 
 ###Ideas###
+###Armenia Ideas###
  ARM_church:0 "Armenian Apostolic Church"
  ARM_church_desc:0 "The Armenian Apostolic Church is the national church of the Armenian people. It is one of the most ancient Christian communities due to the Kingdom of Armenia being the first state to adopt Christianity as its state religion in the early 4th century."
  ARM_mig_design_bureau:0 "MiG Design Bureau"
  ARM_preserve_greater_armenia:0 "Preserve Greater Armenia"
  ARM_preserve_greater_armenia_desc:0 "Great and restored, Armenia as a regional power must ensure the peace and security of the Caucasus-Anatolian region in the means of preserving our Greater Armenia."
- ARM_banak_shortcomings:0 "Banak Shortcomings"
- ARM_banak_shortcomings_desc:0 "Our national army is in a terrible state since it fought off Ottoman, then Kemalist forces in the 1920's and thus has slumped into a poor, underfunded department which is a shadow of its former self, used mainly by oligarchs to embezzle funds to empower themselves; We must stop this as soon as possible."
- ARM_motherland_sentinel:0 "Sentinel of the Motherland"
+ ARM_banak_shortcomings:0 "Army Shortcomings"
+ ARM_banak_shortcomings_desc:0 "The army is in a declining state since it fought the Ottoman Empire's Army of Islam and the Azerbaijani Armed Forces in 1918; Essentially a shadow of its former self, used by corrupt politicans and officers to empower themselves, we must put a stop to this as soon as possible."
+ ARM_motherland_sentinel:0 "Sentinels of the Fatherland"
  ARM_motherland_sentinel_desc:0 "Our motherland, strong and restored territorially must be preserved through allmeans necessary, national pride has swept through the youth of Armenia; if our nation ever comes under threat again, the sentinels will fight with their dying breath to defend the motherland."
- ARM_corrupt_oligarchs:0 "Oligarchal Government"
- ARM_corrupt_oligarchs_desc:0 "Corruption floods the bureocracy of Armenia. Embezzlement, judicial mistrials, police brutality and weapons syphoning to name a few are the consequences of the political impurity of Armenia, we must find a way to deal with them before its too late."
- AZR_turkish_officers:0 "Turkish Officers"
- AZR_turkish_officers_desc:0 "Supported by their ethnic big brother, Turkey has dispatched officers to Azerbaijan to develop their armed forces to a higher standard."
+ ARM_corrupt_oligarchs:0 "Corrupt Government"
+ ARM_corrupt_oligarchs_desc:0 "Rampant corruption floods the bureaucracy of the state, if unrestrained it will continue decaying into the nation."
  ARM_german_advisors:0 "German Military Advisors"
  ARM_german_advisors_desc:0 "At the German's insistence, several experienced officers and commanders have joined the ranks of the Armenian Banak in the idea of mutual cooperation between the nations."
  ARM_french_advisors:0 "French Military Advisors"
@@ -181,7 +200,7 @@ l_english:
  ARM_allow_minorities_desc:0 "Islam has grown increasing more prevalent in our rural western territories where more and more people are reassuming their Turkish identities and the Armenian government under immense pressure from within and the Middle-Eastern world has decided to allow these minorities to reassume their prior ethnicities and Islamic faith."
  ARM_one_nation:0 "Religious Taxation Implemented"
  ARM_one_nation_desc:0 "In order to prevent a Moslem uprising in the state, Islam is heavily taxed to increase conversions to the national Apostolic Church to ensure a nationwide united Christian identity for the state."
- ARM_democratic_investments:0 "Foreign Investments"
+ ARM_democratic_investments:0 "Foreign Investment"
  ARM_democratic_investments_desc:0 ""
  ARM_usa_mandate:0 "American Mandate"
  ARM_usa_mandate_desc:0 ""
@@ -200,13 +219,12 @@ l_english:
  ARM_empowered_nakharars:0 "Reinstated Nakharars"
  ARM_empowered_nakharars_desc:0 "The oligarchic figures of the nation have been strengthened by being transferred more power over their local peoples and industries which will work to our advantage."
  ARM_replaced_bureaucracy:0 "Bureaucratic Reform"
- ARM_replaced_bureaucracy_desc:0 "The corruption that runs rampant throughout the bureaucracy has finally been put down and is being replaced by a more effective and visible system as to prevent corruption from taking over the government institutions again."
- ARM_corruption_investigators:0 "Corruption Investigaters"
- ARM_corruption_investigators_desc:0 "Investigators and prosecuters specifically assigned by the new ruling party of Armenia are rapidly uncovering all signs of corruption and cleaning the system from the inside out in order to democratize."
+ ARM_replaced_bureaucracy_desc:0 "The corruption that runs rampant throughout the bureaucracy has been rooted out and is being replaced by a more effective and visible system as to prevent corruption from taking over the government institutions again."
  GEO_abkazian_seperatists:0 "Abkhazian Seperatists"
  GEO_abkazian_seperatists_desc:0 "Abkhazian Seperatists and nationalists are rebelling in the Sukhumi region to gain independence from the state, we must find a way to subdue this seperatism before there's a major uprising against the state."
  GEO_ossetian_seperatists:0 "Ossetian Seperatists"
  GEO_ossetian_seperatists_desc:0 "Ossetian Seperatists and nationalists are rebelling in the South Ossetia region to gain independence from the state, we must find a way to subdue this seperatism before there's a major uprising against the state."
+ ###Armenia State Advisors###
  khoren_advisor:0 "Khoren I"
  simon_vratsian_advisor:0 "Simon Vratsian"
  drastamat_kanayan_advisor:0 "Drastamat Kanayan"
@@ -218,7 +236,7 @@ l_english:
  mikoyan_aircraft:0 "Mikoyan"
  zcmc:0 "Zangezur Copper and Molybdenum Combine"
  ararat_cement:0 "Ararat Cement"
- ycrdi:0 "Yerevan Computer Research and Development Institute"
+ ycrdi:0 "Erivan Computer Research and Development Institute"
  eraz:0 "ErAZ"
  artem_mikoyan_theorist:0 "Artem Mikoyan"
  artem_alikhanian_theorist:0 "Artem Alikhanian"
@@ -237,9 +255,64 @@ l_english:
  tovmas_nazarbekian_high_command:0 "Tovmas Nazarbekian"
  nelson_stepanyan_high_command:0 "Nelson Stepanyan"
  hovhannes_isakyan_high_command:0 "Hovhannes Isakyan"
+ ###Azerbaijan Ideas###
+ AZR_islamic_law:0 "Islamic Law"
+ AZR_islamic_law_desc:0 ""
+ AZR_secular_republic:0 "Secular Republic"
+ AZR_secular_republic_desc:0 ""
+ AZR_ethnic_tension:0 "Ethnic Tensions"
+ AZR_ethnic_tension_desc:0 ""
+ AZR_defeated_nation:0 "Defeated Nation"
+ AZR_defeated_nation_desc:0 ""
+ AZR_empowered_khans:0 "Empowered Khans"
+ AZR_empowered_khans_desc:0 ""
+ AZR_preserve_greater_azerbaijan:0 "Preserve Greater Azerbaijan"
+ AZR_preserve_greater_azerbaijan_desc:0 ""
+ AZR_state_security_service:0 "State Security Service"
+ AZR_state_security_service_desc:0 ""
+ AZR_azerbaycan_motherland:0 "Azerbaycan Motherland"
+ AZR_azerbaycan_motherland_desc:0 ""
+ AZR_communism_influence:0 "Communist Influence"
+ AZR_communism_influence_desc:0 ""
+ AZR_german_influence:0 "German Military Influences"
+ AZR_german_influence_desc:0 ""
+ AZR_liberal_reforms:0 "Liberal Reforms"
+ AZR_liberal_reforms_desc:0 ""
+ AZR_khanate_return:0 "Municipal Khanates"
+ AZR_khanate_return_desc:0 ""
+ AZR_multinational_state:0 "Multiethnic State"
+ AZR_multinational_state_desc:0 ""
+ AZR_turkic_state:0 "Turkic State"
+ AZR_turkic_state_desc:0 ""
+ AZR_democracy_of_the_east:0 "Democracy of the East"
+ AZR_democracy_of_the_east_desc:0 ""
+ AZR_mass_infantry_production:0 "Mass Infantry Production"
+ AZR_mass_infantry_production_desc:0 ""
+ AZR_military_industrialisation:0 "Military Industrialisation"
+ AZR_military_industrialisation_desc:0 ""
+ AZR_economists:0 "State Economists"
+ AZR_economists_desc:0 ""
+ AZR_rehabilitated_bureaucracy:0 "Rehabilitated Bureaucracy"
+ AZR_rehabilitated_bureaucracy_desc:0 ""
 
-###Focuses###
+###Focus Tree###
 
+###Azerbaijan###
+###Internal Politics###
+AZR_musavat_constitution:0 "Musavat Constitution"
+AZR_musavat_constitution_desc:0 ""
+AZR_deal_with_growing_right_wing:0 "Deal with the Right Movement"
+AZR_deal_with_growing_right_wing_desc:0 ""
+AZR_support_right_wing_sentiment:0 "Support the Right"
+AZR_support_right_wing_sentiment_desc:0 ""
+AZR_deescalating_ethnic_tension:0 "Deescalating Ethnic Tensions"
+AZR_deescalating_ethnic_tension_desc:0 ""
+
+AZR_reclaim_greater_azerbaijan:0 "Reclaim Greater Azerbaijan"
+AZR_reclaim_greater_azerbaijan_desc:0 ""
+
+
+###Armenia###
 ###Internal Politics###
  ARM_radical_politics:0 "Radical Politics"
  ARM_radical_politics_desc:0 ""
@@ -327,7 +400,7 @@ l_english:
  ARM_never_another_mets_yeghern_desc:0 ""
  ARM_erzurum_capital:0 "Reinforce Erivan"
  ARM_van_capital:0 "The Urartian Capital"
- ARM_van_capital_desc:0 "Van, the historic home of Armenians and the root of our civilisation stand to compete with Yerevan in terms of industry and welfare, as well as security; Moving the capital there will provide a better balance between the more sparsely poulated western regions and the concentrated east."
+ ARM_van_capital_desc:0 "Van, the historic home of Armenians and the roots of our civilisation from the times Urartu stand to compete with Erivan in terms of industry and welfare, as well as security; Moving the capital there will provide a better balance between the more sparsely poulated western regions and the concentrated east."
  ARM_join_axis:0 "Join the Axis"
  ARM_join_axis_desc:0 ""
  ARM_join_comintern:0 "Join the Comintern"
@@ -355,10 +428,9 @@ l_english:
  ARM_increase_army_reserves:0 "Increase Army Reserves"
  ARM_increase_army_reserves_desc:0 "Our army reserves are low as they are and if a war were to come to our doorstep, we would be facing a severe shortage of manpower, to counter this we need to conscript more men into the national reserves."
  ARM_german_attache:0 "Deutsche Attachés nach Armenien"
- ARM_german_attache_desc:0 "Germany's army is one of the best in the world thanks to its numerous intellectual and skilled commanders, perhaps it would not be so bad for our own army to be taught by a German commander as to improve our tactics for the wars to come."
+ ARM_german_attache_desc:0 "The Wehrmacht, considered as one of the the world's most disciplined armed forces thanks to its skilled General Staff can train and develop our own armed forces to prepare for the wars to come."
  ARM_ayf:0 "Armenian Youth Federation"
  ARM_ayf_desc:0 ""
-
  ###Industry & Economy###
  ARM_economic_recovery:0 "Begin Economic Recovery"
  ARM_economic_recovery_desc:0 "Devastated by the Great Depression of the 1930s, Armenian Rubles have lost almost all their values in the face of better of nations such as France and Britain and thus destroyed our economy and rendered thousands jobless, bringing about famine and povery, wide-spread throughout the republic. It is for the best if we begin at once salavaging whatever is left of out economy and to get it shipshape as soon as possible."
@@ -371,15 +443,15 @@ l_english:
  ARM_open_kajaran_mine:0 "The Kajaran Mine"
  ARM_open_kajaran_mine_desc:0 "The Kajaran Mine, something our developers have been planning for the past few years is a project which could yield great benefit to the Armenian state, we just have to approve it."
  ARM_develop_the_capital:0 "Develop the Capital"
- ARM_develop_the_capital_desc:0 "Erivan, the capital compares as a village to Berlin or New York, which is why we must announce a government initiative to immedietely develop Yerevan's roads and infrastructure so it may become a starling example to the world and a Paris of the Middle-East."
+ ARM_develop_the_capital_desc:0 "Erivan, the capital compares as a village to Berlin or New York, which is why we must announce a government initiative to immedietely develop Erivan's roads and infrastructure so it may become a starling example to the world and a Paris of the Middle-East."
  ARM_develop_the_west:0 "Industrialize the West" #MUTUALLY EXCLUSIVE#
  ARM_develop_the_west_desc:0 "Our western most provinces of Qaren and Van are very rural and relativelt undeveloped compared to the Russian or eastern half of the country so it may be prudent to develop the west as so the country is not economically dependent on the east."
  ARM_expand_east_industry:0 "Expand Eastern Industry" #MUTUALLY EXCLUSIVE#
- ARM_expand_east_industry_desc:0 "Yerevan, Gyumri are our most industrialized cities due to their previous Russian occupation so we must focus on expanding this industry to a standard that an be compared to that of Washington DC or London."
+ ARM_expand_east_industry_desc:0 "Erivan & Gyumri being the most industrialized cities due to the previous Russian administration means we can focus on expanding this industry to a standard that an be compared to that of Washington DC or London."
  ARM_attract_investment:0 "Attract Foreign Investors"
- ARM_attract_investment_desc:0 "Without foreign capital, our economy will be bottlenecked through its own financial capacity, so we must attract investments from abroad to stimulate economic development locally."
+ ARM_attract_investment_desc:0 "Without foreign capital, our economy will be bottlenecked through its own financial capacity, so we must attract investments from abroad to stimulate domestic economic growth."
  ARM_karabakh_erzincan_railway:0 "Interstate Railway"
- ARM_karabakh_erzincan_railway_desc:0 "From the capital of the Artsakh province, Vararakn all the way to our western-most city Yerznka, a massive railway as our engineers have proposed will not only make transport easier but we will reap tremendous economic benefits from having such a direct railway that goes across the country passing through Yerevan."
+ ARM_karabakh_erzincan_railway_desc:0 "From the capital of the Artsakh province, Vararakn all the way to our western-most city Yerznka, a massive railway as our engineers have proposed will not only make transport easier but we will reap tremendous economic benefits from having such a direct railway that goes across the country passing through Erivan."
  ARM_armament_effort:0 "Industrial Remilitarization"
  ARM_armament_effort_desc:0 "War is coming in Europe and it is inevitable, we must begin rearmament through our industries to provide our troops with the weapons they need to defend our borders"
  ARM_extract_rare_minerals:0 "Gyumri Mineral Extraction"
@@ -392,7 +464,6 @@ l_english:
  ARM_subsidise_local_businesses_desc:0 "Industries and businesses in Hayastan are stagnant and are barely surviving in the wake of the recent economic collapse, if they are to develop we will have to divert some of our own capital to give these companies a kickstart then they can repay the capital when they are in better shape financially."
  ARM_research_slot_focus_2:0 "Ensure University Education"
  ARM_research_slot_focus_2_desc:0 ""
-
  ###Foreign Policy###
  ARM_foreign_policy:0 "Foreign Policy"
  ARM_foreign_policy_desc:0 "Ever since the 1920s our existence with our neighbours has been mostly quiet and relatively peaceful, we should begin to reassert ourselves and develop diplomatically with our neighbouring countries."
@@ -400,7 +471,7 @@ l_english:
  ARM_acceptance_desc:0 "Now, in this 'gathering storm' perhaps it will be wise to reach out to our turkic neighbours Turkey and Azerbaijan by recognising their governing bodies as legal entities and successors to the Ottoman state and the Russian Empire respectively."
  ARM_diplomacy_azerbaijan:0 "Reopen Diplomacy with Azerbaijan"
  ARM_diplomacy_azerbaijan_desc:0 "Azerbaijan, the little brother of Turkey  was a small annoyance for Armenians in our early stages of independence however due to our superior numbers and tactics we managed to beat them out of Artsakh and Gandzak, perhaps now is the time to reopen relations with our little neighbour."
- ARM_diplomacy_turkey:0 "Reopen Istanbul Embassy"
+ ARM_diplomacy_turkey:0 "Reopen Ankara Embassy"
  ARM_diplomacy_turkey_desc:0 "Closed in the 1920s, the Armenian embassy in Constantinople has been residing in the sprawling city gathering dust and falling into a state of disrepair, if we are to reinitate relations with the Turkish nation, reopening our embassy might be a necessary step."
  ARM_continue_disregard:0 "Continue to Ignore the Turks"
  ARM_continue_disregard_desc:0 "Our policy which has been ongoing for nearly two decades to leave the turkish nations of Azerbaijan and Turkey has been successful so far so we should continue this disregard of them as they are forever irrelevant to the history of the Armenian state from here on now."
@@ -414,7 +485,6 @@ l_english:
  ARM_propose_alliance_georgia_desc:0 "With the summit resulting in a highly positive interaction for both sides, we may choose to take this advancement a step forward and propose a military alliance between our two nations."
  ARM_secure_georgia:0 "Secure Georgia"
  ARM_secure_georgia_desc:0 "As a result of the disaster of the summit with Georgia, relations have gone bitter and they may begin alligning themselves with our enemies, this calls for a pre-emptive intervention to install a friendly puppet government."
-
  ###Army, Air & Navy###
  ARM_appoint_new_sparapet:0 "Nor Sparapet"
  ARM_appoint_new_sparapet_desc:0 "In order to begin reforming the armed forces, we must begin with appointing a new Sparapet or Supreme Commander of the Armed Forces of Armenia."

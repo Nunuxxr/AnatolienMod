@@ -76,9 +76,11 @@ SWI = {
 	color = rgb { 224 5 5 }
 	color_ui = rgb { 193 81 81 }
 }
-TUR = { #Greenish
-	color = rgb { 147 200 147 } #198
-	color_ui = rgb { 128  158  118 }
+TUR = {
+	color = rgb { 171 190 152 }
+	color_ui = rgb { 222 247 198 }
+	#color = rgb { 147 200 147 } #198
+	#color_ui = rgb { 128  158  118 }
 }
 GRE = {
 	color = rgb { 93 181 227 }
@@ -376,8 +378,8 @@ UKR = {
 }
 
 AZR = {
-	color = rgb { 30 145 60 }
-	color_ui = rgb { 30 145 60 }
+	color = rgb { 247 223 69 }
+	color_ui = rgb { 247 223 69 }
 }
 
 GEO = {

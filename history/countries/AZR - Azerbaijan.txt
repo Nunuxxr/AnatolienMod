@@ -83,6 +83,9 @@ set_popularities = {
 
 add_ideas = {
 	limited_conscription
+	AZR_azerbaycan_motherland
+	AZR_preserve_greater_azerbaijan
+	AZR_democracy_of_the_east
 }
 
 create_country_leader = {

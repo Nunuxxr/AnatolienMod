@@ -3996,9 +3996,12 @@ spriteTypes = {
 		name = "GFX_idea_MTG_naval_treaty_adherent_reduced"
 		texturefile = "gfx/interface/ideas/idea_mtg_naval_treaty_adherent_reduced.dds"
 	}
+	
+	###Anatolien
+	
 	spriteType = {
-		name = "GFX_idea_ARM_legacy_of_genocide"
-		texturefile = "gfx/interface/ideas/idea_genocide_icon.dds"
+		name = "GFX_idea_arm_legacy_of_genocide"
+		texturefile = "gfx/interface/ideas/idea_genocide.png"
 	}
 	spriteType = {
 		name = "GFX_idea_arm_armenian_seperatists"
@@ -4013,8 +4016,56 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_arm_abkhazian_seperatists.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_arm_ossetian_seperatists"
-		texturefile = "gfx/interface/ideas/idea_arm_ossetian_seperatists.dds"
+		name = "GFX_idea_arm_national_flag"
+		texturefile = "gfx/interface/ideas/idea_arm_national_flag.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_azr_national_flag"
+		texturefile = "gfx/interface/ideas/idea_azr_national_flag.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_geo_national_flag"
+		texturefile = "gfx/interface/ideas/idea_geo_national_flag.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tur_national_flag"
+		texturefile = "gfx/interface/ideas/idea_tur_national_flag.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_per_national_flag"
+		texturefile = "gfx/interface/ideas/idea_per_national_flag.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_turkey"
+		texturefile = "gfx/interface/ideas/idea_turkey.png"
+	}
+	spriteType = {
+		name = "GFX_idea_azr_greater_azerbaijan"
+		texturefile = "gfx/interface/ideas/idea_azr_greater_azerbaijan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_azr_national_emblem"
+		texturefile = "gfx/interface/ideas/idea_azr_national_emblem.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_arm_coa"
+		texturefile = "gfx/interface/ideas/idea_arm_coa.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_azr_turan"
+		texturefile = "gfx/interface/ideas/idea_azr_turan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_azr_state_security"
+		texturefile = "gfx/interface/ideas/idea_azr_state_security.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_arm_state_security"
+		texturefile = "gfx/interface/ideas/idea_arm_state_security.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_azr_khanate"
+		texturefile = "gfx/interface/ideas/idea_azr_khanate.dds"
 	}
 	
 }

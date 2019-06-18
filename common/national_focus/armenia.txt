@@ -20,9 +20,7 @@ focus_tree = {
         cost = 5
         available_if_capitulated = no
         completion_reward = {
-			hidden_effect = {
-				country_event = armenia.5
-			}
+			country_event = armenia.5
         }
     }
 
@@ -376,7 +374,7 @@ focus_tree = {
         cost = 5
         available_if_capitulated = no
         completion_reward = {
-			hidden_effect = { country_event = armenia.4 }
+			country_event = armenia.4
         }
     }
 
@@ -569,7 +567,7 @@ focus_tree = {
 
     focus = {
         id = ARM_never_another_mets_yeghern
-        icon = GFX_focus_generic_military_academy
+        icon = GFX_focus_arm_avenge #generic_military_academy
         prerequisite = {
 			focus = ARM_recruit_nzhdeh
 		}
@@ -746,7 +744,7 @@ focus_tree = {
 
     focus = {
         id = ARM_recruit_nzhdeh
-        icon = GFX_focus_mex_soldaderas
+        icon = GFX_focus_arm_officer #mex_soldaderas
         prerequisite = { focus = ARM_focus_on_the_greater_threat }
         x = 6
         y = 2
@@ -1210,7 +1208,7 @@ focus_tree = {
 
     focus = {
         id = ARM_expand_yerevan_state_university
-        icon = GFX_focus_research
+        icon = GFX_focus_arm_nuclear #GFX_focus_research
 		prerequisite = {
 			focus = ARM_pass_agriculture_act
 		}
@@ -2278,7 +2276,7 @@ focus_tree = {
 
     focus = {
         id = ARM_ratify_persia_treaty
-        icon = GFX_
+        icon = GFX_focus_arm_agreement_iran
         prerequisite = { focus = ARM_continue_disregard }
         x = 20
         y = 12
@@ -2304,7 +2302,7 @@ focus_tree = {
 
     focus = {
         id = ARM_georgia_summit
-        icon = GFX_
+        icon = GFX_focus_arm_flag_georgia
         prerequisite = { focus = ARM_diplomacy_west }
         x = 23
         y = 13
@@ -2319,7 +2317,7 @@ focus_tree = {
 
     focus = {
         id = ARM_propose_alliance_georgia
-        icon = GFX_
+        icon = GFX_focus_arm_agreement_georgia
         prerequisite = { focus = ARM_georgia_summit }
 		mutually_exclusive = { focus = ARM_secure_georgia }
 		available = {
@@ -2389,7 +2387,7 @@ focus_tree = {
 
     focus = {
         id = ARM_diplomacy_turkey
-        icon = GFX_focus_industry_1
+        icon = GFX_focus_arm_agreement_turkey
         prerequisite = { focus = ARM_acceptance }
         x = 30
         y = 13
