@@ -4,7 +4,7 @@ l_english:
  ###Bookmarks###
  ARM_GATHERING_STORM_DESC:0 "Armenia, a bastion of Christianity has withstood Turkish invasion in its more recent years since its independence from the Russian Empire in 1918. Fueled by the blood and willpower of millions of ethnic ‘Ottoman’ Armenians who aided the Russian’s Caucasus offensive into Anatolia, Armenia has fortified itself by expelling or assimilating its Turkish and Kurdish minorities into the Christian Armenian identity whilst maintaining a sizable minority of Greeks and Georgians in the North of Armenia."
  AZR_GATHERING_STORM_DESC:0 "After the Battle of Bakü, the Azarbaijani government wasn't quite prepared to become its own nation with the lack of regulation in the army, with a democracy that hasn't been fully integrated into the constitution and a matter of lost territories to Armenia and Georgia due to their numerical strength over the Caucasian Turkish people of Azarbaijan. Today, the Caucasian Albanians are in control of a rump state of what could be a greater Azarbaijan, united with its sizable minority to the south in Iran, fate is uncertain however one thing for sure is the people of Azerbaijan are in desperate need of a leader to restore them to their former glory."
- 
+
  ###Custom Tooltip Effects###
  ARM_dissonance_of_the_republic_tt:0 "The republic is in political crisis, in this gathering storm all sorts of sentiment and radical ideological values are arising, its time to discuss this."
  ARM_soviet_armenians_tt:0 "Unlocks Soviet Armenian poltical advisors and military high command"
@@ -614,7 +614,7 @@ CAU_neutrality_party:0 "Unity Party"
  VICTORY_POINTS_3658:0 "Kutaisi"
  VICTORY_POINTS_8123:0 "Kirkuk"
  VICTORY_POINTS_6436:0 "Zaqatala"
- VICTORY_POINTS_10122:0 "Marmaris"
+ VICTORY_POINTS_10122:0 "Physkos"
  VICTORY_POINTS_7604:0 "Urmia"
 
  #New TAG Country Names

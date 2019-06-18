@@ -106,7 +106,7 @@
  VICTORY_POINTS_9940:0 "Heraklion"
  VICTORY_POINTS_11818:0 "Thessaloniki"
  VICTORY_POINTS_11747:0 "Ankara"
- VICTORY_POINTS_9833:0 "Konstantinoúpolis" #Constantinople #Kostantiniyye #Byzantion
+ VICTORY_POINTS_9833:0 "Constantinople" #Constantinople #Kostantiniyye #Byzantion
  VICTORY_POINTS_940:0 "Konya"
  VICTORY_POINTS_11867:0 "Prousa"
  VICTORY_POINTS_4112:0 "Smyrna"
@@ -854,7 +854,7 @@
  VICTORY_POINTS_10056:0 "Mersin" #Mersin #Hadrianopolis
  VICTORY_POINTS_3870:0 "Kayseri"
  VICTORY_POINTS_3951:0 "Eskişehir"
- VICTORY_POINTS_4512:0 "Diyarbakır" #Diyarbakır #Tigranakert #Amida
+ VICTORY_POINTS_4512:0 "Amed" #Diyarbakır #Tigranakert #Amida
  VICTORY_POINTS_11881:0 "Samsun"
  VICTORY_POINTS_9823:0 "Şanlıurfa" #Şanlıurfa #Edessa
  VICTORY_POINTS_7620:0 "Malatya"
