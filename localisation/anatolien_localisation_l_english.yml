@@ -598,6 +598,9 @@ CAU_neutrality_party:0 "Unity Party"
  STATE_794:0 "Syunik"
  STATE_795:0 "Baku"
 
+ #Straits
+ HELLESPONT_STRAIT:0 "Hellespont"
+
  #Victory Points
  VICTORY_POINTS_1467:0 "Shusha"
  VICTORY_POINTS_6997:0 "Nakhchivan"
