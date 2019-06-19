@@ -97,6 +97,28 @@ on_actions = {
                 }
               }
             }
+            #Completed Eastern Thrace, GRE, TUR
+            else_if = {
+              limit={FROM.FROM={state = 341}}
+              if={
+                limit = {
+                  tag=GRE
+                }
+                FROM.FROM = {
+                  set_state_name = "Eastern Thrace"
+                  set_province_name = { id = 9833 name = "Constantinople" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Eastern Thrace"
+                  set_province_name = { id = 9833 name = "Konstantiniyye" }
+                }
+              }
+            }
             #Completed Amed, ARM, TUR, KUR
             else_if = {
               limit={FROM.FROM={state = 350}}
@@ -105,8 +127,8 @@ on_actions = {
                   tag=ARM
                 }
                 FROM.FROM = {
-                  set_state_name = "Arzanene"
-                  set_province_name = { id = 4512 name = "Tigranakert" }
+                  set_state_name = "Aghdznik" #Arzanene
+                  set_province_name = { id = 4512 name = "Dikranagerd" } #Tigranakert
                 }
               }
               else_if={
@@ -224,6 +246,30 @@ on_actions = {
                 FROM.FROM = {
                   set_state_name = "Wan"
                   set_province_name = { id = 6935 name = "Wan" }
+                }
+              }
+            }
+            #Completed Karin, ARM, TUR
+            else_if = {
+              limit={FROM.FROM={state = 352}}
+              if={
+                limit = {
+                  tag=ARM
+                }
+                FROM.FROM = {
+                  set_state_name = "Karin"
+                  set_province_name = { id = 11853 name = "Karin" }
+                  set_province_name = { id = 9932 name = "Trebizond" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Erzurum"
+                  set_province_name = { id = 11853 name = "Erzurum" }
+                  set_province_name = { id = 9932 name = "Trabzon" }
                 }
               }
             }
