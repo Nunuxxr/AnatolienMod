@@ -252,9 +252,9 @@ on_actions = {
               }
             }
           }
-          #ANATOLIA
+          #SOUTH BALKANS
           else_if={
-            limit={FROM.FROM={region = 129}}
+            limit={FROM.FROM={region = 25}}
             #Completed Caria, GRE, TUR
             if = {
               limit={FROM.FROM={state = 341}}
