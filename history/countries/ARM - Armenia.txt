@@ -102,17 +102,6 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Garegin Nzhdeh"
-	desc = "ARM_garegin_nzhdeh_desc_desc"
-	picture = "Portrait_Armenia_Garegin_Nzhdeh.dds"
-	expire = "1955.3.8"
-	ideology = nazism
-	traits = {
-		great_war_hero
-	}
-}
-
-create_country_leader = {
 	name = "Stepan Sapah-Gulian"
 	desc = "ARM_stepan_sapah-gulian_desc"
 	picture = "Portrait_Armenia_Stepan_Sapah-Gulian.tga"

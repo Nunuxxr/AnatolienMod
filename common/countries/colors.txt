@@ -82,6 +82,10 @@ TUR = {
 	#color = rgb { 147 200 147 } #198
 	#color_ui = rgb { 128  158  118 }
 }
+#TUR = { #Dark Red KR Ottomans
+#	color = rgb { 123 0 0 }
+#	color_ui = rgb { 123 0 0 }
+#}
 GRE = {
 	color = rgb { 93 181 227 }
 	color_ui = rgb { 121 235 255 }
@@ -231,7 +235,7 @@ SAF = {
 	color_ui = rgb { 198 169 248 }
 }
 SAU = {
-	color = rgb { 0 148 53 }
+	color = rgb { 0 105 53 }
 	color_ui = rgb { 10 100 10 }
 }
 SIA = {

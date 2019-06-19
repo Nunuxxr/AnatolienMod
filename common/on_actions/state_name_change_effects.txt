@@ -89,7 +89,7 @@ on_actions = {
             }
             #Completed Karin, ARM, TUR
             else_if = {
-              limit={FROM.FROM={state = 352}}
+              limit={FROM.FROM={state = 354}}
               if={
                 limit = {
                   tag=ARM
