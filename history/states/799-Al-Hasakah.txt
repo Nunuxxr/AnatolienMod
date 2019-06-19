@@ -1,0 +1,23 @@
+state={
+	id=799
+	name="STATE_799"
+	provinces={
+		1549 1578 10882 
+	}
+	history={
+		owner = FRA
+		victory_points = {
+			1578 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SYR
+		add_core_of = KUR
+
+	}
+	manpower=146000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

@@ -2,9 +2,9 @@ on_actions = {
     on_state_control_changed={
         #I decided to experiment a bit, to make it faster to implement, and better organized. As such, states will now be organized first by strategic regions. Also, since we dont have many nations with the same culture as in HC, Im simplifying it.
         effect={
-          #CAUCASUS
+          #ARMENIA
           if={
-            limit={FROM.FROM={region = 134}}
+            limit={FROM.FROM={region = 208}}
             #Completed Syunik, ARM, AZR
             if = {
               limit={FROM.FROM={state = 794}}
@@ -22,100 +22,6 @@ on_actions = {
                 }
                 FROM.FROM = {
                   set_state_name = "Zangezur"
-                }
-              }
-            }
-          }
-          #ANATOLIA
-          else_if={
-            limit={FROM.FROM={region = 129}}
-            #Completed Caria, GRE, TUR
-            if = {
-              limit={FROM.FROM={state = 342}}
-              if={
-                limit = {
-                  tag=GRE
-                }
-                FROM.FROM = {
-                  set_state_name = "Caria"
-                  set_province_name = { id = 10122 name = "Physkos" }
-                }
-              }
-              else_if={
-                limit = {
-                  tag=TUR
-                }
-                FROM.FROM = {
-                  set_state_name = "Mugla"
-                  set_province_name = { id = 10122 name = "Marmaris" }
-                }
-              }
-            }
-            #Completed Smyrna, GRE, TUR
-            else_if = {
-              limit={FROM.FROM={state = 339}}
-              if={
-                limit = {
-                  tag=GRE
-                }
-                FROM.FROM = {
-                  set_state_name = "Ionia"
-                  set_province_name = { id = 4112 name = "Smyrna" }
-                }
-              }
-              else_if={
-                limit = {
-                  tag=TUR
-                }
-                FROM.FROM = {
-                  set_state_name = "Izmir"
-                  set_province_name = { id = 4112 name = "Izmir" }
-                }
-              }
-            }
-            #Completed Prousa, GRE, TUR
-            else_if = {
-              limit={FROM.FROM={state = 340}}
-              if={
-                limit = {
-                  tag=GRE
-                }
-                FROM.FROM = {
-                  set_state_name = "Mysia"
-                  set_province_name = { id = 11867 name = "Prousa" }
-                  set_province_name = { id = 11811 name = "Nicomedia" }
-                }
-              }
-              else_if={
-                limit = {
-                  tag=TUR
-                }
-                FROM.FROM = {
-                  set_state_name = "Bursa"
-                  set_province_name = { id = 11867 name = "Bursa" }
-                  set_province_name = { id = 11811 name = "Izmit" }
-                }
-              }
-            }
-            #Completed Eastern Thrace, GRE, TUR
-            else_if = {
-              limit={FROM.FROM={state = 341}}
-              if={
-                limit = {
-                  tag=GRE
-                }
-                FROM.FROM = {
-                  set_state_name = "Eastern Thrace"
-                  set_province_name = { id = 9833 name = "Constantinople" }
-                }
-              }
-              else_if={
-                limit = {
-                  tag=TUR
-                }
-                FROM.FROM = {
-                  set_state_name = "Eastern Thrace"
-                  set_province_name = { id = 9833 name = "Konstantiniyye" }
                 }
               }
             }
@@ -270,6 +176,104 @@ on_actions = {
                   set_state_name = "Erzurum"
                   set_province_name = { id = 11853 name = "Erzurum" }
                   set_province_name = { id = 9932 name = "Trabzon" }
+                }
+              }
+            }
+          }
+          #ANATOLIA
+          else_if={
+            limit={FROM.FROM={region = 129}}
+            #Completed Caria, GRE, TUR
+            if = {
+              limit={FROM.FROM={state = 342}}
+              if={
+                limit = {
+                  tag=GRE
+                }
+                FROM.FROM = {
+                  set_state_name = "Caria"
+                  set_province_name = { id = 10122 name = "Physkos" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Mugla"
+                  set_province_name = { id = 10122 name = "Marmaris" }
+                }
+              }
+            }
+            #Completed Smyrna, GRE, TUR
+            else_if = {
+              limit={FROM.FROM={state = 339}}
+              if={
+                limit = {
+                  tag=GRE
+                }
+                FROM.FROM = {
+                  set_state_name = "Ionia"
+                  set_province_name = { id = 4112 name = "Smyrna" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Izmir"
+                  set_province_name = { id = 4112 name = "Izmir" }
+                }
+              }
+            }
+            #Completed Prousa, GRE, TUR
+            else_if = {
+              limit={FROM.FROM={state = 340}}
+              if={
+                limit = {
+                  tag=GRE
+                }
+                FROM.FROM = {
+                  set_state_name = "Mysia"
+                  set_province_name = { id = 11867 name = "Prousa" }
+                  set_province_name = { id = 11811 name = "Nicomedia" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Bursa"
+                  set_province_name = { id = 11867 name = "Bursa" }
+                  set_province_name = { id = 11811 name = "Izmit" }
+                }
+              }
+            }
+          }
+          #ANATOLIA
+          else_if={
+            limit={FROM.FROM={region = 129}}
+            #Completed Caria, GRE, TUR
+            if = {
+              limit={FROM.FROM={state = 341}}
+              if={
+                limit = {
+                  tag=GRE
+                }
+                FROM.FROM = {
+                  set_state_name = "Eastern Thrace"
+                  set_province_name = { id = 9833 name = "Constantinople" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Eastern Thrace"
+                  set_province_name = { id = 9833 name = "Konstantiniyye" }
                 }
               }
             }
