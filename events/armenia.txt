@@ -210,12 +210,6 @@ country_event = { #Heir Apparent
         ai_chance = { factor = 75 }
 		set_country_flag = ARM_jaques_bagratuni_chosen
     }
-	
-    option = { #Giorgi
-        name = armenia.6.b
-        ai_chance = { factor = 25 }
-		set_country_flag = ARM_giorgi_bagration-mukhranel_chosen
-    }
 }
 
 country_event = { #Summit Offer from Armenia

@@ -29,7 +29,7 @@ focus_tree = {
         icon = GFX_focus_generic_strike_at_democracy3
         prerequisite = { focus = ARM_radical_politics }
 		available = { has_country_flag = ARM_communism_flag }
-        x = 1
+        x = 2
         y = 1
         cost = 10
         available_if_capitulated = no
@@ -39,19 +39,6 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.1
 			}
-        }
-    }
-
-    focus = {
-        id = ARM_red_army
-        icon = GFX_focus_YUG_pan_slavic_congress
-        prerequisite = { focus = ARM_left_leanings }
-        x = 2
-        y = 2
-        cost = 10
-        available_if_capitulated = no
-        completion_reward = {
-			add_ideas = militarism_focus
         }
     }
 
@@ -76,7 +63,7 @@ focus_tree = {
         id = ARM_a_gun_in_every_hand
         icon = GFX_focus_generic_little_entente
         prerequisite = { 
-			focus = ARM_red_army
+			focus = ARM_concessions_to_factory_workers
 			focus = ARM_support_dro 
 		}
         x = 3
@@ -108,7 +95,7 @@ focus_tree = {
         id = ARM_concessions_to_factory_workers
         icon = GFX_focus_eng_concessions_to_the_trade_unions
         prerequisite = { focus = ARM_left_leanings }
-        x = 0
+        x = 2
         y = 2
         cost = 10
         available_if_capitulated = no
@@ -122,7 +109,7 @@ focus_tree = {
 
     focus = {
         id = ARM_reintroduce_melikdoms
-        icon = GFX_focus_generic_home_defense
+        icon = GFX_focus_eng_move_to_secure_the_dominions
         prerequisite = { 
 			focus = ARM_a_gun_in_every_hand 
 		}
@@ -156,35 +143,12 @@ focus_tree = {
         id = ARM_collectivism
         icon = GFX_goal_generic_propaganda
         prerequisite = { focus = ARM_political_commissars }
-        x = 0
-        y = 4
-        cost = 10
-        available_if_capitulated = no
-        completion_reward = {
-			add_ideas = collectivist_ethos_focus
-		}
-	}
-
-    focus = {
-        id = ARM_soviet_aid
-        icon = GFX_focus_chi_mission_to_the_soviet_union
-        prerequisite = { focus = ARM_political_commissars }
         x = 2
         y = 4
         cost = 10
         available_if_capitulated = no
         completion_reward = {
-			230 = {
-				#limit = {
-				#	ROOT = { has_full_control_of_state = PREV }
-				#}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
+			add_ideas = collectivist_ethos_focus
 		}
 	}
 
@@ -196,19 +160,18 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ARM_leninism
 		}
-        x = 3
+        x = 1
         y = 5
         cost = 10
         available_if_capitulated = no
         completion_reward = {
 			create_country_leader = {
-				name = "Grigory Harutyunyan"
-				desc = ""
-				picture = "Portrait_Armenia_Grigory_Arutinov.dds"
-				expire = "1953.3.1"
+				name = "Aghasi Khanjian"
+				desc = "ARM_aghasi_khanjian_desc"
+				picture = "Portrait_Armenia_Aghasi_Khanjian.tga"
+				expire = "1975.1.1"
 				ideology = stalinism
 				traits = {
-					#
 				}
 			}
 			hidden_effect = {
@@ -216,71 +179,20 @@ focus_tree = {
 					ruling_party = communism
 				}
 				set_popularities = {
-					communism = 35
+					communism = 0.35
 				}
-			}
-		}
-	}
-
-    focus = {
-        id = ARM_leninism
-        icon = GFX_focus_ger_great_red_menace
-        prerequisite = { focus = ARM_collectivism }
-		mutually_exclusive = {
-			focus = ARM_stalinism
-		}
-        x = 0
-        y = 5
-        cost = 10
-        available_if_capitulated = no
-        completion_reward = {
-			create_country_leader = {
-				name = "Stepan Shahumyan"
-				desc = ""
-				picture = "Portrait_Armenia_Stepan_Shahumyan.dds"
-				expire = "1953.3.1"
-				ideology = anarchist_communism
-				traits = {
-					triumphant_revolutionary
-				}
-			}
-			hidden_effect = {
-				set_politics = {
-					ruling_party = communism
-				}
-				set_popularities = {
-					communism = 35
-				}
-			}
-		}
-	}
-
-    focus = {
-        id = ARM_permanent_revolution
-        icon = GFX_goal_support_fourth_int
-        prerequisite = { focus = ARM_leninism }
-        x = 0
-        y = 6
-        cost = 10
-        available_if_capitulated = no
-        completion_reward = {
-			add_political_power = 50
-			hidden_effect = {
-				remove_country_leader_trait = permanent_revolutionary
-				add_country_leader_trait = triumphant_revolutionary
 			}
 		}
 	}
 
     focus = {
         id = ARM_state_atheism
-        icon = GFX_goal_tfv_burn_the_royal_portraits
+        icon = GFX_focus_mex_triumph_over_the_cristeros
         prerequisite = { 
-			focus = ARM_permanent_revolution
-			focus = ARM_soviet_armenians
+			focus = ARM_collectivism
 		}
-        x = 0
-        y = 7
+        x = 3
+        y = 5
         cost = 10
         available_if_capitulated = no
         completion_reward = {
@@ -295,8 +207,8 @@ focus_tree = {
         id = ARM_soviet_armenians
         icon = GFX_goal_support_communism
         prerequisite = { focus = ARM_stalinism }
-        x = 0
-        y = 6
+        x = 1
+        y = 7
         cost = 10
         available_if_capitulated = no
         completion_reward = {
@@ -441,7 +353,6 @@ focus_tree = {
         prerequisite = { 
 			focus = ARM_dashnak_victory_focus
 			focus = ARM_western_victory_focus
-			focus = ARM_jaques_bagratuni
 		}
 		bypass = {
 			has_idea = free_trade
@@ -483,7 +394,7 @@ focus_tree = {
 
     focus = {
         id = ARM_democratic_investment
-        icon = GFX_focus_mex_privatisation
+        icon = GFX_focus_usa_reestablish_the_gold_standard
         prerequisite = { focus = ARM_hire_state_economists }
         prerequisite = { focus = ARM_prepare_for_next_war }
         x = 9
@@ -520,7 +431,6 @@ focus_tree = {
         icon = GFX_focus_arm_ayf
         prerequisite = { 
 			focus = ARM_dashnak_victory_focus
-			focus = ARM_axis_friendship
 		}
         x = 7
         y = 5
@@ -582,9 +492,8 @@ focus_tree = {
         prerequisite = {
 			focus = ARM_german_attache
 		}
-		mutually_exclusive = { focus = ARM_join_comintern }
-        x = 5
-        y = 7
+        x = 4
+        y = 6
         cost = 10
         available_if_capitulated = no
 
@@ -629,13 +538,10 @@ focus_tree = {
         id = ARM_join_comintern
         icon = GFX_focus_chi_mission_to_the_soviet_union
         prerequisite = {
-			focus = ARM_soviet_armenians
-		}
-		mutually_exclusive = {
-			focus = ARM_join_axis
+			focus = ARM_stalinism
 		}
         x = 2
-        y = 7
+        y = 6
         cost = 10
         available_if_capitulated = no
 
@@ -683,13 +589,12 @@ focus_tree = {
         id = ARM_erzurum_capital
         icon = GFX_goal_generic_construct_military
         prerequisite = {
-			focus = ARM_ayf
-			focus = ARM_stalinism
-			focus = ARM_leninism
+			focus = ARM_join_axis
+			focus = ARM_join_comintern
 		}
 		mutually_exclusive = { focus = ARM_van_capital }
-        x = 2
-        y = 6
+        x = 3
+        y = 7
         cost = 10
         available_if_capitulated = no
 		available = {
@@ -713,11 +618,12 @@ focus_tree = {
         id = ARM_van_capital
         icon = GFX_focus_usa_guarantee_the_american_dream
         prerequisite = {
-			focus = ARM_ayf
+			focus = ARM_join_axis
+			focus = ARM_join_comintern
 		}
 		mutually_exclusive = { focus = ARM_erzurum_capital }
-        x = 4
-        y = 6
+        x = 5
+        y = 7
         cost = 10
         available_if_capitulated = no
 		available = {
@@ -771,40 +677,20 @@ focus_tree = {
 					great_war_hero
 				}
 			}
+			set_politics = {
+				ruling_party = fascism
+			}
+			set_cosmetic_tag = ARM_national_socialism
 			hidden_effect = {
-				set_politics = {
-					ruling_party = fascism
-				}
 				set_popularities = {
-					fascism = 35
+					fascism = 0.35
 				}
 				set_party_name = { 
 					ideology = fascism 
 					long_name = ARM_fascism_party_nzhdeh_long 
 					name = ARM_fascism_party_nzhdeh
 				}
-				set_cosmetic_tag = ARM_national_socialism
 			}
-        }
-    }
-
-    focus = {
-        id = ARM_centralisation
-        icon = GFX_focus_hol_united_netherlands
-        prerequisite = {
-			focus = ARM_bastion_of_christianity
-			focus = ARM_religious_freedom
-			focus = ARM_increase_funding_to_etchimiadzin
-			focus = ARM_state_atheism
-		}
-		mutually_exclusive = { focus = ARM_federalisation }
-        x = 5
-        y = 8
-        cost = 10
-        available_if_capitulated = no
-        completion_reward = {
-			add_political_power = 50
-			add_stability = -0.05
         }
     }
 
@@ -813,10 +699,9 @@ focus_tree = {
         icon = GFX_goal_generic_national_unity
         prerequisite = {
 			focus = ARM_western_victory_focus
-			focus = ARM_constitutional_monarchy
 		}
-        x = 12
-        y = 6
+        x = 11
+        y = 5
         cost = 10
         available_if_capitulated = no
         completion_reward = {
@@ -829,6 +714,7 @@ focus_tree = {
         icon = GFX_goal_tfv_sever_ties_with_uk
         prerequisite = {
 			focus = ARM_ayf
+			focus = ARM_german_attache
 		}
         x = 6
         y = 6
@@ -856,7 +742,7 @@ focus_tree = {
         id = ARM_religious_freedom
         icon = GFX_focus_generic_diplomatic_treaty
         prerequisite = { focus = ARM_expand_civil_rights }
-        x = 12
+        x = 11
         y = 7
         cost = 10
         available_if_capitulated = no
@@ -870,7 +756,7 @@ focus_tree = {
         icon = GFX_focus_CZE_german_puppet
         prerequisite = { focus = ARM_maintain_status_quo }
 		available = { has_country_flag = ARM_monarchism_flag }
-        x = 13
+        x = 12
         y = 1
         cost = 10
         available_if_capitulated = no
@@ -884,14 +770,13 @@ focus_tree = {
         icon = GFX_goal_generic_construction2
         prerequisite = {
 			focus = ARM_continue_public_works
-			focus = ARM_successor_to_the_bagratids
 		}
 		available = {
 			OR = {
 				has_full_control_of_state = 353
 			}
 		}
-        x = 14
+        x = 17
         y = 2
         cost = 10
         available_if_capitulated = no
@@ -902,7 +787,7 @@ focus_tree = {
 
     focus = {
         id = ARM_reinstate_nakharars
-        icon = GFX_focus_hol_gateway_to_europe
+        icon = GFX_focus_eng_special_air_service
         prerequisite = { 
 			focus = ARM_successor_to_the_bagratids
 		}
@@ -921,10 +806,7 @@ focus_tree = {
         prerequisite = { 
 			focus = ARM_reinstate_nakharars
 		}
-        prerequisite = { 
-			focus = ARM_rebuilding_ani
-		}
-        x = 13
+        x = 11
         y = 3
         cost = 5
         available_if_capitulated = no
@@ -934,52 +816,12 @@ focus_tree = {
     }
 
     focus = {
-        id = ARM_giorgi_bagration-mukhranel
-        icon = GFX_focus_eng_motion_of_no_confidence
-        prerequisite = { 
-			focus = ARM_heir_apparent
-		}
-		mutually_exclusive = {
-			focus = ARM_jaques_bagratuni
-		}
-        available = { has_country_flag = ARM_giorgi_bagration-mukhranel_chosen }
-        x = 14
-        y = 4
-        cost = 5
-        available_if_capitulated = no
-        completion_reward = {
-			add_political_power = 100
-        }
-    }
-
-    focus = {
-        id = ARM_dismiss_parliament
-        icon = GFX_focus_eng_decolonization
-        prerequisite = { 
-			focus = ARM_giorgi_bagration-mukhranel
-		}
-        available = { has_country_flag = ARM_jaques_bagratuni_chosen }
-        x = 13
-        y = 5
-        cost = 5
-        cost = 5
-        available_if_capitulated = no
-        completion_reward = {
-			add_popularity = {
-				ideology = democratic
-				popularity = -0.15
-			}
-        }
-    }
-
-    focus = {
         id = ARM_abolish_constitution
         icon = GFX_focus_renounce_the_treaty_of_trianon
         prerequisite = {
-			focus = ARM_giorgi_bagration-mukhranel
+			focus = ARM_jaques_bagratuni
 		}
-        available = { has_country_flag = ARM_jaques_bagratuni_chosen }
-        x = 15
+        x = 13
         y = 5
         cost = 10
         available_if_capitulated = no
@@ -994,38 +836,23 @@ focus_tree = {
         icon = GFX_focus_ger_revive_kaiserreich
         prerequisite = { focus = ARM_dismiss_parliament }
 		prerequisite = { focus = ARM_abolish_constitution }
-        x = 14
+        x = 12
         y = 6
         cost = 10
         available_if_capitulated = no
         completion_reward = {
-			retire_country_leader = yes
-			create_country_leader = {
-				name = "Giorgi Bagration"
-				desc = ""
-				picture = "Portrait_Armenia_Giorgi_BagrationMukhraneli.tga"
-				expire = "1957.9.29"
-				ideology = despotism
-				traits = {
-					#
-				}
-			}
-			set_party_name = { 
-				ideology = neutrality 
-				long_name = ARM_neutrality_party_long 
-				name = ARM_neutrality_party
-			}
+			add_political_power = 100
         }
     }
 
     focus = {
         id = ARM_bastion_of_christianity
-        icon = GFX_focus_eng_expose_the_belly_of_the_bear
+        icon = GFX_focus_eng_imperial_federation
         prerequisite = {
 			focus = ARM_absolute_monarchy
 		}
         available = { has_country_flag = ARM_jaques_bagratuni_chosen }
-        x = 14
+        x = 13
         y = 7
         cost = 10
         available_if_capitulated = no
@@ -1038,7 +865,7 @@ focus_tree = {
 
     focus = {
         id = ARM_jaques_bagratuni
-        icon = GFX_focus_eng_god_save_the_king
+        icon = GFX_focus_generic_home_defense
         prerequisite = { 
 			focus = ARM_heir_apparent
 		}
@@ -1051,27 +878,12 @@ focus_tree = {
         cost = 5
         available_if_capitulated = no
         completion_reward = {
-			add_political_power = 100
-        }
-    }
-
-    focus = {
-        id = ARM_constitutional_monarchy
-        icon = GFX_goal_tfv_strengthen_commonwealth_ties
-        prerequisite = { 
-			focus = ARM_jaques_bagratuni
-		}
-        x = 11
-        y = 5
-        cost = 10
-        available_if_capitulated = no
-        completion_reward = {
 			create_country_leader = {
 				name = "Jaques Bagratuni"
 				desc = ""
 				picture = "Portrait_Armenia_Jaques_Bagratuni.tga"
-				expire = "1953.3.1"
-				ideology = conservatism
+				expire = "1955.1.1"
+				ideology = despotism
 				traits = {
 					#
 				}
@@ -1084,47 +896,25 @@ focus_tree = {
 					democratic = 35
 				}
 				set_party_name = { 
-					ideology = democratic 
-					long_name = ARM_democratic_party_consitutional_monarchy_long
-					name = ARM_democratic_party_consitutional_monarchy
+					ideology = neutrality 
+					long_name = ARM_neutrality_party_giorgi_long
+					name = ARM_neutrality_party_giorgi
 				}
 			}
         }
     }
 
     focus = {
-        id = ARM_federalisation
-        icon = GFX_focus_usa_union_representation_act
-        prerequisite = {
-			focus = ARM_bastion_of_christianity
-			focus = ARM_religious_freedom
-			focus = ARM_increase_funding_to_etchimiadzin
-			focus = ARM_state_atheism
-		}
-		mutually_exclusive = { focus = ARM_centralisation }
-        x = 9
-        y = 8
-        cost = 10
-        available_if_capitulated = no
-		available = {
-			owns_state = 788
-			owns_state = 793
-		}
-        completion_reward = {
-			add_stability = 0.05
-			add_political_power = 150
-        }
-    }
-
-    focus = {
         id = ARM_independent_armenian_state
         icon = GFX_focus_arm_flag_armenia
-        prerequisite = { 
-			focus = ARM_centralisation
-			focus = ARM_federalisation
+        prerequisite = {
+			focus = ARM_soviet_armenians
+			focus = ARM_increase_funding_to_etchimiadzin
+			focus = ARM_religious_freedom
+			focus = ARM_bastion_of_christianity
 		}
         x = 7
-        y = 9
+        y = 8
         cost = 10
         available_if_capitulated = no
         completion_reward = {
@@ -1147,7 +937,7 @@ focus_tree = {
 				has_full_control_of_state = 789
 			}
 		}
-        x = 15
+        x = 13
         y = 3
         cost = 10
         available_if_capitulated = no
@@ -1158,8 +948,6 @@ focus_tree = {
 			788 = { set_state_name = "Artsakh" }
 			set_province_name = { id = 10472 name = "Ani"}
 			set_province_name = { id = 12320 name = "Artashat"}
-			set_province_name = { id = 11853 name = "Karin"}
-			set_province_name = { id = 4583 name = "Tsolakert"}
 			set_capital = 353
         }
     }
@@ -1200,7 +988,7 @@ focus_tree = {
 
     focus = {
         id = ARM_expand_yerevan_state_university
-        icon = GFX_focus_arm_nuclear #GFX_focus_research
+        icon = GFX_focus_research
 		prerequisite = {
 			focus = ARM_pass_agriculture_act
 		}
@@ -1360,19 +1148,10 @@ focus_tree = {
 		available = {
 			OR = {
 				has_full_control_of_state = 352
-				has_full_control_of_state = 353
 				has_full_control_of_state = 354
 			}
 		}
         completion_reward = {
-			353 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 			352 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1382,10 +1161,10 @@ focus_tree = {
 				}
 			}
 			354 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1407,9 +1186,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_full_control_of_state = 230
-				has_full_control_of_state = 788
 				has_full_control_of_state = 794
-				has_full_control_of_state = 793
 			}
 		}
         completion_reward = {
@@ -1421,23 +1198,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			788 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 			794 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			793 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -1576,6 +1337,11 @@ focus_tree = {
 		prerequisite = { focus = ARM_attract_investment }
 		prerequisite = { focus = ARM_subsidise_local_businesses }
 		mutually_exclusive = { focus = ARM_nakhichevan_oil }
+		available = {
+			OR = {
+				has_full_control_of_state = 230
+			}
+		}
         x = 22
         y = 6
         cost = 10
@@ -1596,6 +1362,11 @@ focus_tree = {
 		prerequisite = { focus = ARM_attract_investment }
 		prerequisite = { focus = ARM_subsidise_local_businesses }
 		mutually_exclusive = { focus = ARM_extract_rare_minerals }
+		available = {
+			OR = {
+				has_full_control_of_state = 793
+			}
+		}
         x = 20
         y = 6
         cost = 10
@@ -1611,7 +1382,7 @@ focus_tree = {
 
     focus = {
         id = ARM_research_slot_focus_2
-        icon = GFX_focus_research2
+        icon = GFX_focus_arm_nuclear #GFX_focus_research2
 		prerequisite = {
 			focus = ARM_nakhichevan_oil
 			focus = ARM_extract_rare_minerals
@@ -1622,7 +1393,11 @@ focus_tree = {
         cost = 10
         available_if_capitulated = no
         completion_reward = {
-			add_research_slot = 1
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 3
+				category = nuclear
+			}
         }
     }
 
@@ -1638,7 +1413,10 @@ focus_tree = {
         cost = 10
         available_if_capitulated = yes
         completion_reward = {
-            country_event = armenia.22
+			show_ideas_tooltip = hovhannes_bagramyan_army_chief
+			show_ideas_tooltip = andranik_ozanian_army_chief
+			show_ideas_tooltip = gargein_nzhdeh_army_chief
+			show_ideas_tooltip = christopher_araratyan_army_chief
 		}
     }
 
@@ -1646,7 +1424,6 @@ focus_tree = {
         id = ARM_army_reform
         icon = GFX_focus_secret_rearmament
         prerequisite = { focus = ARM_appoint_new_sparapet }
-		available = { has_country_flag = ARM_sparapet_army }
         cost = 10.00
         x = 30
         y = 1
@@ -1845,7 +1622,6 @@ focus_tree = {
         id = ARM_air_reform
         icon = GFX_goal_generic_air_fighter2
         prerequisite = { focus = ARM_appoint_new_sparapet }
-		available = { has_country_flag = ARM_sparapet_air }
         cost = 10.00
         x = 26
         y = 1
@@ -2029,7 +1805,6 @@ focus_tree = {
         id = ARM_naval_awakening
         icon = GFX_goal_generic_navy_carrier
         prerequisite = { focus = ARM_appoint_new_sparapet }
-		available = { has_country_flag = ARM_sparapet_navy }
         cost = 2
         x = 34
         y = 1

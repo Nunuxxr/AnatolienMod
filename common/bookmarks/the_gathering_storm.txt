@@ -282,6 +282,21 @@ bookmarks = {
 				YUG_establish_the_banovina_of_croatia
 			}
 		}
+		"ARM"={
+			minor = yes
+			history = "ARM_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				ARM_preserve_greater_armenia
+				ARM_church
+				ARM_banak_shortcomings
+			}
+			focuses = {
+				ARM_heir_apparent
+				ARM_focus_on_the_greater_threat
+				ARM_appoint_new_sparapet
+			}
+		}
 		"CHI"={
 			minor = yes
 			history = "CHI_GATHERING_STORM_DESC"
@@ -428,22 +443,6 @@ bookmarks = {
 				HOL_continue_the_war_in_batavia
 				HOL_liberation
 				HOL_prepare_the_inundation_lines
-			}
-		}
-		
-		"ARM"={
-			minor = yes
-			history = "ARM_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				ARM_preserve_greater_armenia
-				ARM_church
-				ARM_banak_shortcomings
-			}
-			focuses = {
-				ARM_heir_apparent
-				ARM_focus_on_the_greater_threat
-				ARM_appoint_new_sparapet
 			}
 		}
 		
