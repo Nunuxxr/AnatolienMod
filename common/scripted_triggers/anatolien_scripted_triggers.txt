@@ -1,0 +1,35 @@
+#	Example:
+#
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+#
+is_arab_nation = {
+	OR={
+		tag=SYR
+		tag=LEB
+		tag=PAL
+		tag=IRQ
+		tag=KUW
+		tag=JOR
+		tag=SAU
+		tag=YEM
+		tag=OMA
+		tag=UAE
+		tag=QAT
+		tag=EGY
+		tag=SUD
+		tag=LBA
+		tag=TUN
+		tag=ALG
+		tag=MOR
+	}
+}

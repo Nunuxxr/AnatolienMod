@@ -278,6 +278,268 @@ on_actions = {
               }
             }
           }
+          #MIDDLE EAST
+          else_if={
+            limit={FROM.FROM={region = 28}}
+            #Completed Aleppo, ARA, TUR, KUR, ARM
+            if = {
+              limit={FROM.FROM={state = 677}}
+              if={
+                limit = {
+                  OR={is_arab_nation=yes tag=FRA}
+                }
+                FROM.FROM = {
+                  set_state_name = "Halab"
+                  set_province_name = { id = 12473 name = "Aleppo" }
+                }
+              }
+              else_if={
+                limit = {
+                  OR={tag=TUR tag=ARM}
+                }
+                FROM.FROM = {
+                  set_state_name = "Halep"
+                  set_province_name = { id = 12473 name = "Halep" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=KUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Heleb"
+                  set_province_name = { id = 12473 name = "Heleb" }
+                }
+              }
+            }
+            #Completed Al-Hasakah, ARA, TUR, KUR, ARM
+            if = {
+              limit={FROM.FROM={state = 799}}
+              if={
+                limit = {
+                  OR={is_arab_nation=yes tag=FRA tag=ARM}
+                }
+                FROM.FROM = {
+                  set_state_name = "Al-Hasakah"
+                  set_province_name = { id = 1578 name = "Al-Hasakah" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Haseke"
+                  set_province_name = { id = 1578 name = "Haseke" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=KUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Hesice"
+                  set_province_name = { id = 1578 name = "Hesice" }
+                }
+              }
+            }
+            #Completed Deir-az-Azur, ARA, TUR, ARM
+            else_if = {
+              limit={FROM.FROM={state = 680}}
+              if={
+                limit = {
+                  OR={is_arab_nation=yes tag=FRA}
+                }
+                FROM.FROM = {
+                  set_state_name = "Deir ez-Zor"
+                  set_province_name = { id = 3942 name = "Deir ez-Zor" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Deyrizor"
+                  set_province_name = { id = 3942 name = "Deyrizor" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=ARM
+                }
+                FROM.FROM = {
+                  set_state_name = "Deyr Ez-Zor"
+                  set_province_name = { id = 3942 name = "Deyr Ez-Zor" }
+                }
+              }
+            }
+            #Completed Damascus, ARA, TUR, ARM
+            else_if = {
+              limit={FROM.FROM={state = 554}}
+              if={
+                limit = {
+                  OR={is_arab_nation=yes tag=FRA}
+                }
+                FROM.FROM = {
+                  set_state_name = "Dimasq"
+                  set_province_name = { id = 4111 name = "Damascus" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Sam"
+                  set_province_name = { id = 4111 name = "Sam" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=ARM
+                }
+                FROM.FROM = {
+                  set_state_name = "Damaskos"
+                  set_province_name = { id = 4111 name = "Damaskos" }
+                }
+              }
+            }
+            #Completed Beirut, ARA, TUR, ARM
+            else_if = {
+              limit={FROM.FROM={state = 553}}
+              if={
+                limit = {
+                  OR={is_arab_nation=yes tag=FRA}
+                }
+                FROM.FROM = {
+                  set_state_name = "Beirut"
+                  set_province_name = { id = 792 name = "Beirut" }
+                }
+              }
+              else_if={
+                limit = {
+                  OR={tag=TUR tag=ARM}
+                }
+                FROM.FROM = {
+                  set_state_name = "Beyrut"
+                  set_province_name = { id = 792 name = "Beyrut" }
+                }
+              }
+            }
+            #Completed Erbil, ARA, TUR, ARM, KUR
+            else_if = {
+              limit={FROM.FROM={state = 798}}
+              if={
+                limit = {
+                  OR={is_arab_nation=yes tag=FRA tag=ARM tag=TUR}
+                }
+                FROM.FROM = {
+                  set_state_name = "Erbil"
+                  set_province_name = { id = 3916 name = "Erbil" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=KUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Hewler"
+                  set_province_name = { id = 3916 name = "Hewler" }
+                }
+              }
+            }
+            #Completed Erbil, ARA, TUR, ARM, KUR
+            else_if = {
+              limit={FROM.FROM={state = 798}}
+              if={
+                limit = {
+                  OR={is_arab_nation=yes tag=ARM tag=TUR}
+                }
+                FROM.FROM = {
+                  set_state_name = "Erbil"
+                  set_province_name = { id = 3916 name = "Erbil" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=KUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Hewler"
+                  set_province_name = { id = 3916 name = "Hewler" }
+                }
+              }
+            }
+            #Completed Mosul, ARA, TUR, ARM, KUR
+            else_if = {
+              limit={FROM.FROM={state = 676}}
+              if={
+                limit = {
+                  OR={is_arab_nation=yes tag=ARM}
+                }
+                FROM.FROM = {
+                  set_state_name = "Mosul"
+                  set_province_name = { id = 10106 name = "Mosul" }
+                  set_province_name = { id = 8123 name = "Kirkuk" }
+                }
+              }
+              if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Musul"
+                  set_province_name = { id = 10106 name = "Musul" }
+                  set_province_name = { id = 8123 name = "Kerkuk" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=KUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Musil"
+                  set_province_name = { id = 10106 name = "Musil" }
+                  set_province_name = { id = 8123 name = "Kerkuk" }
+                }
+              }
+            }
+            #Completed Baghdat, ARA, TUR, KUR
+            else_if = {
+              limit={FROM.FROM={state = 291}}
+              if={
+                limit = {
+                  is_arab_nation=yes
+                }
+                FROM.FROM = {
+                  set_state_name = "Baghdad"
+                  set_province_name = { id = 2097 name = "Baghdad" }
+                  set_province_name = { id = 2089 name = "Basra" }
+                }
+              }
+              if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Bagdat"
+                  set_province_name = { id = 2097 name = "Bagdat" }
+                  set_province_name = { id = 2089 name = "Basra" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=KUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Bexda"
+                  set_province_name = { id = 2097 name = "Bexda" }
+                  set_province_name = { id = 2089 name = "Besre" }
+                }
+              }
+            }
+          }
         }
     }
 }
