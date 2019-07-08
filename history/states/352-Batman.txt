@@ -6,7 +6,7 @@ state={
 	history={
 		owner = ARM
 		victory_points = { #Van
-			6935 5
+			6935 3
 		}
 		buildings = {
 			infrastructure = 3
@@ -17,7 +17,7 @@ state={
 	provinces={
 		652 864 6935 7470 9858 10497 11880 12318 13121
 	}
-	manpower=270542
+	manpower=440000
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

@@ -148,10 +148,10 @@ create_corps_commander = {
 	desc = "ARM_drastamat_kanayan_desc"
 	picture = "Portrait_Armenia_Drastamat_Kanayan3.dds"
 	traits = { trait_mountaineer }
-	skill = 1
+	skill = 2
 	attack_skill = 3
 	defense_skill = 2
-	planning_skill = 3
+	planning_skill = 1
 	logistics_skill = 2
 }
 create_corps_commander = {

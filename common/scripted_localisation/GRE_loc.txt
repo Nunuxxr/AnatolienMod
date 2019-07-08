@@ -1,0 +1,75 @@
+defined_text = {
+	name = GetConstitutionFocus
+	text = {
+		trigger = {
+			has_completed_focus=GRE_historiccompromise
+		}
+		localization_key = GRE_reinforcetheconstitution
+	}
+	text = {
+		trigger = {
+			NOT={has_completed_focus=GRE_historiccompromise}
+		}
+		localization_key = GRE_constitutionalamendment
+	}
+}
+defined_text = {
+	name = GetMegaliIdeaName
+	text = {
+		trigger = {
+			has_completed_focus=GRE_proclaimthebyzantineempire
+		}
+		localization_key = GRE_revivetheempire
+	}
+	text = {
+		trigger = {
+			NOT={has_completed_focus=GRE_proclaimthebyzantineempire}
+		}
+		localization_key = GRE_continuethemegaliidea
+	}
+}
+defined_text = {
+	name = GetAlbanianFocus
+	text = {
+		trigger = {
+			has_completed_focus=GRE_proclaimthebyzantineempire
+		}
+		localization_key = GRE_reclaimalbania
+	}
+	text = {
+		trigger = {
+			NOT={has_completed_focus=GRE_proclaimthebyzantineempire}
+		}
+		localization_key = GRE_claimalbania
+	}
+}
+defined_text = {
+	name = GetSerbianFocus
+	text = {
+		trigger = {
+			has_completed_focus=GRE_proclaimthebyzantineempire
+		}
+		localization_key = GRE_reclaimillyria
+	}
+	text = {
+		trigger = {
+			NOT={has_completed_focus=GRE_proclaimthebyzantineempire}
+		}
+		localization_key = GRE_claimnorthmacedonia
+	}
+}
+defined_text = {
+	name = GetBulgarianFocus
+	text = {
+		trigger = {
+			has_completed_focus=GRE_proclaimthebyzantineempire
+		}
+		localization_key = GRE_reclaimbulgaria
+	}
+	text = {
+		trigger = {
+			NOT={has_completed_focus=GRE_proclaimthebyzantineempire}
+		}
+		localization_key = GRE_claimnorthernthrace
+	}
+}

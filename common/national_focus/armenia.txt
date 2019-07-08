@@ -2023,6 +2023,19 @@ focus_tree = {
 ####################
 
     focus = {
+        id = ARM_acceptance
+        icon = GFX_goal_tripartite_pact
+		mutually_exclusive = { focus = ARM_greater_ambitions }
+        x = 2
+        y = 0
+        cost = 10
+        available_if_capitulated = yes
+        completion_reward = {
+			add_political_power = 50
+        }
+    }
+
+    focus = {
         id = ARM_rekindle_old_alliances
         icon = GFX_goal_generic_military_deal
         prerequisite = { focus = ARM_greater_ambitions focus = ARM_acceptance }
@@ -2253,19 +2266,6 @@ focus_tree = {
     }
 
     focus = {
-        id = ARM_acceptance
-        icon = GFX_goal_generic_dangerous_deal
-		mutually_exclusive = { focus = ARM_greater_ambitions }
-        x = 2
-        y = 0
-        cost = 10
-        available_if_capitulated = yes
-        completion_reward = {
-			add_political_power = 50
-        }
-    }
-
-    focus = {
         id = ARM_diplomacy_turkey
         icon = GFX_focus_arm_agreement_turkey
         prerequisite = { focus = ARM_acceptance }
@@ -2368,9 +2368,9 @@ focus_tree = {
 
     focus = {
         id = ARM_greater_ambitions
-        icon = GFX_goal_generic_more_territorial_claims
+        icon = GFX_goal_generic_position_armies
 		mutually_exclusive = { focus = ARM_acceptance }
-        x = 8
+        x = 7
         y = 0
         cost = 10
         available_if_capitulated = no

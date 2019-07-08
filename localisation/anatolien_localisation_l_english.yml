@@ -675,7 +675,7 @@ CAU_neutrality_party:0 "Unity Party"
  form_caucasia_category_desc:0 "With the conquest of all of Transaucasia, it is time to restore the spirit of a new Transaucasia. All of Transaucasia shall prosper under our rule."
 
  #States
- STATE_788:0 "Artsakh" #Shusha #Nagorno-Karabakh
+ STATE_788:0 "Shushi" #Shusha #Nagorno-Karabakh
  STATE_789:0 "Abkhazia"
  STATE_790:0 "Sakataly"
  STATE_791:0 "Northern Epirus"
@@ -687,29 +687,34 @@ CAU_neutrality_party:0 "Unity Party"
  STATE_797:0 "Pleven"
  STATE_798:0 "Erbil"
  STATE_799:0 "Al-Hasakah"
+ STATE_800:0 "Varna"
+ STATE_801:0 "North Dobrudja"
+ STATE_802:0 "Pirot"
 
  #Straits
  HELLESPONT_STRAIT:0 "Hellespont"
 
  #Victory Points
  VICTORY_POINTS_1467:0 "Shusha"
- VICTORY_POINTS_6997:0 "Nakhijevan"
+ VICTORY_POINTS_6997:0 "Julfa" #Nakhijevan #Nor Julfa
  VICTORY_POINTS_10472:0 "Kars"
- VICTORY_POINTS_11674:0 "Ganja"
+ VICTORY_POINTS_11674:0 "Ganca"
  VICTORY_POINTS_11617:0 "Sukhumi"
  VICTORY_POINTS_4660:0 "Kapan"
- VICTORY_POINTS_4583:0 "Igdir"
- VICTORY_POINTS_12441:0 "Gyumri"
- VICTORY_POINTS_7495:0 "Sumqayıt"
- VICTORY_POINTS_1536:0 "Shirvan"
+ #VICTORY_POINTS_4583:0 "Igdir"
+ VICTORY_POINTS_12441:0 "Kumayri"
+ #VICTORY_POINTS_7495:0 "Sumqayıt"
+ VICTORY_POINTS_1536:0 "Şirvan"
  VICTORY_POINTS_9663:0 "Sochi"
- VICTORY_POINTS_10403:0 "Ardahani"
+ VICTORY_POINTS_7454:0 "Artvini"
+ #VICTORY_POINTS_10403:0 "Ardahani"
  VICTORY_POINTS_3658:0 "Kutaisi"
  VICTORY_POINTS_8123:0 "Kirkuk"
  VICTORY_POINTS_6436:0 "Zaqatala"
  VICTORY_POINTS_10122:0 "Physkos"
  VICTORY_POINTS_7604:0 "Urmia"
  VICTORY_POINTS_6813:0 "Marash"
+ VICTORY_POINTS_11708:0 "Kazakh"
 
  #New TAG Country Names
  KUR_fascism:1 "State of Kurdistan"
