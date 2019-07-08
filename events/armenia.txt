@@ -1,6 +1,6 @@
 ﻿add_namespace = armenia
 
-#Rename New Provinces
+#Sieze Sivas Peace Event
 country_event = {
     id = armenia.1
     title = armenia.1.t
@@ -9,19 +9,26 @@ country_event = {
  
     fire_only_once = yes
  
-    is_triggered_only = yes
+    trigger = {
+		tag = ARM
+		has_offensive_war_with = TUR
+		has_full_control_of_state = 349
+	}
  
-    option = { #a great idea!
+    option = { #Sue for peace
         name = armenia.1.a
         ai_chance = {
-            base = 100
+            base = 95
         }
-        344 = { set_state_name = "Cilicia" }
-        349 = { set_state_name = "Sebastia" }
-        350 = { set_state_name = "Sophene" }
-        set_province_name = { id = 7620 name = "Malatya"}
-        set_province_name = { id = 9761 name = "Sebastia"}
-        set_province_name = { id = 4512 name = "Tigranakert"}
+		TUR = { country_event = armenia.28 }
+    }
+ 
+    option = { #Continue War
+        name = armenia.1.b
+        ai_chance = {
+            base = 5
+        }
+		add_stability = -0.05
     }
 }
 
@@ -35,7 +42,7 @@ country_event = { #Elections
  
     is_triggered_only = yes
    
-    option = { #Hovhannes Kajasnuni
+    option = { #Hovhannes Kajaznuni
         name = armenia.2.a
         ai_chance = { factor = 15 }
 		create_country_leader = {
@@ -59,8 +66,8 @@ country_event = { #Elections
 			}
 			set_party_name = { 
 				ideology = neutrality 
-				long_name = ARM_neutrality_party_long 
-				name = ARM_neutrality_party
+				long_name = ARM_neutrality_party_giorgi_long 
+				name = ARM_neutrality_party_giorgi
 			}
 			set_country_flag = ARM_dashnak_victory
 		}
@@ -85,40 +92,9 @@ country_event = { #Elections
 			set_country_flag = ARM_western_victory
 		}
     }
-	
-    option = { #Andranik Ozanian
-        name = armenia.2.c
-        ai_chance = { factor = 30 }
-		create_country_leader = {
-			name = "Andranik Ozanian"
-			desc = ""
-			picture = "Portrait_Armenia_Andranik_Ozanian.dds"
-			expire = "1953.3.1"
-			ideology = conservatism
-			traits = {
-				great_war_hero
-			}
-		}
-		hidden_effect = {
-			set_politics = {
-				ruling_party = democratic
-			}
-			set_party_name = { 
-				ideology = democratic 
-				long_name = ARM_democratic_party_dashnak_long 
-				name = ARM_democratic_party_dashnak
-			}
-			set_party_name = { 
-				ideology = neutrality 
-				long_name = ARM_neutrality_party_long 
-				name = ARM_neutrality_party
-			}
-			set_country_flag = ARM_dashnak_victory
-		}
-    }
 }
 
-country_event = { #Dissonance of the Republic
+country_event = { #Armenia Proposes an Alliance
     id = armenia.3
     title = armenia.3.t
     desc = armenia.3.d
@@ -128,18 +104,15 @@ country_event = { #Dissonance of the Republic
  
     is_triggered_only = yes
    
-    option = { #Status-Quo
+    option = { #Yes
         name = armenia.3.a
         ai_chance = { factor = 80 }
-		set_country_flag = ARM_maintain_status_quo_flag
-		add_stability = -0.05
+        ARM = { country_event = { id = armenia.22 days = 1 } }
     }
 	
-    option = { #Radical Politics
+    option = { #No
         name = armenia.3.b
-        ai_chance = { factor = 20 }
-		set_country_flag = ARM_radical_politics_flag
-		add_political_power = -25
+        ARM = { country_event = { id = armenia.23 days = 1 } }
     }
 }
 
@@ -209,6 +182,7 @@ country_event = { #Heir Apparent
         name = armenia.6.a
         ai_chance = { factor = 75 }
 		set_country_flag = ARM_jaques_bagratuni_chosen
+		add_stability = 0.05
     }
 }
 
@@ -249,28 +223,22 @@ country_event = { #Summit Begins
  
     is_triggered_only = yes
    
-    option = { #Discuss Trade
+    option = { #Discuss Trade Cooperation
         name = armenia.10.a
         ai_chance = { factor = 33 }
-		GEO = {
-			country_event = armenia.11
-		}
+		GEO = { country_event = { id = armenia.11 days = 1 } }
     }
 	
-    option = { #Discuss Borders
+    option = { #Discuss Border Restrictions
         name = armenia.10.b
         ai_chance = { factor = 33 }
-		GEO = {
-			country_event = armenia.12
-		}
+		GEO = { country_event = { id = armenia.12 days = 1 } }
     }
 	
-    option = { #Discuss Military
-        name = armenia.10.b
+    option = { #Discuss Technology Exchange
+        name = armenia.10.c
         ai_chance = { factor = 34 }
-		GEO = {
-			country_event = armenia.13
-		}
+		GEO = { country_event = { id = armenia.13 days = 1 } }
     }
 }
 
@@ -287,17 +255,13 @@ country_event = { #Trade discussion
     option = { #Yes
         name = armenia.11.a
         ai_chance = { factor = 80 }
-		ARM = {
-			country_event = armenia.14
-		}
+		ARM = { country_event = { id = armenia.14 hours = 6 } }
     }
 	
     option = { #No
         name = armenia.11.b
         ai_chance = { factor = 20 }
-		ARM = {
-			country_event = armenia.15
-		}
+		ARM = { country_event = { id = armenia.15 hours = 6 } }
     }
 }
 
@@ -314,17 +278,13 @@ country_event = { #Borders discussion
     option = { #Yes
         name = armenia.12.a
         ai_chance = { factor = 33 }
-		ARM = {
-			country_event = armenia.16
-		}
+		ARM = { country_event = { id = armenia.16 hours = 6 } }
     }
 	
     option = { #No
         name = armenia.12.b
         ai_chance = { factor = 33 }
-		ARM = {
-			country_event = armenia.17
-		}
+		ARM = { country_event = { id = armenia.17 hours = 6 } }
     }
 }
 
@@ -341,17 +301,13 @@ country_event = { #Research discussion
     option = { #Yes
         name = armenia.13.a
         ai_chance = { factor = 75 }
-		ARM = {
-			country_event = armenia.18
-		}
+		ARM = { country_event = { id = armenia.18 hours = 6 } }
     }
 	
     option = { #No
         name = armenia.13.b
         ai_chance = { factor = 25 }
-		ARM = {
-			country_event = armenia.19
-		}
+		ARM = { country_event = { id = armenia.19 hours = 6 } }
     }
 }
 
@@ -368,9 +324,15 @@ country_event = { #Georgia agrees to trade
     option = { #Yes
         name = armenia.14.a
         ai_chance = { factor = 75 }
-		#add_ideas = +trade relations or -15% consumer goods 200days
+		add_timed_idea = {
+			idea = ARM_better_trade
+			days = 360
+		}
 		GEO = {
-			#add_ideas = +trade relations or -15% consumer goods 200days
+			add_timed_idea = {
+				idea = ARM_better_trade
+				days = 360
+			}
 		}
 		set_global_flag = ARM_georgia_summit_positive
     }
@@ -389,7 +351,6 @@ country_event = { #Georgia refuses trade
     option = { #Yes
         name = armenia.15.a
         ai_chance = { factor = 100 }
-		#trade relations -25
 		set_global_flag = ARM_georgia_summit_negative
     }
 }
@@ -407,9 +368,15 @@ country_event = { #Georgia agrees to lighter borders
     option = { #Yes
         name = armenia.16.a
         ai_chance = { factor = 75 }
-		#add_ideas = 10% monthly population 200days
+		add_timed_idea = {
+			idea = ARM_lighter_borders
+			days = 360
+		}
 		GEO = {
-			#add_ideas = 10% monthly population 200days
+			add_timed_idea = {
+				idea = ARM_lighter_borders
+				days = 360
+			}
 		}
 		set_global_flag = ARM_georgia_summit_positive
     }
@@ -428,10 +395,6 @@ country_event = { #Georgia refuses lighter borders
     option = { #Yes
         name = armenia.17.a
         ai_chance = { factor = 100 }
-		#add_ideas = -10% monthly population 200days
-		GEO = {
-			#add_ideas = -10% monthly population 200days
-		}
 		set_global_flag = ARM_georgia_summit_negative
     }
 }
@@ -448,10 +411,16 @@ country_event = { #Georgia agrees to Research cooperation
    
     option = { #Yes
         name = armenia.18.a
-        ai_chance = { factor = 75 }
-		#2x +75% guns research bonus +15 army xp
+        ai_chance = { factor = 100 }
+		add_timed_idea = {
+			idea = ARM_joint_tech_GEO
+			days = 360
+		}
 		GEO = {
-			#2x +75% guns research bonus +15 army xp
+			add_timed_idea = {
+				idea = ARM_joint_tech_GEO
+				days = 360
+			}
 		}
 		set_global_flag = ARM_georgia_summit_positive
     }
@@ -470,10 +439,6 @@ country_event = { #Georgia refuses Research cooperation
     option = { #Yes
         name = armenia.19.a
         ai_chance = { factor = 100 }
-		#add_ideas = -1% research time 200days
-		GEO = {
-			#add_ideas = -1% research time 200days
-		}
 		set_global_flag = ARM_georgia_summit_negative
     }
 }
@@ -494,8 +459,7 @@ country_event = { #Georgia refuses Research cooperation to attend summit
     }
 }
 
-#sparapet
-country_event = {
+country_event = { #Georgia Accepts Alliance
     id = armenia.22
     title = armenia.22.t
     desc = armenia.22.d
@@ -508,33 +472,52 @@ country_event = {
     option = { #Army
         name = armenia.22.a
         ai_chance = {
-            base = 60
+            base = 100
         }
-		set_country_flag = ARM_sparapet_army
-    }
- 
-    option = { #Airforce
-        name = armenia.22.b
-        ai_chance = {
-            base = 20
+        ARM = {
+                if = {
+                    limit = {
+                    is_faction_leader = yes
+                    }
+                    add_to_faction = GEO
+            }
+            if = {
+                    limit = {
+                    is_in_faction  = yes
+                    }
+                    remove_from_faction = ARM
+            }
+            add_stability = 0.05
+            create_faction = "Aryan Pakt" #Caucasus Pact
+            add_to_faction = GEO
         }
-		set_country_flag = ARM_sparapet_air
     }
+}
 
-    option = { #Navy
-        name = armenia.22.c
+country_event = { #Georgia Declines Alliance
+    id = armenia.23
+    title = armenia.23.t
+    desc = armenia.23.d
+    picture = GFX_report_event_german_reichstag_gathering
+ 
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+ 
+    option = { #Army
+        name = armenia.23.a
         ai_chance = {
-            base = 20
+            base = 100
         }
-		set_country_flag = ARM_sparapet_navy
+        #
     }
 }
 
 #SU transfers Armenian military staff
 country_event = {
-    id = armenia.26
-    title = armenia.26.t
-    desc = armenia.26.d
+    id = armenia.24
+    title = armenia.24.t
+    desc = armenia.24.d
     picture = GFX_report_event_german_reichstag_gathering
  
     fire_only_once = yes
@@ -542,7 +525,7 @@ country_event = {
     is_triggered_only = yes
  
     option = {
-        name = armenia.26.a
+        name = armenia.24.a
         ai_chance = {
             base = 100
         }
@@ -567,11 +550,11 @@ country_event = {
     }
 }
 
-#change capital
+#Transcaucasia Change Capital
 country_event = {
-    id = armenia.27
-    title = armenia.27.t
-    desc = armenia.27.d
+    id = armenia.25
+    title = armenia.25.t
+    desc = armenia.25.d
     picture = GFX_report_event_german_reichstag_gathering
  
     fire_only_once = yes
@@ -579,7 +562,7 @@ country_event = {
     is_triggered_only = yes
  
     option = { #Tbilisi
-        name = armenia.27.a
+        name = armenia.25.a
         ai_chance = {
             base = 100
         }
@@ -587,7 +570,7 @@ country_event = {
     }
  
     option = { #Baku
-        name = armenia.27.b
+        name = armenia.25.b
         ai_chance = {
             base = 0
         }
@@ -595,10 +578,255 @@ country_event = {
     }
 
     option = { #Yerevan
-        name = armenia.27.c
+        name = armenia.25.c
         ai_chance = {
             base = 0
         }
         set_capital = 230
+    }
+}
+
+#Cilcia Promise
+country_event = {
+    id = armenia.26
+    title = armenia.26.t
+    desc = armenia.26.d
+    picture = GFX_report_event_german_reichstag_gathering
+ 
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+ 
+    option = { #Independent State
+        name = armenia.26.a
+        ai_chance = {
+            base = 10
+        }
+		CIL = {
+			transfer_state = 344
+			add_state_core = 344
+		}
+		TUR = {
+            remove_state_core = 344
+		}
+		hidden_effect = { ARM = { country_event = { id = armenia.27 hours = 6 } } }
+    }
+ 
+    option = { #Puppet Cilicia
+        name = armenia.26.b
+        ai_chance = {
+            base = 30
+        }
+		CIL = {
+			transfer_state = 344
+			add_state_core = 344
+		}
+		TUR = {
+            remove_state_core = 344
+		}
+        puppet = CIL
+		hidden_effect = { ARM = { country_event = { id = armenia.28 hours = 6 } } }
+    }
+
+    option = { #Not happening
+        name = armenia.26.c
+        ai_chance = {
+            base = 60
+        }
+		hidden_effect = { ARM = { country_event = { id = armenia.29 hours = 6 } } }
+    }
+}
+
+#Ozanian offers to lead
+country_event = {
+    id = armenia.27
+    title = armenia.27.t
+    desc = armenia.27.d
+ 
+    fire_only_once = yes
+ 
+    trigger = {
+		tag = ARM
+		has_defensive_war = yes
+		has_government = democratic
+	}
+	
+    option = { #Andranik Ozanian leads the country
+        name = armenia.27.a
+		ai_chance = { factor = 75 }
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Andranik Ozanian"
+			desc = ""
+			picture = "Portrait_Armenia_Andranik_Ozanian.dds"
+			expire = "1953.3.1"
+			ideology = conservatism
+			traits = {
+				great_war_hero
+			}
+		}
+    }
+ 
+    option = { #Not necessary
+        name = armenia.27.b
+        ai_chance = {
+            base = 25
+        }
+		#
+    }
+}
+
+#Armenia Offers Peace
+country_event = {
+    id = armenia.28
+    title = armenia.28.t
+    desc = armenia.28.d
+ 
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+	
+    option = { #Accept White peace
+        name = armenia.28.a
+		ai_chance = { factor = 75 }
+		ARM = { transfer_state = 349 }
+		white_peace = ARM
+    }
+ 
+    option = { #Never
+        name = armenia.28.b
+        ai_chance = {
+            base = 25
+        }
+		add_war_support = -0.05
+    }
+}
+
+#France denies Cilicia
+country_event = {
+    id = armenia.29
+    title = armenia.29.t
+    desc = armenia.29.d
+ 
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+	
+    option = { #A shame
+        name = armenia.29.a
+		ai_chance = { factor = 100 }
+    }
+}
+
+#France releases Cilicia
+country_event = {
+    id = armenia.30
+    title = armenia.30.t
+    desc = armenia.30.d
+ 
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+	
+    option = { #Hurray
+        name = armenia.30.a
+		ai_chance = { factor = 100 }
+    }
+}
+
+#Greco-Armenian Conference
+country_event = {
+    id = armenia.31
+    title = armenia.31.t
+    desc = armenia.31.d
+ 
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+	
+    option = { #Accept White peace
+        name = armenia.31.a
+		ai_chance = { factor = 95 }
+		ARM = { country_event = armenia.32 }
+    }
+ 
+    option = { #Never
+        name = armenia.31.b
+        ai_chance = {
+            base = 5
+        }
+		ARM = { country_event = armenia.33 }
+    }
+}
+
+#Greece Agrees to Mutual Defence Pact
+country_event = {
+    id = armenia.32
+    title = armenia.32.t
+    desc = armenia.32.d
+ 
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+	
+    option = {
+        name = armenia.32.a
+		ai_chance = { factor = 100 }
+		add_opinion_modifier = {
+			target = GRE
+			modifier = ARM_friendship
+		}
+		GRE = {
+			add_opinion_modifier = {
+				target = ARM
+				modifier = ARM_friendship
+			}
+		}
+		diplomatic_relation = {
+			country = GRE
+			relation = guarantee
+			active = yes
+		}
+		GRE = {
+			diplomatic_relation = {
+				country = ARM
+				relation = guarantee
+				active = yes
+			}
+		}
+		
+    }
+}
+
+#Greece Declines Mutual Defence Pact
+country_event = {
+    id = armenia.32
+    title = armenia.32.t
+    desc = armenia.32.d
+ 
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+	
+    option = {
+        name = armenia.32.a
+		ai_chance = { factor = 100 }
+		#
+    }
+}
+
+#Greece Declines Mutual Defence Pact
+country_event = {
+    id = armenia.33
+    title = armenia.33.t
+    desc = armenia.33.d
+ 
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+	
+    option = {
+        name = armenia.33.a
+		ai_chance = { factor = 100 }
     }
 }

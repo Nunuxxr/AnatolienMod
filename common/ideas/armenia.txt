@@ -33,11 +33,49 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = YUG_orthodox_church_support
+			picture = jap_supremacy_of_will
 			
 			modifier = {
 				stability_factor = 0.1
 				industrial_capacity_factory = 0.10
+			}
+		}
+		
+		ARM_improve_industrial_methods = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_factory_strikes #civilian_economy
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+		}
+		
+		ARM_outdated_script = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support2
+			
+			modifier = {
+				research_speed_factor = -0.05
 			}
 		}
 		
@@ -83,6 +121,61 @@ ideas = {
 			}
 		}
 
+		ARM_lighter_borders = {
+		
+			allowed = {
+				always = yes
+				#NOT = { has_war_with = GEO has_war_with = ARM }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ast_abandon_the_westminster_system_fascism
+			
+			modifier = {
+				monthly_population = 0.25
+			}
+		}
+
+		ARM_better_trade = {
+		
+			allowed = {
+				always = yes
+				#NOT = { has_war_with = GEO has_war_with = ARM }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ast_abandon_the_westminster_system_fascism
+			
+			modifier = {
+				trade_opinion_factor = 0.25
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		ARM_joint_tech_GEO = {
+		
+			allowed = {
+				always = yes
+				#NOT = { has_war_with = GEO has_war_with = ARM }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ast_abandon_the_westminster_system_fascism
+			
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+
 		ARM_empowered_nakharars = {
 		
 			allowed = {
@@ -101,6 +194,24 @@ ideas = {
 				mobilization_speed = 0.05
 			}
 		}
+
+		ARM_nss = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = nss
+			
+			modifier = {
+				decryption_factor = 0.2
+				encryption_factor = 0.2
+			}
+		}
 		
 		ARM_preserve_greater_armenia = {
 
@@ -114,7 +225,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = arm_coa
+			picture = generic_fortify_the_borders
 			
 			modifier = {
 				guarantee_tension = -1.0
@@ -135,7 +246,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = chi_incompetent_officers
+			picture = chi_army_corruption3
 			
 			modifier = {
 				army_morale_factor = -0.1
@@ -158,8 +269,11 @@ ideas = {
 			picture = general_staff
 			
 			modifier = {
-				army_morale_factor = 0.1
-				army_org_Factor = 0.05
+				army_morale_factor = 0.05
+				high_command_cost_factor = -0.25
+				air_chief_cost_factor = -0.25
+				navy_chief_cost_factor = -0.25
+				
 			}
 		}
 		
@@ -175,13 +289,34 @@ ideas = {
 				always = yes
 			}
 			
-			picture = soviet_german_friendship
+			picture = arm_coa
 			
 			modifier = {
 				army_core_attack_factor = 0.05
 				army_core_defence_factor = 0.05
 				army_morale_factor = 0.1
 				conscription = 0.025
+				surrender_limit = 0.2
+			}
+		}
+		
+		ARM_military_pensions_idea = {
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ARM
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = infantry_bonus
+			
+			modifier = {
+				war_support_factor = 0.05
+				conscription_factor = 0.10
 			}
 		}
 		
@@ -202,6 +337,11 @@ ideas = {
 			modifier = {
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
 			}
 		}
 
@@ -316,10 +456,10 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = raj_marginalized_muslim_community
+			picture = raj_marginalized_muslim_community_angry
 			
 			modifier = {
-				stability_factor = -0.05
+				conscription_factor = -0.05
 				consumer_goods_factor = -0.1
 			}
 		}
@@ -336,10 +476,10 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = raj_marginalized_muslim_community
+			picture = ROM_king_carol_emptied_accounts
 			
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.25
 			}
 		}
 		
@@ -374,7 +514,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = raj_marginalized_muslim_community
+			picture = MEX_revolutionary_army
 			
 			equipment_bonus = {
 				infantry_equipment = {
@@ -395,7 +535,7 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = raj_marginalized_muslim_community
+			picture = generic_armor
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.15
@@ -414,11 +554,13 @@ ideas = {
 
 			removal_cost = -1
 
-			#picture = raj_marginalized_muslim_community
+			picture = chi_hyper_inflation4
 			
 			modifier = {
-				consumer_goods_factor = -0.05
-				political_power_gain = 0.1
+				#political_power_gain = 0.1
+				political_advisor_cost_factor = -0.25
+				economy_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.25
 			}
 		}
 		
@@ -627,7 +769,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
-			picture = idea_mig_design_bureau
+			picture = mig_design_bureau
 			
 			traits = { light_aircraft_manufacturer }
 			

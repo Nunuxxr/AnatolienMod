@@ -975,10 +975,10 @@ opinion_modifiers = {
 		value = -75
 	}
 	
-	ARM_fatherland = { value = 45 }
-	ARM_turkish_nation = { value = 45 }
+	ARM_fatherland = { value = 50 }
+	ARM_turkish_nation = { value = 50 }
 	ARM_deport = { value = -50 }
 	ARM_recognised = { value = 25 }
-	ARM_friendship = { value = 45 }
+	ARM_friendship = { value = 50 }
 	
 }	

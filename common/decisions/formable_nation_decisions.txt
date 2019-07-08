@@ -872,6 +872,7 @@ form_ottoman_empire_category = {
 				controls_state = 354
 				controls_state = 353
 				controls_state = 352
+				controls_state = 792
 			}
 			# Iraq
 			custom_trigger_tooltip = {
@@ -879,6 +880,7 @@ form_ottoman_empire_category = {
 				controls_state = 676
 				controls_state = 675
 				controls_state = 291
+				controls_state = 798
 			}
 			# France
 			custom_trigger_tooltip = {
@@ -888,6 +890,7 @@ form_ottoman_empire_category = {
 				controls_state = 680
 				controls_state = 553
 				controls_state = 554
+				controls_state = 799
 			}
 		}
 
@@ -898,6 +901,7 @@ form_ottoman_empire_category = {
 
 		complete_effect = {
 			set_cosmetic_tag = OTT_UNIFIED
+			set_capital = 341
 			679 = { add_core_of = ROOT }
 			293 = { add_core_of = ROOT }
 			665 = { add_core_of = ROOT }
@@ -908,6 +912,7 @@ form_ottoman_empire_category = {
 				676 = { add_core_of = ROOT }
 				675 = { add_core_of = ROOT }
 				291 = { add_core_of = ROOT }
+				798 = { add_core_of = ROOT }
 			}
 			# France
 			custom_effect_tooltip = form_persia_france_coring_states_tt
@@ -916,6 +921,7 @@ form_ottoman_empire_category = {
 				680 = { add_core_of = ROOT }
 				553 = { add_core_of = ROOT }
 				554 = { add_core_of = ROOT }
+				799 = { add_core_of = ROOT }
 			}
 			# Italian North Africa and Dodecanese
 			custom_effect_tooltip = form_ottoman_italy_coring_states_tt
@@ -2843,7 +2849,7 @@ form_caucasia_category = {
 			}
 			hidden_effect = {
 				news_event = { id = wtt_news.1002 hours = 6 }
-				country_event = { id = armenia.27 days = 2 }
+				country_event = { id = armenia.25 days = 2 }
 				set_global_flag = transcaucasia_formed
 				set_party_name = { 
 					ideology = democratic 

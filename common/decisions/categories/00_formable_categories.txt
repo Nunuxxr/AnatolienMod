@@ -104,6 +104,7 @@ form_ottoman_empire_category = {
 	allowed = {
 		has_dlc = "Waking the Tiger"
 	}
+
 }
 
 form_european_union_category = {

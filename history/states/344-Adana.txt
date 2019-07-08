@@ -14,9 +14,9 @@ state={
 		victory_points = { #Adana
 			806 3
 		}
-		#victory_points = { #Kahramanmaraş
-		#	886 1 
-		#}
+		victory_points = { #Kahramanmaraş
+			6813 1 
+		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2

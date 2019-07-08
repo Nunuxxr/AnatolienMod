@@ -4067,5 +4067,24 @@ spriteTypes = {
 		name = "GFX_idea_azr_khanate"
 		texturefile = "gfx/interface/ideas/idea_azr_khanate.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_eraz"
+		texturefile = "gfx/interface/ideas/idea_eraz.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_zcmc"
+		texturefile = "gfx/interface/ideas/idea_zcmc.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ararat_cement"
+		texturefile = "gfx/interface/ideas/idea_ararat_cement.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ycrdi"
+		texturefile = "gfx/interface/ideas/idea_ycrdi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_nss"
+		texturefile = "gfx/interface/ideas/idea_nss.dds"
+	}
 }

@@ -289,12 +289,12 @@ bookmarks = {
 			ideas = {
 				ARM_preserve_greater_armenia
 				ARM_church
-				ARM_banak_shortcomings
+				ARM_outdated_script
 			}
 			focuses = {
-				ARM_heir_apparent
-				ARM_focus_on_the_greater_threat
-				ARM_appoint_new_sparapet
+				ARM_western_victory_focus
+				ARM_free_elections
+				ARM_referendum_over_adana
 			}
 		}
 		"CHI"={

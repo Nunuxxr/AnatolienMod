@@ -60,8 +60,10 @@ BAL_UNIFIED = {
 }
 
 OTT_UNIFIED = {
-	color = rgb { 178 255 102 }
-	color_ui = rgb { 178 255 102 }
+	color = rgb { 123 0 0 }
+	color_ui = rgb { 123 0 0 }
+#	color = rgb { 178 255 102 }
+#	color_ui = rgb { 178 255 102 }
 }
 
 EUR_UNIFIED = {
@@ -218,4 +220,8 @@ CAU = {
 ARM_monarchy = {
 	color = rgb { 150 0 24 }
 	color_ui = rgb { 225 15 24 }
+}
+TUR_ottoman_red = {
+	color = rgb { 123 0 0 }
+	color_ui = rgb { 123 0 0 }
 }

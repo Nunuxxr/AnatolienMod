@@ -1708,5 +1708,215 @@ spriteTypes = {
 		name = "GFX_focus_arm_officer"
 		texturefile = "gfx/interface/goals/focus_arm_officer.dds"
 	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_hunchak"
+		texturefile = "gfx/interface/goals/focus_arm_hunchak.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_general_dro"
+		texturefile = "gfx/interface/goals/focus_arm_general_dro.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_azr_population_exchange"
+		texturefile = "gfx/interface/goals/focus_arm_azr_population_exchange.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_azr_union"
+		texturefile = "gfx/interface/goals/focus_arm_azr_union.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_cilicia"
+		texturefile = "gfx/interface/goals/focus_arm_cilicia.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_bagratid"
+		texturefile = "gfx/interface/goals/focus_arm_bagratid.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_crest"
+		texturefile = "gfx/interface/goals/focus_arm_crest.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_syria"
+		texturefile = "gfx/interface/goals/focus_arm_syria.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_wilsonian_armenia"
+		texturefile = "gfx/interface/goals/focus_arm_wilsonian_armenia.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_eternity"
+		texturefile = "gfx/interface/goals/focus_arm_eternity.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_azerbaijan"
+		texturefile = "gfx/interface/goals/focus_arm_azerbaijan.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_ottoman"
+		texturefile = "gfx/interface/goals/focus_arm_ottoman.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_agriculture"
+		texturefile = "gfx/interface/goals/focus_arm_agriculture.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_azerbaijan_wargoal"
+		texturefile = "gfx/interface/goals/focus_arm_azerbaijan_wargoal.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_cherish"
+		texturefile = "gfx/interface/goals/focus_arm_cherish.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_commissar"
+		texturefile = "gfx/interface/goals/focus_arm_commissar.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_foreign"
+		texturefile = "gfx/interface/goals/focus_arm_foreign.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_georgia_summit"
+		texturefile = "gfx/interface/goals/focus_arm_georgia_summit.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_georgia_wargoal"
+		texturefile = "gfx/interface/goals/focus_arm_georgia_wargoal.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_market"
+		texturefile = "gfx/interface/goals/focus_arm_market.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_radical"
+		texturefile = "gfx/interface/goals/focus_arm_radical.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_reserve"
+		texturefile = "gfx/interface/goals/focus_arm_reserve.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_tax"
+		texturefile = "gfx/interface/goals/focus_arm_tax.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_urartu"
+		texturefile = "gfx/interface/goals/focus_arm_urartu.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_industrial"
+		texturefile = "gfx/interface/goals/focus_arm_industrial.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_constitution"
+		texturefile = "gfx/interface/goals/focus_arm_constitution.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_church"
+		texturefile = "gfx/interface/goals/focus_arm_church.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_align_germany"
+		texturefile = "gfx/interface/goals/focus_arm_align_germany.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_soviet"
+		texturefile = "gfx/interface/goals/focus_arm_soviet.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_muslim"
+		texturefile = "gfx/interface/goals/focus_arm_muslim.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_collectivism"
+		texturefile = "gfx/interface/goals/focus_arm_collectivism.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_peace"
+		texturefile = "gfx/interface/goals/focus_arm_peace.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_economy"
+		texturefile = "gfx/interface/goals/focus_arm_economy.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_conscription"
+		texturefile = "gfx/interface/goals/focus_arm_conscription.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_melikdoms"
+		texturefile = "gfx/interface/goals/focus_arm_melikdoms.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_antiair"
+		texturefile = "gfx/interface/goals/focus_arm_antiair.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_elections"
+		texturefile = "gfx/interface/goals/focus_arm_elections.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_democracy"
+		texturefile = "gfx/interface/goals/focus_arm_democracy.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_workers"
+		texturefile = "gfx/interface/goals/focus_arm_workers.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_nss"
+		texturefile = "gfx/interface/goals/focus_arm_nss.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_yerevan"
+		texturefile = "gfx/interface/goals/focus_arm_yerevan.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_revolution"
+		texturefile = "gfx/interface/goals/focus_arm_revolution.tga"
+	}
   
 }

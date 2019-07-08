@@ -52,10 +52,19 @@ set_popularities = {
 }
 
 
+#create_country_leader = {
+#	name = "Bakr Sidqi"
+#	desc = "POLITICS_BAKR_SIDIQI_DESC"
+#	picture = "Portrait_KUR_Bakr.tga"
+#	expire = "1965.1.1"
+#	ideology = despotism
+#	traits = {}
+#}
+
 create_country_leader = {
-	name = "Bakr Sidqi"
+	name = "Celadet Bedir Khan"
 	desc = "POLITICS_BAKR_SIDIQI_DESC"
-	picture = "Portrait_KUR_Bakr.tga"
+	picture = "Portrait_KUR_Jeladet_Bedir_Khan.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {}
@@ -94,15 +103,6 @@ create_country_leader = {
 	picture = "Portrait_KUR_Mihemed.tga"
 	expire = "1965.1.1"
 	ideology = leninism
-	traits = {}
-}
-
-create_country_leader = {
-	name = "Qazî Mihemed"
-	desc = "POLITICS_MIHEMED_DESC"
-	picture = "Portrait_KUR_Mihemed.tga"
-	expire = "1965.1.1"
-	ideology = stalinism
 	traits = {}
 }
 

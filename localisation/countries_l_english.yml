@@ -1,6 +1,6 @@
 ﻿l_english:
- GER_fascism:0 "Deutsches Reich"
- GER_fascism_DEF:0 "Das Deutsches Reich"
+ GER_fascism:0 "German Reich"
+ GER_fascism_DEF:0 "the German Reich"
  GER_democratic:0 "German Republic"
  GER_democratic_DEF:0 "the German Republic"
  GER_neutrality:1 "German Empire"
@@ -242,8 +242,8 @@
 
  TUR_fascism:0 "Turkish State"
  TUR_fascism_DEF:0 "the Turkish State"
- TUR_democratic:0 "Republic of Turkey"
- TUR_democratic_DEF:0 "the Republic of Turkey"
+ TUR_democratic:0 "Turkey"
+ TUR_democratic_DEF:0 "Turkey"
  TUR_neutrality:0 "Ottoman Empire"
  TUR_neutrality_DEF:0 "Ottoman Empire"
  TUR_communism:0 "Turkish Socialist Republic"
@@ -631,7 +631,7 @@
  PER_fascism_DEF:0 "the New Persian Empire"
  PER_democratic:0 "Republic of Iran"
  PER_democratic_DEF:0 "the Republic of Iran"
- PER_neutrality:0 "Iran" #Iran
+ PER_neutrality:0 "Persia" #Iran
  PER_neutrality_DEF:0 "Persia" #Imperial State of Iran
  PER_communism:0 "Iranian Communist Authority"
  PER_communism_DEF:0 "the Iranian Communist Authority"
