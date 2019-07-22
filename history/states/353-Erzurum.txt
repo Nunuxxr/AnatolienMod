@@ -5,11 +5,11 @@ state={
 	history={
 		owner = ARM
         victory_points = { #Kars
-			10472 1
+			789 3
 		}
-        #victory_points = { #Igdir
-		#	4583 1
-		#}
+        victory_points = { #Igdir
+			4583 1
+		}
 		buildings = {
 			infrastructure = 3
 		}
@@ -19,7 +19,7 @@ state={
 	provinces={
 		789 4583 6991 10472 12376
 	}
-	manpower=260000 #379498
+	manpower=143471 #260000 #379498
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

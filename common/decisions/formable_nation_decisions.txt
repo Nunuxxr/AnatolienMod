@@ -869,10 +869,9 @@ form_ottoman_empire_category = {
 				controls_state = 355
 				controls_state = 349
 				controls_state = 350
-				controls_state = 354
-				controls_state = 353
 				controls_state = 352
-				controls_state = 792
+				controls_state = 354
+				controls_state = 800
 			}
 			# Iraq
 			custom_trigger_tooltip = {
@@ -2834,14 +2833,6 @@ form_caucasia_category = {
 				419 = { add_core_of = ROOT } #Western Azerbaijan
 				420 = { add_core_of = ROOT } #Eastern Azerbaijan
 			}
-			# USSR
-			custom_effect_tooltip = form_country_ussr_coring_states_tt
-			hidden_effect = {
-				232 = { add_core_of = ROOT } #Dagestan
-				233 = { add_core_of = ROOT } #Caucasus Mountains
-				234 = { add_core_of = ROOT } #Krasnodar
-				235 = { add_core_of = ROOT } #Stavropol
-			}
 			# Kurdistan
 			custom_effect_tooltip = form_country_kurdistan_coring_states_tt
 			hidden_effect = {
@@ -2871,6 +2862,64 @@ form_caucasia_category = {
 					long_name = CAU_neutrality_party_long 
 					name = CAU_neutrality_party
 				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	form_caucasia_north = {
+
+		icon = generic_form_nation
+		
+		fire_only_once = yes
+
+		allowed = {
+			OR = {
+				original_tag = ARM
+				original_tag = AZR
+				original_tag = GEO
+			}
+			has_dlc = "Waking the Tiger"
+		}
+
+		available = {
+			is_subject = no
+			# USSR
+			custom_trigger_tooltip = {
+				tooltip = form_country_soviet_required_states_tt
+				controls_state = 232
+				controls_state = 233
+				controls_state = 234
+				controls_state = 235
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = ARM
+				original_tag = AZR
+				original_tag = GEO
+			}
+			#has_global_flag = CAU
+			has_cosmetic_tag = CAU
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = CAU_unified
+			# USSR
+			custom_effect_tooltip = form_country_ussr_coring_states_tt
+			hidden_effect = {
+				232 = { add_core_of = ROOT } #Dagestan
+				233 = { add_core_of = ROOT } #Caucasus Mountains
+				234 = { add_core_of = ROOT } #Krasnodar
+				235 = { add_core_of = ROOT } #Stavropol
 			}
 		}
 

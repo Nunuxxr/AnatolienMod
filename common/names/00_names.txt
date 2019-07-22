@@ -3789,7 +3789,7 @@ CAY = {
 ARM = {
 	male = {
 		names = { 
-			Anastas Aram Armen Ashot Hagop Baben Garen Haik Hrant Hovhannes Hamazasb Jirayr Gagik Levon 
+			Anastas Aram Armen Ashot Hagop Baben Garen Haik Hrant Hovhannes Hamazasp Jirayr Gagik Levon 
 			Khoren Narek Rupen Sarkis Serj Tovmas Robert Gurgen Garo Christopher Artem Nikol Artur Artem
 			Tigran Vartan Drastamat Khoren Hrayr Ara Andranik Vazgen
 			
@@ -3797,15 +3797,15 @@ ARM = {
 	}
 	female = {
 		names = { 
-		    Mariam Danielle Seda Talar Tamar Taline Eva Aline Anna Elise Arpine
+		    Mariam Danielle Seda Talar Tamar Taline Eva Aline Anna Elise Arpine Perchuhi Varvara Katarine
 		
 		}
 	}
 	surnames = { 
 		Avetisyan Bagratuni Kasparian Hagopian Harutyunyan Hovhannisyan Hovnanian Karapetyan Garabedian 
 		Kasparian Khachaturian Mamikonian Manukyan Nazarian Ohanian Sarkissian Tavitian Kanayan Ararat
-        Vardapetian Vardanian Zakarian Ebeyan Hovsepyan Tsarukyan Pashinyan Mikoyan Gevorgyan Melkonian
-		Karenian Ozanian Bagramyan Sargsyan Kardashian
+        Vartabedian Vardanian Zakarian Ebeyan Hovsepyan Tsarukyan Pashinyan Mikoyan Gevorgyan Melkonian
+		Karenian Ozanian Bagramyan Sargsyan Kardashian Partizpanyan Barseghyan Zalyan Sahakyan Tigranian
 	}
 	callsigns = { Mamikonian Sparapet Komitas Nzhdeh Pasha Arag Baziliks "Mesrop Mashtots" Hovanots Kaytsak Avary "Sev Devy" Herman }
 }

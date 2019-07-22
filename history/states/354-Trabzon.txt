@@ -7,26 +7,20 @@ state={
 
 	history={
 		owner = ARM
-		victory_points = { #Trebizond
-			9932 1
-		}
 		victory_points = { #Erzeron
 			11853 3
 		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			9932 = {
-				naval_base = 3
-			}
 		}
 		add_core_of = ARM
 	}
 
 	provinces={
-		3714 3979 6976 9868 9886 9932 9954 11853 11753
+		652 6976 9868 9886 9954 11853
 	}
-	manpower=675000
+	manpower=361000
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=rural
 }

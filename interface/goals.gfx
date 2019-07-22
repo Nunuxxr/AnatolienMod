@@ -1918,6 +1918,16 @@ spriteTypes = {
 		name = "GFX_focus_arm_revolution"
 		texturefile = "gfx/interface/goals/focus_arm_revolution.tga"
 	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_sardarabat"
+		texturefile = "gfx/interface/goals/focus_arm_sardarabat.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_arm_ani"
+		texturefile = "gfx/interface/goals/focus_arm_ani.tga"
+	}
 
 	### Greece
 	SpriteType = {

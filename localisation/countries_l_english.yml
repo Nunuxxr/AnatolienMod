@@ -1244,9 +1244,9 @@
 
  ARM_fascism:0 "National Armenian State" #National Union of Armenia #Armenian State
  ARM_fascism_DEF:0 "the National Armenian State"
- ARM_democratic:0 "Armenia"
- ARM_democratic_DEF:0 "the Republic of Armenia"
- ARM_neutrality:0 "Armenia" #Mountainous Armenia
+ ARM_democratic:0 "Republic of Armenia"
+ ARM_democratic_DEF:0 "the Democratic Republic of Armenia"
+ ARM_neutrality:0 "Hayastan" #Mountainous Armenia
  ARM_neutrality_DEF:0 "the Democratic Republic of Armenia"
  ARM_communism:1 "Armenian Soviet Republic"
  ARM_communism_DEF:1 "the Armenian Soviet Republic"

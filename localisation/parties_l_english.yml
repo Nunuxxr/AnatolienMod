@@ -487,9 +487,10 @@
  AZR_communism_party:0 "Azerbaycan Komünist Partisi"
  AZR_neutrality_party:0 "Müsavat"
  ARM_fascism_party:0 "Armenian Legion"
- ARM_democratic_party:0 "Social Democrat Hunchakian Party"
- ARM_communism_party:0 "Komunistakan Party"
- ARM_neutrality_party:0 "Dashnaktsutyun" #Armenian Revolutionary Federation
+ ARM_democratic_party:0 "Dashnaks" #Social Democrat Hunchakian Party
+ ARM_democratic_party_long:0 "Armenian Revolutionary Federation" #Social Democrat Hunchakian Party
+ ARM_communism_party:0 "Social Revolutionaries" #Komunistakan Party
+ ARM_neutrality_party:0 "Populist Party" #Dashnaktsutyun #Armenian Revolutionary Federation
  BLR_fascism_party:0 "Belarusian Central Council"
  BLR_democratic_party:0 "Belarusian Christian Democracy"
  BLR_communism_party:0 "Communist Party of Belarus"

@@ -17,7 +17,7 @@ state={
 	provinces={
 		1467 9715
 	}
-	manpower=145000
+	manpower=231000 #59k of which are Azer #145000
 	buildings_max_level_factor=1.000
     state_category=pastoral
 }

@@ -217,10 +217,14 @@ CAU = {
 	color = rgb { 79 92 112 }
 	color_ui = rgb { 79 92 112 }
 }
-ARM_monarchy = {
-	color = rgb { 150 0 24 }
-	color_ui = rgb { 225 15 24 }
+CAU_unified = {
+	color = rgb { 185 115 130 }
+	color_ui = rgb { 185 115 130 }
 }
+#ARM_monarchy = {
+#	color = rgb { 150 0 24 }
+#	color_ui = rgb { 225 15 24 }
+#}
 TUR_ottoman_red = {
 	color = rgb { 123 0 0 }
 	color_ui = rgb { 123 0 0 }

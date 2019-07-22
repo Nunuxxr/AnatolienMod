@@ -60,17 +60,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1935.11.11"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-    fascism = 5
-    democratic = 25
-    communism = 7
-    neutrality = 63
+    fascism = 6
+    democratic = 89
+    communism = 5
 }
 
 add_ideas = {
@@ -85,7 +84,7 @@ create_country_leader = {
 	desc = "ARM_hamo_ohanjanyan_desc"
 	picture = "Portrait_ARM_Hamo_Ohanjanyan.tga"
 	expire = "1947.7.31"
-	ideology = centrism
+	ideology = conservatism
 	traits = {
 	}
 }
@@ -102,22 +101,13 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Stepan Sapah-Gulian"
-	desc = "ARM_stepan_sapah-gulian_desc"
-	picture = "Portrait_Armenia_Stepan_Sapah-Gulian.tga"
-	expire = "1953.3.1"
-	ideology = socialism
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Aghasi Khanjian"
 	desc = "ARM_aghasi_khanjian_desc"
 	picture = "Portrait_Armenia_Aghasi_Khanjian.tga"
 	expire = "1975.1.1"
 	ideology = stalinism
 	traits = {
+		popular_figurehead
 	}
 }
 

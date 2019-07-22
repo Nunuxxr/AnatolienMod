@@ -56,19 +56,6 @@ country_event = { #Elections
 			}
 		}
 		hidden_effect = {
-			set_politics = {
-				ruling_party = democratic
-			}
-			set_party_name = { 
-				ideology = democratic 
-				long_name = ARM_democratic_party_dashnak_long 
-				name = ARM_democratic_party_dashnak
-			}
-			set_party_name = { 
-				ideology = neutrality 
-				long_name = ARM_neutrality_party_giorgi_long 
-				name = ARM_neutrality_party_giorgi
-			}
 			set_country_flag = ARM_dashnak_victory
 		}
     }
@@ -76,6 +63,7 @@ country_event = { #Elections
     option = { #Stepan Sapah-Gulian | Hunchakian
         name = armenia.2.b
         ai_chance = { factor = 45 }
+		retire_country_leader = yes
 		create_country_leader = {
 			name = "Stepan Sapah-Gulian"
 			desc = ""
@@ -86,8 +74,10 @@ country_event = { #Elections
 			}
 		}
 		hidden_effect = {
-			set_politics = {
-				ruling_party = democratic
+			set_party_name = { 
+				ideology = democratic 
+				long_name = ARM_democratic_party_sd_long 
+				name = ARM_democratic_party_sd
 			}
 			set_country_flag = ARM_western_victory
 		}
@@ -800,23 +790,6 @@ country_event = {
 
 #Greece Declines Mutual Defence Pact
 country_event = {
-    id = armenia.32
-    title = armenia.32.t
-    desc = armenia.32.d
- 
-    fire_only_once = yes
- 
-    is_triggered_only = yes
-	
-    option = {
-        name = armenia.32.a
-		ai_chance = { factor = 100 }
-		#
-    }
-}
-
-#Greece Declines Mutual Defence Pact
-country_event = {
     id = armenia.33
     title = armenia.33.t
     desc = armenia.33.d
@@ -828,5 +801,30 @@ country_event = {
     option = {
         name = armenia.33.a
 		ai_chance = { factor = 100 }
+    }
+}
+
+#Revolution time
+country_event = {
+    id = armenia.34
+    title = armenia.34.t
+    desc = armenia.34.d
+ 
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+	
+    option = {
+        name = armenia.34.a
+		ai_chance = { factor = 100 }
+		set_politics = {
+			ruling_party = communism
+		}
+		add_stability = -0.1
+		hidden_effect = {
+			set_popularities = {
+				communism = 0.35
+			}
+		}
     }
 }

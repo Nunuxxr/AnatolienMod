@@ -9,8 +9,8 @@ ENG = {
 	color_ui = rgb { 208 12 39 }
 }
 SOV = {
-	color = rgb { 125 13 24 }
-	color_ui = rgb { 163 17 31 }
+	color = rgb { 155 15 15 }
+	color_ui = rgb { 150 17 59 }
 }
 SWE = {
 	color = rgb { 0 106 167 }
@@ -45,8 +45,8 @@ AUS = {
 	color_ui = rgb { 220 220 220 }
 }
 LIT = {
-	color = rgb { 154 69 116 }
-	color_ui = rgb { 154 69 116 }
+	color = rgb { 219 219 119 }
+	color_ui = rgb { 255 255 155 }
 }
 EST = {
 	color = rgb { 50 135 175 }
@@ -77,13 +77,11 @@ SWI = {
 	color_ui = rgb { 193 81 81 }
 }
 TUR = {
-	color = rgb { 150 170 140 } # Turkey = 155 165 130 # 100 135 65
-	color_ui = rgb { 220 250 210 }
-	#color = rgb { 147 200 147 } #198
-	#color_ui = rgb { 128  158  118 }
+	color = rgb { 145 170 141 } #145 170 141
+	color_ui = rgb { 145 170 141 } #164 255 156
 }
 GRE = {
-	color = rgb { 93 181 227 }
+	color = rgb { 66 133 185 } #old colors are 93 181 227
 	color_ui = rgb { 121 235 255 }
 }
 ALB = {
@@ -100,7 +98,7 @@ DEN = {
 }
 BUL = {
 	color = rgb { 51 155 0 }
-	color_ui = rgb { 51 155 0 }
+	color_ui = rgb { 210 147 217 }
 }
 POR = {
 	color = rgb { 0 147 175 }
@@ -115,8 +113,8 @@ IRE = {
 	color_ui = rgb { 104 207 117 }
 }
 HUN = {
-	color = rgb { 152 85 92 }
-	color_ui = rgb { 152 85 92 }
+	color = rgb { 157 90 97 }
+	color_ui = rgb { 187 74 74 }
 }
 AFG = {
 	color = rgb { 64 160 167 }
@@ -362,6 +360,11 @@ SYR = {
 	color_ui = rgb { 100 100 150 }
 }
 
+SER = {
+	color = rgb { 25 50 140 }
+	color_ui = rgb { 160 110 110 }
+}
+
 YUG = {
 	color = rgb { 90 80 110 }
 	color_ui = rgb { 90 80 110 }
@@ -373,24 +376,39 @@ ICE = {
 }
 
 UKR = {
-	color = rgb { 153 61 0 }
-	color_ui = rgb { 153 61 0 }
+	color = rgb { 0  80  230 }
+	color_ui = rgb { 0  80  230 }	
 }
 
 AZR = {
-	color = rgb { 247 223 69 }
-	color_ui = rgb { 247 223 69 }
+	color = rgb { 40 150 107 }
+	color_ui = rgb { 40 170 137 }
 }
 
 GEO = {
-	color = rgb { 200 40 60 }
-	color_ui = rgb { 240 0 55 }
+	color = rgb { 127 23 52 }
+	color_ui = rgb { 127 23 52 }
 }
 
-ARM = { #KR Blue
-	color = rgb { 14 49 247 }
-	color_ui = rgb { 14 49 247 }
+ARM = {
+	color = rgb { 156 112 160 }
+	color_ui = rgb { 115  122  145 }
 }
+
+#AZR = { KR Yellow
+#	color = rgb { 247 223 69 }
+#	color_ui = rgb { 247 223 69 }
+#}
+
+#GEO = { Red
+#	color = rgb { 200 40 60 }
+#	color_ui = rgb { 240 0 55 }
+#}
+
+#ARM = { #KR Blue
+#	color = rgb { 14 49 247 }
+#	color_ui = rgb { 14 49 247 }
+#}
 
 #ARM = { #Imperator Rome Brown
 #	color = rgb { 165  96  87 }
@@ -428,8 +446,8 @@ MNT = {
 }
 
 BLR = {
-	color = rgb { 30 131 162 }
-	color_ui = rgb { 30 131 162 }
+	color = rgb { 180 220 190 }
+	color_ui = rgb { 180 220 190 }
 }
 MAN = {
 	color = rgb { 255 120 71 }
@@ -485,9 +503,13 @@ CSA = {
 	color_ui = rgb { 186 205 219 }
 }
 KUR = {
-	color = rgb { 80 120 230 }
+	color = rgb { 100 120 200 }
 	color_ui = rgb { 80 120 230 }
 }
+#KUR = { #KR Light Blue
+#	color = rgb { 80 120 230 }
+#	color_ui = rgb { 80 120 230 }
+#}
 ABK = {
 	color = rgb { 0 190 10 }
 	color_ui = rgb { 0 230 5 }

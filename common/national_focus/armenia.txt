@@ -15,7 +15,7 @@ focus_tree = {
         id = ARM_radical_politics
         icon = GFX_goal_generic_demand_territory
 		mutually_exclusive = { focus = ARM_maintain_status_quo }
-        x = 16
+        x = 15
         y = 0
         cost = 5
         available_if_capitulated = no
@@ -161,23 +161,7 @@ focus_tree = {
         cost = 10
         available_if_capitulated = no
         completion_reward = {
-			create_country_leader = {
-				name = "Aghasi Khanjian"
-				desc = "ARM_aghasi_khanjian_desc"
-				picture = "Portrait_Armenia_Aghasi_Khanjian.tga"
-				expire = "1975.1.1"
-				ideology = stalinism
-				traits = {
-				}
-			}
-			hidden_effect = {
-				set_politics = {
-					ruling_party = communism
-				}
-				set_popularities = {
-					communism = 0.35
-				}
-			}
+			country_event = armenia.34
 		}
 	}
 
@@ -288,7 +272,7 @@ focus_tree = {
         id = ARM_maintain_status_quo
         icon = GFX_goal_generic_improve_relations
 		mutually_exclusive = { focus = ARM_radical_politics }
-        x = 22
+        x = 23
         y = 0
         cost = 5
         available_if_capitulated = no
@@ -694,7 +678,6 @@ focus_tree = {
 			set_politics = {
 				ruling_party = fascism
 			}
-			set_cosmetic_tag = ARM_national_socialism
 			hidden_effect = {
 				set_popularities = {
 					fascism = 0.35
@@ -805,7 +788,7 @@ focus_tree = {
 
     focus = {
         id = ARM_rebuilding_ani
-        icon = GFX_goal_generic_construction2
+        icon = GFX_focus_arm_ani
         prerequisite = {
 			focus = ARM_continue_public_works
 		}
@@ -980,8 +963,8 @@ focus_tree = {
 			353 = { set_state_name = "Ayrarat" }
 			354 = { set_state_name = "Tayk" }
 			788 = { set_state_name = "Artsakh" }
-			set_province_name = { id = 10472 name = "Ani"}
-			set_province_name = { id = 12320 name = "Artashat"}
+			set_province_name = { id = 789 name = "Ani"}
+			set_province_name = { id = 12320 name = "Erebuni"}
 			set_capital = 353
         }
     }
@@ -1176,7 +1159,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ARM_expand_east_industry }
         x = 31
         y = 4
-        cost = 20
+        cost = 15
         available_if_capitulated = no
 		available = {
 			OR = {
@@ -1214,7 +1197,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ARM_develop_the_west }
         x = 29
         y = 4
-        cost = 20
+        cost = 15
         available_if_capitulated = no
 		available = {
 			OR = {
@@ -1466,7 +1449,7 @@ focus_tree = {
 
     focus = {
         id = ARM_doctrine_effort_focus
-        icon = GFX_goal_generic_cavalry
+        icon = GFX_focus_arm_sardarabat
         prerequisite = { focus = ARM_infantry_equipment_focus }
         prerequisite = { focus = ARM_mechanization_effort }
         x = 40
@@ -1475,6 +1458,7 @@ focus_tree = {
         available_if_capitulated = yes
         completion_reward = {
             army_experience = 5
+			add_political_power = 50
             add_tech_bonus = {
                 name = land_doc_bonus
                 bonus = 0.5
@@ -2529,7 +2513,7 @@ focus_tree = {
         cost = 10
         available_if_capitulated = no
         completion_reward = {
-			country_event = armenia.30
+			#country_event = armenia.30
         }
     }
 
