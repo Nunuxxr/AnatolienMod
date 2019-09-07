@@ -9,7 +9,7 @@ state={
 	state_category=rural
 
 	history={
-		owner = GRE
+		owner = ITA
 		buildings = {
 			infrastructure = 3
 		}
@@ -21,6 +21,6 @@ state={
 	}
 
 	provinces={
-		9941 10122 11917 12096
+			9941 10122 11917 12013 12096
 	}
 }

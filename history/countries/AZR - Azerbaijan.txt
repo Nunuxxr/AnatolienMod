@@ -1,4 +1,4 @@
-﻿capital = 795 #Baku
+﻿capital = 799 #Baku
 
 oob = "AZR_1936"
 
@@ -83,8 +83,10 @@ set_popularities = {
 
 add_ideas = {
 	limited_conscription
-	AZR_azerbaycan_motherland
-	AZR_preserve_greater_azerbaijan
+	AZR_soviet_mandate
+	AZR_ethnic_tensions
+	#AZR_azerbaycan_motherland
+	#AZR_preserve_greater_azerbaijan
 	AZR_democracy_of_the_east
 }
 

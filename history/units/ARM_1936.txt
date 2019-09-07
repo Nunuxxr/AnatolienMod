@@ -7,7 +7,7 @@ division_template = {
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
-		#infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 2 }
 		#infantry = { x = 2 y = 0 }
 		#infantry = { x = 2 y = 1 }
 	}
@@ -60,8 +60,8 @@ units = {
 	}
 	
 	division= {	# "Kars Infantry Division"
-		name = "1ya 'Kars' Hardzakman Bazhanumy"
-		location = 789
+		name = "1ya 'Erevan' Hardzakman Bazhanumy"
+		location = 12320
 		division_template = "Hardzakman Bazhanumy"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
 		start_experience_factor = 0.2
@@ -69,7 +69,7 @@ units = {
 	}
 	
 	division= {	# "Nakhichevan Mountain Division"
-		name = "2ya 'Nakhijevan' Hatuk Brigad"
+		name = "2ya 'Jugha' Hatuk Brigad"
 		location = 6997
 		division_template = "Hatuk Brigad"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
@@ -78,8 +78,8 @@ units = {
 	}
 
 	division= {	# "Shusha Mountain Division"
-		name = "3ya 'Artsaktsi' Hatuk Brigad"
-		location = 1467
+		name = "3ya Hatuk Brigad"
+		location = 12376
 		division_template = "Hatuk Brigad"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
 		start_experience_factor = 0.3
@@ -87,7 +87,7 @@ units = {
 	}
 
 	division= {	# "Erzurum Infantry Division"
-		name = "2ya 'Karin' Hardzakman Bazhanumy"
+		name = "2ya 'Karno K'aghak' Hardzakman Bazhanumy"
 		location = 11853
 		division_template = "Hardzakman Bazhanumy"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
@@ -95,8 +95,17 @@ units = {
 		start_equipment_factor = 0.75
 	}
 
+	division= {	# "Erzurum Infantry Division"
+		name = "4ya 'Yerznka' Hardzakman Bazhanumy"
+		location = 9868
+		division_template = "Hardzakman Bazhanumy"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+
 	division= {	# "Van Mountain Division"
-		name = "1ya 'Vani' Hatuk Brigad"
+		name = "1ya 'Vaspurakan' Hatuk Brigad"
 		location = 864
 		division_template = "Hatuk Brigad"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
@@ -105,8 +114,8 @@ units = {
 	}
 
 	division= {	# "Trapizon Infantry Division"
-		name = "3ya 'Trebizond' Hardzakman Bazhanumy"
-		location = 9932
+		name = "3ya 'Sev Tsovi' Hardzakman Bazhanumy"
+		location = 3714
 		division_template = "Hardzakman Bazhanumy"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
 		start_experience_factor = 0.2

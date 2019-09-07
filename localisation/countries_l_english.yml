@@ -242,7 +242,7 @@
 
  TUR_fascism:0 "Turkish State"
  TUR_fascism_DEF:0 "the Turkish State"
- TUR_democratic:0 "Turkey"
+ TUR_democratic:0 "T u r k e y"
  TUR_democratic_DEF:0 "Turkey"
  TUR_neutrality:0 "Ottoman Empire"
  TUR_neutrality_DEF:0 "Ottoman Empire"
@@ -1242,12 +1242,12 @@
  AZR_neutrality_ADJ:0 "Azerbaijani"
  AZR_communism_ADJ:0 "Azerbaijani"
 
- ARM_fascism:0 "National Armenian State" #National Union of Armenia #Armenian State
- ARM_fascism_DEF:0 "the National Armenian State"
- ARM_democratic:0 "Republic of Armenia"
- ARM_democratic_DEF:0 "the Democratic Republic of Armenia"
- ARM_neutrality:0 "Hayastan" #Mountainous Armenia
- ARM_neutrality_DEF:0 "the Democratic Republic of Armenia"
+ ARM_fascism:0 "Armenian State" #National Union of Armenia #Armenian State
+ ARM_fascism_DEF:0 "the Armenian State"
+ ARM_democratic:0 "Armenia"
+ ARM_democratic_DEF:0 "the Republic of Armenia"
+ ARM_neutrality:0 "Hayastan" #Mountainous Armenia #Hayastani Hanrapetutyun
+ ARM_neutrality_DEF:0 "Hayastan"
  ARM_communism:1 "Armenian Soviet Republic"
  ARM_communism_DEF:1 "the Armenian Soviet Republic"
  ARM_fascism_ADJ:0 "Armenian"

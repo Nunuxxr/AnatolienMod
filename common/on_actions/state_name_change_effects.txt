@@ -2,33 +2,10 @@ on_actions = {
     on_state_control_changed={
         #I decided to experiment a bit, to make it faster to implement, and better organized. As such, states will now be organized first by strategic regions. Also, since we dont have many nations with the same culture as in HC, Im simplifying it.
         effect={
-			#AZERBAIJAN & GEORGIA
-            limit={FROM.FROM={region = 134}}
-            #Completed Azerbaijan, ARM, AZR
-            if = {
-              limit={FROM.FROM={state = 229}}
-              if={
-                limit = {
-                  tag=AZR
-                }
-                FROM.FROM = {
-                  set_state_name = "Elisabetpol"
-                  set_province_name = { id = 11674 name = "Ganja" }
-                }
-              }
-              else_if={
-                limit = {
-                  tag=ARM
-                }
-                FROM.FROM = {
-                  set_state_name = "Utik"
-                  set_province_name = { id = 11674 name = "Gandzak" }
-                }
-              }
-            }
-            #Completed Ardahan, ARM, GEO
-            if = {
-              limit={FROM.FROM={state = 792}}
+			#GEORGIA
+            else_if = {
+              limit={FROM.FROM={state = 801}}
+			  #Completed Tao-Klarjeti, ARM, GEO, SOV
               if={
                 limit = {
                   tag=GEO
@@ -43,15 +20,73 @@ on_actions = {
                   tag=ARM
                 }
                 FROM.FROM = {
-                  set_state_name = "Gugark"
+                  set_state_name = "Artahan"
                   set_province_name = { id = 7454 name = "Ardvin" }
                 }
               }
-            }
-          #ARMENIA
-          if={
-            limit={FROM.FROM={region = 208}}
-            #Completed Syunik, ARM, AZR
+              else_if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Ardahan"
+                  set_province_name = { id = 7454 name = "Artvin" }
+                }
+              }
+			}
+			###AZERBAIJAN
+            #Completed Azerbaijan, ARM, AZR, SOV, TUR
+            else_if = {
+              limit={FROM.FROM={state = 229}}
+			  #Completed Azerbaijan, ARM, AZR, SOV
+              if={
+                limit = {
+                  tag=ARM
+                }
+                FROM.FROM = {
+                  set_state_name = "Adrbejan"
+                  set_province_name = { id = 11674 name = "Gandzak" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=AZR
+                }
+                FROM.FROM = {
+                  set_state_name = "Azerbaycan"
+                  set_province_name = { id = 11674 name = "Ganja" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Azerbaycan"
+                  set_province_name = { id = 11674 name = "Ganja" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=GEO
+                }
+                FROM.FROM = {
+                  set_state_name = "Mt’k’vari"
+                  set_province_name = { id = 11674 name = "Arran" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=SOV
+                }
+                FROM.FROM = {
+                  set_state_name = "Azerbaijan"
+                  set_province_name = { id = 11674 name = "Kirovabad" }
+                }
+              }
+			}
+            #ARMENIA
+            #Completed Syunik, ARM, AZR, SOV
             if = {
               limit={FROM.FROM={state = 794}}
               if={
@@ -59,8 +94,7 @@ on_actions = {
                   tag=ARM
                 }
                 FROM.FROM = {
-                  set_state_name = "Siunik"
-                  set_province_name = { id = 4660 name = "Kapan" }
+                  set_state_name = "Syunik"
                 }
               }
               else_if={
@@ -69,11 +103,27 @@ on_actions = {
                 }
                 FROM.FROM = {
                   set_state_name = "Zangezur"
+                }
+              }
+              else_if={
+                limit = {
+                  tag=SOV
+                }
+                FROM.FROM = {
+                  set_state_name = "Syunik"
+                }
+              }
+              else_if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Zangezur"
                   set_province_name = { id = 4660 name = "Ghapan" }
                 }
               }
             }
-            limit={FROM.FROM={region = 208}}
+            limit={FROM.FROM={region = 134}}
             #Completed Artsakh, ARM, AZR
             if = {
               limit={FROM.FROM={state = 788}}
@@ -82,8 +132,8 @@ on_actions = {
                   tag=ARM
                 }
                 FROM.FROM = {
-                  set_state_name = "Shushi"
-                  set_province_name = { id = 1467 name = "Shusha" }
+                  set_state_name = "Artsakh"
+                  set_province_name = { id = 1467 name = "Shushi" }
                 }
               }
               else_if={
@@ -91,13 +141,31 @@ on_actions = {
                   tag=AZR
                 }
                 FROM.FROM = {
+                  set_state_name = "Nagorno-Karabakh"
+                  set_province_name = { id = 1467 name = "Shusha" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
                   set_state_name = "Karabagh"
                   set_province_name = { id = 1467 name = "Şuşa" }
                 }
               }
+              else_if={
+                limit = {
+                  tag=SOV
+                }
+                FROM.FROM = {
+                  set_state_name = "Nagorno-Karabakh"
+                  set_province_name = { id = 1467 name = "Stepanakert" }
+                }
+              }
             }
-            limit={FROM.FROM={region = 208}}
-            #Completed Nakhichevan, ARM, AZR
+            limit={FROM.FROM={region = 134}}
+            #Completed Nakhichevan, ARM, AZR, TUR, SOV
             if = {
               limit={FROM.FROM={state = 793}}
               if={
@@ -105,8 +173,8 @@ on_actions = {
                   tag=ARM
                 }
                 FROM.FROM = {
-                  set_state_name = "Nakhchivan"
-                  set_province_name = { id = 6997 name = "Julfa" } #Jugha
+                  set_state_name = "Nakhchivan" #Goghtan
+                  set_province_name = { id = 6997 name = "Nakhchivan" } #Agulis #Julfa
                 }
               }
               else_if={
@@ -114,12 +182,30 @@ on_actions = {
                   tag=AZR
                 }
                 FROM.FROM = {
+                  set_state_name = "Nakhchivan"
+                  set_province_name = { id = 6997 name = "Nakhchivan" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
                   set_state_name = "Naxçıvan"
                   set_province_name = { id = 6997 name = "Naxçıvan" }
                 }
               }
+              else_if={
+                limit = {
+                  tag=SOV
+                }
+                FROM.FROM = {
+                  set_state_name = "Nakhichevan"
+                  set_province_name = { id = 6997 name = "Nakhichevan" }
+                }
+              }
             }
-            limit={FROM.FROM={region = 208}}
+            limit={FROM.FROM={region = 134}}
             #Completed Hayastan, ARM, AZR
             if = {
               limit={FROM.FROM={state = 230}}
@@ -128,10 +214,9 @@ on_actions = {
                   tag=ARM
                 }
                 FROM.FROM = {
-                  set_state_name = "Erevan"
-                  set_province_name = { id = 12320 name = "Erivan" }
+                  set_state_name = "Ararat" #-Shirak
+                  set_province_name = { id = 12320 name = "Yerevan" }
                   set_province_name = { id = 12441 name = "Kumayri" }
-                  set_province_name = { id = 11708 name = "Kazakh" }
                 }
               }
               else_if={
@@ -140,22 +225,8 @@ on_actions = {
                 }
                 FROM.FROM = {
                   set_state_name = "Irevan"
-                  set_province_name = { id = 12320 name = "İrevan" }
+                  set_province_name = { id = 12320 name = "Irevan" }
                   set_province_name = { id = 12441 name = "Gümrü" }
-                  set_province_name = { id = 11708 name = "Qazax" }
-                }
-              }
-            }
-            #Completed Amed, ARM, TUR, KUR
-            else_if = {
-              limit={FROM.FROM={state = 350}}
-              if={
-                limit = {
-                  tag=ARM
-                }
-                FROM.FROM = {
-                  set_state_name = "Arzanene" #Aghdznik
-                  set_province_name = { id = 4512 name = "Dikranagerd" } #Tigranakert
                 }
               }
               else_if={
@@ -163,17 +234,77 @@ on_actions = {
                   tag=TUR
                 }
                 FROM.FROM = {
-                  set_state_name = "Diyarbakır"
-                  set_province_name = { id = 4512 name = "Diyarbakır" }
+                  set_state_name = "Erivan"
+                  set_province_name = { id = 12320 name = "Erivan" }
+                  set_province_name = { id = 12441 name = "Gümrü" }
                 }
               }
               else_if={
                 limit = {
-                  tag=KUR
+                  tag=SOV
                 }
                 FROM.FROM = {
-                  set_state_name = "Amed"
-                  set_province_name = { id = 4512 name = "Amed" }
+                  set_state_name = "Armenia"
+                  set_province_name = { id = 12320 name = "Yerevan" }
+                  set_province_name = { id = 12441 name = "Leninakan" }
+                }
+              }
+            }
+            limit={FROM.FROM={region = 134}}
+            #Completed Trebizond, ARM, TUR, GRE
+            if = {
+              limit={FROM.FROM={state = 353}}
+              if={
+                limit = {
+                  tag=ARM
+                }
+                FROM.FROM = {
+                  set_state_name = "Karin"
+                  set_province_name = { id = 9932 name = "Trebizond" }
+                  set_province_name = { id = 11853 name = "Karin" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=GRE
+                }
+                FROM.FROM = {
+                  set_state_name = "Pontus Cappadocia"
+                  set_province_name = { id = 9932 name = "Trapezous" }
+                  set_province_name = { id = 11853 name = "Karin" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Trabzon"
+                  set_province_name = { id = 9932 name = "Trabzon" }
+                  set_province_name = { id = 11853 name = "Erzurum" }
+                }
+              }
+            }
+            limit={FROM.FROM={region = 134}}
+            #Completed Trebizond, ARM, TUR, GRE
+            if = {
+              limit={FROM.FROM={state = 354}}
+              if={
+                limit = {
+                  tag=ARM
+                }
+                FROM.FROM = {
+                  set_state_name = "Vanand"
+                  set_province_name = { id = 789 name = "Kars" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Kars"
+                  set_province_name = { id = 789 name = "Kars" }
                 }
               }
             }
@@ -187,7 +318,7 @@ on_actions = {
                 FROM.FROM = {
                   set_state_name = "Van"
                   set_province_name = { id = 6935 name = "Van" }
-                  set_province_name = { id = 10497 name = "Sasun" }
+                  set_province_name = { id = 10497 name = "Paghesh" }
                 }
               }
               else_if={
@@ -197,7 +328,7 @@ on_actions = {
                 FROM.FROM = {
                   set_state_name = "Van"
                   set_province_name = { id = 6935 name = "Van" }
-                  set_province_name = { id = 10497 name = "Sason" }
+                  set_province_name = { id = 10497 name = "Bitlis" }
                 }
               }
               else_if={
@@ -207,35 +338,10 @@ on_actions = {
                 FROM.FROM = {
                   set_state_name = "Wan"
                   set_province_name = { id = 6935 name = "Wan" }
-                  set_province_name = { id = 10497 name = "Qabilcewz" }
+                  set_province_name = { id = 10497 name = "Bidlis" }
                 }
               }
             }
-            #Completed Karin, ARM, TUR
-            else_if = {
-              limit={FROM.FROM={state = 354}}
-              if={
-                limit = {
-                  tag=ARM
-                }
-                FROM.FROM = {
-                  set_state_name = "Karin"
-                  set_province_name = { id = 11853 name = "Karin" }
-                  set_province_name = { id = 9932 name = "Trebizond" }
-                }
-              }
-              else_if={
-                limit = {
-                  tag=TUR
-                }
-                FROM.FROM = {
-                  set_state_name = "Erzurum"
-                  set_province_name = { id = 11853 name = "Erzurum" }
-                  set_province_name = { id = 9932 name = "Trabzon" }
-                }
-              }
-            }
-          }
           #ANATOLIA
           else_if={
             limit={FROM.FROM={region = 129}}
@@ -307,6 +413,40 @@ on_actions = {
                 }
               }
             }
+            #Completed Amed, ARM, TUR, KUR
+            else_if = {
+              limit={FROM.FROM={state = 350}}
+              if={
+                limit = {
+                  tag=ARM
+                }
+                FROM.FROM = {
+                  set_state_name = "Aghdznik" #Korchayk
+                  set_province_name = { id = 4512 name = "Tigranakert" }
+                  set_province_name = { id = 12387 name = "Batman" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Diyarbakır"
+                  set_province_name = { id = 4512 name = "Diyarbakır" }
+                  set_province_name = { id = 12387 name = "Batman" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=KUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Amed"
+                  set_province_name = { id = 4512 name = "Amed" }
+                  set_province_name = { id = 12387 name = "Elih" }
+                }
+              }
+            }
             #Completed Afyon, GRE, TUR
             else_if = {
               limit={FROM.FROM={state = 343}}
@@ -361,8 +501,8 @@ on_actions = {
                   tag=GRE
                 }
                 FROM.FROM = {
-                  set_state_name = "Sampsoúnta"
-                  set_province_name = { id = 11881 name = "Sampsoúnta" }
+                  set_state_name = "Pontus"
+                  set_province_name = { id = 11881 name = "Sampsounta" }
                 }
               }
               else_if={
@@ -431,11 +571,17 @@ on_actions = {
                   tag=ARM
                 }
                 FROM.FROM = {
-                  set_state_name = "Eastern Kilikia"
-                  set_province_name = { id = 7620 name = "Malatya" }
-                  set_province_name = { id = 9893 name = "Ayntap" }
-                  set_province_name = { id = 806 name = "Adana" }
-                  set_province_name = { id = 6813 name = "Marash" }
+                  set_state_name = "Kilikia"
+                  set_province_name = { id = 11746 name = "Adana" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=CIL
+                }
+                FROM.FROM = {
+                  set_state_name = "Kilikia"
+                  set_province_name = { id = 11746 name = "Sis" }
                 }
               }
               else_if={
@@ -444,10 +590,7 @@ on_actions = {
                 }
                 FROM.FROM = {
                   set_state_name = "Adana"
-                  set_province_name = { id = 7620 name = "Malatya" }
-                  set_province_name = { id = 9893 name = "Gaziantep" }
-                  set_province_name = { id = 806 name = "Adana" }
-                  set_province_name = { id = 6813 name = "Maraş" }
+                  set_province_name = { id = 11746 name = "Adana" }
                 }
               }
               else_if={
@@ -456,9 +599,54 @@ on_actions = {
                 }
                 FROM.FROM = {
                   set_state_name = "Edene"
+                  set_province_name = { id = 11746 name = "Edene" }
+                }
+              }
+            }
+            #Completed Adana, ARM, TUR, KUR
+            else_if = {
+              limit={FROM.FROM={state = 795}}
+              if={
+                limit = {
+                  tag=ARM
+                }
+                FROM.FROM = {
+                  set_state_name = "Maras"
+                  set_province_name = { id = 7620 name = "Melitene" }
+                  set_province_name = { id = 9893 name = "Ayntap" }
+                  set_province_name = { id = 6813 name = "Marash" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=CIL
+                }
+                FROM.FROM = {
+                  set_state_name = "Maras"
+                  set_province_name = { id = 7620 name = "Melitene" }
+                  set_province_name = { id = 9893 name = "Ayntap" }
+                  set_province_name = { id = 6813 name = "Marash" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=TUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Maras"
+                  set_province_name = { id = 7620 name = "Malatya" }
+                  set_province_name = { id = 9893 name = "Gaziantep" }
+                  set_province_name = { id = 6813 name = "Maraş" }
+                }
+              }
+              else_if={
+                limit = {
+                  tag=KUR
+                }
+                FROM.FROM = {
+                  set_state_name = "Marqas"
                   set_province_name = { id = 7620 name = "Meleti" }
                   set_province_name = { id = 9893 name = "Dilok" }
-                  set_province_name = { id = 806 name = "Edene" }
                   set_province_name = { id = 6813 name = "Marqas" }
                 }
               }
@@ -471,8 +659,9 @@ on_actions = {
                   tag=ARM
                 }
                 FROM.FROM = {
-                  set_state_name = "Sebastia"
-                  set_province_name = { id = 9777 name = "Sebastia" }
+                  set_state_name = "Sophene"
+                  #set_province_name = { id = 9777 name = "Sebastia" }
+                  set_province_name = { id = 9860 name = "Kharpert" } #Kharput
                 }
               }
               else_if={
@@ -480,8 +669,9 @@ on_actions = {
                   tag=TUR
                 }
                 FROM.FROM = {
-                  set_state_name = "Sivas"
-                  set_province_name = { id = 9777 name = "Sivas" }
+                  set_state_name = "Mezereh"
+                  #set_province_name = { id = 9777 name = "Sivas" }
+                  set_province_name = { id = 9860 name = "Mezereh" }
                 }
               }
               else_if={
@@ -489,8 +679,9 @@ on_actions = {
                   tag=KUR
                 }
                 FROM.FROM = {
-                  set_state_name = "Sewas"
-                  set_province_name = { id = 9777 name = "Sewas" }
+                  set_state_name = "Mezereh"
+                  #set_province_name = { id = 9777 name = "Sewas" }
+                  set_province_name = { id = 9860 name = "Mezereh" }
                 }
               }
             }
@@ -779,28 +970,6 @@ on_actions = {
                   set_state_name = "Bexda"
                   set_province_name = { id = 2097 name = "Bexda" }
                   set_province_name = { id = 2089 name = "Besre" }
-                }
-              }
-            }
-            #Completed Palestine, ARA, TUR
-            else_if = {
-              limit={FROM.FROM={state = 454}}
-              if={
-                limit = {
-                  is_arab_nation=yes
-                }
-                FROM.FROM = {
-                  set_state_name = "Palestine"
-                  set_province_name = { id = 1086 name = "Jerusalem" }
-                }
-              }
-              if={
-                limit = {
-                  tag=TUR
-                }
-                FROM.FROM = {
-                  set_state_name = "Filistin"
-                  set_province_name = { id = 1086 name = "Kudüs" }
                 }
               }
             }

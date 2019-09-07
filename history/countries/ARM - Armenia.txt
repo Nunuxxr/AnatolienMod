@@ -61,40 +61,46 @@ set_technology = {
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "1935.11.11"
+	last_election = "1935.10.11"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
     fascism = 6
-    democratic = 89
-    communism = 5
+    democratic = 77
+    communism = 13
+    neutrality = 4
 }
 
 add_ideas = {
 	limited_conscription
-	ARM_preserve_greater_armenia
-	ARM_church
+	#ARM_preserve_greater_armenia
+	#ARM_church
+	ARM_usa_mandate
+	AZR_ethnic_tensions
+	ARM_ruble_devalued
+	ARM_livestock_idea
 	ARM_outdated_script
 }
 
 create_country_leader = {
-	name = "Hamo Ohanjanyan"
-	desc = "ARM_hamo_ohanjanyan_desc"
-	picture = "Portrait_ARM_Hamo_Ohanjanyan.tga"
-	expire = "1947.7.31"
+	name = "Hovhannes Kajaznuni"
+	desc = "ARM_hovhannes_kajaznuni_desc" #########################################
+	picture = "Portrait_Armenia_Hovhannes_Kajaznuni.dds"
+	expire = "1953.3.1"
 	ideology = conservatism
 	traits = {
+		great_architect
 	}
 }
 
 create_country_leader = {
-	name = "Drastamat Kanayan"
-	desc = "ARM_drastamat_kanayan_desc"
-	picture = "Portrait_Armenia_Drastamat_Kanayan3.dds"
+	name = "Garegin Ter-Harutyunyan"
+	desc = "ARM_garegin_nzhdeh_desc"
+	picture = "Portrait_ARM_Garegin_Ter-Harutyunyan.png"
 	expire = "1956.3.8"
-	ideology = fascism_ideology
+	ideology = nazism
 	traits = {
 		great_war_hero
 	}
@@ -145,7 +151,7 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 create_corps_commander = {
-	name = "Christopher Araratyan"
+	name = "Kristapor Araratian"
 	desc = "ARM_christopher_araratyan_desc"
 	picture = "Portrait_Armenia_Christopher_Araratov.tga"
 	traits = { bearer_of_artillery }
@@ -156,7 +162,18 @@ create_corps_commander = {
 	logistics_skill = 1
 }
 create_corps_commander = {
-	name = "Garegin Nzhdeh"
+	name = "Hakob Bagratuni"
+	desc = "ARM_jaques_bagratuni_desc"
+	picture = "Portrait_Armenia_Jaques_Bagratuni.tga"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Karekin Nzhdeh"
 	desc = "ARM_garegin_nzhdeh_desc"
 	picture = "Portrait_ARM_Garegin_Ter-Harutyunyan.png"
 	traits = { commando trait_mountaineer }

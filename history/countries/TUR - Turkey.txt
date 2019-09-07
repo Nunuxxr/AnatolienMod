@@ -14,7 +14,7 @@ set_research_slots = 3
 add_ideas = {
 	limited_conscription
 	TUR_state
-	TUR_entente_restrictions
+	#TUR_entente_restrictions
 	TUR_corrupt
 }
 

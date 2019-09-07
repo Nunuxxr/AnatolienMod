@@ -8,19 +8,13 @@ state={
 
 	history={
 		owner = FRA
-		victory_points = { #Gaziantep
-			9893 1
-		}
 		victory_points = { #Adana
-			806 3
-		}
-		victory_points = { #Kahramanmaraş
-			6813 1 
+			11746 3
 		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
-			806 = {
+			11746 = {
 				naval_base = 3
 			}
 		}
@@ -28,6 +22,6 @@ state={
 	}
 
 	provinces={
-		806 886 3889 6813 7620 9823 9893 9912 11746 11759 11871 12029
+		806 886 3889 11746 12029
 	}
 }

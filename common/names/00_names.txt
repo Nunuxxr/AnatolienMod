@@ -3790,24 +3790,63 @@ ARM = {
 	male = {
 		names = { 
 			Anastas Aram Armen Ashot Hagop Baben Garen Haik Hrant Hovhannes Hamazasp Jirayr Gagik Levon 
-			Khoren Narek Rupen Sarkis Serj Tovmas Robert Gurgen Garo Christopher Artem Nikol Artur Artem
-			Tigran Vartan Drastamat Khoren Hrayr Ara Andranik Vazgen
-			
+			Khoren Narek Ruben Sargis Serj Tovmas Robert Gurgen Garo Kristapor Artem Nikol Artur Artem
+			Tigran Vartan Drastamat Khoren Hrayr Ara Andranik Vazgen Nerses Gerasim Aramayis Mikayel
+			Artashes Samson Giga Arsen Minas Avetik Askanaz Vahan Arsham Suren Sirakan Sahak Grigor
+			Gevorg Alexandre Davit Mihran Artsrun Hovsep Kirk Mark Simone Arak Mardiros Avedis Mkhitar
+			Movses Stepan Petros Poghos Gor Arman Erik Samvel Anania Arshak Karekin
 		}
 	}
 	female = {
 		names = { 
-		    Mariam Danielle Seda Talar Tamar Taline Eva Aline Anna Elise Arpine Perchuhi Varvara Katarine
-		
+		    Mariam Seta Talar Tamar Taline Eva Aline Anna Elise Arpine Perchuhi Varvara Katarine Madlene
+			Yeghisabet Ani Anahit Elen Mary Nare Milena Nairi
 		}
 	}
 	surnames = { 
-		Avetisyan Bagratuni Kasparian Hagopian Harutyunyan Hovhannisyan Hovnanian Karapetyan Garabedian 
-		Kasparian Khachaturian Mamikonian Manukyan Nazarian Ohanian Sarkissian Tavitian Kanayan Ararat
-        Vartabedian Vardanian Zakarian Ebeyan Hovsepyan Tsarukyan Pashinyan Mikoyan Gevorgyan Melkonian
-		Karenian Ozanian Bagramyan Sargsyan Kardashian Partizpanyan Barseghyan Zalyan Sahakyan Tigranian
+		Avetisian Shahnazarian Kasparian Hagopian Harutyunyan Hovhannisian Hovnanian Karapetyan Garabedian 
+		Kasparian Khachaturian Mamikonian Manukyan Nazarian Ohanian Sarkissian Tavitian Kanayan Araratian
+        Vartabedian Zakarian Hovsepyan Tsarukyan Pashinian Mikoyan Gevorgyan Melkonian Khoreni Ghazarian
+		Karenian Ozanian Bagramyan Partizpanyan Barseghyan Zalyan Sahakian Tigranian Ter-Danielian Bekzadian
+		Nasibian Atabekian Kalantarian Manasian Shahmazian Arzumanian Hakhverdian Berberian Enfiadjian Mravyan
+		Makintsyan Khondkarian Minakhorian Melikian Piralian Torosian Vermishian Melik-Karageozian Ananun
+		Tumanian Poghossian Yeghiazaryan Arghutian Kirkorian Markarian Simonyan Arakelian Mardirossian Hayraprtyan
+		Arshakuni Assadourian Agajanian Alaverdyan Atchabahian Avakian Bagdasarian Pakradouni Barsamian Parseghian
+		Ghougassian Keleshian Movsesian Bedrossian Vartanian Yanikian Nalbandian Stepanyan Papazian Sarafian Terzian
+		Tashjian Srvandztyan Gavafian Mehrabyan Pastermadjian 
 	}
-	callsigns = { Mamikonian Sparapet Komitas Nzhdeh Pasha Arag Baziliks "Mesrop Mashtots" Hovanots Kaytsak Avary "Sev Devy" Herman }
+	callsigns = { Mamikonian Sparapet Komitas Nzhdeh Pasha Arag Baziliks "Mesrop Mashtots" Hovanots Kaytsak Avary "Sev Devy" Herman Vartan }
+}
+CIL = {
+	male = {
+		names = { 
+			Anastas Aram Armen Ashot Hagop Baben Garen Haik Hrant Hovhannes Hamazasp Jirayr Gagik Levon 
+			Khoren Narek Ruben Sargis Serj Tovmas Robert Gurgen Garo Kristapor Artem Nikol Artur Artem
+			Tigran Vartan Drastamat Khoren Hrayr Ara Andranik Vazgen Nerses Gerasim Aramayis Mikayel
+			Artashes Samson Giga Arsen Minas Avetik Askanaz Vahan Arsham Suren Sirakan Sahak Grigor
+			Gevorg Alexandre Davit Mihran Artsrun Hovsep Kirk Mark Simone Arak Mardiros Avedis Mkhitar
+			Movses Stepan Petros Poghos Gor Arman Erik Samvel Anania Arshak Karekin
+		}
+	}
+	female = {
+		names = { 
+		    Mariam Seta Talar Tamar Taline Eva Aline Anna Elise Arpine Perchuhi Varvara Katarine Madlene
+			Yeghisabet Ani Anahit Elen Mary Nare Milena Nairi
+		}
+	}
+	surnames = { 
+		Avetisian Shahnazarian Kasparian Hagopian Harutyunyan Hovhannisian Hovnanian Karapetyan Garabedian 
+		Kasparian Khachaturian Mamikonian Manukyan Nazarian Ohanian Sarkissian Tavitian Kanayan Araratian
+        Vartabedian Zakarian Hovsepyan Tsarukyan Pashinian Mikoyan Gevorgyan Melkonian Khoreni Ghazarian
+		Karenian Ozanian Bagramyan Partizpanyan Barseghyan Zalyan Sahakian Tigranian Ter-Danielian Bekzadian
+		Nasibian Atabekian Kalantarian Manasian Shahmazian Arzumanian Hakhverdian Berberian Enfiadjian Mravyan
+		Makintsyan Khondkarian Minakhorian Melikian Piralian Torosian Vermishian Melik-Karageozian Ananun
+		Tumanian Poghossian Yeghiazaryan Arghutian Kirkorian Markarian Simonyan Arakelian Mardirossian Hayraprtyan
+		Arshakuni Assadourian Agajanian Alaverdyan Atchabahian Avakian Bagdasarian Pakradouni Barsamian Parseghian
+		Ghougassian Keleshian Movsesian Bedrossian Vartanian Yanikian Nalbandian Stepanyan Papazian Sarafian Terzian
+		Tashjian Srvandztyan Gavafian Mehrabyan Pastermadjian 
+	}
+	callsigns = { Mamikonian Sparapet Komitas Nzhdeh Pasha Arag Baziliks "Mesrop Mashtots" Hovanots Kaytsak Avary "Sev Devy" Herman Vartan }
 }
 AZR = {
 	male = {

@@ -1,25 +1,35 @@
+
 state={
 	id=353
 	name="STATE_353"
 
 	history={
 		owner = ARM
-        victory_points = { #Kars
-			789 3
+		victory_points = {
+			11853 3
 		}
-        victory_points = { #Igdir
-			4583 1
+		victory_points = {
+			9932 1 
+		}
+		victory_points = {
+			11753 1 
 		}
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
+			9932 = {
+				naval_base = 3
+
+			}
+
 		}
 		add_core_of = ARM
+
 	}
 
 	provinces={
-		789 4583 6991 10472 12376
+		3714 3979 6976 9868 9886 9932 9954 11753 11853 
 	}
-	manpower=143471 #260000 #379498
-	buildings_max_level_factor=1.000
-	state_category=rural
+	manpower=675404
+	state_category = town
 }

@@ -528,7 +528,7 @@ on_actions = {
 					give_resource_rights = { receiver = USA state = 480 }
 				}
 				AZR = {
-					give_resource_rights = { receiver = SOV state = 795 }
+					give_resource_rights = { receiver = SOV state = 799 }
 				}
 			}
 			# Game Rules - Decolonization

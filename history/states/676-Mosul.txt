@@ -13,17 +13,17 @@ state={
 
 		}
 		victory_points = {
-			10106 1 
+			10106 3 
 		}
 		victory_points = {
-			8123 3 
+			8123 1 
 		}
 		add_core_of = IRQ
 
 	}
 
 	provinces={
-		1600 1938 3795 8123 10106 10793 12372 
+		1600 1938 3795 10106 10804 12372 
 	}
 	manpower=650643
 	buildings_max_level_factor=1.000

@@ -383,14 +383,14 @@ bookmarks = {
 			history = "ARM_BLITZKRIEG_DESC"
 			ideology = democratic
 			ideas = {
-				ARM_preserve_greater_armenia
-				ARM_church
-				ARM_banak_shortcomings
+				AZR_ethnic_tensions
+				ARM_livestock_idea
+				ARM_ruble_devalued
 			}
 			focuses = {
-				ARM_heir_apparent
-				ARM_focus_on_the_greater_threat
-				ARM_appoint_new_sparapet
+				ARM_acceptance
+				ARM_free_elections
+				ARM_AZR_population_exchange
 			}
 		}
 		

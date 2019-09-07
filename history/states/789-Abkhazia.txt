@@ -18,7 +18,7 @@ state={
 			}
 		}
 		add_core_of = GEO
-		add_core_of = ABK
+		#add_core_of = ABK
 	}
 
 	provinces={

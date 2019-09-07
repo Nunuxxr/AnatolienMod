@@ -285,16 +285,16 @@ bookmarks = {
 		"ARM"={
 			minor = yes
 			history = "ARM_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = democratic
 			ideas = {
-				ARM_preserve_greater_armenia
-				ARM_church
-				ARM_outdated_script
+				AZR_ethnic_tensions
+				ARM_livestock_idea
+				ARM_ruble_devalued
 			}
 			focuses = {
-				ARM_western_victory_focus
+				ARM_acceptance
 				ARM_free_elections
-				ARM_referendum_over_adana
+				ARM_AZR_population_exchange
 			}
 		}
 		"CHI"={

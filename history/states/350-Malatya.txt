@@ -11,15 +11,13 @@ state={
 		victory_points = { #Diyarbakir
 			4512 3
 		}
-		#victory_points = { #Şanlıurfa
-		#	9823 1
-		#}
-		victory_points = { #Malatya
-			7620 1
+		victory_points = { #Batman
+			12387 1
 		}
 		buildings = {
 			infrastructure = 3
 			air_base = 2
+			industrial_complex = 1
 		}
 		add_core_of = KUR
 		add_core_of = TUR

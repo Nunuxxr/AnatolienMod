@@ -4076,15 +4076,43 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_zcmc.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ararat_cement"
-		texturefile = "gfx/interface/ideas/idea_ararat_cement.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_ycrdi"
 		texturefile = "gfx/interface/ideas/idea_ycrdi.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_nss"
 		texturefile = "gfx/interface/ideas/idea_nss.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_arm_advisor_khoren"
+		texturefile = "gfx/interface/ideas/arm_advisor_khoren.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_arm_ruble"
+		texturefile = "gfx/interface/ideas/idea_arm_ruble.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_arm_animal"
+		texturefile = "gfx/interface/ideas/idea_arm_animal.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_arm_script"
+		texturefile = "gfx/interface/ideas/idea_arm_script.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_arm_tensions"
+		texturefile = "gfx/interface/ideas/idea_arm_tensions.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ysu"
+		texturefile = "gfx/interface/ideas/idea_ysu.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_intervention_usa"
+		texturefile = "gfx/interface/ideas/idea_intervention_usa.png"
+	}
+	spriteType = {
+		name = "GFX_idea_intervention_sov"
+		texturefile = "gfx/interface/ideas/idea_intervention_sov.png"
 	}
 }

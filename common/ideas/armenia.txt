@@ -37,7 +37,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = 0.1
-				industrial_capacity_factory = 0.10
+				consumer_goods_factor = -0.1
 			}
 		}
 		
@@ -56,7 +56,7 @@ ideas = {
 			picture = FRA_factory_strikes #civilian_economy
 			
 			modifier = {
-				industrial_capacity_factory = 0.10
+				industrial_capacity_factory = 0.07
 			}
 		}
 		
@@ -72,10 +72,50 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = prc_low_popular_support2
+			picture = arm_script
 			
 			modifier = {
-				research_speed_factor = -0.05
+				research_speed_factor = -0.07
+			}
+		}
+		
+		ARM_livestock_idea = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = arm_animal
+			
+			modifier = {
+				monthly_population = -0.15
+				winter_attrition_factor = 0.19
+			}
+		}
+		
+		ARM_ruble_devalued = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = arm_ruble
+			
+			modifier = {
+				stability_weekly = -0.001
+				production_speed_industrial_complex_factor = -0.10
 			}
 		}
 		
@@ -98,8 +138,8 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = TUR
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
 			}
 		}
 
@@ -135,7 +175,7 @@ ideas = {
 			picture = ast_abandon_the_westminster_system_fascism
 			
 			modifier = {
-				monthly_population = 0.25
+				monthly_population = 0.1
 			}
 		}
 
@@ -153,7 +193,7 @@ ideas = {
 			picture = ast_abandon_the_westminster_system_fascism
 			
 			modifier = {
-				trade_opinion_factor = 0.25
+				trade_opinion_factor = 0.15
 				consumer_goods_factor = -0.05
 			}
 		}
@@ -172,7 +212,7 @@ ideas = {
 			picture = ast_abandon_the_westminster_system_fascism
 			
 			modifier = {
-				research_speed_factor = 0.1
+				research_speed_factor = 0.08
 			}
 		}
 
@@ -190,7 +230,7 @@ ideas = {
 			
 			modifier = {
 				conscription = 0.01
-				partisan_effect = 0.1
+				#partisan_effect = 0.1
 				mobilization_speed = 0.05
 			}
 		}
@@ -208,8 +248,27 @@ ideas = {
 			picture = nss
 			
 			modifier = {
-				decryption_factor = 0.2
-				encryption_factor = 0.2
+				decryption_factor = 0.07
+				encryption_factor = 0.12
+			}
+		}
+
+		ARM_college = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = officer
+			
+			modifier = {
+				army_leader_start_level = 2
+				experience_gain_army_factor = 0.05
+				training_time_factor = -0.05
 			}
 		}
 		
@@ -228,9 +287,8 @@ ideas = {
 			picture = generic_fortify_the_borders
 			
 			modifier = {
-				guarantee_tension = -1.0
-				guarantee_cost = -0.5
-				surrender_limit = 0.25
+				mobilization_speed = 0.05
+				surrender_limit = 0.1
 			}
 		}
 		
@@ -292,11 +350,8 @@ ideas = {
 			picture = arm_coa
 			
 			modifier = {
-				army_core_attack_factor = 0.05
 				army_core_defence_factor = 0.05
-				army_morale_factor = 0.1
 				conscription = 0.025
-				surrender_limit = 0.2
 			}
 		}
 		
@@ -315,8 +370,8 @@ ideas = {
 			picture = infantry_bonus
 			
 			modifier = {
-				war_support_factor = 0.05
-				conscription_factor = 0.10
+				war_support_factor = 0.03
+				conscription_factor = 0.08
 			}
 		}
 		
@@ -379,8 +434,8 @@ ideas = {
 			picture = generic_fascism_drift_bonus
 			
 			modifier = {
-				fascism_drift = 0.1
-				fascism_acceptance = 85
+				fascism_drift = 0.07
+				fascism_acceptance = 45
 			}
 		}
 		
@@ -400,8 +455,8 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 			
 			modifier = {
-				political_power_gain = 0.1
-				democratic_drift = 0.04
+				stability_weekly = 0.002
+				democratic_drift = 0.02
 			}
 		}
 		
@@ -440,7 +495,7 @@ ideas = {
 			picture = raj_marginalized_muslim_community_happy
 			
 			modifier = {
-				industrial_capacity_factory = 0.10
+				industrial_capacity_factory = 0.08
 			}
 		}
 		
@@ -459,8 +514,8 @@ ideas = {
 			picture = raj_marginalized_muslim_community_angry
 			
 			modifier = {
-				conscription_factor = -0.05
-				consumer_goods_factor = -0.1
+				conscription_factor = -0.03
+				consumer_goods_factor = -0.08
 			}
 		}
 		
@@ -479,7 +534,7 @@ ideas = {
 			picture = ROM_king_carol_emptied_accounts
 			
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_factor = -0.13
 			}
 		}
 		
@@ -491,14 +546,15 @@ ideas = {
 			}
 
 			allowed_civil_war = {
+				always = yes
 			}
 
 			removal_cost = -1
 
-			#picture = raj_marginalized_muslim_community
+			picture = intervention_usa
 			
 			modifier = {
-				consumer_goods_factor = -0.2
+				consumer_goods_factor = -0.1
 			}
 		}
 		
@@ -518,8 +574,13 @@ ideas = {
 			
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.07 instant = yes
 				}
+			}
+			
+			modifier = {
+				conscription_factor = 0.04
+				partisan_effect = 0.12
 			}
 		}
 		
@@ -538,7 +599,7 @@ ideas = {
 			picture = generic_armor
 			
 			modifier = {
-				production_speed_arms_factory_factor = 0.15
+				production_speed_arms_factory_factor = 0.09
 			}
 		}
 		
@@ -557,10 +618,8 @@ ideas = {
 			picture = chi_hyper_inflation4
 			
 			modifier = {
-				#political_power_gain = 0.1
-				political_advisor_cost_factor = -0.25
-				economy_cost_factor = -0.25
-				mobilization_laws_cost_factor = -0.25
+				local_building_slots_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
 			}
 		}
 		
@@ -648,8 +707,26 @@ ideas = {
 			picture = generic_pp_unity_bonus #ger_mefo_bills
 			
 			modifier = {
-				political_advisor_cost_factor = -0.25
-				trade_laws_cost_factor = -0.25
+				political_advisor_cost_factor = -0.08
+				economy_cost_factor = -0.11
+				mobilization_laws_cost_factor = -0.1
+			}
+		}
+		
+		ARM_tseghakronism_idea = {
+		
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = triumphant_will
+			
+			modifier = {
+				justify_war_goal_time = -0.15
+				fascism_acceptance = 50
+				fascism_drift = 0.02
 			}
 		}
 	
@@ -659,7 +736,7 @@ ideas = {
 
 		khoren_advisor = {
 
-			picture = generic_political_advisor_europe_1
+			picture = arm_advisor_khoren
 			
 			allowed = {
 				original_tag = ARM
@@ -698,7 +775,7 @@ ideas = {
 				original_tag = ARM
 			}
 			
-			traits = { captain_of_industry }
+			traits = { silent_workhorse }
 		}
 
 		ruben_ter-minasian_advisor = {
@@ -724,7 +801,7 @@ ideas = {
 				has_completed_focus = ARM_soviet_armenians
 			}
 			
-			traits = { silent_workhorse }
+			traits = { captain_of_industry }
 		}
 
 		amatuni_vardapetyan_advisor = {
@@ -805,6 +882,8 @@ ideas = {
 				original_tag = ARM
 			}
 			
+			picture = generic_exploit_mines
+			
 			research_bonus = {
 				industry = 0.10
 				
@@ -813,7 +892,7 @@ ideas = {
 			traits = { industrial_concern }
 		}
 
-		ycrdi = {
+		ysu = {
 			
 			allowed = {
 				original_tag = ARM
@@ -856,6 +935,8 @@ ideas = {
 				original_tag = ARM
 			}
 
+			picture = generic_political_advisor_europe_2
+
 			available = {
 				has_completed_focus = ARM_soviet_armenians
 			}
@@ -873,6 +954,8 @@ ideas = {
 			allowed = {
 				original_tag = ARM
 			}
+
+			picture = generic_political_advisor_europe_1
 		
 			research_bonus = {
 				nuclear = 0.10
@@ -888,6 +971,8 @@ ideas = {
 				original_tag = ARM
 			}
 			
+			picture = generic_army_europe_1
+			
 			research_bonus = {
 				land_doctrine = 0.07
 			}
@@ -902,6 +987,8 @@ ideas = {
 			allowed = {
 				original_tag = ARM
 			}
+			
+			picture = generic_air_europe_1
 
 			available = {
 				has_completed_focus = ARM_soviet_armenians
@@ -920,6 +1007,8 @@ ideas = {
 			allowed = {
 				original_tag = ARM
 			}
+			
+			picture = generic_navy_europe_1
 
 			available = {
 				has_completed_focus = ARM_soviet_armenians
@@ -942,6 +1031,8 @@ ideas = {
 			allowed = {
 				original_tag = ARM
 			}
+			
+			picture = generic_army_europe_3
 
 			available = {
 				has_completed_focus = ARM_appoint_new_sparapet
@@ -958,6 +1049,8 @@ ideas = {
 			allowed = {
 				original_tag = ARM
 			}
+			
+			picture = generic_army_europe_1
 
 			available = {
 				has_completed_focus = ARM_appoint_new_sparapet
@@ -975,6 +1068,8 @@ ideas = {
 			allowed = {
 				original_tag = ARM
 			}
+			
+			picture = generic_army_europe_4
 
 			available = {
 				has_completed_focus = ARM_soviet_armenians
@@ -994,6 +1089,8 @@ ideas = {
 			allowed = {
 				original_tag = ARM
 			}
+			
+			picture = generic_army_europe_5
 
 			available = {
 				has_completed_focus = ARM_appoint_new_sparapet
@@ -1015,6 +1112,8 @@ ideas = {
 			allowed = {
 				original_tag = ARM
 			}
+			
+			picture = generic_air_europe_3
 
 			available = {
 				has_completed_focus = ARM_soviet_armenians
@@ -1036,6 +1135,8 @@ ideas = {
 			allowed = {
 				original_tag = ARM
 			}
+			
+			picture = generic_navy_europe_1
 
 			available = {
 				has_completed_focus = ARM_soviet_armenians
@@ -1058,6 +1159,8 @@ ideas = {
 				original_tag = ARM
 			}
 			
+			picture = generic_army_europe_1
+			
 			traits = { army_infantry_1 }
 			
 			ai_will_do = {
@@ -1076,6 +1179,8 @@ ideas = {
 				has_completed_focus = ARM_soviet_armenians
 			}
 			
+			picture = generic_army_europe_2
+			
 			traits = { army_armored_1 }
 			
 			ai_will_do = {
@@ -1089,6 +1194,8 @@ ideas = {
 			allowed = {
 				original_tag = ARM
 			}
+			
+			picture = generic_army_europe_3
 			
 			traits = { army_regrouping_1 }
 			
@@ -1104,6 +1211,8 @@ ideas = {
 				original_tag = ARM
 			}
 			
+			picture = generic_army_europe_6
+			
 			traits = { army_logistics_2 }
 			
 			ai_will_do = {
@@ -1117,6 +1226,8 @@ ideas = {
 			allowed = {
 				original_tag = ARM
 			}
+			
+			picture = generic_air_europe_2
 
 			available = {
 				has_completed_focus = ARM_soviet_armenians

@@ -21,6 +21,25 @@ ideas = {
 			}
 		}
 		
+		AZR_soviet_mandate = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = intervention_sov
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		
 		AZR_secular_republic = {
 			
 			allowed = {
@@ -41,27 +60,19 @@ ideas = {
 			}
 		}
 		
-		AZR_ethnic_tension = {
-			
+		AZR_ethnic_tensions = {
+		
 			allowed = {
 				always = yes
 			}
 
-			allowed_civil_war = {
-				always = yes
-			}
-
 			removal_cost = -1
-
-			#picture = YUG_orthodox_church_support
+			
+			picture = arm_tensions
 			
 			modifier = {
-				war_support_factor = 0.05
-			}
-			targeted_modifier = {
-				tag = ARM
-				attack_bonus_against = 0.05
-				defense_bonus_against = 0.05
+				political_power_gain = -0.1
+				stability_factor = -0.05
 			}
 		}
 
