@@ -6,21 +6,20 @@ state={
 	history={
 		owner = ARM
 		victory_points = {
-			11853 3
-		}
-		victory_points = {
-			9932 1 
+			11853 5 
 		}
 		victory_points = {
 			11753 1 
 		}
+		victory_points = {
+			789 3 
+		}
+		victory_points = {
+			10472 1 
+		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			9932 = {
-				naval_base = 3
-
-			}
 
 		}
 		add_core_of = ARM
@@ -28,8 +27,9 @@ state={
 	}
 
 	provinces={
-		3714 3979 6976 9868 9886 9932 9954 11753 11853 
+		652 789 6976 6991 9868 9886 9954 10472 11853 12376 
 	}
 	manpower=675404
-	state_category = town
+	buildings_max_level_factor=1.000
+	state_category=town
 }

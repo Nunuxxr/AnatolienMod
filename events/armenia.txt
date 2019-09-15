@@ -1034,32 +1034,6 @@ country_event = {
 }
 
 country_event = {
-    id = armenia.44
-    title = armenia.44.t
-    desc = armenia.44.d
- 
-    fire_only_once = yes
- 
-    is_triggered_only = yes
-	
-    option = {
-        name = armenia.44.a
-		ai_chance = { factor = 100 }
-		#
-    }
-	
-    option = {
-        name = armenia.44.b
-		ai_chance = { factor = 100 }
-		create_wargoal = {
-			type = take_state_focus
-			target = AZR
-			generator = { 788 }
-		}
-    }
-}
-
-country_event = {
     id = armenia.45
     title = armenia.45.t
     desc = armenia.45.d

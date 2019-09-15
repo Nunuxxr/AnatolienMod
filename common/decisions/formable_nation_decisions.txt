@@ -2774,6 +2774,7 @@ form_caucasia_category = {
 				controls_state = 230
 				#controls_state = 352
 				#controls_state = 353
+				#controls_state = 354
 				controls_state = 793
 				controls_state = 794
 			}
@@ -2781,7 +2782,7 @@ form_caucasia_category = {
 			custom_trigger_tooltip = {
 				tooltip = form_country_georgia_required_states_tt
 				controls_state = 231
-				#controls_state = 354
+				#controls_state = 801
 				controls_state = 789
 				controls_state = 790
 			}
@@ -2810,26 +2811,27 @@ form_caucasia_category = {
 			hidden_effect = {
 				230 = { add_core_of = ROOT } #Hayastan
 				352 = { add_core_of = ROOT } #Van
-				353 = { add_core_of = ROOT } #Rize
+				353 = { add_core_of = ROOT } #Karin
+				354 = { add_core_of = ROOT } #Pontus
 				793 = { add_core_of = ROOT } #Nakhchivan
 				794 = { add_core_of = ROOT } #Syunik
 			}
 			# Georgia
 			custom_effect_tooltip = form_country_georgia_coring_states_tt
 			hidden_effect = {
-				231 = { add_core_of = ROOT } #Sakartvelo
-				789 = { add_core_of = ROOT } #Abkhazia
+				231 = { add_core_of = ROOT } #Tpilisi
+				789 = { add_core_of = ROOT } #Mingrelia
 				790 = { add_core_of = ROOT } #Zaqatala
-				354 = { add_core_of = ROOT } #Tao-Klarjeti
+				801 = { add_core_of = ROOT } #Tao-Klarjeti
 			}
 			# Azerbaijan
 			custom_effect_tooltip = form_country_azerbaijan_coring_states_tt
 			hidden_effect = {
 				229 = { add_core_of = ROOT } #Azerbaijan
 				788 = { add_core_of = ROOT } #Nagorno-Karabakh
-				799 = { add_core_of = ROOT } #Baku
+				799 = { add_core_of = ROOT } #Lankaran
 				#419 = { add_core_of = ROOT } #Western Azerbaijan
-				420 = { add_core_of = ROOT } #Eastern Azerbaijan
+				#420 = { add_core_of = ROOT } #Eastern Azerbaijan
 			}
 			hidden_effect = {
 				news_event = { id = wtt_news.1002 hours = 6 }

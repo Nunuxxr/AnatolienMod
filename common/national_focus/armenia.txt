@@ -1,5 +1,5 @@
 focus_tree = {
-    id = ARM_armenia_focus
+    id = armenia_focus
     country = {
         factor = 0
         modifier = {

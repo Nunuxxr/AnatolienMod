@@ -1,3 +1,4 @@
+
 state={
 	id=230
 	name="STATE_230"
@@ -5,28 +6,29 @@ state={
 	history={
 		owner = ARM
 		victory_points = {
-			12320 5
+			12320 5 
 		}
 		victory_points = {
-			12441 1
+			12441 1 
 		}
-		#victory_points = {
-		#	12380 1
-		#}
+		victory_points = {
+			4583 1 
+		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
 			arms_factory = 1
 			air_base = 2
+
 		}
 		add_core_of = ARM
 
 	}
 
 	provinces={
-		3564 11708 12320 12380 12441 12450 13123
+		3564 4583 12320 12380 12441 13123 
 	}
-	manpower=904000 #1250000 #569529 #1,300,000 - (Kars + Nakhchivan + Syunik + Artsakh) #850000
+	manpower=704000
 	buildings_max_level_factor=1.000
 	state_category=large_town
 }

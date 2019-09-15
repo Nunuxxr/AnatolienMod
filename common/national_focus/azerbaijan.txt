@@ -1,5 +1,5 @@
 focus_tree = {
-	id = generic_focus
+	id = azerbaijan_focus
     country = {
         factor = 1
         modifier = {
@@ -205,9 +205,9 @@ focus_tree = {
 	focus = {
 		id = AZR_special_forces
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = AZR_equipment_effort_3 }
-		prerequisite = { focus = AZR_doctrine_effort_2 }
-		prerequisite = { focus = AZR_armor_effort }
+		prerequisite = { focus = equipment_effort_3 }
+		prerequisite = { focus = doctrine_effort_2 }
+		prerequisite = { focus = armor_effort }
 		x = 1
 		y = 1
 		relative_position_id = AZR_equipment_effort_3
@@ -321,7 +321,7 @@ focus_tree = {
 		mutually_exclusive = { focus = AZR_bomber_focus }
 		x = -1
 		y = 1
-		relative_position_id = aviation_effort
+		relative_position_id = AZR_aviation_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1473,7 +1473,7 @@ focus_tree = {
 
 	focus = {
 		id = AZR_construction_effort_3
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_chi_british_cooperation
 		prerequisite = { focus = AZR_infrastructure_effort }
 		x = 2
 		y = 1
@@ -1641,7 +1641,7 @@ focus_tree = {
 
 	focus = {
 		id = AZR_political_effort
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_arm_agreement_azerbaijan2
 		x = 19
 		y = 0
 		cost = 10
@@ -1665,7 +1665,7 @@ focus_tree = {
 				has_government = neutrality
 			}
 		}
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = AZR_political_effort
 		cost = 10
@@ -1703,7 +1703,7 @@ focus_tree = {
 				has_government = neutrality
 			}
 		}
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = AZR_collectivist_ethos
 		cost = 10
@@ -1754,7 +1754,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = AZR_collectivist_ethos
 		cost = 10
@@ -1799,7 +1799,7 @@ focus_tree = {
 				has_government = neutrality
 			}
 		}
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = AZR_political_effort
 		cost = 10
@@ -1880,7 +1880,7 @@ focus_tree = {
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = AZR_liberty_ethos }
 		mutually_exclusive = { focus = AZR_interventionism_focus }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = AZR_liberty_ethos
 		cost = 10
@@ -1909,7 +1909,7 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = AZR_liberty_ethos }
 		mutually_exclusive = { focus = AZR_neutrality_focus }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = AZR_liberty_ethos
 		cost = 10
@@ -2188,6 +2188,6 @@ focus_tree = {
 				}				
 			}			
 		}
-	}	
+	}
 
 }

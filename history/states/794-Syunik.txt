@@ -15,8 +15,8 @@ state={
 	}
 
 	provinces={
-		4660 6642
+		4660 6642 11708 12450
 	}
-	manpower=180000 #221000 #120k of which are Azer #180000
+	manpower=380000 #221000 #120k of which are Azer #180000
 	state_category = rural
 }

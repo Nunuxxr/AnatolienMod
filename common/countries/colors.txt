@@ -77,8 +77,8 @@ SWI = {
 	color_ui = rgb { 193 81 81 }
 }
 TUR = {
-	color = rgb { 145 170 141 } #145 170 141
-	color_ui = rgb { 145 170 141 } #164 255 156
+	color = rgb { 165 155 130 }
+	color_ui = rgb { 10 100 10 }
 }
 GRE = {
 	color = rgb { 76 153 195 } #old colors are 93 181 227
@@ -505,10 +505,6 @@ CSA = {
 KUR = {
 	color = rgb { 80 120 230 }
 	color_ui = rgb { 80 120 230 }
-}
-ASY = {
-	color = rgb { 225 225 225 }
-	color_ui = rgb { 235 235 235 }
 }
 D01 = {
 	color = rgb { 200 100 31 }
