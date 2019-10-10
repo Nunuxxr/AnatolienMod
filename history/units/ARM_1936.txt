@@ -51,7 +51,7 @@ division_template = {
 units = {
 
 	division= {	# "Sevan Cavalry Division"
-		name = "1ya 'Sevan' Hetselazorayin Brigad"
+		name = "1ya 'Dilizhan' Hetselazorayin Brigad"
 		location = 11708
 		division_template = "Hetselazorayin Brigad"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
@@ -60,8 +60,8 @@ units = {
 	}
 	
 	division= {	# "Kars Infantry Division"
-		name = "1ya 'Erevan' Hardzakman Bazhanumy"
-		location = 12320
+		name = "1ya 'Ejmiatsin' Hardzakman Bazhanumy"
+		location = 13221
 		division_template = "Hardzakman Bazhanumy"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
 		start_experience_factor = 0.2
@@ -70,16 +70,16 @@ units = {
 	
 	division= {	# "Nakhichevan Mountain Division"
 		name = "2ya 'Jugha' Hatuk Brigad"
-		location = 6997
+		location = 13218
 		division_template = "Hatuk Brigad"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.75
 	}
 
-	division= {	# "Shusha Mountain Division"
-		name = "3ya Hatuk Brigad"
-		location = 12376
+	division= {	# "Shushi Mountain Division"
+		name = "3ya 'Shushinsky' Hatuk Brigad"
+		location = 1467
 		division_template = "Hatuk Brigad"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
 		start_experience_factor = 0.3
@@ -88,7 +88,7 @@ units = {
 
 	division= {	# "Erzurum Infantry Division"
 		name = "2ya 'Karno K'aghak' Hardzakman Bazhanumy"
-		location = 11853
+		location = 652
 		division_template = "Hardzakman Bazhanumy"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
 		start_experience_factor = 0.2

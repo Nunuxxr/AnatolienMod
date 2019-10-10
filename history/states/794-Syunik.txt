@@ -5,18 +5,27 @@ state={
 	history={
 		owner = ARM
         victory_points = {
-			4660 1
+			6642 1
+		}
+        victory_points = {
+			11708 1
+		}
+		victory_points = {
+			1467 3
 		}
 		buildings = {
 			infrastructure = 2
+			1467 = {
+				bunker = 2
+			}
 		}
 		add_core_of = ARM
 		#add_core_of = AZR
 	}
 
 	provinces={
-		4660 6642 11708 12450
+		1467 4660 6642 9715 11708 12450
 	}
-	manpower=380000 #221000 #120k of which are Azer #180000
+	manpower=520000 #221000 #120k of which are Azer #180000
 	state_category = rural
 }

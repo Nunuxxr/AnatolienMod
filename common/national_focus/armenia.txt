@@ -1,12 +1,15 @@
 focus_tree = {
     id = armenia_focus
+	
     country = {
         factor = 0
+		
         modifier = {
             add = 10
             tag = ARM
         }
     }
+	
     default = no
 
 	continuous_focus_position = { x = 50 y = 1350 }
@@ -473,6 +476,7 @@ focus_tree = {
         icon = GFX_focus_generic_soviet_politics
         prerequisite = {
 			focus = ARM_appease_revolutionaries
+			focus = ARM_draft_new_constitution
 		}
 		available = {
 			SOV = {
@@ -481,7 +485,7 @@ focus_tree = {
 				has_capitulated = no
 			}
 		}
-        x = 12
+        x = 11
         y = 2
         cost = 10
         available_if_capitulated = no
@@ -496,43 +500,13 @@ focus_tree = {
     }
 
     focus = {
-        id = ARM_cut_off_usa
-        icon = GFX_focus_arm_usa
-        prerequisite = {
-			focus = ARM_appease_revolutionaries
-		}
-		available = {
-			USA = {
-				exists = yes
-				NOT = { 
-					has_government = communism
-				}
-			}
-		}
-        x = 15
-        y = 2
-        cost = 10
-        available_if_capitulated = no
-        completion_reward = {
-			add_political_power = 200
-			remove_ideas = ARM_usa_mandate
-			USA = {
-				add_opinion_modifier = { 
-					target = ROOT
-					modifier = large_decrease
-				}
-			}
-        }
-    }
-
-    focus = {
         id = ARM_peasant_councils
         icon = GFX_focus_prc_agrarian_socialism
         prerequisite = {
 			focus = ARM_appease_revolutionaries
 		}
         x = 14
-        y = 3
+        y = 2
         cost = 10
         available_if_capitulated = no
         completion_reward = {
@@ -545,6 +519,9 @@ focus_tree = {
         icon = GFX_focus_arm_workers
         prerequisite = {
 			focus = ARM_recognise_ussr
+		}
+        prerequisite = {
+			focus = ARM_peasant_councils
 		}
         x = 12
         y = 3
@@ -561,9 +538,6 @@ focus_tree = {
         prerequisite = {
 			focus = ARM_worker_rights
 		}
-        prerequisite = {
-			focus = ARM_peasant_councils
-		}
 		available = {
 			SOV = {
 				NOT = { has_war_with = ROOT }
@@ -579,10 +553,40 @@ focus_tree = {
 			country_event = armenia.34
         }
     }
+	
+    focus = {
+        id = ARM_cut_off_usa
+        icon = GFX_focus_arm_usa
+        prerequisite = {
+			focus = ARM_peasant_councils
+		}
+		available = {
+			USA = {
+				exists = yes
+				NOT = { 
+					has_government = communism
+				}
+			}
+		}
+        x = 14
+        y = 3
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			add_political_power = 100
+			USA = {
+				add_opinion_modifier = { 
+					target = ROOT
+					modifier = large_decrease
+				}
+			}
+        }
+    }
+
 
     focus = {
         id = ARM_join_comintern
-        icon = GFX_focus_generic_join_comintern
+        icon = GFX_focus_arm_agreement_ssr
         prerequisite = {
 			focus = ARM_independent_socialism
 		}
@@ -677,7 +681,7 @@ focus_tree = {
 	
     focus = {
         id = ARM_economic_recovery
-        icon = GFX_goal_generic_production
+        icon = GFX_focus_arm_housing
         x = 20
         y = 0
         cost = 10
@@ -930,7 +934,7 @@ focus_tree = {
     focus = {
         id = ARM_armenian_ruble
         icon = GFX_focus_arm_ruble
-		prerequisite = { focus = ARM_reform_passport }
+		prerequisite = { focus = ARM_expand_east_industry }
 		available = { is_puppet = no }
         x = 17
         y = 5
@@ -947,25 +951,36 @@ focus_tree = {
 
     focus = {
         id = ARM_develop_the_capital
-        icon = GFX_focus_generic_industry_1
+        icon = GFX_focus_arm_tumanyan
 		prerequisite = { focus = ARM_pass_agriculture_act }
         x = 18
         y = 3
         cost = 10
         available_if_capitulated = no
 		available = {
-			OR = {
-				has_full_control_of_state = 230
-			}
+		#	OR = {
+		#		has_full_control_of_state = 230
+		#	}
 		}
         completion_reward = {
 			230 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 				}
+			}
+			
+			352 = {
 			}
         }
     }
@@ -1217,7 +1232,7 @@ focus_tree = {
 
     focus = {
         id = ARM_appoint_new_sparapet
-        icon = GFX_focus_arm_general
+        icon = GFX_focus_eng_the_kings_party
         x = 29
         y = 0
         cost = 10
@@ -1316,7 +1331,7 @@ focus_tree = {
 
     focus = {
         id = ARM_army_college
-        icon = GFX_focus_arm_officer
+        icon = GFX_focus_arm_general
         prerequisite = { focus = ARM_doctrine_effort_focus }
         x = 32
         y = 2
@@ -1820,7 +1835,7 @@ focus_tree = {
         id = ARM_referendum_over_adana
         icon = GFX_focus_arm_cilicia
         prerequisite = { 
-			focus = ARM_rekindle_old_alliances
+			focus = ARM_french_mediation
 		}
 		available = {
 			NOT = { has_war_with = FRA }

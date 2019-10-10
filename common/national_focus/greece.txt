@@ -105,8 +105,15 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward={
-			if={
-				limit={ENG={limit={has_government=democratic is_faction_leader=yes}}}
+			if={ ###########################
+				limit={
+					ENG={
+						limit={
+							has_government=democratic 
+							is_faction_leader=yes
+						}
+					}
+				}
 				ENG={country_event=generic.2}
 			}
 			else_if={

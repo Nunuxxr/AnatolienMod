@@ -228,7 +228,7 @@
  STATE_227:0 "Stalino"
  STATE_228:0 "Voroshilovgrad"
  STATE_229:1 "Azerbaycan" #Elisabetpol
- STATE_230:0 "Ararat"
+ STATE_230:0 "Erivan"
  STATE_231:0 "Tpilisi"
  STATE_232:0 "Dagestan"
  STATE_233:0 "Caucasus Mountains"
@@ -342,7 +342,7 @@
  STATE_341:1 "Eastern Thrace"
  STATE_342:1 "Antalya"
  STATE_343:0 "Denizli"
- STATE_344:0 "Adana"
+ STATE_344:0 "Aintab"
  STATE_345:0 "Adana"
  STATE_346:0 "Konya"
  STATE_347:0 "Düzce"
@@ -786,7 +786,7 @@
  STATE_785:0 "Picardy"
  STATE_786:0 "Mauritanian Desert"
  STATE_787:0 "Northern Kashmir"
- STATE_788:0 "Nagorno-Karabakh"
+ STATE_788:0 "Kalbajar" #Nagorno-Karabakh
  STATE_789:0 "Mingrelia"
  STATE_790:0 "Zaqatala" #Sakataly
  STATE_791:0 "Northern Epirus"
@@ -800,3 +800,4 @@
  STATE_799:0 "Lankaran"
  STATE_800:0 "Pirot"
  STATE_801:0 "Tao-Klarjeti"
+ STATE_802:0 "Vanand"

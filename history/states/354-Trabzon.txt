@@ -6,7 +6,10 @@ state={
 	history={
 		owner = ARM
 		victory_points = {
-			9932 1 
+			9932 3
+		}
+		victory_points = {
+			11753 1 
 		}
 		buildings = {
 			infrastructure = 3

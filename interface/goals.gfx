@@ -2124,6 +2124,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_arm_teach.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_focus_arm_tumanyan"
+		texturefile = "gfx/interface/goals/focus_arm_tumanyan.dds"
+	}
+
 	### Greece
 	SpriteType = {
 		name = "GFX_focus_byzantium"

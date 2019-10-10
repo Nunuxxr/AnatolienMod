@@ -1,0 +1,28 @@
+
+state={
+	id=802
+	name="STATE_802"
+
+	history={
+		owner = ARM
+		victory_points = {
+			789 3 
+		}
+		victory_points = {
+			12376 1 
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = ARM
+
+	}
+
+	provinces={
+		789 4583 10472 13219 
+	}
+	manpower=220000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}
