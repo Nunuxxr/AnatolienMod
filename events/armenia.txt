@@ -1,6 +1,6 @@
 ﻿add_namespace = armenia
 
-#Sieze Sivas Peace Event
+#Assyrian Liberation
 country_event = {
     id = armenia.1
     title = armenia.1.t
@@ -11,24 +11,27 @@ country_event = {
  
     trigger = {
 		tag = ARM
-		has_offensive_war_with = TUR
-		has_full_control_of_state = 349
+		has_offensive_war_with = KUR
+		has_full_control_of_state = 803
 	}
  
-    option = { #Sue for peace
+    option = { #Release Assyria
         name = armenia.1.a
         ai_chance = {
             base = 95
         }
-		TUR = { country_event = armenia.28 }
+		ASY = {
+			transfer_state = 803
+		}
     }
  
-    option = { #Continue War
+    option = { #Occupy
         name = armenia.1.b
         ai_chance = {
             base = 5
         }
-		add_stability = -0.05
+		add_stability = -0.01
+		add_political_power = -50
     }
 }
 
@@ -105,7 +108,7 @@ country_event = { #Armenia Proposes an Alliance
     }
 }
 
-country_event = { #Status-Quo
+country_event = { #Fedayee Divisons
     id = armenia.4
     title = armenia.4.t
     desc = armenia.4.d
@@ -113,21 +116,48 @@ country_event = { #Status-Quo
    
     fire_only_once = yes
  
-    is_triggered_only = yes
+    trigger = {
+		has_defensive_war = yes
+	}
    
-    option = { #Democracy
+    option = {
         name = armenia.4.a
-        ai_chance = { factor = 75 }
-		set_country_flag = ARM_democracy_flag
-		add_stability = 0.05
-		add_political_power = -50
-    }
-	
-    option = { #Monarchism
-        name = armenia.4.b
-        ai_chance = { factor = 25 }
-		set_country_flag = ARM_monarchism_flag
-		add_political_power = -25
+        ai_chance = { factor = 100 }
+		add_war_support = 0.05
+		custom_effect_tooltip = ARM_fedayee_unit_tt
+		hidden_effect = {
+			division_template = {
+				name = "Fedayee Division"
+				priority = 2
+				division_names_group = ARM_MTN_01
+				regiments = {
+					mountaineers = { x = 0 y = 0 }
+					mountaineers = { x = 0 y = 1 }
+			
+	    	   	 	mountaineers = { x = 1 y = 0 }
+					mountaineers = { x = 1 y = 1 }
+			
+	    	   	 	mountaineers = { x = 2 y = 0 }
+					mountaineers = { x = 2 y = 1 }
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 230 }
+				create_unit = {
+					division = "name = \"Arevelyan Fedayee Division\" division_template = \"Fedayee Division\" start_experience_factor = 1.0" 
+					owner = ARM
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 352 }
+				create_unit = {
+					division = "name = \"Arevmtyan Fedayee Division\" division_template = \"Fedayee Division\" start_experience_factor = 1.0" 
+					owner = ARM
+				}
+			}
+		}
     }
 }
 
@@ -496,7 +526,7 @@ country_event = { #Georgia Accepts Alliance
                     remove_from_faction = ARM
             }
             add_stability = 0.05
-            create_faction = "Aryan Pakt" #Caucasus Pact
+            create_faction = "Kavkaz Accords" #Caucasus Pact
             add_to_faction = GEO
         }
     }
@@ -974,7 +1004,9 @@ country_event = {
     option = {
         name = armenia.40.a
 		ai_chance = { factor = 60 }
-        CHL = { country_event = { id = armenia.47 days = 1 } }
+		hidden_effect = {
+			CHL = { country_event = { id = armenia.47 days = 1 } }
+		}
     }
 }
 

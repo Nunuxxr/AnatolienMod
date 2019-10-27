@@ -980,5 +980,13 @@ opinion_modifiers = {
 	ARM_deport = { value = -50 }
 	ARM_recognised = { value = 25 }
 	ARM_friendship = { value = 50 }
+
+	TUR_paid_opda = { 
+		value = 30 
+	}
+	
+	TUR_opda_deal_break = { 
+		value = -100 
+	}
 	
 }	

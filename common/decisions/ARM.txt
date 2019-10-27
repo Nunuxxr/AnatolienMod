@@ -1,0 +1,850 @@
+ARM_building_yerevan  = {
+	yerevan_erebuni = {
+	
+		icon = hol_attract_foreign_investors
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			owns_state = 230
+		}
+		visible = {
+			has_completed_focus = ARM_develop_the_capital
+		}
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_stability = 0.01
+            230 = {
+				add_manpower = 1000
+            }
+            add_manpower = -250
+        }
+        days_remove = 100
+        remove_effect = {
+            add_manpower = 250
+        }
+	}
+	yerevan_opera = {
+	
+		icon = eng_blackshirt_speech
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			owns_state = 230
+		}
+		visible = {
+			has_completed_focus = ARM_develop_the_capital
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+            add_stability = 0.05
+            230 = {
+				add_manpower = 500
+            }
+            add_manpower = -250
+        }  
+        days_remove = 75
+        remove_effect = {
+            add_manpower = 250
+        }
+	}
+	yerevan_trams = {
+	
+		icon = hol_draw_up_staff_plans
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			owns_state = 230
+		}
+		visible = {
+			has_completed_focus = ARM_develop_the_capital
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+            230 = {
+                add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+				add_manpower = 15000
+            }
+            add_manpower = -250
+        }  
+        days_remove = 100
+        remove_effect = {
+            add_manpower = 250
+        }
+	}
+	yerevan_memorial = {
+	
+		icon = eng_blackshirt_march
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			owns_state = 230
+		}
+		visible = {
+			has_completed_focus = ARM_develop_the_capital
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+            add_war_support = 0.05
+            add_manpower = -250
+        }  
+        days_remove = 100
+        remove_effect = {
+            add_manpower = 250
+        }
+	}
+	yerevan_hraparak = {
+	
+		icon = eng_install_government
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			owns_state = 230
+		}
+		visible = {
+			has_completed_focus = ARM_develop_the_capital
+		}
+		cost = 120
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+            add_stability = 0.05
+			add_war_support = 0.01
+            230 = {
+				add_manpower = 4500
+            }
+            add_manpower = -500
+        }  
+        days_remove = 150
+        remove_effect = {
+            add_manpower = 500
+        }
+	}
+	yerevan_cascade = {
+	
+		icon = hol_draw_up_staff_plans
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			owns_state = 230
+		}
+		visible = {
+			has_completed_focus = ARM_develop_the_capital
+		}
+		cost = 120
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+            add_stability = 0.03
+            add_manpower = -500
+            230 = {
+				add_manpower = 2000
+            }
+        }  
+        days_remove = 150
+        remove_effect = {
+            add_manpower = 500
+        }
+	}
+	yerevan_mother = {
+	
+		icon = generic_independence
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			owns_state = 230
+		}
+		visible = {
+			has_completed_focus = ARM_develop_the_capital
+		}
+		cost = 120
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+            add_stability = 0.07
+            230 = {
+				add_manpower = 3500
+            }
+            add_manpower = -500
+        }  
+        days_remove = 175
+        remove_effect = {
+            add_manpower = 500
+        }
+	}
+}
+
+ARM_eastern_industrialisation = {
+
+	expand_erivan = {
+	
+		icon = generic_construction
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			owns_state = 230
+		}
+		visible = {
+			has_completed_focus = ARM_expand_east_industry
+		}
+		cost = 250
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+            230 = {
+				add_extra_state_shared_building_slots = 2
+                add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+            }
+            add_manpower = -1000
+        }  
+        days_remove = 200
+        remove_effect = {
+            add_manpower = 1000
+        }
+	}
+	expand_syunik = {
+	
+		icon = generic_construction
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			owns_state = 794
+		}
+		visible = {
+			has_completed_focus = ARM_expand_east_industry
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+            794 = {
+				add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            add_manpower = -500
+        }  
+        days_remove = 100
+        remove_effect = {
+            add_manpower = 500
+        }
+	}
+	expand_nakhchivan = {
+	
+		icon = generic_construction
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			owns_state = 793
+		}
+		visible = {
+			has_completed_focus = ARM_expand_east_industry
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+            793 = {
+				add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            add_manpower = -500
+        }  
+        days_remove = 100
+        remove_effect = {
+            add_manpower = 500
+        }
+	}
+}
+
+ARM_western_industrialisation = {
+
+	expand_van = {
+	
+		icon = generic_construction
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			owns_state = 352
+		}
+		visible = {
+			has_completed_focus = ARM_develop_the_west
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+            352 = {
+				add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            add_manpower = -500
+        }  
+        days_remove = 100
+        remove_effect = {
+            add_manpower = 500
+        }
+	}
+	expand_karin = {
+	
+		icon = generic_construction
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			owns_state = 353
+		}
+		visible = {
+			has_completed_focus = ARM_develop_the_west
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+            353 = {
+				add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            add_manpower = -500
+        }  
+        days_remove = 100
+        remove_effect = {
+            add_manpower = 500
+        }
+	}
+	expand_vanand = {
+	
+		icon = generic_construction
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			owns_state = 802
+		}
+		visible = {
+			has_completed_focus = ARM_develop_the_west
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+            802 = {
+				add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            add_manpower = -500
+        }  
+        days_remove = 100
+        remove_effect = {
+            add_manpower = 500
+        }
+	}
+	expand_pontus = {
+	
+		icon = generic_construction
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			owns_state = 354
+		}
+		visible = {
+			has_completed_focus = ARM_develop_the_west
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+            354 = {
+				add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            add_manpower = -500
+        }  
+        days_remove = 100
+        remove_effect = {
+            add_manpower = 500
+        }
+	}
+}
+
+ARM_reopen_diplomacy = {
+
+	statevisit_usa = {
+	
+		icon = generic_political_discourse
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			is_subject = no
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = USA
+					has_war_with = ARM
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = ARM_rekindle_old_alliances
+			NOT = { has_war_with = USA }
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			ARM = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = medium_increase
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = ARM
+					modifier = medium_increase
+				}
+			}
+        }  
+        days_remove = 1
+        remove_effect = {
+            #
+        }
+	}
+	statevisit_france = {
+	
+		icon = generic_political_discourse
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			is_subject = no
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = FRA
+					has_war_with = ARM
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = ARM_rekindle_old_alliances
+			NOT = { has_war_with = FRA }
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			ARM = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = medium_increase
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = ARM
+					modifier = medium_increase
+				}
+			}
+        }  
+        days_remove = 1
+        remove_effect = {
+            #
+        }
+	}
+	statevisit_uk = {
+	
+		icon = generic_political_discourse
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			is_subject = no
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = ENG
+					has_war_with = ARM
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = ARM_rekindle_old_alliances
+			NOT = { has_war_with = ENG }
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			ARM = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = medium_increase
+				}
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = ARM
+					modifier = medium_increase
+				}
+			}
+        }  
+        days_remove = 1
+        remove_effect = {
+            #
+        }
+	}
+	statevisit_greece = {
+	
+		icon = generic_political_discourse
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			is_subject = no
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = GRE
+					has_war_with = ARM
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = ARM_rekindle_old_alliances
+			NOT = { has_war_with = GRE }
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			ARM = {
+				add_opinion_modifier = {
+					target = GRE
+					modifier = medium_increase
+				}
+			}
+			GRE = {
+				add_opinion_modifier = {
+					target = ARM
+					modifier = medium_increase
+				}
+			}
+        }  
+        days_remove = 1
+        remove_effect = {
+            #
+        }
+	}
+	statevisit_iran = {
+	
+		icon = generic_political_discourse
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			is_subject = no
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = PER
+					has_war_with = ARM
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = ARM_rekindle_old_alliances
+			NOT = { has_war_with = PER }
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			ARM = {
+				add_opinion_modifier = {
+					target = PER
+					modifier = medium_increase
+				}
+			}
+			PER = {
+				add_opinion_modifier = {
+					target = ARM
+					modifier = medium_increase
+				}
+			}
+        }  
+        days_remove = 1
+        remove_effect = {
+            #
+        }
+	}
+	statevisit_georgia = {
+	
+		icon = generic_political_discourse
+		
+		allowed = {
+			original_tag = ARM
+		}
+		available = {
+			is_subject = no
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = GEO
+					has_war_with = ARM
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = ARM_rekindle_old_alliances
+			NOT = { has_war_with = GEO }
+		}
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			ARM = {
+				add_opinion_modifier = {
+					target = GEO
+					modifier = medium_increase
+				}
+			}
+			GEO = {
+				add_opinion_modifier = {
+					target = ARM
+					modifier = medium_increase
+				}
+			}
+        }  
+        days_remove = 1
+        remove_effect = {
+            #
+        }
+	}
+}
+
+ARM_exchange_population = {
+
+	remove_erivan_turks = {
+
+		icon = generic_nationalism
+
+		available = {
+			has_completed_focus = ARM_AZR_population_exchange
+			divisions_in_state = {
+				state = 230
+				size > 0
+			}
+		}
+
+		cost = 0
+
+		highlight_states = {
+			state = 230
+		}
+		visible = {
+			has_country_flag = ARM_erivan_turks
+			230 = {
+				is_owned_and_controlled_by = ARM
+			}
+		}
+		is_good = yes
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 230	
+					size = 1
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = erivan_turks_tt
+			clr_country_flag = ARM_erivan_turks
+			if = {
+				limit = {
+					NOT = { has_country_flag = ARM_syunik_turks }
+					NOT = { has_country_flag = ARM_nakhchivan_turks }
+				}
+				remove_ideas = AZR_ethnic_tensions
+			}
+		}
+	}
+	remove_syunik_turks = {
+
+		icon = generic_nationalism
+
+		available = {
+			has_completed_focus = ARM_AZR_population_exchange
+			divisions_in_state = {
+				state = 794
+				size > 0
+			}
+		}
+
+		cost = 0
+
+		highlight_states = {
+			state = 794
+		}
+		visible = {
+			has_country_flag = ARM_syunik_turks
+			794 = {
+				is_owned_and_controlled_by = ARM
+			}
+		}
+		is_good = yes
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 794
+					size = 1
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = syunik_turks_tt
+			clr_country_flag = ARM_syunik_turks
+			if = {
+				limit = {
+					NOT = { has_country_flag = ARM_erivan_turks }
+					NOT = { has_country_flag = ARM_nakhchivan_turks }
+				}
+				remove_ideas = AZR_ethnic_tensions
+			}
+		}
+	}
+	remove_nakhchivan_turks = {
+
+		icon = generic_nationalism
+
+		available = {
+			has_completed_focus = ARM_AZR_population_exchange
+			divisions_in_state = {
+				state = 793	
+				size > 0
+			}
+		}
+
+		cost = 0
+
+		highlight_states = {
+			state = 793
+		}
+		visible = {
+			has_country_flag = ARM_nakhchivan_turks
+			793 = {
+				is_owned_and_controlled_by = ARM
+			}
+		}
+		is_good = yes
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 793
+					size = 1
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = nakhchivan_turks_tt
+			clr_country_flag = ARM_nakhchivan_turks
+			if = {
+				limit = {
+					NOT = { has_country_flag = ARM_erivan_turks }
+					NOT = { has_country_flag = ARM_syunik_turks }
+				}
+				remove_ideas = AZR_ethnic_tensions
+			}
+		}
+	}
+}

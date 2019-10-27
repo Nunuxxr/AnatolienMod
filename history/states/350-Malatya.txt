@@ -11,9 +11,6 @@ state={
 		victory_points = {
 			11797 1 
 		}
-		victory_points = {
-			7530 1 
-		}
 		buildings = {
 			infrastructure = 3
 			air_base = 2
@@ -26,7 +23,7 @@ state={
 	}
 
 	provinces={
-		876 1463 4512 7530 9860 10399 11739 11759 11797 12476 
+		876 4512 9860 10399 11739 11759 11797 
 	}
 	manpower=1047156
 	buildings_max_level_factor=1.000

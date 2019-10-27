@@ -1,0 +1,1016 @@
+TUR_turkic_khanates = {
+	release_central_asia = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+			#Astrakhan
+			owns_state = 236
+			custom_trigger_tooltip = {
+				tooltip = caf_form_required_states_tt
+				#Kazakhstan
+				owns_state = 402
+				owns_state = 404
+				owns_state = 406
+				owns_state = 407
+				owns_state = 583
+				owns_state = 586
+				owns_state = 587
+				owns_state = 588
+				owns_state = 589
+				owns_state = 590
+			
+				#Uzbekistan
+				owns_state = 405
+				owns_state = 585
+				
+				#Turkmenistan
+				owns_state = 584
+				
+				#Kyrgyzstan
+				owns_state = 732
+				
+				#Tajikistan
+				owns_state = 742
+			}
+		}
+		visible = {
+			original_tag = TUR
+		}
+		cost = 250
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			hidden_effect = {
+				CAF = {
+					#Astrakhan
+					transfer_state = 236
+					
+					#Kazakhstan
+					transfer_state = 402
+					transfer_state = 404
+					transfer_state = 406
+					transfer_state = 407
+					transfer_state = 583
+					transfer_state = 586
+					transfer_state = 587
+					transfer_state = 588
+					transfer_state = 589
+					transfer_state = 590
+				
+					#Uzbekistan
+					transfer_state = 405
+					transfer_state = 585
+				
+					#Turkmenistan
+					transfer_state = 584
+				
+					#Kyrgyzstan
+					transfer_state = 732
+				
+					#Tajikistan
+					transfer_state = 742
+				}
+			}
+			puppet = CAF
+			hidden_effect = {
+				236 = { add_core_of = CAF }
+				402 = { add_core_of = CAF }
+				404 = { add_core_of = CAF }
+				406 = { add_core_of = CAF }
+				407 = { add_core_of = CAF }
+				583 = { add_core_of = CAF }
+				586 = { add_core_of = CAF }
+				587 = { add_core_of = CAF }
+				588 = { add_core_of = CAF }
+				589 = { add_core_of = CAF }
+				590 = { add_core_of = CAF }
+				405 = { add_core_of = CAF }
+				585 = { add_core_of = CAF }
+				584 = { add_core_of = CAF }
+				732 = { add_core_of = CAF }
+				742 = { add_core_of = CAF }
+			}
+		}
+		days_remove = 1
+	}
+	
+	
+	release_caucasus_emirate = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+			#custom_trigger_tooltip = {
+				#tooltip = cne_form_required_states_tt		
+				#Crimea
+				#owns_state = 137
+				
+				#North Caucasus
+				owns_state = 232
+				owns_state = 233
+				owns_state = 234
+				
+				#Georgia
+				owns_state = 231
+				owns_state = 789
+				owns_state = 795
+			#}
+		}
+		visible = {
+			original_tag = TUR
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			hidden_effect = {
+				CNE = {
+					#Kazakhstan
+					transfer_state = 232
+					transfer_state = 233
+					transfer_state = 234
+					#Georgia
+					transfer_state = 231
+					transfer_state = 789
+					transfer_state = 795
+				}
+			}
+			puppet = CNE
+			hidden_effect = {
+				232 = { add_core_of = CNE }
+				233 = { add_core_of = CNE }
+				234 = { add_core_of = CNE }
+				231 = { add_core_of = CNE }
+				789 = { add_core_of = CNE }
+				795 = { add_core_of = CNE }
+			}
+		}
+		days_remove = 1
+	}
+
+}
+
+TUR_turkic_integration  = {
+	integrate_kazakhstan = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+			CAF = {
+				is_puppet_of = TUR
+			}
+			CAF = {
+				owns_state = 236
+				owns_state = 402
+				owns_state = 404
+				owns_state = 406
+				owns_state = 407
+				owns_state = 583
+				owns_state = 586
+				owns_state = 587
+				owns_state = 588
+				owns_state = 589
+				owns_state = 590
+			}
+		}
+		visible = {
+			CAF = {
+				is_puppet_of = TUR
+			}
+		}
+
+		highlight_states = {
+			state = 586
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+        }
+        days_remove = 150
+        remove_effect = {
+            set_country_flag = kazakhstan_integrated
+        }
+	}
+	
+	integrate_uzbekistan = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+			CAF = {
+				is_puppet_of = TUR
+			}
+			CAF = {
+				owns_state = 405
+				owns_state = 585
+			}
+		}
+		visible = {
+			CAF = {
+				is_puppet_of = TUR
+			}
+		}
+
+		highlight_states = {
+			state = 405
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+        }
+        days_remove = 150
+        remove_effect = {
+            set_country_flag = uzbekistan_integrated
+        }
+	}
+	
+	integrate_turkmenistan = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+			CAF = {
+				is_puppet_of = TUR
+			}
+			CAF = {
+				owns_state = 584
+			}
+		}
+		visible = {
+			CAF = {
+				is_puppet_of = TUR
+			}
+		}
+
+		highlight_states = {
+			state = 584
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+        }
+        days_remove = 150
+        remove_effect = {
+            set_country_flag = turkmenistan_integrated
+        }
+	}
+	
+	integrate_kyrgyzstan = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+			CAF = {
+				is_puppet_of = TUR
+			}
+			CAF = {
+				owns_state = 732
+			}
+		}
+		visible = {
+			CAF = {
+				is_puppet_of = TUR
+			}
+		}
+
+		highlight_states = {
+			state = 732
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+        }
+        days_remove = 150
+        remove_effect = {
+            set_country_flag = kyrgyzstan_integrated
+        }
+	}
+	
+	integrate_tajikistan = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+			CAF = {
+				is_puppet_of = TUR
+			}
+			CAF = {
+				owns_state = 742
+			}
+		}
+		visible = {
+			CAF = {
+				is_puppet_of = TUR
+			}
+		}
+
+		highlight_states = {
+			state = 742
+		}
+		cost = 200
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+        }
+        days_remove = 200
+        remove_effect = {
+            set_country_flag = tajikistan_integrated
+        }
+	}
+	
+	annex_central_asia = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+			CAF = {
+				is_puppet_of = TUR
+			}
+			has_country_flag = kazakhstan_integrated
+			has_country_flag = uzbekistan_integrated
+			has_country_flag = turkmenistan_integrated
+			has_country_flag = kyrgyzstan_integrated
+			has_country_flag = tajikistan_integrated
+		}
+		visible = {
+			CAF = {
+				is_puppet_of = TUR
+			}
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+            annex_country = {
+				target = CAF
+				transfer_troops = yes
+			}
+			hidden_effect = {
+				236 = { 
+					add_core_of = TUR
+					remove_core_of = CAF
+					remove_core_of = SOV
+					remove_core_of = KAZ
+				}
+				402 = { 
+					add_core_of = TUR
+					remove_core_of = CAF
+					remove_core_of = SOV
+					remove_core_of = KAZ
+				}
+				404 = { 
+					add_core_of = TUR
+					remove_core_of = CAF
+					remove_core_of = SOV
+					remove_core_of = KAZ
+				}
+				406 = { 
+					add_core_of = TUR
+					remove_core_of = CAF
+					remove_core_of = SOV
+					remove_core_of = KAZ
+				}
+				407 = { 
+					add_core_of = TUR
+					remove_core_of = CAF
+					remove_core_of = SOV
+					remove_core_of = KAZ
+				}
+				583 = { 
+					add_core_of = TUR
+					remove_core_of = CAF
+					remove_core_of = SOV
+					remove_core_of = KAZ
+				}
+				586 = { 
+					add_core_of = TUR
+					remove_core_of = CAF
+					remove_core_of = SOV
+					remove_core_of = KAZ
+				}
+				587 = { 
+					add_core_of = TUR
+					remove_core_of = CAF
+					remove_core_of = SOV
+					remove_core_of = KAZ
+				}
+				588 = { 
+					add_core_of = TUR
+					remove_core_of = CAF
+					remove_core_of = SOV
+					remove_core_of = KAZ
+				}
+				589 = { 
+					add_core_of = TUR
+					remove_core_of = CAF
+					remove_core_of = SOV
+					remove_core_of = KAZ
+				}
+				590 = { 
+					add_core_of = TUR
+					remove_core_of = CAF
+					remove_core_of = SOV
+					remove_core_of = KAZ
+				}
+				405 = { 
+					add_core_of = TUR
+					remove_core_of = CAF
+					remove_core_of = SOV
+					remove_core_of = UZB
+				}
+				585 = { 
+					add_core_of = TUR
+					remove_core_of = CAF
+					remove_core_of = SOV
+					remove_core_of = UZB
+				}
+				584 = { 
+					add_core_of = TUR
+					remove_core_of = CAF
+					remove_core_of = SOV
+					remove_core_of = TMS
+				}
+				732 = { 
+					add_core_of = TUR
+					remove_core_of = CAF
+					remove_core_of = SOV
+					remove_core_of = KYR
+				}
+				742 = { 
+					add_core_of = TUR
+					remove_core_of = CAF
+					remove_core_of = SOV
+					remove_core_of = TAJ
+				}
+			}
+        }  
+        days_remove = 1
+	}
+	
+	integrate_north_caucasus = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+			CNE = {
+				is_puppet_of = TUR
+			}
+			CNE = {
+				owns_state = 232
+				owns_state = 233
+				owns_state = 234
+				owns_state = 795
+			}
+		}
+		visible = {
+			CNE = {
+				is_puppet_of = TUR
+			}
+		}
+
+		highlight_states = {
+			state = 233
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+        }
+        days_remove = 150
+        remove_effect = {
+            set_country_flag = north_caucasus_integrated
+        }
+	}
+	
+	integrate_tiflis = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+			CNE = {
+				is_puppet_of = TUR
+			}
+			CNE = {
+				owns_state = 231
+			}
+		}
+		visible = {
+			CNE = {
+				is_puppet_of = TUR
+			}
+		}
+
+		highlight_states = {
+			state = 231
+		}
+		cost = 200
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+        }
+        days_remove = 200
+        remove_effect = {
+            set_country_flag = tiflis_integrated
+        }
+	}
+	
+	integrate_mingrelia = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+			CNE = {
+				is_puppet_of = TUR
+			}
+			CNE = {
+				owns_state = 789
+			}
+		}
+		visible = {
+			CNE = {
+				is_puppet_of = TUR
+			}
+		}
+
+		highlight_states = {
+			state = 789
+		}
+		cost = 200
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+        }
+        days_remove = 200
+        remove_effect = {
+            set_country_flag = mingrelia_integrated
+        }
+	}
+	
+	annex_north_caucasus = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+			CNE = {
+				is_puppet_of = TUR
+			}
+			has_country_flag = north_caucasus_integrated
+			has_country_flag = tiflis_integrated
+			has_country_flag = mingrelia_integrated
+		}
+		visible = {
+			CNE = {
+				is_puppet_of = TUR
+			}
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+            annex_country = {
+				target = CNE
+				transfer_troops = yes
+			}
+			hidden_effect = {
+				232 = { 
+					add_core_of = TUR
+					remove_core_of = CNE
+					remove_core_of = SOV
+				}
+				233 = { 
+					add_core_of = TUR
+					remove_core_of = CNE
+					remove_core_of = SOV
+				}
+				234 = { 
+					add_core_of = TUR
+					remove_core_of = CNE
+					remove_core_of = SOV
+				}
+				231 = { 
+					add_core_of = TUR
+					remove_core_of = CNE
+					remove_core_of = SOV
+					remove_core_of = GEO
+				}
+				789 = { 
+					add_core_of = TUR
+					remove_core_of = CNE
+					remove_core_of = SOV
+					remove_core_of = GEO
+				}
+				795 = { 
+					add_core_of = TUR
+					remove_core_of = CNE
+					remove_core_of = SOV
+					remove_core_of = GEO
+				}
+				801 = { 
+					add_core_of = TUR
+					remove_core_of = GEO
+				}
+				804 = { 
+					add_core_of = TUR
+					remove_core_of = GEO
+				}
+			}
+        }  
+        days_remove = 1
+	}
+	
+	integrate_uyghurstan = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+			SIK = {
+				is_puppet_of = TUR
+			}
+			SIK = {
+				owns_state = 287
+				owns_state = 617
+				owns_state = 618
+				owns_state = 619
+				owns_state = 759
+				owns_state = 760
+			}
+		}
+		visible = {
+			SIK = {
+				is_puppet_of = TUR
+			}
+		}
+
+		highlight_states = {
+			state = 287
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+        }
+        days_remove = 150
+        remove_effect = {
+            set_country_flag = uyghurstan_integrated
+        }
+	}
+	
+	annex_uyghurstan = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+			SIK = {
+				is_puppet_of = TUR
+			}
+			has_country_flag = uyghurstan_integrated
+		}
+		visible = {
+			SIK = {
+				is_puppet_of = TUR
+			}
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+            annex_country = {
+				target = SIK
+				transfer_troops = yes
+			}
+			hidden_effect = {
+				287 = { 
+					add_core_of = TUR
+					remove_core_of = SIK
+					remove_core_of = CHI
+					remove_core_of = PRC
+				}
+				617 = { 
+					add_core_of = TUR
+					remove_core_of = SIK
+					remove_core_of = CHI
+					remove_core_of = PRC
+				}
+				618 = { 
+					add_core_of = TUR
+					remove_core_of = SIK
+					remove_core_of = CHI
+					remove_core_of = PRC
+				}
+				619 = { 
+					add_core_of = TUR
+					remove_core_of = SIK
+					remove_core_of = CHI
+					remove_core_of = PRC
+				}
+				759 = { 
+					add_core_of = TUR
+					remove_core_of = SIK
+					remove_core_of = CHI
+					remove_core_of = PRC
+				}
+				760 = { 
+					add_core_of = TUR
+					remove_core_of = SIK
+					remove_core_of = CHI
+					remove_core_of = PRC
+				}
+			}
+        }  
+        days_remove = 1
+	}
+	
+	integrate_greeks = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+			owns_state = 339
+			owns_state = 340
+			owns_state = 341
+			owns_state = 187
+			owns_state = 184 #Western Thrace / Trakiya
+		}
+		visible = {
+			is_subject = no
+			owns_state = 339
+			owns_state = 340
+			owns_state = 341
+			owns_state = 187
+			owns_state = 184 #Western Thrace / Trakiya
+		}
+
+		highlight_states = {
+			state = 339
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+        }
+        days_remove = 365
+        remove_effect = {
+				339 = { 
+					add_core_of = TUR
+					remove_core_of = GRE
+				}
+				340 = { 
+					add_core_of = TUR
+					remove_core_of = GRE
+				}
+				341 = { 
+					add_core_of = TUR
+					remove_core_of = GRE
+				}
+				187 = { 
+					add_core_of = TUR
+					remove_core_of = GRE
+				}
+				184 = { 
+					add_core_of = TUR
+					remove_core_of = GRE
+				}
+        }
+	}
+	
+	integrate_armenians = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+			owns_state = 352
+			owns_state = 353
+			owns_state = 354
+			owns_state = 802
+		}
+		visible = {
+			is_subject = no
+			owns_state = 352
+			owns_state = 353
+			owns_state = 354
+			owns_state = 802
+		}
+
+		highlight_states = {
+			state = 353
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+        }
+        days_remove = 365
+        remove_effect = {
+				352 = { 
+					add_core_of = TUR
+					remove_core_of = ARM
+				}
+				353 = { 
+					add_core_of = TUR
+					remove_core_of = ARM
+				}
+				354 = { 
+					add_core_of = TUR
+					remove_core_of = ARM
+				}
+				802 = { 
+					add_core_of = TUR
+					remove_core_of = ARM
+				}
+        }
+	}
+	
+	integrate_kurds = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+			owns_state = 350
+			owns_state = 803
+			owns_state = 798 #Erbil
+		}
+		visible = {
+			is_subject = no
+			owns_state = 350
+			owns_state = 803
+			owns_state = 798 #Erbil
+		}
+
+		highlight_states = {
+			state = 350
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+        }
+        days_remove = 365
+        remove_effect = {
+				350 = { 
+					add_core_of = TUR
+					remove_core_of = KUR
+				}
+				803 = { 
+					add_core_of = TUR
+					remove_core_of = KUR
+					remove_core_of = ASY
+				}
+				798 = { 
+					add_core_of = TUR
+					remove_core_of = KUR
+				}
+        }
+	}
+	
+	integrate_arabs = {
+	
+		icon = generic_nationalism
+		
+		allowed = {
+			original_tag = TUR
+		}
+		available = {
+			owns_state = 344 #Urfa
+			owns_state = 347 #Mosul
+			owns_state = 677 #Aleppo
+			owns_state = 798 #Erbil
+		}
+		visible = {
+			is_subject = no
+			owns_state = 344 #Urfa
+			owns_state = 347 #Mosul
+			owns_state = 677 #Aleppo
+			owns_state = 798 #Erbil
+		}
+
+		highlight_states = {
+			state = 677
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+        }
+        days_remove = 365
+        remove_effect = {
+				344 = { 
+					add_core_of = TUR
+					remove_core_of = SYR
+				}
+				347 = { 
+					add_core_of = TUR
+					remove_core_of = IRQ
+				}
+				677 = { 
+					add_core_of = TUR
+					remove_core_of = SYR
+				}
+				798 = { 
+					add_core_of = TUR
+					remove_core_of = IRQ
+				}
+        }
+	}
+}

@@ -1,2193 +1,1007 @@
 focus_tree = {
-	id = turkey_focus
-    country = {
-        factor = 1
-        modifier = {
-            add = 10
-            tag = TUR
-        }
-    }
-    default = no
+	id = ottoman_focus
 
-	focus = {
-		id = TUR_army_effort
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 1
-		y = 0
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_equipment_effort
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = TUR_army_effort }
-		x = -1
-		y = 1
-		relative_position_id = TUR_army_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_motorization_effort
-		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = TUR_army_effort }
-		bypass = { has_tech = motorised_infantry }
-		x = 1
-		y = 1
-		relative_position_id = TUR_army_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = motorized_bonus
-				bonus = 3.0
-				technology = motorised_infantry
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_doctrine_effort
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = TUR_army_effort }
-		x = 0
-		y = 2
-		relative_position_id = TUR_army_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_equipment_effort_2
-		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = TUR_equipment_effort }
-		x = 0
-		y = 2
-		relative_position_id = TUR_equipment_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_mechanization_effort
-		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = TUR_motorization_effort }
-		x = 0
-		y = 2
-		relative_position_id = TUR_motorization_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = motorized_bonus
-				ahead_reduction = 2
-				uses = 1
-				category = motorized_equipment
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_doctrine_effort_2
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = TUR_doctrine_effort }
-		x = 0
-		y = 2
-		relative_position_id = TUR_doctrine_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_equipment_effort_3
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = TUR_equipment_effort_2 }
-		x = 0
-		y = 2
-		relative_position_id = TUR_equipment_effort_2
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				ahead_reduction = 2
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_armor_effort
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = TUR_mechanization_effort }
-		x = 0
-		y = 2
-		relative_position_id = TUR_mechanization_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 2
-				category = armor
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_special_forces
-		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = equipment_effort_3 }
-		prerequisite = { focus = doctrine_effort_2 }
-		prerequisite = { focus = armor_effort }
-		x = 1
-		y = 1
-		relative_position_id = TUR_equipment_effort_3
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = special_forces
-			add_tech_bonus = {
-				name = special_forces_bonus
-				bonus = 1.0
-				uses = 1
-				technology = paratroopers
-				technology = paratroopers2
-				technology = marines
-				technology = marines2
-				technology = tech_mountaineers
-				technology = tech_mountaineers2
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_aviation_effort
-		icon = GFX_goal_generic_build_airforce
-		x = 5
-		y = 0
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		complete_tooltip = {
-			air_experience = 25
-			if = { limit = { has_country_flag = aviation_effort_AB }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}			
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
-			}			
-		}
-
-		completion_reward = {
-			air_experience = 25
-
-			if = {
-				limit = {
-					capital_scope = {
-						NOT = {
-							free_building_slots = {
-								building = air_base
-								size > 1
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_AB }
-				}
-			}
-			if = {
-				limit = {
-					capital_scope = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-				}
-				capital_scope = {
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_AB }
-				}
-			}
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_fighter_focus
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = TUR_aviation_effort }
-		mutually_exclusive = { focus = TUR_bomber_focus }
-		x = -1
-		y = 1
-		relative_position_id = TUR_aviation_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 1.0
-				uses = 2
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
-				technology = heavy_fighter1
-				technology = heavy_fighter2
-				technology = heavy_fighter3
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_bomber_focus
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = TUR_aviation_effort }
-		mutually_exclusive = { focus = TUR_fighter_focus }
-		x = 1
-		y = 1
-		relative_position_id = TUR_aviation_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 1.0
-				uses = 2
-				technology = strategic_bomber1
-				technology = strategic_bomber2
-				technology = strategic_bomber3
-				category = tactical_bomber
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_aviation_effort_2
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = TUR_bomber_focus focus = TUR_fighter_focus }
-		x = -1
-		y = 1
-		relative_position_id = TUR_bomber_focus
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		complete_tooltip = {
-			air_experience = 25
-			if = { limit = { has_country_flag = aviation_effort_2_AB }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name =  air_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		completion_reward = {
-			air_experience = 25
-			if = {
-				limit = {
-					capital_scope = {
-						OR = {
-							NOT = { is_controlled_by = ROOT }
-							NOT = {
-								free_building_slots = {
-									building = air_base
-									size > 1
-								}
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_2_AB }
-				}
-			}
-			if = {
-				limit = {
-					capital_scope = {
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-				}
-				capital_scope = {
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}				
-					ROOT = { set_country_flag = aviation_effort_2_AB }
-				}
-			}
-			add_tech_bonus = {
-				name =  air_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_CAS_effort
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = TUR_aviation_effort_2 }
-		prerequisite = { focus = TUR_motorization_effort }
-		x = -1
-		y = 1
-		relative_position_id = TUR_aviation_effort_2
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = CAS_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = cas_bomber
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_rocket_effort
-		icon = GFX_focus_rocketry
-		prerequisite = { focus = TUR_aviation_effort_2 }
-		prerequisite = { focus = TUR_infrastructure_effort }
-		x = 0
-		y = 2
-		relative_position_id = TUR_aviation_effort_2
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = jet_rocket_bonus
-				ahead_reduction = 2
-				uses = 2
-				category = rocketry
-				category = jet_technology
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.25
-				always = yes
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_NAV_effort
-		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = TUR_aviation_effort_2 }
-		prerequisite = { focus = TUR_flexible_navy }
-		x = 1
-		y = 1
-		relative_position_id = TUR_aviation_effort_2
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = naval_bomber
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_naval_effort
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 9
-		y = 0
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		available = {
-			any_state = {
-				is_coastal = yes
-				is_controlled_by = ROOT
-			}
-		}
-
-		complete_tooltip = {
-			navy_experience = 25
-			add_extra_state_shared_building_slots = 3
-			add_building_construction = {
-				type = dockyard
-				level = 3
-				instant_build = yes
-			}
-		}
+	country = {
+		factor = 0
 		
-		completion_reward = {
-			navy_experience = 25
-			if = {
-				limit = {
-					NOT = {
-						any_owned_state = {
-							dockyard > 0
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-					any_owned_state = {
-						is_coastal = yes
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					any_owned_state = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					NOT = {
-						any_owned_state = {
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-				}
-				random_state = {
-					limit = {
-						controller = { tag = ROOT }
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-			}			
+		modifier = {
+			add = 10
+			tag = TUR
 		}
 	}
 
-	focus = {
-		id = TUR_flexible_navy
-		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = TUR_naval_effort }
-		mutually_exclusive = { focus = TUR_large_navy }
-		x = -1
-		y = 1
-		relative_position_id = TUR_naval_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = sub_op_bonus
-				bonus = 1.0
-				uses = 2
-				technology = convoy_interdiction_ti
-				technology = unrestricted_submarine_warfare
-				technology = wolfpacks
-				technology = advanced_submarine_warfare
-				technology = combined_operations_raiding
-			}
-		}
-	}
+############################################################################### SULTANS PATH
 
 	focus = {
-		id = TUR_large_navy
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = TUR_naval_effort }
-		mutually_exclusive = { focus = TUR_flexible_navy }
-		x = 1
-		y = 1
-		relative_position_id = TUR_naval_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = fleet_in_being_bonus
-				bonus = 1.0
-				uses = 2
-				category = fleet_in_being_tree
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_submarine_effort
-		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = TUR_flexible_navy focus = TUR_large_navy }
-		x = 0
-		y = 1
-		relative_position_id = TUR_flexible_navy
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = ss_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = ss_tech
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_cruiser_effort
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = TUR_large_navy focus = TUR_flexible_navy }
-		x = 0
-		y = 1
-		relative_position_id = TUR_large_navy
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = cl_tech
-				category = ca_tech
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_destroyer_effort
-		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = TUR_submarine_effort }
-		x = 0
-		y = 1
-		relative_position_id = TUR_submarine_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = dd_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = dd_tech
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_capital_ships_effort
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = TUR_cruiser_effort }
-		x = 0
-		y = 1
-		relative_position_id = TUR_cruiser_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = capital_ships_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = bc_tech
-				category = bb_tech
-				category = cv_tech
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_industrial_effort
-		icon = GFX_goal_generic_production
-		x = 13
+		id = TUR_emergency
+		icon = GFX_focus_generic_strike_at_democracy2
+		mutually_exclusive = { focus = TUR_democracy }
+		x = 2
 		y = 0
 		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 1
-				category = industry
-			}
-		}
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				date < 1939.1.1
-				OR = { 
-					# we dont want chinese minors to go crazy on slots early since they get eaten
-					tag = GXC 
-					tag = YUN
-					tag = SHX
-					tag = XSM
-					tag = BEL
-					tag = LUX
-					tag = HOL
-					tag = DEN
-
-					# we also dont want tiny nations to go crazy with slots right away
-					num_of_controlled_states < 2
-				}				
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_construction_effort
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = TUR_industrial_effort }
-		x = -1
-		y = 1
-		relative_position_id = TUR_industrial_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		
-		ai_will_do = {
-			factor = 2
-		}
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 1
-						include_locked = yes
-					}					
-				}
-			}
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}			
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_production_effort
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = TUR_industrial_effort }
-		x = 1
-		y = 1
-		relative_position_id = TUR_industrial_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 2			
-		}
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_construction_effort_2
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = TUR_construction_effort }
-		x = 0
-		y = 1
-		relative_position_id = TUR_construction_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}		
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_production_effort_2
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = TUR_production_effort }
-		x = 0
-		y = 1
-		relative_position_id = TUR_production_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}		
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_infrastructure_effort
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = TUR_construction_effort_2 }
-		x = 0
-		y = 1
-		relative_position_id = TUR_construction_effort_2
-		cost = 10
-
-		available_if_capitulated = yes
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-				}
-			}
-		}
-
-		complete_tooltip = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_production_effort_3
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = TUR_production_effort_2 }
-		x = 0
-		y = 1
-		relative_position_id = TUR_production_effort_2
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}					
-				}
-			}
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}		
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_infrastructure_effort_2
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = TUR_infrastructure_effort }
-		x = 0
-		y = 1
-		relative_position_id = TUR_infrastructure_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-				}
-			}
-		}
-
-		complete_tooltip = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_construction_effort_3
-		icon = GFX_focus_chi_british_cooperation
-		prerequisite = { focus = TUR_infrastructure_effort }
-		x = 2
-		y = 1
-		relative_position_id = TUR_infrastructure_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 2
-						include_locked = yes
-					}
-				}
-			}
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 1
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_nuclear_effort
-		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = TUR_infrastructure_effort_2 }
-		x = -2
-		y = 1
-		relative_position_id = TUR_infrastructure_effort_2
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = nuclear_bonus
-				ahead_reduction = 2
-				category = nuclear
-			}
-		}
-
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0.25
-				always = yes
-			}
 		}
-	}
-
-	focus = {
-		id = TUR_extra_tech_slot
-		icon = GFX_focus_research
-		prerequisite = { focus = TUR_infrastructure_effort_2 }
-		x = 0
-		y = 1
-		relative_position_id = TUR_infrastructure_effort_2
-		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-	
-	focus = {
-		id = TUR_extra_tech_slot_2
-		icon = GFX_focus_research
-		prerequisite = { focus = TUR_extra_tech_slot }
-		available = {
-			num_of_factories > 50
-		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		x = 0
-		y = 1
-		relative_position_id = TUR_extra_tech_slot
-		cost = 10
 
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}	
-
-	focus = {
-		id = TUR_secret_weapons
-		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = TUR_infrastructure_effort_2 }
-		x = 2
-		y = 1
-		relative_position_id = TUR_infrastructure_effort_2
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = secret_bonus
-				bonus = 1.0
-				uses = 4
-				category = electronics
-				category = nuclear
-				category = rocketry
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.25
-				always = yes
-			}
-		}
-	}
-
-	focus = {
-		id = TUR_political_effort
-		icon = GFX_focus_arm_agreement_ottoman
-		x = 19
-		y = 0
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
 			add_political_power = 120
-		}
-	}
-
-	focus = {
-		id = TUR_collectivist_ethos
-		icon = GFX_goal_generic_national_unity #icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = TUR_political_effort }
-		mutually_exclusive = { focus = TUR_liberty_ethos}
-		available = {
-			OR = {
-				has_government = fascism
-				has_government = communism
-				has_government = neutrality
-			}
-		}
-		x = -2
-		y = 1
-		relative_position_id = TUR_political_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 0
-				OR = {
-					AND = {
-						is_historical_focus_on = yes
-						has_government = neutrality
-					}
-					has_idea = neutrality_idea
-				}
-			}
-		}
-
-		completion_reward = {
 			add_timed_idea = { idea = collectivist_ethos_focus days = 1095 }
+
 		}
 	}
 
 	focus = {
-		id = TUR_nationalism_focus
-		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = TUR_collectivist_ethos }
-		mutually_exclusive = { focus = TUR_internationalism_focus }
-		available = {
-			OR = {
-				has_government = fascism
-				has_government = neutrality
-			}
-		}
-		x = -1
+		id = TUR_suspend_parliament
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = TUR_emergency }
+		x = 2
 		y = 1
-		relative_position_id = TUR_collectivist_ethos
 		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
-					is_major = yes
-					has_government = fascism
-				}
-			}
-			modifier = {
-				factor = 0
-				AND = {
-					is_historical_focus_on = yes
-					NOT = { has_government = fascism }
-				}
-			}
-		}
-
 		completion_reward = {
-			add_timed_idea = {
-				idea = nationalism
-				days = 720
-			}
+
+			add_stability = -0.15
 		}
 	}
-	
+
 	focus = {
-		id = TUR_internationalism_focus
-		icon = GFX_goal_support_communism #icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = TUR_collectivist_ethos }
-		mutually_exclusive = { focus = TUR_nationalism_focus }
-		available = {
-			if = {
-				limit = { original_tag = CHI }
-				has_government = communism
-				else = {
-					OR = {
-						has_government = communism
-						has_government = neutrality
-					}
-				}
-			}
+		id = TUR_purge
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = TUR_suspend_parliament }
+		x = 2
+		y = 2
+		cost = 20
+		ai_will_do = {
+			factor = 1
 		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			army_experience = -100
+			add_timed_idea = { idea = officers_purged days = 730 }
+			add_stability = 0.45
+			remove_ideas = tur_corrupt
+
+		}
+	}
+
+########################## SPLIT
+
+	focus = {
+		id = TUR_sultans_rule
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = TUR_purge }
+		mutually_exclusive = { focus = TUR_sultans_parliament }
+		x = 3
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			add_country_leader_trait = camarilla_leader
+			add_war_support = 0.15
+
+		}
+	}
+
+	focus = {
+		id = TUR_sultans_parliament
+		icon = GFX_focus_arm_popular
+		prerequisite = { focus = TUR_purge }
+		mutually_exclusive = { focus = TUR_sultans_rule }
 		x = 1
-		y = 1
-		relative_position_id = TUR_collectivist_ethos
+		y = 3
 		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
-					is_major = yes
-					has_government = communism
-				}
-			}			
-			modifier = {
-				factor = 0
-				AND = {
-					is_historical_focus_on = yes
-					NOT = { has_government = communism }
-				}
-			}
-		}
-
 		completion_reward = {
-			add_timed_idea = {
-				idea = internationalism
-				days = 720
-			}
+
+			add_stability = 0.25
+
 		}
-	}	
+	}
 
 	focus = {
-		id = TUR_liberty_ethos
+		id = TUR_sultans_cabinet
+		icon = GFX_focus_eng_the_kings_party
+		prerequisite = { focus = TUR_sultans_rule }
+		x = 3
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = ENG_the_kings_party_idea
+			remove_ideas = TUR_state
+		}
+	}
+
+	focus = {
+		id = TUR_sultans_constitution
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = TUR_sultans_parliament }
+		x = 1
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			if = {
+				limit = {
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = tot_economic_mobilisation }
+				}
+				add_ideas = partial_economic_mobilisation
+				remove_ideas = TUR_state
+			}
+		}
+	}
+
+########################## END OF SPLIT
+
+	focus = {
+		id = TUR_new_janisarries
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = TUR_sultans_cabinet focus = TUR_sultans_constitution }
+		x = 2
+		y = 5
+		cost = 15
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			army_experience = 30
+			add_timed_idea = { idea = reign_of_terror days = 365 }
+			remove_ideas = officers_purged
+			
+		}
+	}
+
+	focus = {
+		id = TUR_opda_payments_fulfilled
+		icon = GFX_focus_arm_trade
+		prerequisite = { focus = TUR_new_janisarries }
+		x = 2
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			custom_effect_tooltip = TUR_opda_payments_fulfilled_tooltip
+
+			hidden_effect = {
+				remove_ideas = TUR_opda
+				add_timed_idea = { idea = TUR_opda_payments days = 365}
+				ENG = {
+					add_opinion_modifier = { target = TUR modifier = TUR_paid_opda }
+				}
+				FRA = {
+					add_opinion_modifier = { target = TUR modifier = TUR_paid_opda }
+				}
+				ITA = {
+					add_opinion_modifier = { target = TUR modifier = TUR_paid_opda }
+				}
+				GRE = {
+					add_opinion_modifier = { target = TUR modifier = TUR_paid_opda }
+				}
+			}
+
+		}
+	}
+
+############################################################################### DEMOCRACY / MILITARY COUP PATH
+
+	focus = {
+		id = TUR_democracy
 		icon = GFX_goal_support_democracy
-		prerequisite = { focus = TUR_political_effort }
-		mutually_exclusive = { focus = TUR_collectivist_ethos }
+		mutually_exclusive = { focus = TUR_emergency }
+		x = 8
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			add_political_power = 120
+			add_timed_idea = { idea = JAP_strengthen_civilian_government days = 1095 }
+			add_popularity = {
+    			ideology = democratic
+    			popularity = 0.1
+			}
+			add_stability = -0.10
+		}
+	}
+
+	focus = {
+		id = TUR_coup
+		icon = GFX_focus_tur_kazim_karabekir
+		prerequisite = { focus = TUR_democracy }
 		available = {
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
+			has_stability < 0.25
 		}
-		x = 2
+		x = 8
 		y = 1
-		relative_position_id = TUR_political_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 95
-			modifier = {
-				factor = 0.1
-				any_neighbor_country = {
-					is_major = yes
-					OR = {
-						has_government = communism
-						has_government = fascism
-					}
-				}
-				NOT = {
-					any_neighbor_country = {
-						is_major = yes
-						has_government = democratic
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_ideas = liberty_ethos_focus
-		}
-	}
-
-	focus = {
-		id = TUR_militarism
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = TUR_nationalism_focus }
-		x = 0
-		y = 1
-		relative_position_id = TUR_nationalism_focus
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			if = {
-				limit = { has_idea = neutrality_idea }
-				remove_ideas = neutrality_idea
-			}			
-			add_ideas = militarism_focus
-			army_experience = 20
-			set_rule = { can_send_volunteers = yes }
-		}
-	}
-
-	focus = {
-		id = TUR_political_correctness
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = TUR_internationalism_focus }
-		x = 0
-		y = 1
-		relative_position_id = TUR_internationalism_focus
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			if = {
-				limit = { has_idea = neutrality_idea }
-				remove_ideas = neutrality_idea
-			}		
-			add_political_power = 200
-			add_ideas = idea_political_correctness
-		}
-	}
-
-	focus = {
-		id = TUR_neutrality_focus
-		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = TUR_liberty_ethos }
-		mutually_exclusive = { focus = TUR_interventionism_focus }
-		x = -1
-		y = 1
-		relative_position_id = TUR_liberty_ethos
-		cost = 10
-
-		available_if_capitulated = yes
-
+		cost = 20
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				tag = AUS
-			}
 		}
 
+		available_if_capitulated = yes
+
 		completion_reward = {
-			if = {
-				limit = { NOT = { has_idea = neutrality_idea } }
-				add_ideas = neutrality_idea
+
+			set_party_name = { 
+    			ideology = neutrality  
+    			long_name = TUR_neutrality_party_junta_long
+    			name = TUR_neutrality_party_junta
 			}
-			add_political_power = 150
+			add_stability = -0.05
 		}
 	}
 
 	focus = {
-		id = TUR_interventionism_focus
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = TUR_liberty_ethos }
-		mutually_exclusive = { focus = TUR_neutrality_focus }
-		x = 1
-		y = 1
-		relative_position_id = TUR_liberty_ethos
+		id = TUR_abolish_sultanate
+		icon = GFX_focus_rom_abdicate
+		prerequisite = { focus = TUR_coup }
+		x = 8
+		y = 2
 		cost = 10
-
-		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				has_idea = neutrality_idea
-			}
 		}
-
-		completion_reward = {
-			if = {
-				limit = { has_idea = neutrality_idea }
-				remove_ideas = neutrality_idea
-			}	
-			set_rule = { can_send_volunteers = yes }
-			add_political_power = 150
-		}
-	}
-
-	focus = {
-		id = TUR_military_youth
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = TUR_militarism }
-		x = 0
-		y = 1
-		relative_position_id = TUR_militarism
-		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = military_youth_focus
-			if = {
-				limit = { has_government = fascism }
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.2
+
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Kâzım Karabekir"
+				ideology = despotism
+				desc = "politics_kazim_karabekir_desc"
+				picture = GFX_portrait_kazim_karabekir
+				expire = "1948.1.26"
+				traits = {
+					dictator
 				}
 			}
-			if = {
-				limit = { has_government = communism }
-				add_popularity = {
-					ideology = communism
-					popularity = 0.2
+			add_stability = -0.05
+		}
+	}
+
+############################################################################### MILITARY DICTATORSHIP PATH
+
+	focus = {
+		id = TUR_military_dictatorship
+		icon = GFX_focus_tur_fevzi_cakmak
+		prerequisite = { focus = TUR_abolish_sultanate }
+		mutually_exclusive = { focus = TUR_democracy_prevails }
+		x = 6
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Fevzi Çakmak"
+				ideology = despotism 
+				desc = "politics_fevzi_cakmak_desc"
+				picture = GFX_portrait_fevzi_cakmak
+				expire = "1950.4.10"
+				traits = {
+					great_war_hero
+					dictator
 				}
 			}
+			add_stability = 0.3
+			remove_ideas = TUR_corrupt
 		}
 	}
 
 	focus = {
-		id = TUR_deterrence
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = TUR_neutrality_focus }
-		x = 0
-		y = 1
-		relative_position_id = TUR_neutrality_focus
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = deterrence
-		}
-	}
-
-	focus = {
-		id = TUR_volunteer_corps
-		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = TUR_interventionism_focus }
-		x = 0
-		y = 1
-		relative_position_id = TUR_interventionism_focus
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = volunteer_corps_focus
-		}
-	}
-
-	focus = {
-		id = TUR_paramilitarism
+		id = TUR_securing_the_state
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = TUR_military_youth }
-		x = 0
-		y = 1
-		relative_position_id = TUR_military_youth
+		prerequisite = { focus = TUR_military_dictatorship }
+		x = 6
+		y = 4
 		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = paramilitarism_focus
-		}
-	}
 
-	focus = {
-		id = TUR_indoctrination_focus
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = TUR_political_correctness }
-		x = 0
-		y = 1
-		relative_position_id = TUR_political_correctness
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = indoctrination_focus
-			add_political_power = 150
-		}
-	}
-
-	focus = {
-		id = TUR_foreign_expeditions
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = TUR_volunteer_corps }
-		x = 0
-		y = 1
-		relative_position_id = TUR_volunteer_corps
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = foreign_expeditions_focus
-		}
-	}
-
-	focus = {
-		id = TUR_why_we_fight
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = TUR_foreign_expeditions focus = TUR_deterrence }
-		available = { 
-			OR = { 
-				threat > 0.75 
-				has_defensive_war = yes 
+			swap_ideas = {
+				add_idea = collectivist_ethos_focus
+				remove_idea = JAP_strengthen_civilian_government
 			}
+			remove_ideas = TUR_state
 		}
+	}
 
-		continue_if_invalid = yes
-		
-		x = -2
-		y = 1
-		relative_position_id = TUR_foreign_expeditions
+	focus = {
+		id = TUR_opda_deal_break_focus
+		icon = GFX_focus_arm_tax
+		prerequisite = { focus = TUR_securing_the_state }
+		mutually_exclusive = { focus = TUR_opda_negotiation }
+		x = 4
+		y = 5
 		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = why_we_fight_focus
-			custom_effect_tooltip = why_we_fight_effect
+
+			custom_effect_tooltip = TUR_opda_deal_break_tooltip
+
 			hidden_effect = {
-				if = {
-					limit = { NOT = { has_idea = neutrality_idea } }
-					set_rule = { can_create_factions = yes }
-				}			
+
+				remove_ideas = TUR_opda
+				ENG = {
+					add_opinion_modifier = { target = TUR modifier = TUR_opda_deal_break }
+					create_wargoal = { type = puppet_wargoal_focus target = TUR }
+				}
+				FRA = {
+					add_opinion_modifier = { target = TUR modifier = TUR_opda_deal_break }
+					create_wargoal = { type = puppet_wargoal_focus target = TUR }
+				}
+				ITA = {
+					add_opinion_modifier = { target = TUR modifier = TUR_opda_deal_break }
+					create_wargoal = { type = puppet_wargoal_focus target = TUR }
+				}
+				GRE = {
+					add_opinion_modifier = { target = TUR modifier = TUR_opda_deal_break }
+					create_wargoal = { type = puppet_wargoal_focus target = TUR }
+				}
+
 			}
+
+		}
+	}
+
+############################################################################### JOINT PATHS
+
+	focus = {
+		id = TUR_opda_negotiation
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = TUR_securing_the_state focus = TUR_democracy_prevails }
+		mutually_exclusive = { focus = TUR_opda_deal_break_focus }
+		x = 8
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			custom_effect_tooltip = TUR_opda_tooltip
 		}
 	}
 
 	focus = {
-		id = TUR_political_commissars
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = TUR_indoctrination_focus }
+		id = TUR_opda_negotiation_uk
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = TUR_opda_negotiation }
+		x = 6
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			hidden_effect = {
+
+				add_timed_idea = { idea = TUR_seperate_opda_payments days = 35 }
+
+			}
+
+			custom_effect_tooltip = TUR_opda_seperate_payment_uk_tooltip
+		}
+	}
+
+	focus = {
+		id = TUR_opda_negotiation_fra
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = TUR_opda_negotiation }
+		x = 8
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			
+			hidden_effect = {
+
+				add_timed_idea = { idea = TUR_seperate_opda_payments days = 35 }
+
+			}
+
+			custom_effect_tooltip = TUR_opda_seperate_payment_fra_tooltip
+
+		}
+	}
+
+	focus = {
+		id = TUR_opda_negotiation_ita
+		icon = GFX_focus_generic_italy_first
+		prerequisite = { focus = TUR_opda_negotiation }
+		x = 10
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			
+			hidden_effect = {
+
+				add_timed_idea = { idea = TUR_seperate_opda_payments days = 35 }
+
+			}
+
+			custom_effect_tooltip = TUR_opda_seperate_payment_ita_tooltip
+
+		}
+	}
+
+	focus = {
+		id = TUR_opda_negotiation_end
+		icon = GFX_focus_arm_market
+		prerequisite = { focus = TUR_opda_negotiation_uk }
+		prerequisite = { focus = TUR_opda_negotiation_fra }
+		prerequisite = { focus = TUR_opda_negotiation_ita }
+		x = 8
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			custom_effect_tooltip = TUR_opda_end_negotiation_tooltip
+
+			hidden_effect = {
+
+				GRE = {
+					add_opinion_modifier = { target = TUR modifier = TUR_opda_deal_break }
+					create_wargoal = { type = puppet_wargoal_focus target = TUR }
+				}
+
+				remove_ideas = TUR_opda_payments
+
+			}
+
+
+		}
+	}
+
+############################################################################### DEMOCRACY PATH
+
+	focus = {
+		id = TUR_democracy_prevails
+		icon = GFX_focus_tur_ismet_inonu
+		prerequisite = { focus = TUR_abolish_sultanate }
+		mutually_exclusive = { focus = TUR_military_dictatorship }
+		x = 10
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "İsmet İnönü"
+				ideology = Liberalism
+				desc = "politics_ismet_inonu_desc"
+				picture = GFX_portrait_ismet_inonu2
+				expire = "1973.12.25"
+				traits = {
+					great_war_hero
+				}
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			add_stability = 0.15
+			remove_ideas = TUR_corrupt
+		}
+	}
+
+	focus = {
+		id = TUR_national_assembly
+		icon = GFX_focus_arm_popular
+		prerequisite = { focus = TUR_democracy_prevails }
+		x = 10
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			add_stability = 0.10
+			remove_ideas = TUR_state
+
+		}
+	}
+
+	focus = {
+		id = TUR_military_purpose
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		prerequisite = { focus = TUR_national_assembly }
+		x = 10
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			add_ideas = TUR_military_doctorine
+			army_experience = 50
+
+		}
+	}
+
+############################################################################################################################################################## WAR PARTH
+
+	focus = {
+		id = TUR_war_plan
+		icon = GFX_goal_generic_position_armies
+		x = 15
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
 		available = {
+			is_puppet = no
+			NOT = { has_idea = TUR_state }
+			NOT = { has_idea = TUR_corrupt }
+			NOT = { has_idea = TUR_opda }
+			NOT = { has_idea = TUR_opda_payments }
+			NOT = { has_idea = TUR_seperate_opda_payments }
 		}
-		x = 0
-		y = 1
-		relative_position_id = TUR_indoctrination_focus
-		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = political_commissars_focus
-			if = {
-				limit = { has_government = fascism }
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.2
-				}
-			}
-			if = {
-				limit = { has_government = communism }
-				add_popularity = {
-					ideology = communism
-					popularity = 0.2
-				}
-			}
-			add_political_power = 200
+
+			custom_effect_tooltip = TUR_war_plan_tooltip
+
 		}
 	}
 
 	focus = {
-		id = TUR_ideological_fanaticism
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = TUR_paramilitarism focus = TUR_political_commissars }
-		x = 1
+		id = TUR_pressure_italians
+		icon = GFX_focus_attack_italy
+		prerequisite = { focus = TUR_war_plan }
+		x = 13
 		y = 1
-		relative_position_id = TUR_paramilitarism
-		cost = 10
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			is_puppet = no
+			has_army_manpower = { size > 150000 }
+		}
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = ideological_fanaticism_focus
-			set_rule = {
-				can_create_factions = yes
-			}
+
+			custom_effect_tooltip = TUR_war_plan_italy_tooltip
 			hidden_effect = {
-				set_rule = { can_use_kamikaze_pilots = yes }
+
+				ITA = {
+
+					country_event = turkey.1
+
+				}
+
 			}
-			custom_effect_tooltip = kamikaze_focus_tooltip
+
 		}
 	}
+
+	focus = {
+		id = TUR_french_deal
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = TUR_pressure_italians }
+		x = 13
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			is_puppet = no
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			custom_effect_tooltip = TUR_french_deal_tooltip
+
+		}
+	}
+
+###
+
+	focus = {
+		id = TUR_eastern_gambit
+		icon = GFX_focus_tur_caucasus
+		prerequisite = { focus = TUR_war_plan }
+		x = 15
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			is_puppet = no
+			has_army_manpower = { size > 250000 }
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			custom_effect_tooltip = TUR_eastern_gambit_tooltip
+			hidden_effect = {
+
+				ARM = {
+
+					set_rule = { can_create_factions = yes }
+					create_faction = "Eastern Defense Block"
+					add_to_faction = KUR
+
+				}
+
+				declare_war_on = {
+   			   		target = ARM
+    				type = annex_everything
+				}
+
+				declare_war_on = {
+   			   		target = KUR
+    				type = annex_everything
+				}
+
+			}
+
+		}
+	}
+
+	focus = {
+		id = TUR_georgian_deal
+		icon = GFX_focus_tur_adjaran
+		prerequisite = { focus = TUR_eastern_gambit }
+		x = 15
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			is_puppet = no
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			custom_effect_tooltip = TUR_georgian_deal_tooltip
+			hidden_effect = {
+
+				GEO = {
+
+					country_event = turkey.6
+
+				}
+
+			}
+
+		}
+	}
+
+###
+
+	focus = {
+		id = TUR_grand_offensive
+		icon = GFX_focus_tur_soldiers
+		prerequisite = { focus = TUR_war_plan }
+		x = 17
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			is_puppet = no
+			has_army_manpower = { size > 300000 }
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			custom_effect_tooltip = TUR_grand_offensive_tooltip
+			hidden_effect = {
+
+				GRE = {
+
+					create_faction = "Hellenic Defense League"
+
+				}
+
+				declare_war_on = {
+   			   		target = GRE
+    				type = annex_everything
+				}
+
+			}
+		}
+	}
+
+###
+
+	focus = {
+		id = TUR_misaki_milli
+		icon = GFX_goal_generic_forceful_treaty
+		mutually_exclusive = { focus = TUR_ottoman_borders }
+		x = 17
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			is_puppet = no
+			has_army_manpower = { size > 500000 }
+
+			341 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		339 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		340 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		801 = {
+
+				is_fully_controlled_by = TUR
+
+			}
+
+			354 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		353 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		352 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		802 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		350 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			custom_effect_tooltip = TUR_misaki_milli_tooltip
+			hidden_effect = {
+
+				
+
+			}
+		}
+	}
+
+###SPLIT
 	
 	focus = {
-		id = TUR_technology_sharing
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = TUR_ideological_fanaticism focus = TUR_why_we_fight }
+		id = TUR_ottoman_borders
+		icon = GFX_focus_generic_home_defense
+		mutually_exclusive = { focus = TUR_misaki_milli }
+		x = 14
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
 		available = {
-			has_war = yes
-			is_in_faction = yes
-			OR = {
-				num_of_factories > 50
-				any_other_country = {
-					is_in_faction_with = ROOT
-					num_of_factories > 50
-				}
+			is_puppet = no
+			has_army_manpower = { size > 500000 }
+
+			341 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		339 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		340 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		801 = {
+
+				is_fully_controlled_by = TUR
+
 			}
-		}		
-		x = 2
-		y = 1
-		relative_position_id = TUR_ideological_fanaticism
-		cost = 10
+
+			354 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		353 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		352 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		802 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		350 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+		}
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			if = {
-				limit = {
-					original_research_slots < 3
-				}
-				add_research_slot = 1
+
+			custom_effect_tooltip = TUR_ottoman_borders_tooltip
+			hidden_effect = {
+
+				
+
 			}
-			if = {
-				limit = {
-					original_research_slots > 2
-				}
-				add_tech_bonus = {
-					name = electronics_bonus
-					bonus = 1.0
-					uses = 1
-					category = electronics
-				}
-				add_tech_bonus = {
-					name = industrial_bonus
-					bonus = 1.0
-					uses = 1
-					category = industry
-				}	
-				add_tech_bonus = {
-					name = infantry_artillery_bonus #@#
-					bonus = 1.0
-					uses = 1
-					category = infantry_weapons
-					category = artillery
-				}				
-			}			
 		}
 	}
-
-}

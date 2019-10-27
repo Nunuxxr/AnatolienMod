@@ -2800,6 +2800,8 @@ form_caucasia_category = {
 				original_tag = ARM
 				original_tag = AZR
 				original_tag = GEO
+				original_tag = AMR
+				original_tag = CNE
 			}
 			NOT = { has_global_flag = CAU }
 		}

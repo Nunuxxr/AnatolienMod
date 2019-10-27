@@ -1,0 +1,159 @@
+﻿l_english:
+
+###Ideas
+ TUR_state:0 "Crumbling State"
+ TUR_state_desc:0 "The state has essentially collapsed. The central government holds little to no power, we need to reform or we will not survie."
+ TUR_corrupt:0 "Systematic Corruption"
+ TUR_corrupt_desc:0 "Corruption is rampant. It is in every piece of our legal system and our government. Unless we get rid of it, we cannot effectively run our country."
+ TUR_opda:0 "Ottoman Public Debt Administration"
+ TUR_opda_desc:0 "The OPDA was established in 1881 to collect the payments which the Ottoman government owed to the European companies. It is an independent bureaucracy which puts a massive strain on our economic growth and output."
+ TUR_seperate_opda_payments:0 "Individual OPDA Payments"
+ TUR_military_doctorine:0 "Turkish Military Doctorine"
+ TUR_military_doctorine_desc:0 "Unlike in most western countries, in Turkey the military has the goal of not only the defense of the state but also the defense of state democracy. Therefore the military must always be maintained to a high standard and know our country inside out."
+
+###Tooltip
+ TUR_opda_tooltip:0 "You will begin negotiations with the Entente powers to §Ypay off your debts§! in a manageable manner."
+ TUR_opda_deal_break_tooltip:0 "You will halt payments to foreign companies. This will hurt your relations with the §YUnited Kingdom, Greece, Italy and France§!. They will be given a §Rwargoal§! against you."
+ TUR_opda_payments_fulfilled_tooltip:0 "§YYou will begin paying off your debts en-masse.§! This will §Rhurt your economy immensely§! for a short time but it will §Gimprove relations with the OPDA stake holders.§!"
+ TUR_opda_seperate_payment_uk_tooltip:0 "You will begin paying off your debt owed to the §YBritish§!. This will §Rhurt your economy§! for a short while."
+ TUR_opda_seperate_payment_fra_tooltip:0 "You will begin paying off your debt owed to the §YFrench§!. This will §Rhurt your economy§! for a short while."
+ TUR_opda_seperate_payment_ita_tooltip:0 "You will begin paying off your debt owed to the §YItalians§!. This will §Rhurt your economy§! for a short while."
+ TUR_opda_end_negotiation_tooltip:0 "§GYou have successfully negotiated an end to the OPDA payments with the United Kingdom, Italy and France.§!\n However, the Greek payments are now halted since they are diplomatically isolated. This will hurt relations with §YGreece§! and give them a §Rwargoal§! against you."
+ TUR_war_plan_tooltip:0 "You will begin discussions and planning amongst the generals to decide on the path to take to re-unite the Turkish people across §YThrace, Anatolia and the Middle East.§!"
+ TUR_war_plan_italy_tooltip:0 "You will begin §Ypressuring the Italians to leave Anatolia§! and return the rightful territory of the Turkish people back to the Turkish state.\n §RYou will get a wargoal against the Italians should they refuse.§!"
+ TUR_eastern_gambit_tooltip:0 "Your armies will be moved and ready to §Yattack the eastern states of Kurdistan and Armenia.§! They must return the rightful land of the Turkish people back to the Turkish state. §RYou will declare war on the countries of Armenia and Kurdistan!§!"
+ TUR_grand_offensive_tooltip:0 "You're now ready for the §Ygreat patriotic war against the Greeks.§! They've taken lands which the Turkish people have lived in for centuries. §RThe Greeks will not negotiate, you will get an instant war-goal against them.§!"
+ TUR_french_deal_tooltip:0 "We will send our diplomats to Paris in hopes of §Ysecuring ethnically Turkish lands back into Turkish hands.§!"
+ TUR_georgian_deal_tooltip:0 "We will §Ydemand our ethnic Turkish lands back from the Georgians.§! §RShould they refuse, this will give us a wargoal.§!"
+
+###Opinion Modifiers
+ TUR_paid_opda:0 "Debt Payments Fulfilled"
+ TUR_opda_deal_break:0 "Debt Payments Halted"
+
+###Events
+ TUR.1.t:0 "The Turkish demand their land back!"
+ TUR.1.d:0 "The Turkish have sent us a formal request to give their lands in Anatolia back to them. Should we refuse they may decide to invade us."
+ TUR.1.a:0 "Accept the Turkish Demands"
+ TUR.1.b:0 "Reject the Turkish Demands"
+ TUR_event_tooltip_1_a:0 "These are ethnic Turkish lands, we no longer have any need for them."
+ TUR_event_tooltip_1_b:0 "Unacceptable, how dare the tiny nation of Turkey challenge the Italian supremacy."
+
+ TUR.2.t:0 "Deal proposed by the Turkish"
+ TUR.2.d:0 "Very soon after the Turkish diplomats arrived in Italy, they also arrived in Paris to discuss the matter surrounding the state of Antep / Aintab."
+ TUR.2.a:0 "Accept the Turkish Proposal"
+ TUR.2.b:0 "Reject the Turkish Proposal"
+ TUR_event_tooltip_2_a:0 "These are ethnic Turkish lands, we no longer have any need for them."
+ TUR_event_tooltip_2_b:0 "Unacceptable, how dare the tiny nation of Turkey challenge the French supremacy."
+
+ TUR.3.t:0 "Victory against the Italians!"
+ TUR.3.d:0 "We have secured the state of Antalya from Italy. With this, the Italians are forced to sue for peace as they no longer have any beach heads to counter attack from."
+ TUR.3.a:0 "A much needed victory for the Turkish state"
+ TUR_event_tooltip_3_a:0 "We will annex Antalya from the Italians and peace out with them."
+
+ TUR.4.t:0 "Victory in the East!"
+ TUR.4.d:0 "Our army has successfully defeated both the Kurdish forces and the Armenian army, they have now sued for peace."
+ TUR.4.a:0 "The eastern borders will be restored"
+ TUR.event_tooltip_4_a:0 "We will re-annex our old borders in the east!"
+
+ TUR.5.t:0 "Reintegration of the East"
+ TUR.5.d:0 "With our victory many Armenians fled the region and the Turkish population once again became a majority. After a democratic vote, by a percentage of 84 to 16 the states have voted to join the Turkish state!"
+ TUR.5.a:0 "Re-integrate the eastern states"
+ TUR.event_tooltip_5_a:0 "We will gain cores on the land we have conquered from the Armenians."
+
+ TUR.6.t:0 "The Turkish demand their land back!"
+ TUR.6.d:0 "The Turkish demand the state of Tao-Klarjeti back, claiming that it was ethnically Turkish and that the will of the Turkish people was not respected in the Treaty of Sevres."
+ TUR.6.a:0 "Accept the Turkish Demands"
+ TUR.6.b:0 "Reject the Turkish Demands"
+ TUR_event_tooltip_6_a:0 "These are ethnic Turkish lands, we no longer have any need for them."
+ TUR_event_tooltip_6_b:0 "Unacceptable, how dare they bully other nations into giving them land!"
+
+ TUR.7.t:0 "Asia Minor has been secured!"
+ TUR.7.d:0 "We have secured Asia minor, and the local Greeks have been ousted from positions of power, we can now annex it into our Turkish state."
+ TUR.7.a:0 "A great victory for the Turkish State"
+ TUR_event_tooltip_7_a:0 "We will annex Asia Minor, however the war will continue."
+
+ TUR.8.t:0 "Greek Defeat!"
+ TUR.8.d:0 "We have taken Constantinople, the Greek capital. As a result a formal diplomat arrived in Ankara to sue for peace. The Great Patriotic War is won!"
+ TUR.8.a:0 "Demand all Turkish lands back"
+ TUR_event_tooltip_8_a:0 "We will annex Eastern Thrace into the Turkish state. We will have peace with Greece."
+
+ TUR.9.t:0 "Refusal of our demands!"
+ TUR.9.d:0 "The Turkish state will have to act decisively, and invade the lands that are rightfully ours! If we do not, we will look as though we are weak and our chances of getting land back from others will be decreased."
+ TUR.9.a:0 "Begin readying the troops"
+ TUR_event_tooltip_9_a:0 "We will gaing a wargoal to take back the rightful Turkish land."
+
+###Focus
+
+ ###Sultan Path
+ TUR_emergency:0 "Declare a National Emergency"
+ TUR_emergency_desc:0 "Our country is facing imminent collapse, the Sultan must declare a national emergency."
+ TUR_suspend_parliament:0 "Suspend the Grand Assembly"
+ TUR_suspend_parliament_desc:0 "The Entente have imposed a 'people's' parliament on us. It is mainly run by British and French officials. This is unacceptable and we must suspend parliament immediately. "
+ TUR_purge:0 "Purge the Army"
+ TUR_purge_desc:0 "We need to purge the army, the British have many officers inside it and influence our army. We must also purge the 'democrats' inside the army which is causing instability."
+ 
+ TUR_sultans_parliament:0 "Sultan's Parliament"
+ TUR_sultans_parliament_desc:0 "Although the Entente parliament was a failure. The Sultan will re-convene parliament and appoint Turkish Viziers and Grand Viziers."
+ TUR_sultans_constitution:0 "Sultan's Constitution"
+ TUR_sultans_constitution_desc:0 "The Sultan and his Viziers will draft a brand new constitution and make sure our country will be rid of it's past."
+ ###SPLIT
+ TUR_sultans_rule:0 "Sultan's Iron Fist"
+ TUR_sultans_rule_desc:0 "The Sultan will take direct rule of his country, only he can lead the Turkish people to greatness."
+ TUR_sultans_cabinet:0 "Sultan's Cabinet"
+ TUR_sultans_cabinet_desc:0 "The Sultan will appoint his own Viziers and his own Grand Vizier. The people do not have enough educaton to make their own choice, and it will simply de-stabilise our realm if we let them."
+ ###END SPLIT
+ 
+ TUR_new_janisarries:0 "Reinstitute Janissaries"
+ TUR_new_janisarries_desc:0 "The Janisarries will be re-established to guard parliament and the Sultan. They will be an independent body of soldiers, however their political and religious beliefs will be restricted."
+ TUR_opda_payments_fulfilled:0 "OPDA Payments"
+ TUR_opda_payments_fulfilled_desc:0 "Our government has decided to pay off the Ottoman Public Debt in one go, this will hurt our economy immensely in the short term but it will save our countries economy in the long term."
+ 
+ ###Democracy / Military Coup Path
+ TUR_democracy:0 "Allow Democratic Rallies"
+ TUR_democracy_desc:0 "The people must choose their own future, we cannot force them to be under the Sultan."
+ TUR_coup:0 "Military Coup"
+ TUR_coup_desc:0 "The Military must coup the current government and make the Sultan a puppet. This is for the sake of democracy!"
+ TUR_abolish_sultanate:0 "Abolish the Sultanate"
+ TUR_abolish_sultanate_desc:0 "We must abolish the Sultanate. The old corrupt system must be ended and we cannot let it go on, a temporary military government will be set up."
+ 
+ TUR_military_dictatorship:0 "Military Dictatorship"
+ TUR_military_dictatorship_desc:0 "A faction in the military led by Fevzi Cakmak regards a military dicatorship as the correct path to go forward. We must remain united rather than split up amongst party ideologies and parliamentary debates."
+ TUR_securing_the_state:0 "Secure the State"
+ TUR_securing_the_state_desc:0 "We must rid the state of de-stabilising elements and make sure the our government remains unchallenged. Long Live the Turks!"
+ TUR_opda_deal_break_focus:0 "Debt Payments Halted"
+ TUR_opda_deal_break_focus_desc:0 "We will stop paying these foolish 'debts' immediately. Our economy cannot keep on going like this, and we will put our national interests above all else."
+ ###SPLIT
+ TUR_democracy_prevails:0 "Democracy Prevails"
+ TUR_democracy_prevails_desc:0 "The democratic faction in the military prevails, and we must now appoint Izmet Inonu to lead the first Turkish Republic."
+ TUR_national_assembly:0 "Form the Grand National Assembly"
+ TUR_national_assembly_desc:0 "The Grand National Assembly will be the legislative body of the country. The ministers will be appointed by the President with respect to the elections held inside of Turkey."
+ TUR_military_purpose:0 "Turkish Military Doctorine"
+ TUR_military_purpose_desc:0 "Unlike in most western countries, in Turkey the military has the goal of not only the defense of the state but also the defense of state democracy. Therefore the military must always be maintained to a high standard and know our country inside out."
+ 
+ TUR_opda_negotiation:0 "Open Negotiations with the OPDA"
+ TUR_opda_negotiation_desc:0 "We will negotiate with each country that has a stake inside of the OPDA so we can pay part by part."
+ TUR_opda_negotiation_uk:0 "Negotiate with the British"
+ TUR_opda_negotiation_uk_desc:0 "Our negotiatiton team will be sent to the British and make sure our payments are paid slowly so that our economy is not harmed."
+ TUR_opda_negotiation_fra:0 "Negotiate with the French"
+ TUR_opda_negotiation_fra_desc:0 "Our negotiatiton team will be sent to the French and make sure our payments are paid slowly so that our economy is not harmed."
+ TUR_opda_negotiation_ita:0 "Negotiate with the Italians"
+ TUR_opda_negotiation_ita_desc:0 "Our negotiatiton team will be sent to the Italians and make sure our payments are paid slowly so that our economy is not harmed."
+ TUR_opda_negotiation_end:0 "End Negotiations with the OPDA"
+ TUR_opda_negotiation_end_desc:0 "We've ended negotiations with the Entente powers. We've also halted debt payments to Greece now that they're diplomatically isolated."
+
+ ######War Plans
+ TUR_war_plan:0 "Turkish War Plans"
+ TUR_war_plan_desc:0 "We will convene the General Staff to begin discussions around the idea of an offensive to re-unite the Turkish people."
+ TUR_eastern_gambit:0 "The Eastern Gambit"
+ TUR_eastern_gambit_desc:0 ""
+ TUR_georgian_deal:0 "Home of the Ajarsky Khachapuri"
+ TUR_georgian_deal_desc:0 ""
+ TUR_pressure_italians:0 "Pressure the Italians"
+ TUR_pressure_italians_desc:0 ""
+ TUR_french_deal:0 "A Deal with the French"
+ TUR_french_deal_desc:0 ""
+ TUR_grand_offensive:0 "The Grand Offensive"
+ TUR_grand_offensive_desc:0 ""
+ TUR_ottoman_borders:0 "Restoration of Ottoman Borders"
+ TUR_ottoman_borders_desc:0 ""
+ TUR_misaki_milli:0 "Misak-ı Millî" #       National Oath

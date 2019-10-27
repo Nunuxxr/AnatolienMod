@@ -1,0 +1,30 @@
+################
+##### TUR ######
+################
+
+TUR_turkic_khanates = {
+
+	icon = generic
+	
+	allowed = {
+		tag = TUR
+	}
+
+	visible = {
+		tag = TUR
+	}
+}
+
+TUR_turkic_integration = {
+
+	icon = generic
+	
+	allowed = {
+		tag = TUR
+	}
+
+	visible = {
+		
+		tag = TUR
+	}
+}

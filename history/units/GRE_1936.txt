@@ -98,7 +98,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 10122
+		location = 9887
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -122,7 +122,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 9929
+		location = 9921
 		division_template = "Tetrágono Pezikoú" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -133,7 +133,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 9
 		}
-		location = 785
+		location = 3851
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5

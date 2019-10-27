@@ -2,7 +2,7 @@
 
 l_english:
 
- ###Music###
+ ###Music
  zangezur_march:0 "Zangezur March"
 
  ###Formable News Events
@@ -34,12 +34,50 @@ CAU_fascism_party:0 "Iron Legion"
 CAU_neutrality_party_long:0 "Transcaucasian Unity Party"
 CAU_neutrality_party:0 "Unity Party"
 
-###Decisions###
+###Decisions
+
+ #Turan Decisions
+ TUR_turkic_khanates:0 "Turan Legacy"
+ release_central_asia:0 "Create the Central Asian Federation"
+ release_caucasus_emirate:0 "Create the North Caucasian Emirate"
+ TUR_turkic_integration:0 "Turkic Integration"
+ integrate_kazakhstan:0 "Assimilate Kazakhstan"
+ integrate_uzbekistan:0 "Assimilate Uzbekistan"
+ integrate_turkmenistan:0 "Assimilate Turkmenistan"
+ integrate_kyrgyzstan:0 "Assimilate Kyrgyzstan"
+ integrate_tajikistan:0 "Turkify Tajikistan"
+ annex_central_asia:0 "Join Central Asia to the Turan"
+ integrate_north_caucasus:0 "Assimilate North Caucasus"
+ integrate_tiflis:0 "Turkify Tpilisi"
+ integrate_mingrelia:0 "Turkify Mingrelia"
+ integrate_uyghurstan:0 "Assimilate Uyghurstan"
+ annex_north_caucasus:0 "Join the North Caucasus to the Turan"
+ integrate_greeks:0 "Turkify Greeks"
+ integrate_armenians:0 "Turkify Armenians"
+ integrate_kurds:0 "Turkify Kurds"
+ integrate_arabs:0 "Turkify Arabs"
+ integrate_sinkiang:0 "Assimilate Uyghurstan"
+ annex_uyghurstan:0 "Join Uyghurstan to the Turan"
+
+ kazakhstan_integrated:0 "Kazakhstan is integrated"
+ uzbekistan_integrated:0 "Uzbekistan is integrated"
+ turkmenistan_integrated:0 "Turkmenistan is integrated"
+ kyrgyzstan_integrated:0 "Kyrgyzstan is integrated"
+ tajikistan_integrated:0 "Tajikistan is integrated"
+
+ north_caucasus_integrated:0 "The North Caucasus is integrated"
+ tiflis_integrated:0 "Tpilisi is integrated"
+ mingrelia_integrated:0 "Mingrelia is integrated"
+
+
+ caf_form_required_states_tt:0 "Owns all §YCentral Asian§! states."
+
+
  form_transcaucasia_category:0 "Realise Caucasian Unity"
  form_transcaucasia_category_desc:0 "Long have we aspired to be a united Transcaucasia. Once before a united Transcaucasian state has been disolved but this time we are here to stay, united so should restore the second Transcaucasian union."
  form_transcaucasia:0 "Form Transaucasia"
 
-#Transcaucasia#
+#Transcaucasia
  form_country_armenia_required_states_tt:0 "Controls all §YArmenian§! states."
  form_country_georgia_required_states_tt:0 "Controls all §YGeorgian§! states."
  form_country_azerbaijan_required_states_tt:0 "Controls all §YAzerbaijani§! states."
@@ -60,20 +98,6 @@ CAU_neutrality_party:0 "Unity Party"
 
  #Straits
  HELLESPONT_STRAIT:0 "Hellespont"
-
- #New TAG Country Names
- ASY_fascism:0 "Assyrian Empire"
- ASY_fascism_DEF:0 "the Assyrian Empire"
- ASY_democratic:0 "Assyrian Republic"
- ASY_democratic_DEF:0 "Assyrian Republic"
- ASY_neutrality:0 "Assyria"
- ASY_neutrality_DEF:0 "Assyria"
- ASY_communism:0 "Assyrian People's State"
- ASY_communism_DEF:0 "the Assyrian People's State"
- ASY_fascism_ADJ:0 "Assyrian"
- ASY_democratic_ADJ:0 "Assyrian"
- ASY_neutrality_ADJ:0 "Assyrian"
- ASY_communism_ADJ:0 "Assyrian"
 
  #Cosmetic Country Names
  CAU_fascism:0 "Transcaucasian Empire"
@@ -132,6 +156,71 @@ CAU_neutrality_party:0 "Unity Party"
  KUR_democratic_ADJ:0 "Kurdish"
  KUR_neutrality_ADJ:0 "Kurdish"
  KUR_communism_ADJ:0 "Kurdish"
+
+ ASY_fascism:0 "State of Assyria"
+ ASY_fascism_DEF:0 "the State of Assyria"
+ ASY_democratic:0 "Assyria"
+ ASY_democratic_DEF:0 "Assyria"
+ ASY_neutrality:0 "Assyria"
+ ASY_neutrality_DEF:0 "Assyria"
+ ASY_communism:0 "Assyrian Socialist Republic"
+ ASY_communism_DEF:0 "the Assyrian Socialist Republic"
+ ASY_fascism_ADJ:0 "Assyrian"
+ ASY_democratic_ADJ:0 "Assyrian"
+ ASY_neutrality_ADJ:0 "Assyrian"
+ ASY_communism_ADJ:0 "Assyrian"
+
+ AMR_fascism:0 "Armenian Empire"
+ AMR_fascism_DEF:0 "the Armenian Empire"
+ AMR_democratic:0 "Armenian Republic"
+ AMR_democratic_DEF:0 "the Armenian Republic"
+ AMR_neutrality:0 "Hayastan"
+ AMR_neutrality_DEF:0 "Hayastan"
+ AMR_communism:0 "Armenian People's State"
+ AMR_communism_DEF:0 "the Armenian People's State"
+ AMR_fascism_ADJ:0 "Armenian"
+ AMR_democratic_ADJ:0 "Armenian"
+ AMR_neutrality_ADJ:0 "Armenian"
+ AMR_communism_ADJ:0 "Armenian"
+
+ CAF_fascism:0 "Turkestan Khanate"
+ CAF_fascism_DEF:0 "the Turkestan Khanate"
+ CAF_democratic:0 "Central Asian Federation"
+ CAF_democratic_DEF:0 "Central Asian Federation"
+ CAF_neutrality:0 "Central Asian State"
+ CAF_neutrality_DEF:0 "the Central Asian State"
+ CAF_communism:0 "Bukharan-Kazakh SSR"
+ CAF_communism_DEF:0 "the Bukharan-Kazakh SSR"
+ CAF_fascism_ADJ:0 "Central Asian"
+ CAF_democratic_ADJ:0 "Central Asian"
+ CAF_neutrality_ADJ:0 "Central Asian"
+ CAF_communism_ADJ:0 "Central Asian"
+
+ CNE_fascism:0 "North Caucasian Emirate"
+ CNE_fascism_DEF:0 "the North Caucasian Emirate"
+ CNE_democratic:0 "Mountainous Republic of the Northern Caucasus"
+ CNE_democratic_DEF:0 "Mountainous Republic of the Northern Caucasus"
+ CNE_neutrality:0 "North Caucasian State"
+ CNE_neutrality_DEF:0 "the North Caucasian State"
+ CNE_communism:0 "Mountain ASSR"
+ CNE_communism_DEF:0 "the Mountain ASSR"
+ CNE_fascism_ADJ:0 "Caucasian"
+ CNE_democratic_ADJ:0 "Caucasian"
+ CNE_neutrality_ADJ:0 "Caucasian"
+ CNE_communism_ADJ:0 "Caucasian"
+
+ TUR_turan_fascism:0 "Turan State"
+ TUR_turan_fascism_DEF:0 "the Turan State"
+ TUR_turan_democratic:0 "Turan Federation"
+ TUR_turan_democratic_DEF:0 "the Turan Federation"
+ TUR_turan_neutrality:0 "Turkic Confederation"
+ TUR_turan_neutrality_DEF:0 "Turkic Confederation"
+ TUR_turan_communism:0 "Turan Commune"
+ TUR_turan_communism_DEF:0 "the Turan Commune"
+ TUR_turan_fascism_ADJ:0 "Turan"
+ TUR_turan_democratic_ADJ:0 "Turan"
+ TUR_turan_neutrality_ADJ:0 "Turkic"
+ TUR_turan_communism_ADJ:0 "Turan"
 
 ###Focus Tree
  KUR_army_effort:0 "Hewldana Artêşê"

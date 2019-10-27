@@ -1,0 +1,34 @@
+
+state={
+	id=804
+	name="STATE_804"
+
+	history={
+		owner = GEO
+		victory_points = {
+			7530 1 
+		}
+		buildings = {
+			infrastructure = 4
+			3653 = {
+				naval_base = 2
+				coastal_bunker = 1
+
+			}
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			3653 3 
+		}
+		add_core_of = GEO
+
+	}
+
+	provinces={
+		3653
+	}
+	manpower=140000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

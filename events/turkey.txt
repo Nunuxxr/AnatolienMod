@@ -1,0 +1,562 @@
+﻿add_namespace = turkey
+
+country_event = {
+    id = turkey.1
+    title = TUR.1.t
+    desc = TUR.1.d
+    picture = GFX_report_event_carol_meeting
+ 
+    fire_only_once = yes
+    is_triggered_only = yes
+ 
+    option = {
+        name = TUR.1.a
+
+        ai_chance = {
+            base = 60
+        }
+
+		custom_effect_tooltip = TUR_event_tooltip_1_a
+
+		hidden_effect = {
+
+			TUR = {
+
+				transfer_state = 342
+
+			}
+
+		}
+    }
+ 
+    option = {
+        name = TUR.1.b
+
+
+        ai_chance = {
+            base = 40
+        }
+
+		custom_effect_tooltip = TUR_event_tooltip_1_b
+
+		hidden_effect = {
+
+			TUR = {
+
+				add_war_support = 0.3
+				create_wargoal = {
+					target = ITA
+					type = take_state_focus
+					generator = { 342 }
+				}
+				country_event = turkey.9	
+
+			}
+
+		}
+    }
+}
+
+country_event = {
+    id = turkey.2
+    title = TUR.2.t
+    desc = TUR.2.d
+    picture = GFX_report_event_FDR_speech
+ 
+    fire_only_once = yes
+    is_triggered_only = yes
+ 
+    option = {
+        name = TUR.2.a
+
+        ai_chance = {
+            base = 80
+        }
+
+		custom_effect_tooltip = TUR_event_tooltip_2_a
+
+		hidden_effect = {
+
+			TUR = {
+
+				transfer_state = 344
+
+			}
+
+		}
+    }
+ 
+    option = {
+        name = TUR.2.b
+
+
+        ai_chance = {
+            base = 20
+        }
+
+		custom_effect_tooltip = TUR_event_tooltip_2_b
+
+		hidden_effect = {
+
+			TUR = {
+
+				add_war_support = 0.3
+				create_wargoal = {
+					target = FRA
+					type = take_state_focus
+					generator = { 344 }
+				}	
+				country_event = turkey.9
+
+			}
+
+		}
+    }
+}
+
+country_event = {
+    id = turkey.3
+    title = TUR.3.t
+    desc = TUR.3.d
+    picture = GFX_report_event_german_troops
+ 
+    fire_only_once = yes
+    is_triggered_only = no
+    mean_time_to_happen = { days = 1 }
+
+    trigger = {
+
+    	tag = TUR
+    	AND = {
+
+    		342 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    	}
+
+    }
+ 
+    option = {
+        name = TUR.3.a
+
+        ai_chance = {
+            base = 100
+        }
+
+		custom_effect_tooltip = TUR_event_tooltip_3_a
+
+		hidden_effect = {
+
+			TUR = {
+
+				white_peace = ITA
+				transfer_state = 342
+
+			}
+
+		}
+    }
+
+}
+
+country_event = {
+    id = turkey.4
+    title = TUR.4.t
+    desc = TUR.4.d
+    picture = GFX_report_event_german_volunteers
+ 
+    fire_only_once = yes
+    is_triggered_only = no
+    mean_time_to_happen = { days = 1 }
+
+    trigger = {
+
+    	tag = TUR
+    	AND = {
+
+    		354 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		353 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		352 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		802 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		350 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    	}
+
+    }
+ 
+    option = {
+        name = TUR.4.a
+
+        ai_chance = {
+            base = 100
+        }
+
+		custom_effect_tooltip = TUR_event_tooltip_4_a
+
+		hidden_effect = {
+
+			TUR = {
+
+				white_peace = ARM
+				white_peace = KUR
+				transfer_state = 354
+				transfer_state = 353
+				transfer_state = 352
+				transfer_state = 802
+				transfer_state = 350
+
+			}
+
+		}
+    }
+
+}
+
+country_event = {
+    id = turkey.5
+    title = TUR.5.t
+    desc = TUR.5.d
+    picture = GFX_report_event_generic_usa_treaty
+ 
+    fire_only_once = yes
+    is_triggered_only = no
+    mean_time_to_happen = { days = 30 }
+
+    trigger = {
+
+    	tag = TUR
+    	AND = {
+
+    		354 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		353 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		352 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		802 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		350 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    	}
+
+    }
+ 
+    option = {
+        name = TUR.5.a
+
+        ai_chance = {
+            base = 100
+        }
+
+		custom_effect_tooltip = TUR_event_tooltip_5_a
+
+		hidden_effect = {
+
+			TUR = {
+
+				354 = {
+
+    				add_core_of = TUR
+    				remove_core_of = ARM
+
+    			}
+
+    			353 = {
+
+    				add_core_of = TUR
+    				remove_core_of = ARM
+
+    			}
+
+    			352 = {
+
+    				add_core_of = TUR
+    				remove_core_of = ARM
+
+    			}
+
+    			802 = {
+
+    				add_core_of = TUR
+    				remove_core_of = ARM
+
+    			}
+
+			}
+
+		}
+    }
+
+}
+
+country_event = {
+    id = turkey.6
+    title = TUR.6.t
+    desc = TUR.6.d
+    picture = GFX_report_event_generic_sign_treaty3
+ 
+    fire_only_once = yes
+    is_triggered_only = yes
+ 
+    option = {
+        name = TUR.6.a
+
+        ai_chance = {
+            base = 80
+        }
+
+		custom_effect_tooltip = TUR_event_tooltip_6_a
+
+		hidden_effect = {
+
+			TUR = {
+
+				transfer_state = 801
+
+				801 = {
+
+					add_core_of = TUR
+					remove_core_of = GEO
+
+				}
+
+			}
+
+		}
+    }
+ 
+    option = {
+        name = TUR.6.b
+
+
+        ai_chance = {
+            base = 20
+        }
+
+		custom_effect_tooltip = TUR_event_tooltip_6_b
+
+		hidden_effect = {
+
+			TUR = {
+
+				add_war_support = 0.3
+				create_wargoal = {
+					target = GEO
+					type = take_state_focus
+					generator = { 801 }
+				}
+
+				country_event = turkey.9	
+
+				801 = {
+
+					add_core_of = TUR
+
+				}
+
+			}
+
+		}
+    }
+}
+
+country_event = {
+    id = turkey.7
+    title = TUR.7.t
+    desc = TUR.7.d
+    picture = GFX_report_event_german_volunteers
+ 
+    fire_only_once = yes
+    is_triggered_only = no
+    mean_time_to_happen = { days = 1 }
+
+    trigger = {
+
+    	tag = TUR
+    	AND = {
+
+    		339 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		340 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    	}
+
+    }
+ 
+    option = {
+        name = TUR.7.a
+
+        ai_chance = {
+            base = 100
+        }
+
+		custom_effect_tooltip = TUR_event_tooltip_7_a
+
+		hidden_effect = {
+
+			TUR = {
+
+				transfer_state = 339
+				transfer_state = 340
+
+				339 = {
+
+					add_core_of = TUR
+
+				}
+
+				340 = {
+
+					add_core_of = TUR
+
+				}
+
+			}
+
+		}
+    }
+
+}
+
+country_event = {
+    id = turkey.8
+    title = TUR.8.t
+    desc = TUR.8.d
+    picture = GFX_report_event_german_volunteers
+ 
+    fire_only_once = yes
+    is_triggered_only = no
+    mean_time_to_happen = { days = 7 }
+
+    trigger = {
+
+    	tag = TUR
+    	AND = {
+
+    		341 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		339 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    		340 = {
+
+    			is_fully_controlled_by = TUR
+
+    		}
+
+    	}
+
+    }
+ 
+    option = {
+        name = TUR.8.a
+
+        ai_chance = {
+            base = 100
+        }
+
+		custom_effect_tooltip = TUR_event_tooltip_8_a
+
+		hidden_effect = {
+
+			TUR = {
+
+				white_peace = GRE
+				transfer_state = 341
+				
+				341 = {
+
+					add_core_of = TUR
+
+				}
+
+			}
+
+		}
+    }
+
+}
+
+country_event = {
+    id = turkey.9
+    title = TUR.9.t
+    desc = TUR.9.d
+    picture = GFX_report_event_long_march
+ 
+    fire_only_once = no
+    is_triggered_only = yes
+
+    option = {
+        name = TUR.9.a
+
+        ai_chance = {
+            base = 100
+        }
+
+		custom_effect_tooltip = TUR_event_tooltip_9_a
+
+    }
+
+}

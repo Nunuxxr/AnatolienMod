@@ -1,0 +1,68 @@
+################
+##### ARM ######
+################
+
+ARM_building_yerevan = {
+
+	icon = generic
+	
+	allowed = {
+		original_tag = ARM
+	}
+
+	visible = {
+		has_completed_focus = ARM_develop_the_capital
+	}
+}
+
+ARM_eastern_industrialisation = {
+
+	icon = generic_economy
+	
+	allowed = {
+		original_tag = ARM
+	}
+
+	visible = {
+		has_completed_focus = ARM_expand_east_industry
+	}
+}
+
+ARM_western_industrialisation = {
+
+	icon = generic_economy
+	
+	allowed = {
+		original_tag = ARM
+	}
+
+	visible = {
+		has_completed_focus = ARM_develop_the_west
+	}
+}
+
+ARM_reopen_diplomacy = {
+
+	icon = generic_foreign_policy
+	
+	allowed = {
+		original_tag = ARM
+	}
+
+	visible = {
+		has_completed_focus = ARM_rekindle_old_alliances
+	}
+}
+
+ARM_exchange_population = {
+
+	icon = GFX_decision_category_armenian_national_liberation_category
+	
+	allowed = {
+		original_tag = ARM
+	}
+
+	visible = {
+		has_completed_focus = ARM_AZR_population_exchange
+	}
+}

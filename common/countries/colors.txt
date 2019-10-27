@@ -498,13 +498,25 @@ CSA = {
 	color = rgb { 145 163 176  }
 	color_ui = rgb { 186 205 219 }
 }
-#KUR = {
-#	color = rgb { 135 181 211 }
-#	color_ui = rgb { 0 153 255 }
-#}
 KUR = {
 	color = rgb { 80 120 230 }
 	color_ui = rgb { 80 120 230 }
+}
+ASY = {
+	color = rgb { 205 212 228 }
+	color_ui = rgb { 255 255 255 }
+}
+AMR = {
+	color = rgb { 110 185 240 }
+	color_ui = rgb { 110 185 240 }
+}
+CAF = {
+	color = rgb { 100 200 225 }
+	color_ui = rgb { 100 200 225 }
+}
+CNE = {
+	color = rgb { 23 109 36 }
+	color_ui = rgb { 23 109 36 }
 }
 D01 = {
 	color = rgb { 200 100 31 }

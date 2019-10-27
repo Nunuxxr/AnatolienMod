@@ -9,7 +9,7 @@
 #	In a script file:
 #
 #	trigger = {
-#		exampel_trigger = yes
+#		example_trigger = yes
 #	}
 #
 is_arab_nation = {
@@ -31,5 +31,29 @@ is_arab_nation = {
 		tag=TUN
 		tag=ALG
 		tag=MOR
+	}
+}
+is_turkic_nation = {
+	OR={
+		tag=TUR
+		tag=AZR
+		tag=KAZ
+		tag=UZB
+		tag=TMS
+		tag=KYR
+		tag=SIK
+		tag=TAN
+		tag=CAF
+	}
+}
+is_colonial_nation = {
+	OR={
+		tag=ENG
+		tag=FRA
+		tag=ITA
+		tag=BEL
+		tag=HOL
+		tag=SPR
+		tag=POR
 	}
 }

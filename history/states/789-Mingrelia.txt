@@ -11,16 +11,9 @@ state={
 		victory_points = {
 			3658 1 
 		}
-		victory_points = {
-			3653 3 
-		}
 		buildings = {
 			infrastructure = 3
-			3653 = {
-				naval_base = 2
-				coastal_bunker = 1
-
-			}
+			industrial_complex = 1
 
 		}
 		add_core_of = GEO
@@ -28,9 +21,9 @@ state={
 	}
 
 	provinces={
-		654 672 772 3653 3656 3658 6674 9626 11599 11617 11647 
+		654 672 772 3656 3658 6674 9626 11599 11617 11647 
 	}
-	manpower=614482
+	manpower=474482
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 }

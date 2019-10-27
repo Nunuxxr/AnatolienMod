@@ -1,27 +1,6 @@
 ideas = {
 
 	country = {
-		TUR_entente_restrictions = {
-			
-			allowed = {
-				original_tag = TUR
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = idea_generic_deal_with_the_devil
-			
-			modifier = {
-				conscription = -0.50
-				war_support_factor = -0.25
-				army_org_factor = -0.05
-			}
-		}
 
 		TUR_state = {
 	
@@ -34,7 +13,7 @@ ideas = {
 				always = yes
 			}
 
-			picture = idea_chi_war_of_resistance2
+			picture = generic_disjointed_gov
 		
 			modifier = {		
 				stability_factor = -0.25
@@ -52,11 +31,100 @@ ideas = {
 				always = yes
 			}
 
-			picture = idea_chi_army_corruption2
+			picture = chi_army_corruption
 		
 			modifier = {		
 				stability_factor = -0.10
 			}
+		}
+
+		TUR_opda = {
+
+			allowed = {
+				original_tag = TUR
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ger_mefo_bills
+
+			modifier = {		
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.15
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.15
+			}
+
+		}
+
+		TUR_opda_payments = {
+
+			allowed = {
+				original_tag = TUR
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ger_mefo_bills
+
+			modifier = {		
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = -0.25
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+			}
+
+		}
+
+		TUR_seperate_opda_payments = {
+
+			allowed = {
+				original_tag = TUR
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ger_mefo_bills
+
+			modifier = {		
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = -0.10
+				production_factory_max_efficiency_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.10
+			}
+
+		}
+
+		TUR_military_doctorine = {
+
+			allowed = {
+				original_tag = TUR
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = MEX_politicised_army
+
+			modifier = {		
+				
+				conscription = 0.01
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+
+			}
+
 		}
 	}
 

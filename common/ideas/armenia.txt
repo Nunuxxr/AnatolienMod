@@ -41,6 +41,26 @@ ideas = {
 			}
 		}
 		
+		ARM_invited_investors = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				global_building_slots_factor = 0.20
+			}
+		}
+		
 		ARM_improve_industrial_methods = {
 			
 			allowed = {
@@ -75,7 +95,7 @@ ideas = {
 			picture = arm_script
 			
 			modifier = {
-				research_speed_factor = -0.07
+				research_speed_factor = -0.075
 			}
 		}
 		
@@ -94,8 +114,8 @@ ideas = {
 			picture = arm_animal
 			
 			modifier = {
-				monthly_population = -0.15
-				winter_attrition_factor = 0.19
+				monthly_population = -0.05
+				winter_attrition_factor = 0.05
 			}
 		}
 		
@@ -114,8 +134,9 @@ ideas = {
 			picture = arm_ruble
 			
 			modifier = {
-				stability_weekly = -0.001
-				production_speed_industrial_complex_factor = -0.10
+				#stability_weekly = -0.001
+				stability_factor = -0.05
+				production_speed_industrial_complex_factor = -0.05
 			}
 		}
 		
@@ -534,7 +555,7 @@ ideas = {
 			picture = ROM_king_carol_emptied_accounts
 			
 			modifier = {
-				consumer_goods_factor = -0.13
+				consumer_goods_factor = -0.1
 			}
 		}
 		
@@ -740,6 +761,10 @@ ideas = {
 			
 			allowed = {
 				original_tag = ARM
+			}
+
+			available = {
+				has_completed_focus = ARM_increase_funding_to_etchimiadzin
 			}
 			
 			traits = { popular_figurehead }

@@ -229,3 +229,7 @@ TUR_ottoman_red = {
 	color = rgb { 123 0 0 }
 	color_ui = rgb { 123 0 0 }
 }
+TUR_turan = {
+	color = rgb { 80 170 90 }
+	color_ui = rgb { 0 181 226 }
+}

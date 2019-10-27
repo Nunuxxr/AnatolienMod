@@ -1745,13 +1745,13 @@ spriteTypes = {
 	}
 	
 	SpriteType = { 
-		name = "GFX_focus_arm_wilsonian_armenia"
-		texturefile = "gfx/interface/goals/focus_arm_wilsonian_armenia.dds"
+		name = "GFX_focus_arm_revolt"
+		texturefile = "gfx/interface/goals/focus_arm_revolt.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_focus_arm_eternity"
-		texturefile = "gfx/interface/goals/focus_arm_eternity.dds"
+		name = "GFX_focus_arm_kremlin"
+		texturefile = "gfx/interface/goals/focus_arm_kremlin.dds"
 	}
 	
 	SpriteType = { 
@@ -1905,8 +1905,8 @@ spriteTypes = {
 	}
 	
 	SpriteType = { 
-		name = "GFX_focus_arm_yerevan"
-		texturefile = "gfx/interface/goals/focus_arm_yerevan.dds"
+		name = "GFX_focus_arm_physics"
+		texturefile = "gfx/interface/goals/focus_arm_physics.dds"
 	}
 	
 	SpriteType = { 
@@ -2065,8 +2065,8 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_arm_agreement_van"
-		texturefile = "gfx/interface/goals/focus_arm_agreement_van.dds"
+		name = "GFX_focus_arm_europe"
+		texturefile = "gfx/interface/goals/focus_arm_europe.dds"
 	}
 
 	SpriteType = {
@@ -2125,8 +2125,18 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_focus_arm_heroes"
+		texturefile = "gfx/interface/goals/focus_arm_heroes.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_focus_arm_tumanyan"
 		texturefile = "gfx/interface/goals/focus_arm_tumanyan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_cathedral"
+		texturefile = "gfx/interface/goals/focus_arm_cathedral.dds"
 	}
 
 	### Greece
@@ -2135,4 +2145,35 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_byzantium.dds"
 	}
 
+
+	### Turkey
+	SpriteType = {
+		name = "GFX_focus_tur_adjaran"
+		texturefile = "gfx/interface/goals/focus_tur_adjaran.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_tur_fevzi_cakmak"
+		texturefile = "gfx/interface/goals/focus_tur_fevzi_cakmak.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_tur_ismet_inonu"
+		texturefile = "gfx/interface/goals/focus_tur_ismet_inonu.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_tur_kazim_karabekir"
+		texturefile = "gfx/interface/goals/focus_tur_kazim_karabekir.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_tur_soldiers"
+		texturefile = "gfx/interface/goals/focus_tur_soldiers.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_focus_tur_caucasus"
+		texturefile = "gfx/interface/goals/focus_tur_caucasus.dds"			
+	}
 }
