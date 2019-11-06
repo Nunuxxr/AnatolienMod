@@ -1,4 +1,4 @@
-﻿l_english:
+﻿ l_english:
  STATE_1:0 "Corsica"
  STATE_2:0 "Latium"
  STATE_3:0 "Switzerland"
@@ -228,7 +228,7 @@
  STATE_227:0 "Stalino"
  STATE_228:0 "Voroshilovgrad"
  STATE_229:1 "Baku" #Elisabetpol
- STATE_230:0 "Erivan"
+ STATE_230:0 "Ayrarat"
  STATE_231:0 "Tpilisi"
  STATE_232:0 "Dagestan"
  STATE_233:0 "Caucasus Mountains"
@@ -345,16 +345,16 @@
  STATE_344:0 "Aintab"
  STATE_345:0 "Adana"
  STATE_346:0 "Konya"
- STATE_347:0 "Mosul"
+ STATE_347:0 "Kayseri"
  STATE_348:0 "Sivas"
  STATE_349:0 "Maraş"
  STATE_350:0 "Amed"
  STATE_351:0 "Vologda"
- STATE_352:0 "Van"
+ STATE_352:0 "Vaspurakan"
  STATE_353:0 "Karin"
- STATE_354:0 "Pontus"
+ STATE_354:0 "Trebizond"
  STATE_355:0 "Samsun"
- STATE_356:0 "Kastamonu"
+ STATE_356:0 "Zonguldak"
  STATE_357:0 "New England"
  STATE_358:0 "New York"
  STATE_359:0 "New Jersey"
@@ -674,7 +674,7 @@
  STATE_673:0 "Sulawesi"
  STATE_674:0 "Central Australia"
  STATE_675:0 "Al Hajara"
- STATE_676:0 "Baiji"
+ STATE_676:0 "Mosul"
  STATE_677:0 "Halab"
  STATE_678:0 "Rub al Khali"
  STATE_679:0 "Hejaz"
@@ -786,7 +786,7 @@
  STATE_785:0 "Picardy"
  STATE_786:0 "Mauritanian Desert"
  STATE_787:0 "Northern Kashmir"
- STATE_788:0 "Kalbajar" #Nagorno-Karabakh
+ STATE_788:0 "Karabakh"
  STATE_789:0 "Mingrelia"
  STATE_790:0 "Zaqatala" #Sakataly
  STATE_791:0 "Northern Epirus"

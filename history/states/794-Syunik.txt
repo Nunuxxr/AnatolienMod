@@ -10,22 +10,16 @@ state={
         victory_points = {
 			11708 1
 		}
-		victory_points = {
-			1467 3
-		}
 		buildings = {
 			infrastructure = 2
-			1467 = {
-				bunker = 2
-			}
 		}
 		add_core_of = ARM
 		#add_core_of = AZR
 	}
 
 	provinces={
-		1467 4660 6642 9715 11708 12450
+		4660 6642
 	}
-	manpower=520000 #221000 #120k of which are Azer #180000
+	manpower=180000 #221000 #120k of which are Azer #180000
 	state_category = rural
 }

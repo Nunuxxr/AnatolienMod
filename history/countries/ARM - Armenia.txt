@@ -183,3 +183,10 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 3
 }
+
+
+
+####### PARLIAMENT #######
+set_variable = { var = armenia_parliament_support value = 25 } ### Value of Parliament at start ###
+set_variable = { var = armenia_parliament_total value = 80 } ### Max Value of Parliament ###
+ARM_recalc_parliament_icon_frames = yes #### Scripted Effect ###

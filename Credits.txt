@@ -1,0 +1,16 @@
+#############
+###CREDITS###
+#############
+
+ Art & GFX
+ -Abbus & Road to 56
+ -Kaiserreich Artists
+ -GrumpyWalrusCat
+ -Duracell AA
+ -Polindus
+ 
+ Scripts & GUI
+ -State Renaming System: Lev Davidovich Bronstein
+ -State Descriptions: Gindisi
+ -Parliament/Congress System: Emperor of Borisia
+ 

@@ -1,7 +1,7 @@
 state = {
 	id = 788
 	name = "STATE_788"
-	manpower = 175000
+	manpower = 280000
 
 	state_category = rural
 
@@ -10,14 +10,17 @@ state = {
 
 		buildings = {
 			infrastructure = 2
+			1467 = {
+				bunker = 2
+			}
 		}
 		victory_points = {
-			1539 1
+			1467 3
 		}
 		add_core_of = AZR
 	}
 
 	provinces = {
-		1539
+		1467 1539 9715
 	}
 }

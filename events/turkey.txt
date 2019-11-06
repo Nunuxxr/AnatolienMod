@@ -1,7 +1,7 @@
-﻿add_namespace = turkey
+﻿add_namespace = TUR
 
 country_event = {
-    id = turkey.1
+    id = TUR.1
     title = TUR.1.t
     desc = TUR.1.d
     picture = GFX_report_event_carol_meeting
@@ -49,7 +49,7 @@ country_event = {
 					type = take_state_focus
 					generator = { 342 }
 				}
-				country_event = turkey.9	
+				country_event = TUR.9	
 
 			}
 
@@ -58,7 +58,7 @@ country_event = {
 }
 
 country_event = {
-    id = turkey.2
+    id = TUR.2
     title = TUR.2.t
     desc = TUR.2.d
     picture = GFX_report_event_FDR_speech
@@ -106,7 +106,7 @@ country_event = {
 					type = take_state_focus
 					generator = { 344 }
 				}	
-				country_event = turkey.9
+				country_event = TUR.9
 
 			}
 
@@ -115,7 +115,7 @@ country_event = {
 }
 
 country_event = {
-    id = turkey.3
+    id = TUR.3
     title = TUR.3.t
     desc = TUR.3.d
     picture = GFX_report_event_german_troops
@@ -163,7 +163,7 @@ country_event = {
 }
 
 country_event = {
-    id = turkey.4
+    id = TUR.4
     title = TUR.4.t
     desc = TUR.4.d
     picture = GFX_report_event_german_volunteers
@@ -240,7 +240,7 @@ country_event = {
 }
 
 country_event = {
-    id = turkey.5
+    id = TUR.5
     title = TUR.5.t
     desc = TUR.5.d
     picture = GFX_report_event_generic_usa_treaty
@@ -337,7 +337,7 @@ country_event = {
 }
 
 country_event = {
-    id = turkey.6
+    id = TUR.6
     title = TUR.6.t
     desc = TUR.6.d
     picture = GFX_report_event_generic_sign_treaty3
@@ -393,7 +393,7 @@ country_event = {
 					generator = { 801 }
 				}
 
-				country_event = turkey.9	
+				country_event = TUR.9	
 
 				801 = {
 
@@ -408,7 +408,7 @@ country_event = {
 }
 
 country_event = {
-    id = turkey.7
+    id = TUR.7
     title = TUR.7.t
     desc = TUR.7.d
     picture = GFX_report_event_german_volunteers
@@ -474,7 +474,7 @@ country_event = {
 }
 
 country_event = {
-    id = turkey.8
+    id = TUR.8
     title = TUR.8.t
     desc = TUR.8.d
     picture = GFX_report_event_german_volunteers
@@ -540,7 +540,7 @@ country_event = {
 }
 
 country_event = {
-    id = turkey.9
+    id = TUR.9
     title = TUR.9.t
     desc = TUR.9.d
     picture = GFX_report_event_long_march

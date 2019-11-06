@@ -326,7 +326,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = azr_national_flag
+			picture = azr_national_emblem
 			
 			modifier = {
 				consumer_goods_factor = -0.15

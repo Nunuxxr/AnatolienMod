@@ -1,0 +1,31 @@
+#793 = {
+#	add_dynamic_modifier = {
+#		modifier = demographic1
+#	}
+#}
+
+#demographic1 = {
+#	add_state_modifier = { 
+#		modifier = {
+#			local_manpower = -0.25
+#			stability_factor = -0.01
+#		}
+#	}
+#}
+
+#demographic2 = {
+#	add_state_modifier = { 
+#		modifier = {
+#			local_manpower = -0.05
+#		}
+#	}
+#}
+
+#demographic3 = {
+#	add_state_modifier = { 
+#		modifier = {
+#			political_power_gain = 0.05
+#			stability_factor = 0.01
+#		}
+#	}
+#}

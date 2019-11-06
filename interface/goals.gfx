@@ -1582,6 +1582,44 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_hol_liberation.dds"
 	}
 
+	### Greece
+	SpriteType = {
+		name = "GFX_focus_gre_byzantium"
+		texturefile = "gfx/interface/goals/focus_gre_byzantium.dds"
+	}
+
+
+	### Turkey
+	SpriteType = {
+		name = "GFX_focus_tur_adjaran"
+		texturefile = "gfx/interface/goals/focus_tur_adjaran.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_tur_fevzi_cakmak"
+		texturefile = "gfx/interface/goals/focus_tur_fevzi_cakmak.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_tur_ismet_inonu"
+		texturefile = "gfx/interface/goals/focus_tur_ismet_inonu.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_tur_kazim_karabekir"
+		texturefile = "gfx/interface/goals/focus_tur_kazim_karabekir.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_tur_soldiers"
+		texturefile = "gfx/interface/goals/focus_tur_soldiers.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_tur_caucasus"
+		texturefile = "gfx/interface/goals/focus_tur_caucasus.dds"			
+	}
+
 	### Armenia
 
 	SpriteType = {
@@ -1830,8 +1868,8 @@ spriteTypes = {
 	}
 	
 	SpriteType = { 
-		name = "GFX_focus_arm_constitution"
-		texturefile = "gfx/interface/goals/focus_arm_constitution.dds"
+		name = "GFX_focus_arm_constitution1"
+		texturefile = "gfx/interface/goals/focus_arm_constitution1.dds"
 	}
 	
 	SpriteType = { 
@@ -1871,7 +1909,7 @@ spriteTypes = {
 	
 	SpriteType = { 
 		name = "GFX_focus_arm_conscription"
-		texturefile = "gfx/interface/goals/focus_arm_conscription.dds"
+		texturefile = "gfx/interface/goals/focus_arm_conscription.tga"
 	}
 	
 	SpriteType = { 
@@ -1930,8 +1968,13 @@ spriteTypes = {
 	}
 	
 	SpriteType = { 
-		name = "GFX_focus_arm_cognac"
-		texturefile = "gfx/interface/goals/focus_arm_cognac.dds"
+		name = "GFX_focus_arm_wine1"
+		texturefile = "gfx/interface/goals/focus_arm_wine1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_wine2"
+		texturefile = "gfx/interface/goals/focus_arm_wine2.tga"
 	}
 	
 	SpriteType = { 
@@ -1972,11 +2015,6 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GFX_focus_arm_catholic"
 		texturefile = "gfx/interface/goals/focus_arm_catholic.dds"
-	}
-	
-	SpriteType = { 
-		name = "GFX_focus_arm_bastion"
-		texturefile = "gfx/interface/goals/focus_arm_bastion.dds"
 	}
 	
 	SpriteType = { 
@@ -2065,11 +2103,6 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_arm_europe"
-		texturefile = "gfx/interface/goals/focus_arm_europe.dds"
-	}
-
-	SpriteType = {
 		name = "GFX_focus_arm_deal_france"
 		texturefile = "gfx/interface/goals/focus_arm_deal_france.dds"
 	}
@@ -2080,8 +2113,13 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_arm_vardan"
-		texturefile = "gfx/interface/goals/focus_arm_vardan.dds"
+		name = "GFX_focus_arm_train1"
+		texturefile = "gfx/interface/goals/focus_arm_train1.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_train2"
+		texturefile = "gfx/interface/goals/focus_arm_train2.tga"
 	}
 
 	SpriteType = {
@@ -2135,45 +2173,117 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_arm_cathedral"
-		texturefile = "gfx/interface/goals/focus_arm_cathedral.dds"
-	}
-
-	### Greece
-	SpriteType = {
-		name = "GFX_focus_byzantium"
-		texturefile = "gfx/interface/goals/focus_byzantium.dds"
-	}
-
-
-	### Turkey
-	SpriteType = {
-		name = "GFX_focus_tur_adjaran"
-		texturefile = "gfx/interface/goals/focus_tur_adjaran.dds"
+		name = "GFX_focus_arm_persia_map"
+		texturefile = "gfx/interface/goals/focus_arm_persia_map.dds"			
 	}
 
 	SpriteType = {
-		name = "GFX_focus_tur_fevzi_cakmak"
-		texturefile = "gfx/interface/goals/focus_tur_fevzi_cakmak.dds"			
-	}	
+		name = "GFX_focus_arm_okhrana"
+		texturefile = "gfx/interface/goals/focus_arm_okhrana.tga"			
+	}
 
 	SpriteType = {
-		name = "GFX_focus_tur_ismet_inonu"
-		texturefile = "gfx/interface/goals/focus_tur_ismet_inonu.dds"			
-	}	
+		name = "GFX_focus_arm_constantinople"
+		texturefile = "gfx/interface/goals/focus_arm_constantinople.tga"			
+	}
 
 	SpriteType = {
-		name = "GFX_focus_tur_kazim_karabekir"
-		texturefile = "gfx/interface/goals/focus_tur_kazim_karabekir.dds"			
-	}	
+		name = "GFX_focus_arm_cabinet1"
+		texturefile = "gfx/interface/goals/focus_arm_cabinet1.tga"			
+	}
 
 	SpriteType = {
-		name = "GFX_focus_tur_soldiers"
-		texturefile = "gfx/interface/goals/focus_tur_soldiers.dds"			
-	}	
+		name = "GFX_focus_arm_cabinet2"
+		texturefile = "gfx/interface/goals/focus_arm_cabinet2.tga"			
+	}
 
 	SpriteType = {
-		name = "GFX_focus_tur_caucasus"
-		texturefile = "gfx/interface/goals/focus_tur_caucasus.dds"			
+		name = "GFX_focus_arm_russia"
+		texturefile = "gfx/interface/goals/focus_arm_russia.tga"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_book"
+		texturefile = "gfx/interface/goals/focus_arm_book.tga"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_production"
+		texturefile = "gfx/interface/goals/focus_arm_production.tga"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_ararat"
+		texturefile = "gfx/interface/goals/focus_arm_ararat.tga"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_electric"
+		texturefile = "gfx/interface/goals/focus_arm_electric.tga"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_judiciary"
+		texturefile = "gfx/interface/goals/focus_arm_judiciary.tga"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_free"
+		texturefile = "gfx/interface/goals/focus_arm_free.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_land"
+		texturefile = "gfx/interface/goals/focus_arm_land.tga"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_smelt"
+		texturefile = "gfx/interface/goals/focus_arm_smelt.tga"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_armament"
+		texturefile = "gfx/interface/goals/focus_arm_armament.tga"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_mullah"
+		texturefile = "gfx/interface/goals/focus_arm_mullah.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_treaty"
+		texturefile = "gfx/interface/goals/focus_arm_treaty.tga"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_commune"
+		texturefile = "gfx/interface/goals/focus_arm_commune.tga"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_constitution2"
+		texturefile = "gfx/interface/goals/focus_arm_constitution2.tga"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_blacksea"
+		texturefile = "gfx/interface/goals/focus_arm_blacksea.tga"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_subsidiary"
+		texturefile = "gfx/interface/goals/focus_arm_subsidiary.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_ysu"
+		texturefile = "gfx/interface/goals/focus_arm_ysu.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_arm_placate"
+		texturefile = "gfx/interface/goals/focus_arm_placate.dds"			
 	}
 }

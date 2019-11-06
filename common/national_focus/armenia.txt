@@ -16,7 +16,7 @@ focus_tree = {
 	
     focus = {
         id = ARM_maintain_status_quo
-        icon = GFX_focus_azr_court #GFX_goal_generic_improve_relations
+        icon = GFX_focus_arm_ararat
         x = 8
         y = 0
         cost = 10
@@ -28,7 +28,7 @@ focus_tree = {
 
     focus = {
         id = ARM_modernise_armenian_script
-        icon = GFX_focus_arm_teach
+        icon = GFX_focus_arm_book
         prerequisite = { 
 			focus = ARM_maintain_status_quo
 		}
@@ -47,18 +47,28 @@ focus_tree = {
         prerequisite = {
 			focus = ARM_modernise_armenian_script
 		}
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					var = armenia_parliament_support_add5
+					value = 80
+					compare = less_than
+				}
+			}
+		}
         x = 6
         y = 2
         cost = 10
         available_if_capitulated = no
         completion_reward = {
 			add_ideas = ARM_never_another_mets_yeghern_idea
+			ARM_parliament_support_add5 = yes
         }
     }
 
     focus = {
         id = ARM_found_the_nss
-        icon = GFX_focus_arm_nss
+        icon = GFX_focus_arm_okhrana
         prerequisite = {
 			focus = ARM_never_another_mets_yeghern
 		}
@@ -88,7 +98,7 @@ focus_tree = {
 
     focus = {
         id = ARM_draft_new_constitution
-        icon = GFX_focus_arm_popular
+        icon = GFX_focus_arm_cabinet1
         prerequisite = { focus = ARM_maintain_status_quo }
 		#available = { has_country_flag = ARM_democracy_flag }
 		mutually_exclusive = { focus = ARM_appease_revolutionaries }
@@ -99,19 +109,16 @@ focus_tree = {
         completion_reward = {
 			add_popularity = {
 				ideology = communism
-				popularity = -0.04
+				popularity = -0.03
 			}
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.07
-			}
-			add_stability = 0.03
+			add_political_power = 50
+			add_stability = 0.01
         }
     }
 
     focus = {
         id = ARM_dissolve_parliament
-        icon = GFX_focus_arm_constitution
+        icon = GFX_focus_arm_judiciary
         prerequisite = { 
 			focus = ARM_draft_new_constitution
 		}
@@ -126,9 +133,9 @@ focus_tree = {
 
     focus = {
         id = ARM_free_elections
-        icon = GFX_focus_arm_elections2
+        icon = GFX_focus_arm_elections
         prerequisite = { focus = ARM_draft_new_constitution }
-        x = 9
+        x = 10
         y = 3
         cost = 10
         available_if_capitulated = no
@@ -139,7 +146,7 @@ focus_tree = {
 
     focus = {
         id = ARM_azat_economy
-        icon = GFX_focus_arm_trade
+        icon = GFX_focus_arm_free
         prerequisite = { 
 			focus = ARM_dashnak_victory_focus
 			focus = ARM_western_victory_focus
@@ -147,7 +154,7 @@ focus_tree = {
 		bypass = {
 			has_idea = free_trade
 		}
-        x = 9
+        x = 10con
         y = 5
         cost = 10
         available_if_capitulated = no
@@ -189,7 +196,7 @@ focus_tree = {
 
     focus = {
         id = ARM_ayf
-        icon = GFX_focus_generic_little_entente
+        icon = GFX_focus_arm_ayf
         prerequisite = { 
 			focus = ARM_dashnak_victory_focus
 		}
@@ -211,7 +218,7 @@ focus_tree = {
 			has_government = democratic
 			has_country_flag = ARM_western_victory
 		}
-        x = 10
+        x = 11
         y = 4
         cost = 10
         available_if_capitulated = no
@@ -222,19 +229,26 @@ focus_tree = {
 
     focus = {
         id = ARM_expand_civil_rights
-        icon = GFX_focus_arm_democracy
+        icon = GFX_focus_arm_muslim
         prerequisite = {
 			focus = ARM_western_victory_focus
 		}
-        x = 10
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					var = armenia_parliament_support_add5
+					value = 80
+					compare = less_than
+				}
+			}
+		}
+        x = 11
         y = 6
         cost = 10
         available_if_capitulated = no
         completion_reward = {
-			add_timed_idea = {
-				idea = ARM_liberal_reforms
-				days = 180
-			}
+			add_stability = 0.01
+			ARM_parliament_support_add5 = yes
         }
     }
 
@@ -244,18 +258,28 @@ focus_tree = {
         prerequisite = {
 			focus = ARM_ayf
 		}
-        x = 7
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					var = armenia_parliament_support
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+        x = 8
         y = 6
         cost = 10
         available_if_capitulated = no
         completion_reward = {
 			add_ideas = ARM_one_nation
+			ARM_parliament_disapproval = yes
         }
     }
 
     focus = {
         id = ARM_increase_funding_to_etchimiadzin
-        icon = GFX_focus_arm_catholic
+        icon = GFX_focus_arm_church
         prerequisite = { focus = ARM_continue_religion_persecution }
         x = 7
         y = 7
@@ -268,7 +292,7 @@ focus_tree = {
 
     focus = {
         id = ARM_repair_church
-        icon = GFX_focus_arm_cathedral
+        icon = GFX_focus_arm_subsidiary
         prerequisite = { focus = ARM_increase_funding_to_etchimiadzin }
         x = 8
         y = 9
@@ -281,7 +305,7 @@ focus_tree = {
 
     focus = {
         id = ARM_religious_freedom
-        icon = GFX_focus_arm_muslim
+        icon = GFX_focus_arm_mullah
         prerequisite = { 
 			focus = ARM_expand_civil_rights
 			focus = ARM_propaganda_effort
@@ -300,7 +324,7 @@ focus_tree = {
 
     focus = {
         id = ARM_independent_armenian_state
-        icon = GFX_focus_arm_cherish #GFX_focus_arm_flag_armenia
+        icon = GFX_focus_arm_urartu
         prerequisite = {
 			focus = ARM_increase_funding_to_etchimiadzin
 			focus = ARM_religious_freedom
@@ -320,7 +344,7 @@ focus_tree = {
 
     focus = {
         id = ARM_appease_revolutionaries
-        icon = GFX_focus_arm_discourse
+        icon = GFX_focus_arm_cabinet2
         prerequisite = {
 			focus = ARM_maintain_status_quo
 		}
@@ -336,7 +360,7 @@ focus_tree = {
 
     focus = {
         id = ARM_recognise_ussr
-        icon = GFX_focus_arm_kremlin #focus_generic_soviet_politics
+        icon = GFX_focus_arm_treaty
         prerequisite = {
 			focus = ARM_appease_revolutionaries
 			focus = ARM_draft_new_constitution
@@ -364,7 +388,7 @@ focus_tree = {
 
     focus = {
         id = ARM_peasant_councils
-        icon = GFX_focus_prc_agrarian_socialism
+        icon = GFX_focus_arm_discourse
         prerequisite = {
 			focus = ARM_appease_revolutionaries
 		}
@@ -386,7 +410,7 @@ focus_tree = {
         prerequisite = {
 			focus = ARM_peasant_councils
 		}
-        x = 12
+        x = 13
         y = 3
         cost = 10
         available_if_capitulated = no
@@ -400,7 +424,7 @@ focus_tree = {
 
     focus = {
         id = ARM_independent_socialism
-        icon = GFX_focus_generic_soviet_politics
+        icon = GFX_goal_generic_war_with_comintern
         prerequisite = {
 			focus = ARM_worker_rights
 		}
@@ -411,7 +435,7 @@ focus_tree = {
 				has_capitulated = no
 			}
 		}
-        x = 13
+        x = 14
         y = 4
         cost = 10
         available_if_capitulated = no
@@ -434,7 +458,7 @@ focus_tree = {
 				}
 			}
 		}
-        x = 14
+        x = 15
         y = 3
         cost = 10
         available_if_capitulated = no
@@ -457,7 +481,7 @@ focus_tree = {
 			focus = ARM_independent_socialism
 		}
         x = 14
-        y = 5
+        y = 6
         cost = 10
         available_if_capitulated = no
 
@@ -518,7 +542,7 @@ focus_tree = {
         icon = GFX_focus_arm_agreement_ssr
         prerequisite = { focus = ARM_join_comintern }
         x = 14
-        y = 6
+        y = 8
         cost = 10
         available_if_capitulated = no
 		available = {
@@ -561,7 +585,7 @@ focus_tree = {
 		available = {
 			has_government = communism
 		}
-        x = 12
+        x = 13
         y = 5
         cost = 10
         available_if_capitulated = no
@@ -598,8 +622,8 @@ focus_tree = {
 	
     focus = {
         id = ARM_economic_recovery
-        icon = GFX_focus_hol_abandon_the_gold_standard
-        x = 20
+        icon = GFX_focus_arm_ruble
+        x = 21
         y = 0
         cost = 10
         available_if_capitulated = no
@@ -615,14 +639,14 @@ focus_tree = {
 
     focus = {
         id = ARM_pass_agriculture_act
-        icon = GFX_focus_arm_agriculture
+        icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { 
 			focus = ARM_continue_public_works 
 		}
 		prerequisite = {
 			focus = ARM_open_kajaran_mine 
 		}
-        x = 20
+        x = 21
         y = 2
         cost = 10
         available_if_capitulated = no
@@ -633,7 +657,7 @@ focus_tree = {
 
     focus = {
         id = ARM_expand_yerevan_state_university
-        icon = GFX_focus_generic_socialist_science
+        icon = GFX_focus_arm_ysu
 		prerequisite = {
 			focus = ARM_pass_agriculture_act
 		}
@@ -650,7 +674,7 @@ focus_tree = {
         id = ARM_continue_public_works
         icon = GFX_goal_generic_construction
 		prerequisite = { focus = ARM_economic_recovery }
-        x = 18
+        x = 19
         y = 1
         cost = 10
         available_if_capitulated = no
@@ -729,7 +753,7 @@ focus_tree = {
 				has_full_control_of_state = 353
 			}
 		}
-        x = 17
+        x = 18
         y = 2
         cost = 10
         available_if_capitulated = no
@@ -740,11 +764,11 @@ focus_tree = {
 
     focus = {
         id = ARM_subsidize_cognac
-        icon = GFX_focus_arm_cognac
+        icon = GFX_focus_arm_wine1
         prerequisite = {
 			focus = ARM_continue_public_works
 		}
-        x = 22
+        x = 24
         y = 2
         cost = 10
         available_if_capitulated = no
@@ -765,7 +789,7 @@ focus_tree = {
         id = ARM_open_kajaran_mine
         icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = ARM_economic_recovery }
-        x = 21
+        x = 22
         y = 1
         cost = 10
         available_if_capitulated = no
@@ -787,7 +811,7 @@ focus_tree = {
         id = ARM_western_steel_repositories
         icon = GFX_focus_generic_steel
 		prerequisite = { focus = ARM_pass_agriculture_act }
-        x = 22
+        x = 23
         y = 3
         cost = 10
         available_if_capitulated = no
@@ -816,9 +840,10 @@ focus_tree = {
 
     focus = {
         id = ARM_reform_passport
-        icon = GFX_focus_arm_passport
-		prerequisite = { focus = ARM_develop_the_capital }
-        x = 23
+        icon = GFX_focus_arm_constitution2
+		prerequisite = { focus = ARM_subsidize_cognac }
+		prerequisite = { focus = ARM_western_steel_repositories }
+        x = 24
         y = 4
         cost = 10
         available_if_capitulated = no
@@ -831,7 +856,7 @@ focus_tree = {
 
     focus = {
         id = ARM_armenian_ruble
-        icon = GFX_focus_arm_ruble
+        icon = GFX_focus_arm_inflation
 		prerequisite = { focus = ARM_expand_east_industry }
 		available = { is_puppet = no }
         x = 17
@@ -868,6 +893,7 @@ focus_tree = {
         id = ARM_develop_the_capital
         icon = GFX_focus_arm_tumanyan
 		prerequisite = { focus = ARM_pass_agriculture_act }
+		prerequisite = { focus = ARM_rebuilding_ani }
         x = 18
         y = 3
         cost = 10
@@ -890,7 +916,7 @@ focus_tree = {
 			focus = ARM_western_steel_repositories 
 		}
 		mutually_exclusive = { focus = ARM_expand_east_industry }
-        x = 21
+        x = 22
         y = 4
         cost = 10
         available_if_capitulated = no
@@ -905,7 +931,7 @@ focus_tree = {
 
     focus = {
         id = ARM_expand_east_industry
-        icon = GFX_focus_generic_industry_3
+        icon = GFX_focus_arm_production
 		prerequisite = { 
 			focus = ARM_develop_the_capital
 		}
@@ -913,7 +939,7 @@ focus_tree = {
 			focus = ARM_western_steel_repositories 
 		}
 		mutually_exclusive = { focus = ARM_develop_the_west }
-        x = 18
+        x = 19
         y = 4
         cost = 10
         available_if_capitulated = no
@@ -927,7 +953,7 @@ focus_tree = {
 
     focus = {
         id = ARM_karabakh_erzincan_railway
-        icon = GFX_focus_arm_vardan
+        icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = {
 			focus = ARM_expand_east_industry
 			focus = ARM_develop_the_west
@@ -991,13 +1017,69 @@ focus_tree = {
     }
 
     focus = {
+        id = ARM_land_reform
+        icon = GFX_focus_arm_land
+		prerequisite = {
+			focus = ARM_reform_passport
+		}
+        x = 24
+        y = 6
+        cost = 10
+        available_if_capitulated = no
+        completion_reward = {
+			230 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			352 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			353 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			354 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			793 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			794 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			802 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+        }
+    }
+
+    focus = {
         id = ARM_subsidise_local_businesses
         icon = GFX_focus_arm_industrial
 		prerequisite = {
 			focus = ARM_expand_east_industry
 			focus = ARM_develop_the_west
 		}
-        x = 19
+        x = 18
         y = 5
         cost = 10
         available_if_capitulated = no
@@ -1008,7 +1090,7 @@ focus_tree = {
 
     focus = {
         id = ARM_armament_effort
-        icon = GFX_goal_generic_construct_mil_factory
+        icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = ARM_karabakh_erzincan_railway }
 		prerequisite = { focus = ARM_subsidise_local_businesses }
         x = 19
@@ -1034,7 +1116,7 @@ focus_tree = {
 
     focus = {
         id = ARM_extract_rare_minerals
-        icon = GFX_focus_generic_aluminum
+        icon = GFX_focus_arm_smelt
 		prerequisite = { focus = ARM_karabakh_erzincan_railway }
 		prerequisite = { focus = ARM_subsidise_local_businesses }
 		available = {
@@ -1131,7 +1213,7 @@ focus_tree = {
 
     focus = {
         id = ARM_army_draft
-        icon = GFX_focus_arm_conscription
+        icon = GFX_focus_arm_revolution
         prerequisite = { focus = ARM_appoint_new_sparapet }
         cost = 10.00
         x = 29
@@ -1295,7 +1377,7 @@ focus_tree = {
 
     focus = {
         id = ARM_airforce_focus
-        icon = GFX_focus_arm_armada
+        icon = GFX_focus_arm_airforce
         prerequisite = { focus = ARM_infantry_equipment_focus }
         prerequisite = { focus = ARM_artillery_effort }
         cost = 10
@@ -1492,7 +1574,7 @@ focus_tree = {
 
     focus = {
         id = ARM_battleship_plan
-        icon = GFX_goal_generic_navy_battleship
+        icon = GFX_focus_arm_blacksea
         prerequisite = { focus = ARM_navy_doctrine }
         prerequisite = { focus = ARM_submarine_development }
         prerequisite = { focus = ARM_destroyer_dominance }
@@ -1550,7 +1632,7 @@ focus_tree = {
 
     focus = {
         id = ARM_new_embassy
-        icon = GFX_goal_tripartite_pact
+        icon = GFX_focus_arm_constantinople
 		prerequisite = { focus = ARM_acceptance }
         x = 4
         y = 2
@@ -1563,7 +1645,7 @@ focus_tree = {
 
     focus = {
         id = ARM_rekindle_old_alliances
-        icon = GFX_focus_arm_foreign
+        icon = GFX_focus_arm_russia
         prerequisite = { focus = ARM_diplomacy_turkey }
         x = 3
         y = 3
@@ -1576,7 +1658,7 @@ focus_tree = {
 
     focus = {
         id = ARM_ratify_persia_treaty
-        icon = GFX_focus_arm_agreement_iran
+        icon = GFX_focus_arm_persia_map
         prerequisite = { focus = ARM_rekindle_old_alliances }
 		mutually_exclusive = { focus = ARM_AZR_population_exchange }
 		available = {
@@ -1817,7 +1899,7 @@ focus_tree = {
 					modifier = large_increase
 				}
 			}
-			#country_event = armenia.5
+			country_event = armenia.5
         }
     }
 
@@ -1833,9 +1915,24 @@ focus_tree = {
         completion_reward = {
 			unlock_decision_category_tooltip = ARM_exchange_population
 			hidden_effect = {
-				set_country_flag = ARM_erivan_turks
+				if = {
+					limit = {
+						owns_state = 230
+					}
+					set_country_flag = ARM_erivan_turks
+				}
+				if = {
+					limit = {
+						owns_state = 793
+					}
 				set_country_flag = ARM_syunik_turks
-				set_country_flag = ARM_nakhchivan_turks
+				}
+				if = {
+					limit = {
+						owns_state = 794
+					}
+					set_country_flag = ARM_nakhchivan_turks
+				}
 			}
         }
     }

@@ -1,0 +1,8 @@
+ARM_parliament = {
+	icon = usa_congress
+	allowed = {
+		original_tag = ARM
+	}
+	scripted_gui = arm_parliament_decision_ui
+	priority = 100
+}

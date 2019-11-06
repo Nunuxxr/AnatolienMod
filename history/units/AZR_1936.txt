@@ -63,9 +63,9 @@ units = {
 
 	}
 	
-	division= {	# "Dağ Briqadası" #Derbent
-		name = "1ya Dağ 'Derbent' Briqadası"
-		location = 7624
+	division= {	# "Dağ Briqadası" #Quba
+		name = "1ya Dağ 'Quba' Briqadası"
+		location = 4458
 		division_template = "Dağ Briqadası"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "AZR" } }
 		start_experience_factor = 0.3

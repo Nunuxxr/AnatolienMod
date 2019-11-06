@@ -1,0 +1,28 @@
+﻿l_english:
+### Parliament ###
+ARM_parliament:0 "National Assembly" #### The name of the Decision category ###
+ARM_parliament_desc_text:1 "The National Assembly of Armenia was first formed in May of 1918, however, since June 1919 it houses 80 deputies from all the regions and nationalities of the Armenian Republic." ### Replace this with the description
+ARM_parliament_support_header:0 "§YKhorhurd Support§!" ### Text under the GFX
+ARM_parliament_support_amount:0 "§G[?ARM.armenia_parliament_support]§! / §Y[?ARM.armenia_parliament_total]§!"
+
+### Custom Tooltips ###
+#ARM_parliament_support_tt:0 "§GIncrease§! Support from §YDeputies§!.\n"
+ARM_parliament_disapproval_tt:0 "§RDecreases§W Support from £discourse_texticon §YDeputies§!.§!\n"
+ARM_parliament_support_add5_tt:0 "Up to §Y5 £discourse_texticon Deputies§! will §GSupport§! the Government"
+ARM_parliament_support_add10_tt:0 "Up to §Y10 £discourse_texticon Deputies§! will §GSupport§! the Government"
+armenia_parliament_support_majority:0 "A §YMajority§! of the National Assembly is supporting the Government."
+ARM_parliament_support_remove5_tt:0 "Up to §Y5 £discourse_texticon Deputies§! will join the §ROpposition§!"
+ARM_parliament_support_remove10_tt:0 "Up to §Y10 £discourse_texticon Deputies§! will join the §ROpposition§!"
+
+### Decisions ###
+ARM_parliament_lobbying:0 "Lobby Deputies of the Khorhurd for §YSupport§!"
+ARM_parliament_decrease_support:0 "Lose §YSupport§! §R(Test Decision)§!"
+ARM_parliament_lobbying_add5:0 "Small Deputy Lobbying Effort"
+ARM_parliament_lobbying_add10:0 "Medium Deputy Lobbying Effort"
+ARM_lower_draft_age:0 "Lower §YDraft Age§! to 17"
+ARM_lower_vote_age:0 "Lower §YVoting Age§! to 18"
+ARM_condemn_atrocities:0 "Condemn §YEthnic Clashes§!"
+ARM_restrict_islam:0 "Ban Religious Headwear"
+ARM_restrict_immigration:0 "Restrict non-Armenian Immigration"
+ARM_denounce_germany:0 "Denounce §YGermany§!"
+ARM_turkish_expansion:0 "Condemn Turkish Expansion"

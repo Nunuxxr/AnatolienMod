@@ -226,7 +226,7 @@ focus_tree = {
 	#Focus for Proclaim the Byzantine Empire
 	focus = {
 		id = GRE_proclaimthebyzantineempire
-		icon = GFX_focus_byzantium
+		icon = GFX_focus_gre_byzantium
 		x = 1
 		y = 1
 		relative_position_id=GRE_constitutionalamendmentreinforcetheconstitution

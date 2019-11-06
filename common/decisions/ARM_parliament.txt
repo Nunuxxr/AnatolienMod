@@ -1,0 +1,207 @@
+##############################################################
+###Thanks to Emperor of Borisia#7904 for help with the code###
+##############################################################
+
+ARM_parliament = {
+    
+	ARM_parliament_lobbying_add5 = {
+		icon = generic_political_discourse
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					var = armenia_parliament_support_add5
+					value = 80
+					compare = less_than
+				}
+			}
+		}
+		visible = {
+			always = yes
+		}
+		cost = 50
+		complete_effect = {
+			ARM_parliament_support_add5 = yes
+		}
+	}
+    
+	ARM_parliament_lobbying_add10 = {
+		icon = generic_political_discourse
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					var = armenia_parliament_support_add10
+					value = 80
+					compare = less_than
+				}
+			}
+		}
+		visible = {
+			always = yes
+		}
+		cost = 75
+		complete_effect = {
+			ARM_parliament_support_add10 = yes
+		}
+	}
+
+	ARM_parliament_decrease_support = {
+		icon = generic_political_discourse
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					var = armenia_parliament_support
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		visible = {
+			always = yes
+		}
+		cost = 0
+		complete_effect = {
+			ARM_parliament_disapproval = yes
+		}
+	}
+
+	ARM_lower_draft_age = {
+		available = {
+			has_country_flag = armenia_parliament_support_majority
+		}
+		fire_only_once = yes
+		visible = {
+			always = yes
+		}
+		cost = 100
+		complete_effect = {
+			add_ideas = { 
+				ARM_lowered_draft 
+			}
+		}
+	}
+
+	ARM_lower_vote_age = {
+		available = {
+			has_country_flag = armenia_parliament_support_majority
+		}
+		fire_only_once = yes
+		visible = {
+			always = yes
+		}
+		cost = 75
+		complete_effect = {
+			add_stability = 0.05
+		}
+	}
+
+	ARM_restrict_islam = {
+		available = {
+			has_country_flag = armenia_parliament_support_majority
+		}
+		fire_only_once = yes
+		visible = {
+			OR = {
+				has_country_flag = ARM_dashnak_victory
+				has_government = fascism
+			}
+		}
+		cost = 50
+		complete_effect = {
+			add_stability = 0.025
+		}
+	}
+
+	ARM_restrict_immigration = {
+		available = {
+			has_country_flag = armenia_parliament_support_majority
+		}
+		fire_only_once = yes
+		visible = {
+			OR = {
+				has_country_flag = ARM_dashnak_victory
+				has_government = fascism
+			}
+		}
+		cost = 100
+		complete_effect = {
+			add_stability = 0.05
+		}
+	}
+
+	ARM_condemn_atrocities = {
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = {
+					var = armenia_parliament_support_add10
+					value = 80
+					compare = less_than
+				}
+			}
+		}
+		fire_only_once = yes
+		visible = {
+			always = yes
+		}
+		cost = 30
+		complete_effect = {
+			add_stability = 0.01
+			ARM_parliament_support_remove5 = yes
+		}
+	}
+
+	ARM_denounce_germany = {
+		available = {
+			has_country_flag = armenia_parliament_support_majority
+		}
+		fire_only_once = yes
+		visible = {
+			always = yes
+			NOT = {
+				has_government =fascism
+				ARM = {
+					is_in_faction_with = GER
+				}
+			}
+			GER = {
+				has_government =fascism
+			}
+		}
+		cost = 30
+		complete_effect = {
+			add_war_support = 0.01
+			GER = {
+				add_opinion_modifier = { 
+					target = ROOT
+					modifier = medium_decrease
+				}
+			}
+		}
+	}
+
+	ARM_turkish_expansion = {
+		available = {
+			#has_country_flag = armenia_parliament_support_majority
+		}
+		fire_only_once = yes
+		visible = {
+			always = yes
+			NOT = {
+				ARM = {
+					is_in_faction_with = TUR
+				}
+			}
+			TUR = { has_war = yes }
+		}
+		cost = 30
+		complete_effect = {
+			#add_war_support = 0.05
+			TUR = {
+				add_opinion_modifier = { 
+					target = ROOT
+					modifier = medium_decrease
+				}
+			}
+			ARM_parliament_support_add10 = yes
+		}
+	}
+}

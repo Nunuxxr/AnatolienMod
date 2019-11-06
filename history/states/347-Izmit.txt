@@ -4,7 +4,7 @@ state={
 	name="STATE_347"
 
 	history={
-		owner = IRQ
+		owner = TUR
 		victory_points = {
 			10106 1 
 		}
@@ -12,14 +12,14 @@ state={
 			infrastructure = 3
 
 		}
-		add_core_of = IRQ
+		add_core_of = TUR
 
 	}
 
 	provinces={
-		3916 8123 10106 10804 
+		869 921 961 3807 3862 3870 3964 6807 9763 9830 9861 11826 11844 
 	}
-	manpower=250643
+	manpower=500000
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

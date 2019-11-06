@@ -74,7 +74,44 @@ on_actions = {
                 }
                 FROM.FROM = {
                   set_state_name = "Syunik"
+                }
+              }
+              else_if={
+                limit = {
+                  tag=SOV
+                }
+                FROM.FROM = {
+                  set_state_name = "Zanghezur"
+                }
+              }
+              else_if={
+                limit = {
+                  is_turkic_nation=yes
+                }
+                FROM.FROM = {
+                  set_state_name = "Qarabağ"
+                }
+              }
+            }
+            #Completed Artsakh, ARM, AZR
+            if = {
+              limit={FROM.FROM={state = 788}}
+              if={
+                limit = {
+                  OR={tag=ARM tag=AMR}
+                }
+                FROM.FROM = {
+                  set_state_name = "Artsakh"
                   set_province_name = { id = 1467 name = "Shoushi" }
+                }
+              }
+              else_if={
+                limit = {
+                  is_turkic_nation=yes
+                }
+                FROM.FROM = {
+                  set_state_name = "Karabakh"
+                  set_province_name = { id = 1467 name = "Shusha" }
                 }
               }
               else_if={
@@ -84,43 +121,6 @@ on_actions = {
                 FROM.FROM = {
                   set_state_name = "Nagorno-Karabakh"
                   set_province_name = { id = 1467 name = "Shusha" }
-                }
-              }
-              else_if={
-                limit = {
-                  is_turkic_nation=yes
-                }
-                FROM.FROM = {
-                  set_state_name = "Zangezur"
-                  set_province_name = { id = 1467 name = "Şuşa" }
-                }
-              }
-            }
-            #Completed Artsvashen, ARM, AZR
-            if = {
-              limit={FROM.FROM={state = 788}}
-              if={
-                limit = {
-                  OR={tag=ARM tag=AMR}
-                }
-                FROM.FROM = {
-                  set_state_name = "Parisos" #Karvachar #Artsvashen
-                }
-              }
-              else_if={
-                limit = {
-                  is_turkic_nation=yes
-                }
-                FROM.FROM = {
-                  set_state_name = "Kalbajar"
-                }
-              }
-              else_if={
-                limit = {
-                  tag=SOV
-                }
-                FROM.FROM = {
-                  set_state_name = "Shahoumian"
                 }
               }
             }
@@ -155,7 +155,7 @@ on_actions = {
                 }
                 FROM.FROM = {
                   set_state_name = "Erivan"
-                  set_province_name = { id = 12320 name = "Yerevan" }
+                  set_province_name = { id = 12320 name = "Erivan" }
                   set_province_name = { id = 12441 name = "Kumayri" }
                   set_province_name = { id = 13221 name = "Etchmiadzin" }
                 }
@@ -215,7 +215,7 @@ on_actions = {
                   OR={tag=ARM tag=AMR}
                 }
                 FROM.FROM = {
-                  set_state_name = "Pontus"
+                  set_state_name = "Trebizond"
                   set_province_name = { id = 9932 name = "Trebizond" }
                   set_province_name = { id = 11753 name = "Rize" }
                 }
@@ -240,16 +240,6 @@ on_actions = {
                   set_province_name = { id = 11753 name = "Rizaion" }
                 }
               }
-              else_if={
-                limit = {
-                  tag=GEO
-                }
-                FROM.FROM = {
-                  set_state_name = "Lazistan"
-                  set_province_name = { id = 9932 name = "Trapizoni" }
-                  set_province_name = { id = 11753 name = "Rizini" }
-                }
-              }
             }
             #Completed Van, ARM, TUR, KUR
             else_if = {
@@ -259,7 +249,7 @@ on_actions = {
                   OR={tag=ARM tag=AMR}
                 }
                 FROM.FROM = {
-                  set_state_name = "Van"
+                  set_state_name = "Vaspurakan"
                   set_province_name = { id = 6935 name = "Van" }
                   set_province_name = { id = 10497 name = "Paghesh" }
                 }

@@ -76,7 +76,7 @@ ideas = {
 			picture = FRA_factory_strikes #civilian_economy
 			
 			modifier = {
-				industrial_capacity_factory = 0.07
+				industrial_capacity_factory = 0.075
 			}
 		}
 		
@@ -269,8 +269,8 @@ ideas = {
 			picture = nss
 			
 			modifier = {
-				decryption_factor = 0.07
-				encryption_factor = 0.12
+				decryption_factor = 0.1
+				encryption_factor = 0.1
 			}
 		}
 
@@ -290,69 +290,6 @@ ideas = {
 				army_leader_start_level = 2
 				experience_gain_army_factor = 0.05
 				training_time_factor = -0.05
-			}
-		}
-		
-		ARM_preserve_greater_armenia = {
-
-			removal_cost = -1
-			
-			allowed = {
-				original_tag = ARM
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			picture = generic_fortify_the_borders
-			
-			modifier = {
-				mobilization_speed = 0.05
-				surrender_limit = 0.1
-			}
-		}
-		
-		ARM_banak_shortcomings = {
-
-			removal_cost = -1
-			
-			allowed = {
-				original_tag = ARM
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			picture = chi_army_corruption3
-			
-			modifier = {
-				army_morale_factor = -0.1
-				army_org_Factor = -0.05
-			}
-		}
-		
-		ARM_banak_compromise = {
-
-			removal_cost = -1
-			
-			allowed = {
-				original_tag = ARM
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			picture = general_staff
-			
-			modifier = {
-				army_morale_factor = 0.05
-				high_command_cost_factor = -0.25
-				air_chief_cost_factor = -0.25
-				navy_chief_cost_factor = -0.25
-				
 			}
 		}
 		
@@ -376,7 +313,7 @@ ideas = {
 			}
 		}
 		
-		ARM_military_pensions_idea = {
+		ARM_lowered_draft = {
 
 			removal_cost = -1
 			
@@ -391,33 +328,7 @@ ideas = {
 			picture = infantry_bonus
 			
 			modifier = {
-				war_support_factor = 0.03
-				conscription_factor = 0.08
-			}
-		}
-		
-		ARM_bastion_of_christianity_idea = {
-
-			removal_cost = -1
-			
-			allowed = {
-				original_tag = ARM
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			picture = soviet_german_friendship
-			
-			modifier = {
-				army_core_attack_factor = 0.1
-				army_core_defence_factor = 0.1
-			}
-			targeted_modifier = {
-				tag = TUR
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
+				conscription_factor = 0.1
 			}
 		}
 
@@ -437,26 +348,6 @@ ideas = {
 			
 			modifier = {
 				communism_drift = 0.1
-			}
-		}
-
-		ARM_german_influence = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_fascism_drift_bonus
-			
-			modifier = {
-				fascism_drift = 0.07
-				fascism_acceptance = 45
 			}
 		}
 		
@@ -481,26 +372,6 @@ ideas = {
 			}
 		}
 		
-		ARM_peoples_compromise = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = ast_abandon_the_westminster_system
-			
-			modifier = {
-				neutrality_drift = 0.1
-			}
-		}
-		
 		ARM_allow_minorities = {
 			
 			
@@ -516,7 +387,7 @@ ideas = {
 			picture = raj_marginalized_muslim_community_happy
 			
 			modifier = {
-				industrial_capacity_factory = 0.08
+				industrial_capacity_factory = 0.075
 			}
 		}
 		
@@ -535,8 +406,8 @@ ideas = {
 			picture = raj_marginalized_muslim_community_angry
 			
 			modifier = {
-				conscription_factor = -0.03
-				consumer_goods_factor = -0.08
+				conscription_factor = -0.02
+				consumer_goods_factor = -0.05
 			}
 		}
 		
@@ -559,26 +430,6 @@ ideas = {
 			}
 		}
 		
-		ARM_usa_mandate = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = intervention_usa
-			
-			modifier = {
-				consumer_goods_factor = -0.1
-			}
-		}
-		
 		ARM_a_gun_in_every_hand_idea = {
 			
 			
@@ -595,32 +446,13 @@ ideas = {
 			
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.07 instant = yes
+					build_cost_ic = -0.10 instant = yes
 				}
 			}
 			
 			modifier = {
-				conscription_factor = 0.04
-				partisan_effect = 0.12
-			}
-		}
-		
-		ARM_prepare_for_next_war_idea = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-			}
-
-			removal_cost = -1
-
-			picture = generic_armor
-			
-			modifier = {
-				production_speed_arms_factory_factor = 0.09
+				conscription_factor = 0.05
+				partisan_effect = 0.15
 			}
 		}
 		
@@ -728,8 +560,8 @@ ideas = {
 			picture = generic_pp_unity_bonus #ger_mefo_bills
 			
 			modifier = {
-				political_advisor_cost_factor = -0.08
-				economy_cost_factor = -0.11
+				political_advisor_cost_factor = -0.1
+				economy_cost_factor = -0.1
 				mobilization_laws_cost_factor = -0.1
 			}
 		}
